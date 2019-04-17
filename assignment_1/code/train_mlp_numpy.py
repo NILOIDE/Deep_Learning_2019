@@ -73,13 +73,27 @@ def train():
   else:
     dnn_hidden_units = []
 
-  ########################
-  # PUT YOUR CODE HERE  #
-  #######################
-  raise NotImplementedError
-  ########################
-  # END OF YOUR CODE    #
-  #######################
+  cifar10 = cifar10_utils.get_cifar10(FLAGS.data_dir)
+
+  test_images, test_labels = cifar10['test'].images, cifar10['test'].labels
+  test_img_num, im_channels, im_height, im_width = test_images.shape
+  x_size = im_channels * im_height * im_width
+  mlp = MLP(x_size, dnn_hidden_units, test_labels.shape[1])
+  CE_module = CrossEntropyModule()
+  x_test = test_images.reshape((test_img_num, x_size))
+
+  train_results = []
+  batch_size = FLAGS.batch_size
+  for epoch in range(FLAGS.max_steps):
+    x_train, y_train = cifar10['train'].next_batch(batch_size)
+    x_train = x_train.reshape((batch_size, x_size))
+
+    output = mlp.forward(x_train)
+    loss = CE_module.forward(output, y_train)
+    dCE = CE_module.backward(loss, y_train)
+    mlp.backward(dCE)
+    quit()
+
 
 def print_flags():
   """
