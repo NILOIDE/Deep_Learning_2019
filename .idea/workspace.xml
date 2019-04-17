@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c3d455d3-bc7a-4a68-bf58-fcbb7443af70" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/assignment_1/code/mlp_numpy.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment_1/code/mlp_numpy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_1/code/modules.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment_1/code/modules.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_1/code/train_mlp_numpy.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment_1/code/train_mlp_numpy.py" afterDir="false" />
-    </list>
+    <list default="true" id="c3d455d3-bc7a-4a68-bf58-fcbb7443af70" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,7 +15,7 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/assignment_1/code/modules.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="408">
+                <state relative-caret-position="561">
                   <caret line="66" column="22" selection-start-line="66" selection-start-column="22" selection-end-line="66" selection-end-column="22" />
                 </state>
               </provider>
@@ -149,6 +145,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/assignment_1/code/train_mlp_numpy.py" />
   </component>
   <component name="RunDashboard">
@@ -269,7 +266,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assignment_1/code/modules.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
+        <state relative-caret-position="561">
           <caret line="66" column="22" selection-start-line="66" selection-start-column="22" selection-end-line="66" selection-end-column="22" />
         </state>
       </provider>
