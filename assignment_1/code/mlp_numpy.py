@@ -34,14 +34,19 @@ class MLP(object):
     """
 
     network = []
+    param_layers = []
     network.append(LinearModule(n_inputs, n_hidden[0]))
+    param_layers.append(network[-1])
     network.append(ReLUModule())
     for n_module in n_hidden[1:]:
       network.append(LinearModule(n_inputs, n_module))
+      param_layers.append(network[-1])
       network.append(ReLUModule())
     network.append(LinearModule(n_hidden[-1], n_classes))
+    param_layers.append(network[-1])
     network.append(SoftMaxModule())
     self.network = network
+    self.param_layers = param_layers
 
 
   def forward(self, x):
@@ -74,7 +79,6 @@ class MLP(object):
     Implement backward pass of the network.
     """
     for module in reversed(self.network):
-      print(module)
       dout = module.backward(dout)
 
     return

@@ -43,13 +43,7 @@ def accuracy(predictions, targets):
   Implement accuracy computation.
   """
 
-  ########################
-  # PUT YOUR CODE HERE  #
-  #######################
-  raise NotImplementedError
-  ########################
-  # END OF YOUR CODE    #
-  #######################
+  accuracy = (np.argmax(predictions, axis=1) == np.argmax(targets, axis=1)).mean()
 
   return accuracy
 
@@ -75,10 +69,10 @@ def train():
 
   cifar10 = cifar10_utils.get_cifar10(FLAGS.data_dir)
 
-  test_images, test_labels = cifar10['test'].images, cifar10['test'].labels
+  test_images, y_test = cifar10['test'].images, cifar10['test'].labels
   test_img_num, im_channels, im_height, im_width = test_images.shape
   x_size = im_channels * im_height * im_width
-  mlp = MLP(x_size, dnn_hidden_units, test_labels.shape[1])
+  mlp = MLP(x_size, dnn_hidden_units, y_test.shape[1])
   CE_module = CrossEntropyModule()
   x_test = test_images.reshape((test_img_num, x_size))
 
@@ -90,9 +84,25 @@ def train():
 
     output = mlp.forward(x_train)
     loss = CE_module.forward(output, y_train)
-    dCE = CE_module.backward(loss, y_train)
+    dCE = CE_module.backward(output, y_train)
     mlp.backward(dCE)
-    quit()
+    for layer in mlp.param_layers:
+      layer.params['weight'] -= FLAGS.learning_rate * layer.grads['weight']
+      layer.params['bias'] -= FLAGS.learning_rate * layer.grads['bias']
+
+    train_acc = accuracy(output, y_train)
+    test_output = mlp.forward(x_test)
+    test_loss = CE_module.forward(test_output, y_test)
+    test_acc = accuracy(test_output, y_test)
+    train_results.append({'Train loss': loss, 'Train accuracy': train_acc, 'Test loss': test_loss, 'Test accuracy': test_acc})
+    if epoch % 50 == 0:
+      print("Epoch:", epoch, "  Loss:", loss, "Acc:", train_acc)
+
+  if train_results:
+    print("----------------")
+    for s, r in zip(*train_results, [train_results[i] for i in train_results]):
+      print(s, r)
+
 
 
 def print_flags():

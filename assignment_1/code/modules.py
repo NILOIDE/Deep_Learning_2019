@@ -17,9 +17,9 @@ class LinearModule(object):
       out_features: size of each output sample
 
     TODO:
-    Initialize weights self.params['weight'] using normal distribution with mean = 0 and 
-    std = 0.0001. Initialize biases self.params['bias'] with 0. 
-    
+    Initialize weights self.params['weight'] using normal distribution with mean = 0 and
+    std = 0.0001. Initialize biases self.params['bias'] with 0.
+
     Also, initialize gradients with zeros.
     """
 
@@ -30,15 +30,15 @@ class LinearModule(object):
   def forward(self, x):
     """
     Forward pass.
-    
+
     Args:
       x: input to the module
     Returns:
       out: output of the module
-    
+
     TODO:
-    Implement forward pass of the module. 
-    
+    Implement forward pass of the module.
+
     Hint: You can store intermediate variables inside the object. They can be used in backward pass computation.                                                           #
     """
 
@@ -57,23 +57,18 @@ class LinearModule(object):
       dout: gradients of the previous module
     Returns:
       dx: gradients with respect to the input of the module
-    
+
     TODO:
-    Implement backward pass of the module. Store gradient of the loss with respect to 
-    layer parameters in self.grads['weight'] and self.grads['bias']. 
+    Implement backward pass of the module. Store gradient of the loss with respect to
+    layer parameters in self.grads['weight'] and self.grads['bias'].
     """
 
-    print(dout.shape)
-    print(self.x.shape)
     dx = dout @ self.params['weight']
-
     # a = np.repeat(self.params['weight'][np.newaxis, :, :], dout.shape[0], axis=0)
     # print(a.shape)
-    self.grads['weight'] = dout @ self.x.T
-    print(self.grads['weight'].shape)
-    quit()
-    self.grads['bias'] = dout
-    
+    self.grads['weight'] = dout.T @ self.x
+    self.grads['bias'] = np.sum(dout, axis=0)
+
     return dx
 
 class ReLUModule(object):
@@ -83,15 +78,15 @@ class ReLUModule(object):
   def forward(self, x):
     """
     Forward pass.
-    
+
     Args:
       x: input to the module
     Returns:
       out: output of the module
-    
+
     TODO:
-    Implement forward pass of the module. 
-    
+    Implement forward pass of the module.
+
     Hint: You can store intermediate variables inside the object. They can be used in backward pass computation.                                                           #
     """
 
@@ -108,12 +103,12 @@ class ReLUModule(object):
       dout: gradients of the previous modul
     Returns:
       dx: gradients with respect to the input of the module
-    
+
     TODO:
     Implement backward pass of the module.
     """
 
-    dx = dout @ np.diag(dout > 0)
+    dx = dout * (self.x > 0)
 
     return dx
 
@@ -128,17 +123,19 @@ class SoftMaxModule(object):
       x: input to the module
     Returns:
       out: output of the module
-    
+
     TODO:
-    Implement forward pass of the module. 
+    Implement forward pass of the module.
     To stabilize computation you should use the so-called Max Trick - https://timvieira.github.io/blog/post/2014/02/11/exp-normalize-trick/
-    
+
     Hint: You can store intermediate variables inside the object. They can be used in backward pass computation.                                                           #
     """
-    ex = np.exp(x - np.max(x))
-    s = np.sum(ex, axis=0)
+
+    ex = np.exp(x - np.atleast_2d(np.max(x, axis=1)).T)
+    s = np.atleast_2d(np.sum(ex, axis=1)).T
     out = ex / s
     self.out = out
+
     return out
 
   def backward(self, dout):
@@ -149,7 +146,7 @@ class SoftMaxModule(object):
       dout: gradients of the previous modul
     Returns:
       dx: gradients with respect to the input of the module
-    
+
     TODO:
     Implement backward pass of the module.
     """
@@ -158,7 +155,9 @@ class SoftMaxModule(object):
     diag_tensor = np.zeros((n_batch, out_dim, out_dim))
     diag_idx = np.arange(out_dim)
     diag_tensor[:, diag_idx, diag_idx] = self.out
-    dx = dout @ (np.diag(self.out) - self.out.T @ self.out)
+
+    within_batch_operation = diag_tensor - np.einsum('ij, ik -> ijk', self.out, self.out)
+    dx = np.einsum('ij, ijk -> ik', dout, within_batch_operation)
 
     return dx
 
@@ -175,14 +174,13 @@ class CrossEntropyModule(object):
       y: labels of the input
     Returns:
       out: cross entropy loss
-    
+
     TODO:
-    Implement forward pass of the module. 
+    Implement forward pass of the module.
     """
 
-    e = 1e-10
-    out = np.sum(- y * np.log(x + e), axis=1)
-
+    e = 1e-8
+    out = np.sum(- y * np.log(x + e), axis=1).mean()
     return out
 
   def backward(self, x, y):
@@ -194,12 +192,11 @@ class CrossEntropyModule(object):
       y: labels of the input
     Returns:
       dx: gradient of the loss with the respect to the input x.
-    
+
     TODO:
     Implement backward pass of the module.
     """
-    e = 1e-10
-    a = 1/(x+e)
-    dx = np.diag(a).T @ y
+    e = 1e-8
+    dx = - y/(x+e) / y.shape[0]
 
     return dx
