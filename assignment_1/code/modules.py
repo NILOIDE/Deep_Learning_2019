@@ -64,8 +64,6 @@ class LinearModule(object):
     """
 
     dx = dout @ self.params['weight']
-    # a = np.repeat(self.params['weight'][np.newaxis, :, :], dout.shape[0], axis=0)
-    # print(a.shape)
     self.grads['weight'] = dout.T @ self.x
     self.grads['bias'] = np.sum(dout, axis=0)
 

@@ -67,42 +67,65 @@ def train():
   else:
     dnn_hidden_units = []
 
+  # Load data set --------------------
   cifar10 = cifar10_utils.get_cifar10(FLAGS.data_dir)
-
   test_images, y_test = cifar10['test'].images, cifar10['test'].labels
   test_img_num, im_channels, im_height, im_width = test_images.shape
   x_size = im_channels * im_height * im_width
+  x_test = test_images.reshape((test_img_num, x_size))
+  # ----------------------------------
+  # Create MLP -----------------------
   mlp = MLP(x_size, dnn_hidden_units, y_test.shape[1])
   CE_module = CrossEntropyModule()
-  x_test = test_images.reshape((test_img_num, x_size))
+  # ----------------------------------
 
-  train_results = []
+  results = []
   batch_size = FLAGS.batch_size
   for epoch in range(FLAGS.max_steps):
+    # Prepare batch -------------------------
     x_train, y_train = cifar10['train'].next_batch(batch_size)
     x_train = x_train.reshape((batch_size, x_size))
-
+    # ---------------------------------------
+    # Train step ----------------------------
     output = mlp.forward(x_train)
-    loss = CE_module.forward(output, y_train)
+    train_loss = CE_module.forward(output, y_train)
     dCE = CE_module.backward(output, y_train)
     mlp.backward(dCE)
     for layer in mlp.param_layers:
       layer.params['weight'] -= FLAGS.learning_rate * layer.grads['weight']
       layer.params['bias'] -= FLAGS.learning_rate * layer.grads['bias']
+    # ----------------------------------------
+    # Store performance every 1% steps -------
+    if epoch % FLAGS.eval_freq == 0:
+      train_acc = accuracy(output, y_train)
+      test_output = mlp.forward(x_test)
+      test_loss = CE_module.forward(test_output, y_test)
+      test_acc = accuracy(test_output, y_test)
+      results.append({'Train loss': train_loss, 'Train accuracy': train_acc,
+                      'Test loss': test_loss, 'Test accuracy': test_acc})
+      print("Epoch:", epoch, "  Loss:", train_loss, "Acc:", train_acc)
+    # ----------------------------------------
 
-    train_acc = accuracy(output, y_train)
-    test_output = mlp.forward(x_test)
-    test_loss = CE_module.forward(test_output, y_test)
-    test_acc = accuracy(test_output, y_test)
-    train_results.append({'Train loss': loss, 'Train accuracy': train_acc, 'Test loss': test_loss, 'Test accuracy': test_acc})
-    if epoch % 50 == 0:
-      print("Epoch:", epoch, "  Loss:", loss, "Acc:", train_acc)
-
-  if train_results:
-    print("----------------")
-    for s, r in zip(*train_results, [train_results[i] for i in train_results]):
+  if results:
+    print("--------Final Results--------")
+    for s, r in zip([*results[-1]], [results[-1][i] for i in results[-1]]):
       print(s, r)
-
+    print("-----------------------------")
+    import matplotlib.pyplot as plt
+    y_axis = {'Train loss': [r['Train loss'] for r in results],
+              'Train accuracy': [r['Train accuracy'] for r in results],
+              'Test loss': [r['Test loss'] for r in results],
+              'Test accuracy': [r['Test accuracy'] for r in results]}
+    # curves = [[np.arange(len(results))*(FLAGS.max_steps//100), y[1]] for y in y_axis]
+    x_axis = np.arange(len(results))*FLAGS.eval_freq
+    # for i in [*[curve[1] for curve in y_axis]]:
+    #   print(len(i))
+    plt.plot(x_axis, y_axis['Train loss'], x_axis, y_axis['Train accuracy'],
+             x_axis, y_axis['Test loss'], x_axis, y_axis['Test accuracy'])
+    plt.legend(['Train loss', 'Train accuracy', 'Test loss', 'Test accuracy'])
+    plt.xlabel("Training steps")
+    plt.ylabel("Accuracy / Loss")
+    plt.savefig("mlp_numpy_curves.pdf")
 
 
 def print_flags():
