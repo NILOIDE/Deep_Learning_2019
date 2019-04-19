@@ -32,15 +32,12 @@ class CustomBatchNormAutograd(nn.Module):
       Save parameters for the number of neurons and eps.
       Initialize parameters gamma and beta via nn.Parameter
     """
-    super(CustomBatchNormAutograd, self).__init__()
 
-    ########################
-    # PUT YOUR CODE HERE  #
-    #######################
-    raise NotImplementedError
-    ########################
-    # END OF YOUR CODE    #
-    #######################
+    super(CustomBatchNormAutograd, self).__init__()
+    self.n_neurons = n_neurons
+    self.eps = eps
+    self.gamma = nn.Parameter(torch.ones(n_neurons))
+    self.beta = nn.Parameter(torch.zeros(n_neurons))
 
   def forward(self, input):
     """
@@ -57,13 +54,11 @@ class CustomBatchNormAutograd(nn.Module):
       For the case that you make use of torch.var be aware that the flag unbiased=False should be set.
     """
 
-    ########################
-    # PUT YOUR CODE HERE  #
-    #######################
-    raise NotImplementedError
-    ########################
-    # END OF YOUR CODE    #
-    #######################
+    assert input.shape[1] == self.n_neurons
+    mean = input.mean(dim=0)
+    var = input.var(dim=0, unbiased=False)
+    x_hat = (input - mean)/torch.sqrt(var + self.eps)
+    out = self.gamma * x_hat + self.beta
 
     return out
 

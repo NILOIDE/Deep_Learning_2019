@@ -5,6 +5,9 @@ You should fill in code into indicated sections.
 from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
+import torch
+import torch.nn as nn
+
 
 class MLP(nn.Module):
   """
@@ -30,14 +33,17 @@ class MLP(nn.Module):
     TODO:
     Implement initialization of the network.
     """
+    super(MLP, self).__init__()
+    from custom_batchnorm import CustomBatchNormAutograd
+    self.layers = [nn.Linear(n_inputs, n_hidden[0]), nn.ReLU()]
+    for i in range(len(n_hidden[1:])):
+      self.layers.append(nn.Linear(n_hidden[i-1], n_hidden[i]))
+      self.layers.append(nn.ReLU())
+      self.layers.append(CustomBatchNormAutograd(n_hidden[i]))
+    self.layers.append(nn.Linear(n_hidden[-1], n_classes))
+    # self.layers.append(nn.Softmax())
 
-    ########################
-    # PUT YOUR CODE HERE  #
-    #######################
-    raise NotImplementedError
-    ########################
-    # END OF YOUR CODE    #
-    #######################
+    self.model = nn.Sequential(*self.layers)
 
   def forward(self, x):
     """
@@ -53,12 +59,6 @@ class MLP(nn.Module):
     Implement forward pass of the network.
     """
 
-    ########################
-    # PUT YOUR CODE HERE  #
-    #######################
-    raise NotImplementedError
-    ########################
-    # END OF YOUR CODE    #
-    #######################
+    out = self.model(x)
 
     return out

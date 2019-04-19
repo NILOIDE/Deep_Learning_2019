@@ -95,7 +95,7 @@ def train():
       layer.params['weight'] -= FLAGS.learning_rate * layer.grads['weight']
       layer.params['bias'] -= FLAGS.learning_rate * layer.grads['bias']
     # ----------------------------------------
-    # Store performance every 1% steps -------
+    # Store every eval_freq steps ------------
     if epoch % FLAGS.eval_freq == 0:
       train_acc = accuracy(output, y_train)
       test_output = mlp.forward(x_test)
