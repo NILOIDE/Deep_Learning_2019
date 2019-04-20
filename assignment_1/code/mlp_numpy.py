@@ -35,7 +35,6 @@ class MLP(object):
 
     network = []
     param_layers = []
-    print(n_hidden)
     network.append(LinearModule(n_inputs, n_hidden[0]))
     param_layers.append(network[-1])
     network.append(ReLUModule())
@@ -47,7 +46,6 @@ class MLP(object):
     param_layers.append(network[-1])
     network.append(SoftMaxModule())
     self.network = network
-    print(network)
     self.param_layers = param_layers
 
 

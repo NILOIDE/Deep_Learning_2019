@@ -88,7 +88,7 @@ def train():
   # ----------------------------------
 
   results = []
-  for epoch in range(FLAGS.max_steps):
+  for epoch in range(1, FLAGS.max_steps+1):
     # Prepare batch -------------------------
     x_train, y_train = cifar10['train'].next_batch(FLAGS.batch_size)
     x_train = x_train.reshape((FLAGS.batch_size, x_size))
@@ -129,6 +129,7 @@ def train():
 
     print("--------Best Results--------")
     best_idx = np.argmax(y_axis['Test accuracy'])
+    print("Best epoch:", best_idx*FLAGS.eval_freq)
     for s, r in zip([*y_axis], [y_axis[i][best_idx] for i in y_axis]):
       print(s, r)
     print("-----------------------------")

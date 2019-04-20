@@ -3,10 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="c3d455d3-bc7a-4a68-bf58-fcbb7443af70" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_1/code/custom_batchnorm.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment_1/code/custom_batchnorm.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment_1/code/mlp_numpy.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment_1/code/mlp_numpy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_1/code/mlp_numpy_curves.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/assignment_1/code/mlp_numpy_curves.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_1/code/mlp_numpy_curves.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment_1/code/mlp_pytorch.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment_1/code/mlp_pytorch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_1/code/mlp_pytorch_curves.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment_1/code/train_mlp_numpy.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment_1/code/train_mlp_numpy.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment_1/code/train_mlp_pytorch.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment_1/code/train_mlp_pytorch.py" afterDir="false" />
     </list>
@@ -26,8 +26,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/assignment_1/code/mlp_pytorch.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="714">
-                  <caret line="42" column="58" lean-forward="true" selection-start-line="42" selection-start-column="58" selection-end-line="42" selection-end-column="58" />
+                <state relative-caret-position="629">
+                  <caret line="37" column="98" selection-start-line="37" selection-start-column="98" selection-end-line="37" selection-end-column="98" />
                   <folding>
                     <element signature="e#123#161#0" expanded="true" />
                   </folding>
@@ -36,10 +36,22 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/assignment_1/code/mlp_numpy.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="646">
+                  <caret line="42" column="38" lean-forward="true" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="38" />
+                  <folding>
+                    <element signature="e#121#159#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/assignment_1/code/train_mlp_numpy.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="544">
-                  <caret line="77" column="40" selection-start-line="77" selection-start-column="40" selection-end-line="77" selection-end-column="40" />
+                <state relative-caret-position="136">
+                  <caret line="83" column="24" selection-start-line="83" selection-start-column="24" selection-end-line="83" selection-end-column="24" />
                   <folding>
                     <element signature="e#142#180#0" expanded="true" />
                   </folding>
@@ -51,11 +63,11 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/assignment_1/code/train_mlp_pytorch.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2227">
-                  <caret line="131" column="50" selection-start-line="131" selection-start-column="50" selection-end-line="131" selection-end-column="50" />
+                <state relative-caret-position="153">
+                  <caret line="90" column="24" selection-start-line="90" selection-start-column="24" selection-end-line="90" selection-end-column="24" />
                   <folding>
                     <element signature="e#144#182#0" expanded="true" />
                   </folding>
@@ -63,7 +75,7 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/assignment_1/code/custom_batchnorm.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="-340">
@@ -91,10 +103,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/assignment_1/code/modules.py" />
+        <option value="$PROJECT_DIR$/assignment_1/code/custom_batchnorm.py" />
         <option value="$PROJECT_DIR$/assignment_1/code/mlp_numpy.py" />
         <option value="$PROJECT_DIR$/assignment_1/code/train_mlp_numpy.py" />
         <option value="$PROJECT_DIR$/assignment_1/code/train_mlp_pytorch.py" />
-        <option value="$PROJECT_DIR$/assignment_1/code/custom_batchnorm.py" />
         <option value="$PROJECT_DIR$/assignment_1/code/mlp_pytorch.py" />
       </list>
     </option>
@@ -266,36 +278,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assignment_1/code/mlp_numpy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="39" column="36" lean-forward="true" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
-          <folding>
-            <element signature="e#121#159#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assignment_1/code/train_mlp_numpy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="77" column="40" selection-start-line="77" selection-start-column="40" selection-end-line="77" selection-end-column="40" />
-          <folding>
-            <element signature="e#142#180#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assignment_1/code/train_mlp_pytorch.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2227">
-          <caret line="131" column="50" selection-start-line="131" selection-start-column="50" selection-end-line="131" selection-end-column="50" />
-          <folding>
-            <element signature="e#144#182#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assignment_1/code/custom_batchnorm.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-340">
@@ -306,10 +288,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assignment_1/code/mlp_numpy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="42" column="38" lean-forward="true" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="38" />
+          <folding>
+            <element signature="e#121#159#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assignment_1/code/train_mlp_numpy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="83" column="24" selection-start-line="83" selection-start-column="24" selection-end-line="83" selection-end-column="24" />
+          <folding>
+            <element signature="e#142#180#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assignment_1/code/train_mlp_pytorch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="90" column="24" selection-start-line="90" selection-start-column="24" selection-end-line="90" selection-end-column="24" />
+          <folding>
+            <element signature="e#144#182#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/assignment_1/code/mlp_pytorch.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="42" column="58" lean-forward="true" selection-start-line="42" selection-start-column="58" selection-end-line="42" selection-end-column="58" />
+        <state relative-caret-position="629">
+          <caret line="37" column="98" selection-start-line="37" selection-start-column="98" selection-end-line="37" selection-end-column="98" />
           <folding>
             <element signature="e#123#161#0" expanded="true" />
           </folding>

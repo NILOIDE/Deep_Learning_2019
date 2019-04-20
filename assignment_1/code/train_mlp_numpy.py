@@ -81,7 +81,7 @@ def train():
 
   results = []
   batch_size = FLAGS.batch_size
-  for epoch in range(FLAGS.max_steps):
+  for epoch in range(1, FLAGS.max_steps+1):
     # Prepare batch -------------------------
     x_train, y_train = cifar10['train'].next_batch(batch_size)
     x_train = x_train.reshape((batch_size, x_size))
@@ -107,25 +107,26 @@ def train():
     # ----------------------------------------
 
   if results:
-    print("--------Final Results--------")
-    for s, r in zip([*results[-1]], [results[-1][i] for i in results[-1]]):
-      print(s, r)
-    print("-----------------------------")
     import matplotlib.pyplot as plt
     y_axis = {'Train loss': [r['Train loss'] for r in results],
               'Train accuracy': [r['Train accuracy'] for r in results],
               'Test loss': [r['Test loss'] for r in results],
               'Test accuracy': [r['Test accuracy'] for r in results]}
-    # curves = [[np.arange(len(results))*(FLAGS.max_steps//100), y[1]] for y in y_axis]
     x_axis = np.arange(len(results))*FLAGS.eval_freq
-    # for i in [*[curve[1] for curve in y_axis]]:
-    #   print(len(i))
     plt.plot(x_axis, y_axis['Train loss'], x_axis, y_axis['Train accuracy'],
              x_axis, y_axis['Test loss'], x_axis, y_axis['Test accuracy'])
     plt.legend(['Train loss', 'Train accuracy', 'Test loss', 'Test accuracy'])
     plt.xlabel("Training steps")
     plt.ylabel("Accuracy / Loss")
     plt.savefig("mlp_numpy_curves.pdf")
+
+    print("--------Best Results--------")
+    best_idx = np.argmax(y_axis['Test accuracy'])
+    print("Best epoch:", best_idx*FLAGS.eval_freq)
+    best_idx = np.argmax(y_axis['Test accuracy'])
+    for s, r in zip([*y_axis], [y_axis[i][best_idx] for i in y_axis]):
+      print(s, r)
+    print("-----------------------------")
 
 
 def print_flags():
