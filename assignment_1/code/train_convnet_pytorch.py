@@ -134,9 +134,9 @@ def train():
     #           'Test accuracy': [r['Test accuracy'] for r in results]}
     # x_axis = np.arange(len(results))*FLAGS.eval_freq
     train_results = np.array(train_results)
-    train_x_axis = train_results[:,0]
-    train_loss = train_results[:,1]
-    train_acc = train_results[:,2]
+    train_x_axis = train_results[:, 0]
+    train_loss = train_results[:, 1]
+    train_acc = train_results[:, 2]
     test_results = np.array(test_results)
     test_x_axis = test_results[:, 0]
     test_loss = test_results[:, 1]
@@ -149,10 +149,12 @@ def train():
     plt.savefig("convnet_pytorch_curves.pdf")
 
     print("--------Best Results--------")
-    best_idx = np.argmax(y_axis['Test accuracy'])
+    best_idx = np.argmax(test_results[:, 1])
     print("Best epoch:", best_idx*FLAGS.eval_freq)
-    for s, r in zip([*y_axis], [y_axis[i][best_idx] for i in y_axis]):
-      print(s, r)
+    print("Train loss", train_results[:, 1])
+    print("Train accuracy", train_results[:, 2])
+    print("Test loss", test_results[:, 1])
+    print("Test accuracy", test_results[:, 2])
     print("-----------------------------")
 
 def print_flags():
