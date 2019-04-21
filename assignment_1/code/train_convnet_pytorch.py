@@ -43,8 +43,6 @@ def accuracy(predictions, targets):
   Implement accuracy computation.
   """
 
-  # predictions = predictions.cpu().numpy()
-  # targets = targets.cpu().numpy()
   accuracy = torch.argmax(predictions, dim=1) == torch.argmax(targets, dim=1)
   accuracy = accuracy.float().mean()
 
@@ -126,11 +124,6 @@ def train():
 
   if train_results and test_results:
     import matplotlib.pyplot as plt
-    # y_axis = {'Train loss': [r['Train loss'] for r in results],
-    #           'Train accuracy': [r['Train accuracy'] for r in results],
-    #           'Test loss': [r['Test loss'] for r in results],
-    #           'Test accuracy': [r['Test accuracy'] for r in results]}
-    # x_axis = np.arange(len(results))*FLAGS.eval_freq
     train_results = np.array(train_results)
     train_x_axis = train_results[:, 0]
     train_loss = train_results[:, 1]
