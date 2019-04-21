@@ -65,8 +65,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/assignment_1/code/train_convnet_pytorch.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="612">
-                  <caret line="84" column="36" selection-start-line="84" selection-start-column="36" selection-end-line="84" selection-end-column="36" />
+                <state relative-caret-position="821">
+                  <caret line="116" column="51" selection-start-line="116" selection-start-column="51" selection-end-line="116" selection-end-column="51" />
                   <folding>
                     <element signature="e#150#188#0" expanded="true" />
                   </folding>
@@ -354,8 +354,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assignment_1/code/train_convnet_pytorch.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="84" column="36" selection-start-line="84" selection-start-column="36" selection-end-line="84" selection-end-column="36" />
+        <state relative-caret-position="821">
+          <caret line="116" column="51" selection-start-line="116" selection-start-column="51" selection-end-line="116" selection-end-column="51" />
           <folding>
             <element signature="e#150#188#0" expanded="true" />
           </folding>

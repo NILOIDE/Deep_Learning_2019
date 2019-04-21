@@ -16,8 +16,8 @@ import torch
 # Default constants
 LEARNING_RATE_DEFAULT = 1e-4
 BATCH_SIZE_DEFAULT = 32
-MAX_STEPS_DEFAULT = 5000
-EVAL_FREQ_DEFAULT = 500
+MAX_STEPS_DEFAULT = 50
+EVAL_FREQ_DEFAULT = 50
 OPTIMIZER_DEFAULT = 'ADAM'
 
 # Directory in which cifar data is saved
@@ -64,22 +64,15 @@ def train():
   # Pytorch stuff --------------------
   data_type = torch.FloatTensor
   device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-  print("step1")
+
   # Load data set --------------------
   cifar10 = cifar10_utils.get_cifar10(FLAGS.data_dir)
-  print("step2")
   x_test, y_test = cifar10['test'].images, cifar10['test'].labels
-  print("step3")
   test_img_num, im_channels, im_height, im_width = x_test.shape
-  x_test = torch.tensor(x_test).type(data_type).to(device)
-  y_test = torch.tensor(y_test).type(data_type).to(device)
-  print("step4")
   # ----------------------------------
   # Create MLP -----------------------
   model = ConvNet(im_channels, y_test.shape[1])
-  print("step5")
   model.to(device)
-  print("step6")
   CE_module = torch.nn.CrossEntropyLoss()
   optimizer = torch.optim.Adam(model.parameters(), lr=FLAGS.learning_rate)
   # ----------------------------------
@@ -88,7 +81,6 @@ def train():
   test_results =[]
   for epoch in range(1, FLAGS.max_steps+1):
     # Prepare batch -------------------------
-    print(epoch)
     x_train, y_train = cifar10['train'].next_batch(FLAGS.batch_size)
     x_train = torch.tensor(x_train).type(data_type).to(device)
     y_train = torch.tensor(y_train).type(data_type).to(device)
@@ -106,10 +98,23 @@ def train():
     if epoch % 50 == 0:
       print("Epoch:", epoch, "  Loss:", train_loss.item(), "Acc:", train_acc.item())
     if epoch % FLAGS.eval_freq == 0 or epoch == 1:
-      test_output = model.forward(x_test)
-      test_loss = CE_module.forward(test_output, torch.argmax(y_test, dim=1))
+      t_size = 100
+      test_loss = []
+      test_output = None
+      for i in range(t_size, test_img_num, t_size):
+        x_test_batch = x_test[i-t_size:i]
+        y_test_batch = y_test[i-t_size:i]
+        x_test_batch = torch.tensor(x_test_batch).type(data_type).to(device)
+        y_test_batch = torch.tensor(y_test_batch).type(data_type).to(device)
+        test_batch_output = model.forward(x_test_batch)
+        test_batch_loss = CE_module.forward(test_batch_output, torch.argmax(y_test_batch, dim=1))
+        test_loss.append(test_batch_loss.item())
+        if test_output is None:
+          test_output = test_batch_output
+        else:
+          test_output = torch.cat((test_output, test_batch_output), 0)
       test_acc = accuracy(test_output, y_test)
-      test_results.append([epoch, test_loss.item(), test_acc.item()])
+      test_results.append([epoch, np.sum(test_loss)/(test_img_num/t_size), test_acc.item()])
     # ----------------------------------------
 
   if train_results and test_results:
