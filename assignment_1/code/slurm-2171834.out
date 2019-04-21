@@ -1,0 +1,14 @@
+learning_rate : 0.0001
+max_steps : 5000
+batch_size : 32
+eval_freq : 500
+data_dir : ./cifar10/cifar-10-batches-py
+--------Best Results--------
+Best epoch: 5000
+Train loss 0.286116600037
+Train accuracy 0.96875
+Test loss 0.702122536469
+Test accuracy 0.770432710648
+[ 0.16115786  0.56901044  0.63221157  0.65534854  0.69401044  0.71734774
+  0.73747998  0.74248797  0.75961542  0.76742792  0.77043271]
+-----------------------------
