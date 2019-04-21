@@ -96,8 +96,6 @@ def train():
     train_acc = accuracy(output.detach(), y_train)
     train_results.append([epoch, train_loss.detach().item(), train_acc.item()])
 
-    if epoch % 50 == 0:
-      print("Epoch:", epoch)
     if epoch % FLAGS.eval_freq == 0 or epoch == 1:
       t_size = FLAGS.batch_size
       test_loss = []
