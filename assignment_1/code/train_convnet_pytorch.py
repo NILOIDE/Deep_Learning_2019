@@ -92,16 +92,17 @@ def train():
     train_loss.backward()
     optimizer.step()
     # ----------------------------------------
-    # Store every eval_freq steps ------------
+    # Store train results --------------------
     train_acc = accuracy(output.detach(), y_train)
     train_results.append([epoch, train_loss.detach().item(), train_acc.item()])
-
+    # ----------------------------------------
+    # Test every eval_freq steps ------------
     if epoch % FLAGS.eval_freq == 0 or epoch == 1:
       t_size = FLAGS.batch_size
       test_loss = []
       test_output = None
       test_labels = None
-      for i in range(t_size, test_img_num, t_size):
+      for _ in range(t_size, test_img_num, t_size):
         x_test_batch, y_test_batch = cifar10['test'].next_batch(t_size)
         x_test_batch = torch.tensor(x_test_batch).type(data_type).to(device)
         y_test_batch = torch.tensor(y_test_batch).type(data_type).to(device)
@@ -140,8 +141,8 @@ def train():
     print("--------Best Results--------")
     best_idx = np.argmax(test_results[:, 2])
     print("Best epoch:", best_idx*FLAGS.eval_freq)
-    print("Train loss", train_results[best_idx, 1])
-    print("Train accuracy", train_results[best_idx, 2])
+    print("Train loss", train_results[best_idx*FLAGS.eval_freq, 1])
+    print("Train accuracy", train_results[best_idx*FLAGS.eval_freq, 2])
     print("Test loss", test_results[best_idx, 1])
     print("Test accuracy", test_results[best_idx, 2])
     print("-----------------------------")

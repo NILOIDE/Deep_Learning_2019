@@ -74,12 +74,12 @@ def train():
 
   # Load data set --------------------
   cifar10 = cifar10_utils.get_cifar10(FLAGS.data_dir)
-  test_images, y_test = cifar10['test'].images, cifar10['test'].labels
-  test_img_num, im_channels, im_height, im_width = test_images.shape
+  x_test, y_test = cifar10['test'].images, cifar10['test'].labels
+  test_img_num, im_channels, im_height, im_width = x_test.shape
   x_size = im_channels * im_height * im_width
-  x_test = test_images.reshape((test_img_num, x_size))
-  x_test = torch.tensor(x_test).type(data_type).to(device)
-  y_test = torch.tensor(y_test).type(data_type).to(device)
+  # x_test = test_images.reshape((test_img_num, x_size))
+  # x_test = torch.tensor(x_test).type(data_type).to(device)
+  # y_test = torch.tensor(y_test).type(data_type).to(device)
   # ----------------------------------
   # Create MLP -----------------------
   mlp = MLP(x_size, dnn_hidden_units, y_test.shape[1])
@@ -88,7 +88,8 @@ def train():
   optimizer = torch.optim.Adam(mlp.parameters(), lr=FLAGS.learning_rate)
   # ----------------------------------
 
-  results = []
+  train_results = []
+  test_results = []
   for epoch in range(1, FLAGS.max_steps+1):
     # Prepare batch -------------------------
     x_train, y_train = cifar10['train'].next_batch(FLAGS.batch_size)
@@ -103,36 +104,62 @@ def train():
     train_loss.backward()
     optimizer.step()
     # ----------------------------------------
+    # Store train results --------------------
+    train_acc = accuracy(output.detach(), y_train)
+    train_results.append([epoch, train_loss.detach().item(), train_acc.item()])
+    # ----------------------------------------
     # Store every eval_freq steps ------------
-    if epoch % FLAGS.eval_freq == 0:
-      train_acc = accuracy(output, y_train)
-      test_output = mlp.forward(x_test)
-      test_loss = CE_module.forward(test_output, torch.argmax(y_test, dim=1))
-      test_acc = accuracy(test_output, y_test)
-      results.append({'Train loss': train_loss.item(), 'Train accuracy': train_acc.item(),
-                      'Test loss': test_loss.item(), 'Test accuracy': test_acc.item()})
-      print("Epoch:", epoch, "  Loss:", train_loss.item(), "Acc:", train_acc.item())
+    if epoch % FLAGS.eval_freq == 0 or epoch == 1:
+      t_size = FLAGS.batch_size
+      test_loss = []
+      test_output = None
+      test_labels = None
+      for _ in range(t_size, test_img_num, t_size):
+        x_test_batch, y_test_batch = cifar10['test'].next_batch(t_size)
+        test_batch_num, im_channels, im_height, im_width = x_test_batch.shape
+        x_size = im_channels * im_height * im_width
+        x_test_batch = x_test_batch.reshape((test_batch_num, x_size))
+        x_test_batch = torch.tensor(x_test_batch).type(data_type).to(device)
+        y_test_batch = torch.tensor(y_test_batch).type(data_type).to(device)
+        test_batch_output = mlp.forward(x_test_batch)
+        test_batch_loss = CE_module.forward(test_batch_output, torch.argmax(y_test_batch, dim=1))
+        test_loss.append(test_batch_loss.detach().item())
+        if test_output is None:
+          test_output = test_batch_output.detach()
+        else:
+          test_output = torch.cat((test_output, test_batch_output.detach()), 0)
+        if test_labels is None:
+          test_labels = test_batch_output.detach()
+        else:
+          test_labels = torch.cat((test_labels, y_test_batch.detach()), 0)
+      test_acc = accuracy(test_output, test_labels)
+      test_results.append([epoch, np.sum(test_loss) / (test_img_num / t_size), test_acc.item()])
     # ----------------------------------------
 
-  if results:
+  if train_results and test_results:
     import matplotlib.pyplot as plt
-    y_axis = {'Train loss': [r['Train loss'] for r in results],
-              'Train accuracy': [r['Train accuracy'] for r in results],
-              'Test loss': [r['Test loss'] for r in results],
-              'Test accuracy': [r['Test accuracy'] for r in results]}
-    x_axis = np.arange(len(results))*FLAGS.eval_freq
-    plt.plot(x_axis, y_axis['Train loss'], x_axis, y_axis['Train accuracy'],
-             x_axis, y_axis['Test loss'], x_axis, y_axis['Test accuracy'])
+    train_results = np.array(train_results)
+    train_x_axis = train_results[:, 0]
+    train_loss = train_results[:, 1]
+    train_acc = train_results[:, 2]
+    test_results = np.array(test_results)
+    test_x_axis = test_results[:, 0]
+    test_loss = test_results[:, 1]
+    test_acc = test_results[:, 2]
+    plt.plot(train_x_axis, train_loss, train_x_axis, train_acc,
+             test_x_axis, test_loss, test_x_axis, test_acc)
     plt.legend(['Train loss', 'Train accuracy', 'Test loss', 'Test accuracy'])
     plt.xlabel("Training steps")
     plt.ylabel("Accuracy / Loss")
     plt.savefig("mlp_pytorch_curves.pdf")
 
     print("--------Best Results--------")
-    best_idx = np.argmax(y_axis['Test accuracy'])
-    print("Best epoch:", best_idx*FLAGS.eval_freq)
-    for s, r in zip([*y_axis], [y_axis[i][best_idx] for i in y_axis]):
-      print(s, r)
+    best_idx = np.argmax(test_results[:, 2])
+    print("Best epoch:", best_idx * FLAGS.eval_freq)
+    print("Train loss", train_results[best_idx*FLAGS.eval_freq, 1])
+    print("Train accuracy", train_results[best_idx*FLAGS.eval_freq, 2])
+    print("Test loss", test_results[best_idx, 1])
+    print("Test accuracy", test_results[best_idx, 2])
     print("-----------------------------")
 
 def print_flags():
