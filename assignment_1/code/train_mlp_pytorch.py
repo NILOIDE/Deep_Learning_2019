@@ -77,9 +77,6 @@ def train():
   x_test, y_test = cifar10['test'].images, cifar10['test'].labels
   test_img_num, im_channels, im_height, im_width = x_test.shape
   x_size = im_channels * im_height * im_width
-  # x_test = test_images.reshape((test_img_num, x_size))
-  # x_test = torch.tensor(x_test).type(data_type).to(device)
-  # y_test = torch.tensor(y_test).type(data_type).to(device)
   # ----------------------------------
   # Create MLP -----------------------
   mlp = MLP(x_size, dnn_hidden_units, y_test.shape[1])
@@ -157,7 +154,7 @@ def train():
     best_idx = np.argmax(test_results[:, 2])
     print("Best epoch:", best_idx * FLAGS.eval_freq)
     print("Train loss", train_results[best_idx*FLAGS.eval_freq, 1])
-    print("Train accuracy", train_results[best_idx*FLAGS.eval_freqgit , 2])
+    print("Train accuracy", train_results[best_idx*FLAGS.eval_freq, 2])
     print("Test loss", test_results[best_idx, 1])
     print("Test accuracy", test_results[best_idx, 2])
     print("-----------------------------")
