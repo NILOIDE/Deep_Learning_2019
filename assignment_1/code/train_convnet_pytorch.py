@@ -63,7 +63,7 @@ def train():
 
   # Pytorch stuff --------------------
   data_type = torch.FloatTensor
-  device = 'cpu'#torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
+  device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 
   # Load data set --------------------
   cifar10 = cifar10_utils.get_cifar10(FLAGS.data_dir)
