@@ -43,7 +43,9 @@ def accuracy(predictions, targets):
   Implement accuracy computation.
   """
 
-  accuracy = torch.argmax(predictions, dim=1) == torch.argmax(targets, dim=1)
+  predictions = predictions.numpy()
+  targets = targets.numpy()
+  accuracy = np.argmax(predictions, dim=1) == np.argmax(targets, dim=1)
   accuracy = accuracy.float().mean()
 
   return accuracy
