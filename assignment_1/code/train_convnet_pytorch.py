@@ -16,8 +16,8 @@ import torch
 # Default constants
 LEARNING_RATE_DEFAULT = 1e-4
 BATCH_SIZE_DEFAULT = 32
-MAX_STEPS_DEFAULT = 50
-EVAL_FREQ_DEFAULT = 50
+MAX_STEPS_DEFAULT = 5000
+EVAL_FREQ_DEFAULT = 500
 OPTIMIZER_DEFAULT = 'ADAM'
 
 # Directory in which cifar data is saved
@@ -98,7 +98,7 @@ def train():
     if epoch % 50 == 0:
       print("Epoch:", epoch, "  Loss:", train_loss.item(), "Acc:", train_acc.item())
     if epoch % FLAGS.eval_freq == 0 or epoch == 1:
-      t_size = 100
+      t_size = FLAGS.batch_size
       test_loss = []
       test_output = None
       for i in range(t_size, test_img_num, t_size):
