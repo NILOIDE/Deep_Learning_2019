@@ -95,6 +95,8 @@ def train():
     # Store every eval_freq steps ------------
     train_acc = accuracy(output, y_train)
     train_results.append([epoch, train_loss.item(), train_acc.item()])
+    train_loss.detach()
+    output.detach()
     if epoch % 50 == 0:
       print("Epoch:", epoch, "  Loss:", train_loss.item(), "Acc:", train_acc.item())
     if epoch % FLAGS.eval_freq == 0 or epoch == 1:
