@@ -102,8 +102,7 @@ def train():
       test_loss = []
       test_output = None
       for i in range(t_size, test_img_num, t_size):
-        x_test_batch = x_test[i-t_size:i]
-        y_test_batch = y_test[i-t_size:i]
+        x_test_batch, y_test_batch = cifar10['test'].next_batch(t_size)
         x_test_batch = torch.tensor(x_test_batch).type(data_type).to(device)
         y_test_batch = torch.tensor(y_test_batch).type(data_type).to(device)
         test_batch_output = model.forward(x_test_batch)
