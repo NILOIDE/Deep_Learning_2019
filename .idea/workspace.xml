@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3d455d3-bc7a-4a68-bf58-fcbb7443af70" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/assignment_1/code/convnet_job.sh" beforeDir="false" afterPath="$PROJECT_DIR$/assignment_1/code/convnet_job.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_1/code/train_convnet_pytorch.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment_1/code/train_convnet_pytorch.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,8 +57,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/assignment_1/code/train_convnet_pytorch.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="629">
-                  <caret line="94" column="20" selection-start-line="94" selection-start-column="20" selection-end-line="94" selection-end-column="20" />
+                <state relative-caret-position="731">
+                  <caret line="115" column="23" selection-start-line="115" selection-start-column="23" selection-end-line="115" selection-end-column="23" />
                   <folding>
                     <element signature="e#150#188#0" expanded="true" />
                   </folding>
@@ -100,8 +100,8 @@
         <option value="$PROJECT_DIR$/assignment_1/code/mlp_numpy.py" />
         <option value="$PROJECT_DIR$/assignment_1/code/train_mlp_pytorch.py" />
         <option value="$PROJECT_DIR$/assignment_1/code/train_mlp_numpy.py" />
-        <option value="$PROJECT_DIR$/assignment_1/code/train_convnet_pytorch.py" />
         <option value="$PROJECT_DIR$/assignment_1/code/convnet_job.sh" />
+        <option value="$PROJECT_DIR$/assignment_1/code/train_convnet_pytorch.py" />
       </list>
     </option>
   </component>
@@ -354,8 +354,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assignment_1/code/train_convnet_pytorch.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="94" column="20" selection-start-line="94" selection-start-column="20" selection-end-line="94" selection-end-column="20" />
+        <state relative-caret-position="731">
+          <caret line="115" column="23" selection-start-line="115" selection-start-column="23" selection-end-line="115" selection-end-column="23" />
           <folding>
             <element signature="e#150#188#0" expanded="true" />
           </folding>

@@ -93,12 +93,11 @@ def train():
     optimizer.step()
     # ----------------------------------------
     # Store every eval_freq steps ------------
-    train_acc = accuracy(output, y_train)
-    train_results.append([epoch, train_loss.item(), train_acc.item()])
-    train_loss.detach()
-    output.detach()
+    train_acc = accuracy(output.detach(), y_train)
+    train_results.append([epoch, train_loss.detach().item(), train_acc.item()])
+
     if epoch % 50 == 0:
-      print("Epoch:", epoch, "  Loss:", train_loss.item(), "Acc:", train_acc.item())
+      print("Epoch:", epoch)
     if epoch % FLAGS.eval_freq == 0 or epoch == 1:
       t_size = FLAGS.batch_size
       test_loss = []
@@ -109,11 +108,12 @@ def train():
         y_test_batch = torch.tensor(y_test_batch).type(data_type).to(device)
         test_batch_output = model.forward(x_test_batch)
         test_batch_loss = CE_module.forward(test_batch_output, torch.argmax(y_test_batch, dim=1))
-        test_loss.append(test_batch_loss.item())
+        test_loss.append(test_batch_loss.detach().item())
         if test_output is None:
-          test_output = test_batch_output
+          test_output = test_batch_output.detach()
         else:
-          test_output = torch.cat((test_output, test_batch_output), 0)
+          test_output = torch.cat((test_output, test_batch_output.detach()), 0)
+      print(test_output)
       test_acc = accuracy(test_output, y_test)
       test_results.append([epoch, np.sum(test_loss)/(test_img_num/t_size), test_acc.item()])
     # ----------------------------------------
