@@ -102,6 +102,7 @@ def train():
       t_size = FLAGS.batch_size
       test_loss = []
       test_output = None
+      test_labels = None
       for i in range(t_size, test_img_num, t_size):
         x_test_batch, y_test_batch = cifar10['test'].next_batch(t_size)
         x_test_batch = torch.tensor(x_test_batch).type(data_type).to(device)
@@ -113,7 +114,13 @@ def train():
           test_output = test_batch_output.detach()
         else:
           test_output = torch.cat((test_output, test_batch_output.detach()), 0)
+        if test_labels is None:
+          test_labels = test_batch_output.detach()
+        else:
+          test_labels = torch.cat((test_labels, y_test_batch.detach()), 0)
       print(test_output)
+      print(test_output.shape)
+      print(test_labels)
       test_acc = accuracy(test_output, y_test)
       test_results.append([epoch, np.sum(test_loss)/(test_img_num/t_size), test_acc.item()])
     # ----------------------------------------
