@@ -16,8 +16,8 @@ import torch
 # Default constants
 LEARNING_RATE_DEFAULT = 1e-4
 BATCH_SIZE_DEFAULT = 32
-MAX_STEPS_DEFAULT = 5000
-EVAL_FREQ_DEFAULT = 500
+MAX_STEPS_DEFAULT = 50
+EVAL_FREQ_DEFAULT = 50
 OPTIMIZER_DEFAULT = 'ADAM'
 
 # Directory in which cifar data is saved
@@ -79,7 +79,8 @@ def train():
   optimizer = torch.optim.Adam(model.parameters(), lr=FLAGS.learning_rate)
   # ----------------------------------
 
-  results = []
+  train_results = []
+  test_results =[]
   for epoch in range(1, FLAGS.max_steps+1):
     # Prepare batch -------------------------
     x_train, y_train = cifar10['train'].next_batch(FLAGS.batch_size)
@@ -94,25 +95,34 @@ def train():
     optimizer.step()
     # ----------------------------------------
     # Store every eval_freq steps ------------
-    if epoch % FLAGS.eval_freq == 0:
-      train_acc = accuracy(output, y_train)
+    train_acc = accuracy(output, y_train)
+    train_results.append([epoch, train_loss.item(), train_acc.item()])
+    if epoch % 50 == 0:
+      print("Epoch:", epoch, "  Loss:", train_loss.item(), "Acc:", train_acc.item())
+    if epoch % FLAGS.eval_freq == 0 or epoch == 1:
       test_output = model.forward(x_test)
       test_loss = CE_module.forward(test_output, torch.argmax(y_test, dim=1))
       test_acc = accuracy(test_output, y_test)
-      results.append({'Train loss': train_loss.item(), 'Train accuracy': train_acc.item(),
-                      'Test loss': test_loss.item(), 'Test accuracy': test_acc.item()})
-      print("Epoch:", epoch, "  Loss:", train_loss.item(), "Acc:", train_acc.item())
+      test_results.append([epoch, test_loss.item(), test_acc.item()])
     # ----------------------------------------
 
-  if results:
+  if train_results and test_results:
     import matplotlib.pyplot as plt
-    y_axis = {'Train loss': [r['Train loss'] for r in results],
-              'Train accuracy': [r['Train accuracy'] for r in results],
-              'Test loss': [r['Test loss'] for r in results],
-              'Test accuracy': [r['Test accuracy'] for r in results]}
-    x_axis = np.arange(len(results))*FLAGS.eval_freq
-    plt.plot(x_axis, y_axis['Train loss'], x_axis, y_axis['Train accuracy'],
-             x_axis, y_axis['Test loss'], x_axis, y_axis['Test accuracy'])
+    # y_axis = {'Train loss': [r['Train loss'] for r in results],
+    #           'Train accuracy': [r['Train accuracy'] for r in results],
+    #           'Test loss': [r['Test loss'] for r in results],
+    #           'Test accuracy': [r['Test accuracy'] for r in results]}
+    # x_axis = np.arange(len(results))*FLAGS.eval_freq
+    train_results = np.array(train_results)
+    train_x_axis = train_results[:,0]
+    train_loss = train_results[:,1]
+    train_acc = train_results[:,2]
+    test_results = np.array(test_results)
+    test_x_axis = test_results[:, 0]
+    test_loss = test_results[:, 1]
+    test_acc = test_results[:, 2]
+    plt.plot(train_x_axis, train_loss, train_x_axis, train_acc,
+             test_x_axis, test_loss, test_x_axis, test_acc)
     plt.legend(['Train loss', 'Train accuracy', 'Test loss', 'Test accuracy'])
     plt.xlabel("Training steps")
     plt.ylabel("Accuracy / Loss")
