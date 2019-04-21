@@ -16,8 +16,8 @@ import torch
 # Default constants
 LEARNING_RATE_DEFAULT = 1e-4
 BATCH_SIZE_DEFAULT = 32
-MAX_STEPS_DEFAULT = 50
-EVAL_FREQ_DEFAULT = 50
+MAX_STEPS_DEFAULT = 5000
+EVAL_FREQ_DEFAULT = 500
 OPTIMIZER_DEFAULT = 'ADAM'
 
 # Directory in which cifar data is saved
@@ -64,17 +64,22 @@ def train():
   # Pytorch stuff --------------------
   data_type = torch.FloatTensor
   device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-
+  print("step1")
   # Load data set --------------------
   cifar10 = cifar10_utils.get_cifar10(FLAGS.data_dir)
+  print("step2")
   x_test, y_test = cifar10['test'].images, cifar10['test'].labels
+  print("step3")
   test_img_num, im_channels, im_height, im_width = x_test.shape
   x_test = torch.tensor(x_test).type(data_type).to(device)
   y_test = torch.tensor(y_test).type(data_type).to(device)
+  print("step4")
   # ----------------------------------
   # Create MLP -----------------------
   model = ConvNet(im_channels, y_test.shape[1])
+  print("step5")
   model.to(device)
+  print("step6")
   CE_module = torch.nn.CrossEntropyLoss()
   optimizer = torch.optim.Adam(model.parameters(), lr=FLAGS.learning_rate)
   # ----------------------------------
@@ -83,6 +88,7 @@ def train():
   test_results =[]
   for epoch in range(1, FLAGS.max_steps+1):
     # Prepare batch -------------------------
+    print(epoch)
     x_train, y_train = cifar10['train'].next_batch(FLAGS.batch_size)
     x_train = torch.tensor(x_train).type(data_type).to(device)
     y_train = torch.tensor(y_train).type(data_type).to(device)
