@@ -63,7 +63,7 @@ def train():
 
   # Pytorch stuff --------------------
   data_type = torch.FloatTensor
-  device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+  device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 
   # Load data set --------------------
   cifar10 = cifar10_utils.get_cifar10(FLAGS.data_dir)
@@ -72,7 +72,7 @@ def train():
   # ----------------------------------
   # Create MLP -----------------------
   model = ConvNet(im_channels, y_test.shape[1])
-  model.to(device)
+  model = model.to(device)
   CE_module = torch.nn.CrossEntropyLoss()
   optimizer = torch.optim.Adam(model.parameters(), lr=FLAGS.learning_rate)
   # ----------------------------------
