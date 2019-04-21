@@ -57,8 +57,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/assignment_1/code/train_convnet_pytorch.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="265">
-                  <caret line="45" column="36" selection-start-line="45" selection-start-column="36" selection-end-line="46" selection-end-column="35" />
+                <state relative-caret-position="401">
+                  <caret line="47" column="54" selection-start-line="47" selection-start-column="54" selection-end-line="47" selection-end-column="54" />
                   <folding>
                     <element signature="e#150#188#0" expanded="true" />
                   </folding>
@@ -84,6 +84,7 @@
       <find>print</find>
       <find>need</find>
       <find>x_test</find>
+      <find>y_test</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -354,8 +355,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assignment_1/code/train_convnet_pytorch.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="45" column="36" selection-start-line="45" selection-start-column="36" selection-end-line="46" selection-end-column="35" />
+        <state relative-caret-position="401">
+          <caret line="47" column="54" selection-start-line="47" selection-start-column="54" selection-end-line="47" selection-end-column="54" />
           <folding>
             <element signature="e#150#188#0" expanded="true" />
           </folding>

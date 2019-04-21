@@ -45,7 +45,7 @@ def accuracy(predictions, targets):
 
   # predictions = predictions.cpu().numpy()
   # targets = targets.cpu().numpy()
-  accuracy = np.argmax(predictions, dim=1) == np.argmax(targets, dim=1)
+  accuracy = torch.argmax(predictions, dim=1) == torch.argmax(targets, dim=1)
   accuracy = accuracy.float().mean()
 
   return accuracy
@@ -120,10 +120,6 @@ def train():
           test_labels = test_batch_output.detach()
         else:
           test_labels = torch.cat((test_labels, y_test_batch.detach()), 0)
-      print(test_output)
-      print(test_output.shape)
-      print(test_labels)
-      print(test_labels.shape)
       test_acc = accuracy(test_output, test_labels)
       test_results.append([epoch, np.sum(test_loss)/(test_img_num/t_size), test_acc.item()])
     # ----------------------------------------
