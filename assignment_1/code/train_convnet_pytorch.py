@@ -145,7 +145,6 @@ def train():
     print("Train accuracy", train_results[best_idx*FLAGS.eval_freq-1, 2])
     print("Test loss", test_results[best_idx, 1])
     print("Test accuracy", test_results[best_idx, 2])
-    print(test_results[:,2])
     print("-----------------------------")
 
 def print_flags():
