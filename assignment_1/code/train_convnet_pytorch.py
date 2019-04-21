@@ -121,6 +121,7 @@ def train():
       print(test_output)
       print(test_output.shape)
       print(test_labels)
+      print(test_labels.shape)
       test_acc = accuracy(test_output, y_test)
       test_results.append([epoch, np.sum(test_loss)/(test_img_num/t_size), test_acc.item()])
     # ----------------------------------------
