@@ -79,7 +79,8 @@ def train():
   CE_module = CrossEntropyModule()
   # ----------------------------------
 
-  results = []
+  train_results = []
+  test_results = []
   batch_size = FLAGS.batch_size
   for epoch in range(1, FLAGS.max_steps+1):
     # Prepare batch -------------------------
@@ -95,37 +96,44 @@ def train():
       layer.params['weight'] -= FLAGS.learning_rate * layer.grads['weight']
       layer.params['bias'] -= FLAGS.learning_rate * layer.grads['bias']
     # ----------------------------------------
+    # Store train results --------------------
+    train_acc = accuracy(output, y_train)
+    train_results.append([epoch, train_loss, train_acc])
+    # ----------------------------------------
     # Store every eval_freq steps ------------
     if epoch % FLAGS.eval_freq == 0:
-      train_acc = accuracy(output, y_train)
       test_output = mlp.forward(x_test)
       test_loss = CE_module.forward(test_output, y_test)
       test_acc = accuracy(test_output, y_test)
-      results.append({'Train loss': train_loss, 'Train accuracy': train_acc,
-                      'Test loss': test_loss, 'Test accuracy': test_acc})
+      test_results.append([epoch, test_loss, test_acc])
       print("Epoch:", epoch, "  Loss:", train_loss, "Acc:", train_acc)
     # ----------------------------------------
-
-  if results:
+  print(len(train_results))
+  print(len(test_results))
+  if train_results and test_results:
     import matplotlib.pyplot as plt
-    y_axis = {'Train loss': [r['Train loss'] for r in results],
-              'Train accuracy': [r['Train accuracy'] for r in results],
-              'Test loss': [r['Test loss'] for r in results],
-              'Test accuracy': [r['Test accuracy'] for r in results]}
-    x_axis = np.arange(len(results))*FLAGS.eval_freq
-    plt.plot(x_axis, y_axis['Train loss'], x_axis, y_axis['Train accuracy'],
-             x_axis, y_axis['Test loss'], x_axis, y_axis['Test accuracy'])
+    train_results = np.array(train_results)
+    train_x_axis = train_results[:, 0]
+    train_loss = train_results[:, 1]
+    train_acc = train_results[:, 2]
+    test_results = np.array(test_results)
+    test_x_axis = test_results[:, 0]
+    test_loss = test_results[:, 1]
+    test_acc = test_results[:, 2]
+    plt.plot(train_x_axis, train_loss, train_x_axis, train_acc,
+             test_x_axis, test_loss, test_x_axis, test_acc)
     plt.legend(['Train loss', 'Train accuracy', 'Test loss', 'Test accuracy'])
     plt.xlabel("Training steps")
     plt.ylabel("Accuracy / Loss")
     plt.savefig("mlp_numpy_curves.pdf")
 
     print("--------Best Results--------")
-    best_idx = np.argmax(y_axis['Test accuracy'])
-    print("Best epoch:", best_idx*FLAGS.eval_freq)
-    best_idx = np.argmax(y_axis['Test accuracy'])
-    for s, r in zip([*y_axis], [y_axis[i][best_idx] for i in y_axis]):
-      print(s, r)
+    best_idx = np.argmax(test_results[:, 2])
+    print("Best epoch:", best_idx * FLAGS.eval_freq)
+    print("Train loss", train_results[best_idx * FLAGS.eval_freq, 1])
+    print("Train accuracy", train_results[best_idx * FLAGS.eval_freq, 2])
+    print("Test loss", test_results[best_idx, 1])
+    print("Test accuracy", test_results[best_idx, 2])
     print("-----------------------------")
 
 

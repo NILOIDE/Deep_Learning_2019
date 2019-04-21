@@ -157,7 +157,7 @@ def train():
     best_idx = np.argmax(test_results[:, 2])
     print("Best epoch:", best_idx * FLAGS.eval_freq)
     print("Train loss", train_results[best_idx*FLAGS.eval_freq, 1])
-    print("Train accuracy", train_results[best_idx*FLAGS.eval_freq, 2])
+    print("Train accuracy", train_results[best_idx*FLAGS.eval_freqgit , 2])
     print("Test loss", test_results[best_idx, 1])
     print("Test accuracy", test_results[best_idx, 2])
     print("-----------------------------")
