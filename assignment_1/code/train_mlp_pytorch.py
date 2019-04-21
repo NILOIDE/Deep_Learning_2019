@@ -58,6 +58,7 @@ def train():
   ### DO NOT CHANGE SEEDS!
   # Set the random seeds for reproducibility
   np.random.seed(42)
+  torch.manual_seed(42)
 
   ## Prepare all functions
   # Get number of units in each hidden layer specified in the string such as 100,100

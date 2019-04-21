@@ -35,7 +35,8 @@ class MLP(nn.Module):
     """
     super(MLP, self).__init__()
     from custom_batchnorm import CustomBatchNormAutograd
-    self.layers = [nn.Linear(n_inputs, n_hidden[0]), nn.ReLU(), CustomBatchNormAutograd(n_hidden[0])]
+    self.layers = [nn.Linear(n_inputs, n_hidden[0]), nn.ReLU()]
+    self.layers.append(CustomBatchNormAutograd(n_hidden[0]))
     for i in range(len(n_hidden[1:])):
       self.layers.append(nn.Linear(n_hidden[i-1], n_hidden[i]))
       self.layers.append(nn.ReLU())

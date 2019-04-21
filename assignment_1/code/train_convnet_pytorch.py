@@ -11,6 +11,7 @@ import numpy as np
 import os
 from convnet_pytorch import ConvNet
 import cifar10_utils
+import torch
 
 # Default constants
 LEARNING_RATE_DEFAULT = 1e-4
@@ -42,13 +43,8 @@ def accuracy(predictions, targets):
   Implement accuracy computation.
   """
 
-  ########################
-  # PUT YOUR CODE HERE  #
-  #######################
-  raise NotImplementedError
-  ########################
-  # END OF YOUR CODE    #
-  #######################
+  accuracy = torch.argmax(predictions, dim=1) == torch.argmax(targets, dim=1)
+  accuracy = accuracy.float().mean()
 
   return accuracy
 
@@ -63,14 +59,71 @@ def train():
   ### DO NOT CHANGE SEEDS!
   # Set the random seeds for reproducibility
   np.random.seed(42)
+  torch.manual_seed(42)
 
-  ########################
-  # PUT YOUR CODE HERE  #
-  #######################
-  raise NotImplementedError
-  ########################
-  # END OF YOUR CODE    #
-  #######################
+  # Pytorch stuff --------------------
+  data_type = torch.FloatTensor
+  device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+
+  # Load data set --------------------
+  cifar10 = cifar10_utils.get_cifar10(FLAGS.data_dir)
+  x_test, y_test = cifar10['test'].images, cifar10['test'].labels
+  test_img_num, im_channels, im_height, im_width = x_test.shape
+  x_test = torch.tensor(x_test).type(data_type).to(device)
+  y_test = torch.tensor(y_test).type(data_type).to(device)
+  # ----------------------------------
+  # Create MLP -----------------------
+  model = ConvNet(im_channels, y_test.shape[1])
+  model.to(device)
+  CE_module = torch.nn.CrossEntropyLoss()
+  optimizer = torch.optim.Adam(model.parameters(), lr=FLAGS.learning_rate)
+  # ----------------------------------
+
+  results = []
+  for epoch in range(1, FLAGS.max_steps+1):
+    # Prepare batch -------------------------
+    x_train, y_train = cifar10['train'].next_batch(FLAGS.batch_size)
+    x_train = torch.tensor(x_train).type(data_type).to(device)
+    y_train = torch.tensor(y_train).type(data_type).to(device)
+    # ---------------------------------------
+    # Train step ----------------------------
+    optimizer.zero_grad()
+    output = model.forward(x_train)
+    train_loss = CE_module.forward(output, torch.argmax(y_train, dim=1))
+    train_loss.backward()
+    optimizer.step()
+    # ----------------------------------------
+    # Store every eval_freq steps ------------
+    if epoch % FLAGS.eval_freq == 0:
+      train_acc = accuracy(output, y_train)
+      test_output = model.forward(x_test)
+      test_loss = CE_module.forward(test_output, torch.argmax(y_test, dim=1))
+      test_acc = accuracy(test_output, y_test)
+      results.append({'Train loss': train_loss.item(), 'Train accuracy': train_acc.item(),
+                      'Test loss': test_loss.item(), 'Test accuracy': test_acc.item()})
+      print("Epoch:", epoch, "  Loss:", train_loss.item(), "Acc:", train_acc.item())
+    # ----------------------------------------
+
+  if results:
+    import matplotlib.pyplot as plt
+    y_axis = {'Train loss': [r['Train loss'] for r in results],
+              'Train accuracy': [r['Train accuracy'] for r in results],
+              'Test loss': [r['Test loss'] for r in results],
+              'Test accuracy': [r['Test accuracy'] for r in results]}
+    x_axis = np.arange(len(results))*FLAGS.eval_freq
+    plt.plot(x_axis, y_axis['Train loss'], x_axis, y_axis['Train accuracy'],
+             x_axis, y_axis['Test loss'], x_axis, y_axis['Test accuracy'])
+    plt.legend(['Train loss', 'Train accuracy', 'Test loss', 'Test accuracy'])
+    plt.xlabel("Training steps")
+    plt.ylabel("Accuracy / Loss")
+    plt.savefig("convnet_pytorch_curves.pdf")
+
+    print("--------Best Results--------")
+    best_idx = np.argmax(y_axis['Test accuracy'])
+    print("Best epoch:", best_idx*FLAGS.eval_freq)
+    for s, r in zip([*y_axis], [y_axis[i][best_idx] for i in y_axis]):
+      print(s, r)
+    print("-----------------------------")
 
 def print_flags():
   """

@@ -106,13 +106,12 @@ class CustomBatchNormManualFunction(torch.autograd.Function):
       For the case that you make use of torch.var be aware that the flag unbiased=False should be set.
     """
 
-    ########################
-    # PUT YOUR CODE HERE  #
-    #######################
-    raise NotImplementedError
-    ########################
-    # END OF YOUR CODE    #
-    #######################
+    mean = input.mean(dim=0)
+    var = input.var(dim=0, unbiased=False)
+    x_hat = (input - mean) / torch.sqrt(var + eps)
+    out = gamma * x_hat + beta
+    ctx.eps = eps
+    ctx.save_for_backward(x_hat, gamma, var)
 
     return out
 
@@ -134,13 +133,26 @@ class CustomBatchNormManualFunction(torch.autograd.Function):
       inputs to None. This should be decided dynamically.
     """
 
-    ########################
-    # PUT YOUR CODE HERE  #
-    #######################
-    raise NotImplementedError
-    ########################
-    # END OF YOUR CODE    #
-    #######################
+    x_hat, gamma, var = ctx.saved_tensors
+    B = grad_output.shape[0]
+    eps = ctx.eps
+    grad_input = None
+    grad_beta = None
+    grad_gamma = None
+
+    if ctx.needs_input_grad[2]:
+      grad_beta = torch.sum(grad_output, dim=0)
+
+    if ctx.needs_input_grad[1]:
+      grad_gamma = torch.sum(grad_output * x_hat, dim=0)
+
+    if ctx.needs_input_grad[0]:
+      if grad_gamma is None:
+        grad_gamma = torch.sum(grad_output * x_hat, dim=0)
+      if grad_beta is None:
+        grad_beta = torch.sum(grad_output, dim=0)
+      grad_input = B * grad_output - grad_beta - x_hat * grad_gamma
+      grad_input *= gamma / (B * torch.sqrt(var + eps))
 
     # return gradients of the three tensor inputs and None for the constant eps
     return grad_input, grad_gamma, grad_beta, None
@@ -172,13 +184,10 @@ class CustomBatchNormManualModule(nn.Module):
     """
     super(CustomBatchNormManualModule, self).__init__()
 
-    ########################
-    # PUT YOUR CODE HERE  #
-    #######################
-    raise NotImplementedError
-    ########################
-    # END OF YOUR CODE    #
-    #######################
+    self.n_neurons = n_neurons
+    self.eps = eps
+    self.gamma = nn.Parameter(torch.ones(n_neurons))
+    self.beta = nn.Parameter(torch.zeros(n_neurons))
 
   def forward(self, input):
     """
@@ -195,12 +204,8 @@ class CustomBatchNormManualModule(nn.Module):
       Call it via its .apply() method.
     """
 
-    ########################
-    # PUT YOUR CODE HERE  #
-    #######################
-    raise NotImplementedError
-    ########################
-    # END OF YOUR CODE    #
-    #######################
+    assert input.shape[1] == self.n_neurons
+    batch_norm = CustomBatchNormManualFunction()
+    out = batch_norm.apply(input, self.gamma, self.beta, self.eps)
 
     return out
