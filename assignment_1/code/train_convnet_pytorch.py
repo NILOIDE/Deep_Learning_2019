@@ -43,8 +43,8 @@ def accuracy(predictions, targets):
   Implement accuracy computation.
   """
 
-  predictions = predictions.numpy()
-  targets = targets.numpy()
+  predictions = predictions.cpu().numpy()
+  targets = targets.cpu().numpy()
   accuracy = np.argmax(predictions, dim=1) == np.argmax(targets, dim=1)
   accuracy = accuracy.float().mean()
 
