@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3d455d3-bc7a-4a68-bf58-fcbb7443af70" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_1/code/mlp_numpy.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment_1/code/mlp_numpy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_1/code/mlp_pytorch.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment_1/code/mlp_pytorch.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_1/code/mlp_pytorch_curves.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/assignment_1/code/mlp_pytorch_curves.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_1/code/train_convnet_pytorch.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment_1/code/train_convnet_pytorch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_1/code/convnet_job.sh" beforeDir="false" afterPath="$PROJECT_DIR$/assignment_1/code/convnet_job.sh" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,8 +41,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/assignment_1/code/convnet_pytorch.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="997">
-                  <caret line="88" column="7" selection-start-line="88" selection-start-column="7" selection-end-line="88" selection-end-column="7" />
+                <state relative-caret-position="504">
+                  <caret line="59" column="9" selection-start-line="59" selection-start-column="9" selection-end-line="59" selection-end-column="9" />
                   <folding>
                     <element signature="e#123#161#0" expanded="true" />
                   </folding>
@@ -61,11 +57,20 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/assignment_1/code/train_convnet_pytorch.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
-                  <caret line="74" column="10" selection-start-line="74" selection-start-column="10" selection-end-line="74" selection-end-column="10" />
+                <state relative-caret-position="629">
+                  <caret line="94" column="20" selection-start-line="94" selection-start-column="20" selection-end-line="94" selection-end-column="20" />
                   <folding>
                     <element signature="e#150#188#0" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/assignment_1/code/convnet_job.sh">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="68">
+                  <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
                 </state>
               </provider>
             </entry>
@@ -96,6 +101,7 @@
         <option value="$PROJECT_DIR$/assignment_1/code/train_mlp_pytorch.py" />
         <option value="$PROJECT_DIR$/assignment_1/code/train_mlp_numpy.py" />
         <option value="$PROJECT_DIR$/assignment_1/code/train_convnet_pytorch.py" />
+        <option value="$PROJECT_DIR$/assignment_1/code/convnet_job.sh" />
       </list>
     </option>
   </component>
@@ -295,9 +301,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assignment_1/code/convnet_job.sh">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/assignment_1/code/mlp_numpy.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -334,18 +337,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assignment_1/code/convnet_pytorch.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="997">
-          <caret line="88" column="7" selection-start-line="88" selection-start-column="7" selection-end-line="88" selection-end-column="7" />
+        <state relative-caret-position="504">
+          <caret line="59" column="9" selection-start-line="59" selection-start-column="9" selection-end-line="59" selection-end-column="9" />
           <folding>
             <element signature="e#123#161#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assignment_1/code/convnet_job.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/assignment_1/code/train_convnet_pytorch.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="74" column="10" selection-start-line="74" selection-start-column="10" selection-end-line="74" selection-end-column="10" />
+        <state relative-caret-position="629">
+          <caret line="94" column="20" selection-start-line="94" selection-start-column="20" selection-end-line="94" selection-end-column="20" />
           <folding>
             <element signature="e#150#188#0" expanded="true" />
           </folding>

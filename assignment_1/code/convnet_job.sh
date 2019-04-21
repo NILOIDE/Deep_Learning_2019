@@ -2,10 +2,10 @@
 
 #SBATCH --job-name=convnet
 #SBATCH --ntasks=1
-#SBATCH --cpus-per-task=3
+#SBATCH --cpus-per-task=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --time=01:30:50
-#sBATCH --mem=200000M
+#sBATCH --mem=60000M
 #SBATCH --partition=gpu_shared_course
 #SBATCH --gres=gpu:1
 
