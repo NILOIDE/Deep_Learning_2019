@@ -43,8 +43,8 @@ def accuracy(predictions, targets):
   Implement accuracy computation.
   """
 
-  predictions = predictions.cpu().numpy()
-  targets = targets.cpu().numpy()
+  # predictions = predictions.cpu().numpy()
+  # targets = targets.cpu().numpy()
   accuracy = np.argmax(predictions, dim=1) == np.argmax(targets, dim=1)
   accuracy = accuracy.float().mean()
 
@@ -124,7 +124,7 @@ def train():
       print(test_output.shape)
       print(test_labels)
       print(test_labels.shape)
-      test_acc = accuracy(test_output, y_test)
+      test_acc = accuracy(test_output, test_labels)
       test_results.append([epoch, np.sum(test_loss)/(test_img_num/t_size), test_acc.item()])
     # ----------------------------------------
 
