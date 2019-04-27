@@ -40,12 +40,12 @@ def train(config):
     assert config.model_type in ('RNN', 'LSTM')
 
     # Initialize the device which to run the model on
-    device = torch.device(config.device)
+    device = torch.device('cpu')
     # check if cuda is available
-    if config.device.lower() == 'cuda':
-        device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-    else:
-        device = torch.device('cpu')
+    # if config.device.lower() == 'cuda':
+    #     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+    # else:
+    #     device = torch.device('cpu')
 
     # Initialize the model that we are going to use
     model = None
@@ -93,7 +93,7 @@ def train(config):
         # ANSWER: This clips the gradient to the given value. This prevents the
         # gradient growing exponentially, preventing the gradient exploding problem.
         ############################################################################
-        torch.nn.utils.clip_grad_norm(model.parameters(), max_norm=config.max_norm)
+        torch.nn.utils.clip_grad_norm(model.parameters(), max_norm=1)
         ############################################################################
 
         # Add more code here ...
@@ -106,7 +106,7 @@ def train(config):
         t2 = time.time()
         examples_per_second = config.batch_size/float(t2-t1)
 
-        if step % 10 == 0:
+        if step % 100 == 0:
 
             print("[{}] Train Step {:04d}/{:04d}, Batch Size = {}, Examples/Sec = {:.2f}, "
                   "Accuracy = {:.2f}, Loss = {:.3f}".format(
@@ -115,7 +115,7 @@ def train(config):
                     accuracy, loss
             ))
 
-        if step == config.train_steps or (step > 10 and np.mean(accuracy_train[-10:]) == 1.0):
+        if step == config.train_steps :
             # If you receive a PyTorch data-loader error, check this bug report:
             # https://github.com/pytorch/pytorch/pull/9655
             break
@@ -131,6 +131,7 @@ def run_experiment(config):
     import matplotlib.pyplot as plt
     results = []
     for i in range(start, end+1):
+        print("Sentence length:", i)
         config.input_length = i
         data = train(config)
         results.append(data)

@@ -36,8 +36,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/assignment_2/part1/train.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="218">
-                  <caret line="129" column="12" selection-start-line="129" selection-start-column="12" selection-end-line="129" selection-end-column="12" />
+                <state relative-caret-position="320">
+                  <caret line="108" column="21" selection-start-line="108" selection-start-column="21" selection-end-line="108" selection-end-column="21" />
                   <folding>
                     <element signature="e#707#745#0" expanded="true" />
                   </folding>
@@ -89,10 +89,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="65" />
+    <option name="x" value="64" />
     <option name="y" value="-4" />
-    <option name="width" value="1855" />
-    <option name="height" value="1084" />
+    <option name="width" value="1857" />
+    <option name="height" value="1085" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -350,8 +350,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assignment_2/part1/train.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="129" column="12" selection-start-line="129" selection-start-column="12" selection-end-line="129" selection-end-column="12" />
+        <state relative-caret-position="320">
+          <caret line="108" column="21" selection-start-line="108" selection-start-column="21" selection-end-line="108" selection-end-column="21" />
           <folding>
             <element signature="e#707#745#0" expanded="true" />
           </folding>
