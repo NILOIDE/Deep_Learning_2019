@@ -127,7 +127,7 @@ def train(config):
 
 def run_experiment(config):
     start = 5
-    end = 7
+    end = 50
     import matplotlib.pyplot as plt
     results = []
     for i in range(start, end+1):
