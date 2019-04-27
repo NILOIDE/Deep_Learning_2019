@@ -26,9 +26,9 @@ import numpy as np
 import torch
 from torch.utils.data import DataLoader
 
-from part1.dataset import PalindromeDataset
-from part1.vanilla_rnn import VanillaRNN
-from part1.lstm import LSTM
+from dataset import PalindromeDataset
+from vanilla_rnn import VanillaRNN
+from lstm import LSTM
 
 # You may want to look into tensorboardX for logging
 # from tensorboardX import SummaryWriter
@@ -41,35 +41,66 @@ def train(config):
 
     # Initialize the device which to run the model on
     device = torch.device(config.device)
+    # check if cuda is available
+    if config.device.lower() == 'cuda':
+        device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+    else:
+        device = torch.device('cpu')
 
     # Initialize the model that we are going to use
-    model = None  # fixme
-
+    model = None
+    if config.model_type == 'RNN':
+        model = VanillaRNN(seq_length=config.input_length,
+                           input_dim=config.input_dim,
+                           num_hidden=config.num_hidden,
+                           num_classes=config.num_classes,
+                           batch_size=config.batch_size,
+                           device=device)
+    elif config.model_type == 'LS':
+        model = LSTM(seq_length=config.input_length,
+                     input_dim=config.input_dim,
+                     num_hidden=config.num_hidden,
+                     num_classes=config.num_classes,
+                     batch_size=config.batch_size,
+                     device=device)
     # Initialize the dataset and data loader (note the +1)
     dataset = PalindromeDataset(config.input_length+1)
-    data_loader = DataLoader(dataset, config.batch_size, num_workers=1)
+    data_loader = DataLoader(dataset, config.batch_size, num_workers=0)
 
     # Setup the loss and optimizer
-    criterion = None  # fixme
-    optimizer = None  # fixme
+    criterion = torch.nn.CrossEntropyLoss()
+    optimizer = torch.optim.RMSprop(model.parameters(), lr=config.learning_rate)
 
+    accuracy_train = []
+    loss_train = []
     for step, (batch_inputs, batch_targets) in enumerate(data_loader):
-
         # Only for time measurement of step through network
         t1 = time.time()
 
         # Add more code here ...
+        x = batch_inputs.to(device)
+        y = batch_targets.to(device)
+
+        # Forward pass
+        p = model.forward(x)
+        loss = criterion(p, y)
+        loss_train.append(loss)
+        optimizer.zero_grad()
+        loss.backward()
 
         ############################################################################
         # QUESTION: what happens here and why?
+        # ANSWER: This clips the gradient to the given value. This prevents the
+        # gradient growing exponentially, preventing the gradient exploding problem.
         ############################################################################
         torch.nn.utils.clip_grad_norm(model.parameters(), max_norm=config.max_norm)
         ############################################################################
 
         # Add more code here ...
+        optimizer.step()
 
-        loss = np.inf   # fixme
-        accuracy = 0.0  # fixme
+        accuracy = torch.sum(torch.argmax(p, dim=1) == y).to(torch.float) / float(config.batch_size)
+        accuracy_train.append(accuracy)
 
         # Just for time measurement
         t2 = time.time()
@@ -84,13 +115,31 @@ def train(config):
                     accuracy, loss
             ))
 
-        if step == config.train_steps:
+        if step == config.train_steps or (step > 10 and np.mean(accuracy_train[-10:]) == 1.0):
             # If you receive a PyTorch data-loader error, check this bug report:
             # https://github.com/pytorch/pytorch/pull/9655
             break
 
     print('Done training.')
 
+    return [np.max(accuracy_train), np.argmax(accuracy_train), len(accuracy_train)]
+
+
+def run_experiment(config):
+    start = 5
+    end = 7
+    import matplotlib.pyplot as plt
+    results = []
+    for i in range(start, end+1):
+        config.input_length = i
+        data = train(config)
+        results.append(data)
+    results = np.array(results)
+    plt.plot(np.arange(start, end+1), results[0])
+    plt.ylabel("Max accuracy")
+    plt.xlabel("Sentence length")
+    plt.title("Vanilla RNN accuracy with varying sentence lengths")
+    plt.savefig("sentence_length.pdf")
 
  ################################################################################
  ################################################################################
@@ -115,4 +164,5 @@ if __name__ == "__main__":
     config = parser.parse_args()
 
     # Train the model
-    train(config)
+    # train(config)
+    run_experiment(config)

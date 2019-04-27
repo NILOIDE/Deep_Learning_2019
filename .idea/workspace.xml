@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3d455d3-bc7a-4a68-bf58-fcbb7443af70" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_1/code/mlp_pytorch.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment_1/code/mlp_pytorch.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_1/code/mlp_pytorch_curves.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/assignment_1/code/mlp_pytorch_curves.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_1/code/train_convnet_pytorch.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment_1/code/train_convnet_pytorch.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_1/code/train_mlp_numpy.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment_1/code/train_mlp_numpy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_1/code/train_mlp_pytorch.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment_1/code/train_mlp_pytorch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part1/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment_2/part1/train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part1/vanilla_rnn.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment_2/part1/vanilla_rnn.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,49 +17,16 @@
     <favorites_list name="uvadlc_practicals_2019" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.49881375">
+    <splitter split-orientation="horizontal" split-proportion="0.43238434">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/assignment_1/code/mlp_pytorch.py">
+            <entry file="file://$PROJECT_DIR$/assignment_2/part1/vanilla_rnn.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="453">
-                  <caret line="44" column="60" lean-forward="true" selection-start-line="44" selection-start-column="60" selection-end-line="44" selection-end-column="60" />
+                <state relative-caret-position="796">
+                  <caret line="69" selection-start-line="69" selection-end-line="69" />
                   <folding>
-                    <element signature="e#123#161#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/assignment_1/code/mlp_numpy.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="34">
-                  <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/assignment_1/code/convnet_pytorch.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="606">
-                  <caret line="65" column="34" selection-start-line="65" selection-start-column="34" selection-end-line="65" selection-end-column="34" />
-                  <folding>
-                    <element signature="e#123#161#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/assignment_1/code/train_mlp_numpy.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="578">
-                  <caret line="130" column="44" lean-forward="true" selection-start-line="130" selection-start-column="44" selection-end-line="130" selection-end-column="44" />
-                  <folding>
-                    <element signature="e#142#180#0" expanded="true" />
+                    <element signature="e#705#743#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -71,25 +36,13 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/assignment_1/code/train_mlp_pytorch.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="640">
-                  <caret line="156" column="68" selection-start-line="156" selection-start-column="68" selection-end-line="156" selection-end-column="68" />
-                  <folding>
-                    <element signature="e#144#182#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/assignment_1/code/train_convnet_pytorch.py">
+            <entry file="file://$PROJECT_DIR$/assignment_2/part1/train.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="596">
-                  <caret line="147" selection-start-line="147" selection-end-line="147" />
+                <state relative-caret-position="422">
+                  <caret line="141" column="32" selection-start-line="141" selection-start-column="32" selection-end-line="141" selection-end-column="32" />
                   <folding>
-                    <element signature="e#150#188#0" expanded="true" />
+                    <element signature="e#707#745#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -123,6 +76,8 @@
         <option value="$PROJECT_DIR$/assignment_1/code/train_mlp_numpy.py" />
         <option value="$PROJECT_DIR$/assignment_1/code/train_convnet_pytorch.py" />
         <option value="$PROJECT_DIR$/assignment_1/code/mlp_pytorch.py" />
+        <option value="$PROJECT_DIR$/assignment_2/part1/vanilla_rnn.py" />
+        <option value="$PROJECT_DIR$/assignment_2/part1/train.py" />
       </list>
     </option>
   </component>
@@ -137,16 +92,17 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="64" />
+    <option name="x" value="65" />
     <option name="y" value="-4" />
-    <option name="width" value="1857" />
-    <option name="height" value="1085" />
+    <option name="width" value="1855" />
+    <option name="height" value="1084" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -157,19 +113,18 @@
             <path>
               <item name="Deep_Learning_2019" type="b2602c69:ProjectViewProjectNode" />
               <item name="Deep_Learning_2019" type="462c0819:PsiDirectoryNode" />
-              <item name="assignment_1" type="462c0819:PsiDirectoryNode" />
+              <item name="assignment_2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Deep_Learning_2019" type="b2602c69:ProjectViewProjectNode" />
               <item name="Deep_Learning_2019" type="462c0819:PsiDirectoryNode" />
-              <item name="assignment_1" type="462c0819:PsiDirectoryNode" />
-              <item name="code" type="462c0819:PsiDirectoryNode" />
+              <item name="assignment_2" type="462c0819:PsiDirectoryNode" />
+              <item name="part1" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -322,17 +277,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assignment_1/code/mlp_numpy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assignment_1/code/convnet_job.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assignment_1/code/mlp_pytorch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="44" column="48" selection-start-line="44" selection-start-column="48" selection-end-line="44" selection-end-column="48" />
+          <folding>
+            <element signature="e#123#161#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assignment_1/code/train_mlp_pytorch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2499">
+          <caret line="156" column="68" selection-start-line="156" selection-start-column="68" selection-end-line="156" selection-end-column="68" />
+          <folding>
+            <element signature="e#144#182#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assignment_1/code/mlp_numpy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -346,20 +321,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assignment_1/code/train_mlp_pytorch.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="156" column="68" selection-start-line="156" selection-start-column="68" selection-end-line="156" selection-end-column="68" />
-          <folding>
-            <element signature="e#144#182#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assignment_1/code/train_mlp_numpy.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
-          <caret line="130" column="44" lean-forward="true" selection-start-line="130" selection-start-column="44" selection-end-line="130" selection-end-column="44" />
+          <caret line="130" column="44" selection-start-line="130" selection-start-column="44" selection-end-line="130" selection-end-column="44" />
           <folding>
             <element signature="e#142#180#0" expanded="true" />
           </folding>
@@ -368,20 +333,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assignment_1/code/train_convnet_pytorch.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="596">
-          <caret line="147" selection-start-line="147" selection-end-line="147" />
+        <state relative-caret-position="375">
+          <caret line="155" selection-start-line="155" selection-end-line="155" />
           <folding>
             <element signature="e#150#188#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assignment_1/code/mlp_pytorch.py">
+    <entry file="file://$PROJECT_DIR$/assignment_2/part1/vanilla_rnn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="44" column="60" lean-forward="true" selection-start-line="44" selection-start-column="60" selection-end-line="44" selection-end-column="60" />
+        <state relative-caret-position="796">
+          <caret line="69" selection-start-line="69" selection-end-line="69" />
           <folding>
-            <element signature="e#123#161#0" expanded="true" />
+            <element signature="e#705#743#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assignment_2/part1/train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="141" column="32" selection-start-line="141" selection-start-column="32" selection-end-line="141" selection-end-column="32" />
+          <folding>
+            <element signature="e#707#745#0" expanded="true" />
           </folding>
         </state>
       </provider>

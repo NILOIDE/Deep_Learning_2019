@@ -20,6 +20,8 @@ from __future__ import print_function
 
 import torch
 import torch.nn as nn
+from torch.distributions.normal import Normal
+import numpy as np
 
 ################################################################################
 
@@ -28,7 +30,42 @@ class VanillaRNN(nn.Module):
     def __init__(self, seq_length, input_dim, num_hidden, num_classes, batch_size, device='cpu'):
         super(VanillaRNN, self).__init__()
         # Initialization here ...
+        self.seq_length = seq_length
+        self.input_dim = input_dim
+        self.num_hidden = num_hidden
+        self.num_classes = num_classes
+        self.batch_size = batch_size
+        self.device = device
+        self.stdev = 0.01
+
+        self.W_xh = nn.Parameter(Normal(torch.tensor(0.0), torch.tensor(self.stdev)).sample((input_dim, num_hidden)))
+        self.W_hh = nn.Parameter(Normal(torch.tensor(0.0), torch.tensor(self.stdev)).sample((num_hidden, num_hidden)))
+        self.W_hp = nn.Parameter(Normal(torch.tensor(0.0), torch.tensor(self.stdev)).sample((num_hidden, num_classes)))
+
+        self.b_h = nn.Parameter(Normal(torch.tensor(0.0), torch.tensor(self.stdev)).sample((1, num_hidden)))
+        self.b_p = nn.Parameter(Normal(torch.tensor(0.0), torch.tensor(self.stdev)).sample((1, num_classes)))
+
+        self.h = torch.empty(self.batch_size, self.num_hidden, device=self.device)
 
     def forward(self, x):
         # Implementation here ...
-        pass
+
+        # Detach hidden state such that error is not backpropagated into previous sequence
+        self.h.detach_()
+        # Reset hidden state
+        self.h = torch.zeros(self.batch_size, self.num_hidden, device=self.device)
+
+        for t in range(self.seq_length):
+            x_t = x[:, t].view(self.batch_size, self.input_dim)
+            # print(x_t.shape)
+            # print(self.W_xh.shape)
+            # print(self.W_hh.shape)
+            # print(self.h.shape)
+            # print(self.b_h.shape)
+            # print((x_t @ self.W_xh + self.h @ self.W_hh).shape)
+
+            self.h = torch.tanh(x_t @ self.W_xh + self.h @ self.W_hh + self.b_h)
+
+        out = self.h @ self.W_hp + self.b_p
+
+        return out
