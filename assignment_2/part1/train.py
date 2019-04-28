@@ -40,7 +40,7 @@ def train(config):
     assert config.model_type in ('RNN', 'LSTM')
 
     # Initialize the device which to run the model on
-    device = torch.device('cpu')
+    # device = torch.device('cpu')
     # check if cuda is available
     if config.device.lower() == 'cuda':
         device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -130,7 +130,7 @@ def train(config):
 
 def run_experiment(config):
     start = 5
-    end = 7
+    end = 50
     import matplotlib.pyplot as plt
     results = []
     for i in range(start, end+1):
