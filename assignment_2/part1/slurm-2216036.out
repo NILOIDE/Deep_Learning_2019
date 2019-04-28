@@ -1,0 +1,43 @@
+train.py:99: UserWarning: torch.nn.utils.clip_grad_norm is now deprecated in favor of torch.nn.utils.clip_grad_norm_.
+  torch.nn.utils.clip_grad_norm(model.parameters(), max_norm=config.max_norm)
+Sentence length: 5
+[2019-04-28 18:48] Train Step 0000/10000, Batch Size = 128, Examples/Sec = 1316.46, Accuracy = 0.09, Loss = 2.303
+[2019-04-28 18:48] Train Step 0100/10000, Batch Size = 128, Examples/Sec = 4589.15, Accuracy = 0.26, Loss = 1.357
+[2019-04-28 18:48] Train Step 0200/10000, Batch Size = 128, Examples/Sec = 4547.36, Accuracy = 0.63, Loss = 0.832
+[2019-04-28 18:48] Train Step 0300/10000, Batch Size = 128, Examples/Sec = 4620.11, Accuracy = 0.63, Loss = 0.758
+[2019-04-28 18:48] Train Step 0400/10000, Batch Size = 128, Examples/Sec = 4613.76, Accuracy = 0.80, Loss = 0.510
+[2019-04-28 18:48] Train Step 0500/10000, Batch Size = 128, Examples/Sec = 4647.83, Accuracy = 0.96, Loss = 0.343
+[2019-04-28 18:48] Train Step 0600/10000, Batch Size = 128, Examples/Sec = 4696.54, Accuracy = 1.00, Loss = 0.226
+[2019-04-28 18:48] Train Step 0700/10000, Batch Size = 128, Examples/Sec = 4633.55, Accuracy = 0.75, Loss = 0.483
+[2019-04-28 18:48] Train Step 0800/10000, Batch Size = 128, Examples/Sec = 4650.85, Accuracy = 0.89, Loss = 0.215
+[2019-04-28 18:48] Train Step 0900/10000, Batch Size = 128, Examples/Sec = 4651.70, Accuracy = 0.92, Loss = 0.174
+[2019-04-28 18:48] Train Step 1000/10000, Batch Size = 128, Examples/Sec = 4652.22, Accuracy = 0.96, Loss = 0.110
+Done training.
+Sentence length: 6
+[2019-04-28 18:49] Train Step 0000/10000, Batch Size = 128, Examples/Sec = 3875.96, Accuracy = 0.11, Loss = 2.303
+[2019-04-28 18:49] Train Step 0100/10000, Batch Size = 128, Examples/Sec = 3963.81, Accuracy = 0.27, Loss = 1.551
+[2019-04-28 18:49] Train Step 0200/10000, Batch Size = 128, Examples/Sec = 3876.83, Accuracy = 0.39, Loss = 1.160
+[2019-04-28 18:49] Train Step 0300/10000, Batch Size = 128, Examples/Sec = 3854.92, Accuracy = 0.62, Loss = 0.842
+[2019-04-28 18:49] Train Step 0400/10000, Batch Size = 128, Examples/Sec = 3881.57, Accuracy = 0.91, Loss = 0.516
+[2019-04-28 18:49] Train Step 0500/10000, Batch Size = 128, Examples/Sec = 3888.03, Accuracy = 0.93, Loss = 0.288
+[2019-04-28 18:49] Train Step 0600/10000, Batch Size = 128, Examples/Sec = 3892.85, Accuracy = 0.83, Loss = 0.321
+[2019-04-28 18:49] Train Step 0700/10000, Batch Size = 128, Examples/Sec = 3866.25, Accuracy = 0.98, Loss = 0.184
+[2019-04-28 18:49] Train Step 0800/10000, Batch Size = 128, Examples/Sec = 3889.78, Accuracy = 0.95, Loss = 0.158
+[2019-04-28 18:49] Train Step 0900/10000, Batch Size = 128, Examples/Sec = 3865.38, Accuracy = 0.81, Loss = 0.300
+[2019-04-28 18:49] Train Step 1000/10000, Batch Size = 128, Examples/Sec = 3880.61, Accuracy = 0.98, Loss = 0.094
+[2019-04-28 18:49] Train Step 1100/10000, Batch Size = 128, Examples/Sec = 3954.47, Accuracy = 1.00, Loss = 0.047
+Done training.
+Sentence length: 7
+[2019-04-28 18:49] Train Step 0000/10000, Batch Size = 128, Examples/Sec = 3288.62, Accuracy = 0.12, Loss = 2.303
+[2019-04-28 18:49] Train Step 0100/10000, Batch Size = 128, Examples/Sec = 3375.85, Accuracy = 0.30, Loss = 1.459
+[2019-04-28 18:49] Train Step 0200/10000, Batch Size = 128, Examples/Sec = 3367.97, Accuracy = 0.46, Loss = 1.019
+[2019-04-28 18:50] Train Step 0300/10000, Batch Size = 128, Examples/Sec = 3377.10, Accuracy = 0.78, Loss = 0.688
+[2019-04-28 18:50] Train Step 0400/10000, Batch Size = 128, Examples/Sec = 3358.97, Accuracy = 0.91, Loss = 0.534
+[2019-04-28 18:50] Train Step 0500/10000, Batch Size = 128, Examples/Sec = 3399.70, Accuracy = 0.98, Loss = 0.331
+[2019-04-28 18:50] Train Step 0600/10000, Batch Size = 128, Examples/Sec = 3399.25, Accuracy = 0.71, Loss = 0.541
+[2019-04-28 18:50] Train Step 0700/10000, Batch Size = 128, Examples/Sec = 3408.53, Accuracy = 0.73, Loss = 0.398
+[2019-04-28 18:50] Train Step 0800/10000, Batch Size = 128, Examples/Sec = 3407.21, Accuracy = 0.89, Loss = 0.259
+[2019-04-28 18:50] Train Step 0900/10000, Batch Size = 128, Examples/Sec = 3403.88, Accuracy = 0.71, Loss = 0.409
+[2019-04-28 18:50] Train Step 1000/10000, Batch Size = 128, Examples/Sec = 3409.51, Accuracy = 0.99, Loss = 0.107
+[2019-04-28 18:50] Train Step 1100/10000, Batch Size = 128, Examples/Sec = 3399.16, Accuracy = 0.92, Loss = 0.153
+Done training.
