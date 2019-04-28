@@ -143,7 +143,7 @@ def run_experiment(config):
     plt.ylabel("Max accuracy")
     plt.xlabel("Sentence length")
     plt.title("Vanilla RNN accuracy with varying sentence lengths")
-    plt.savefig("sentence_length.pdf")
+    plt.savefig("sentence_length_" + config.model_type + ".pdf")
 
  ################################################################################
  ################################################################################
