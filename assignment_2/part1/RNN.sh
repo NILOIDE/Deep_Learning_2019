@@ -4,7 +4,7 @@
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=1
 #SBATCH --ntasks-per-node=1
-#SBATCH --time=02:30:50
+#SBATCH --time=12:30:50
 #sBATCH --mem=60000M
 #SBATCH --partition=gpu_shared_course
 #SBATCH --gres=gpu:1
