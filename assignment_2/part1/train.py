@@ -153,6 +153,7 @@ def run_experiment(config):
     plt.plot(np.arange(start, end+1), results_rnn[:,0], np.arange(start, end+1), results_lstm[:,0])
     plt.ylabel("Max accuracy")
     plt.xlabel("Sentence length")
+    plt.legend(["RNN", "LSTM"])
     plt.title("Vanilla RNN accuracy with varying sentence lengths")
     plt.savefig("sentence_length_" + config.model_type + ".pdf")
 
