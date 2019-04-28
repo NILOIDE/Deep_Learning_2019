@@ -127,7 +127,7 @@ def train(config):
 
 def run_experiment(config):
     start = 5
-    end = 50
+    end = 8
     import matplotlib.pyplot as plt
     results = []
     for i in range(start, end+1):
@@ -136,7 +136,7 @@ def run_experiment(config):
         data = train(config)
         results.append(data)
     results = np.array(results)
-    plt.plot(np.arange(start, end+1), results[0])
+    plt.plot(np.arange(start, end+1), results[:,0])
     plt.ylabel("Max accuracy")
     plt.xlabel("Sentence length")
     plt.title("Vanilla RNN accuracy with varying sentence lengths")
