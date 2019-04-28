@@ -132,14 +132,25 @@ def run_experiment(config):
     start = 5
     end = 50
     import matplotlib.pyplot as plt
-    results = []
+    results_rnn = []
+    config.model_type = "RNN"
     for i in range(start, end+1):
         print("Sentence length:", i)
         config.input_length = i
         data = train(config)
-        results.append(data)
-    results = np.array(results)
-    plt.plot(np.arange(start, end+1), results[:,0])
+        results_rnn.append(data)
+
+    results_lstm = []
+    config.model_type = "LSTM"
+    for i in range(start, end+1):
+        print("Sentence length:", i)
+        config.input_length = i
+        data = train(config)
+        results_lstm.append(data)
+    results_lstm = np.array(results_lstm)
+    results_rnn = np.array(results_rnn)
+
+    plt.plot(np.arange(start, end+1), results_rnn[:,0], np.arange(start, end+1), results_lstm[:,0])
     plt.ylabel("Max accuracy")
     plt.xlabel("Sentence length")
     plt.title("Vanilla RNN accuracy with varying sentence lengths")
