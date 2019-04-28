@@ -57,13 +57,6 @@ class VanillaRNN(nn.Module):
 
         for t in range(self.seq_length):
             x_t = x[:, t].view(self.batch_size, self.input_dim)
-            # print(x_t.shape)
-            # print(self.W_xh.shape)
-            # print(self.W_hh.shape)
-            # print(self.h.shape)
-            # print(self.b_h.shape)
-            # print((x_t @ self.W_xh + self.h @ self.W_hh).shape)
-
             self.h = torch.tanh(x_t @ self.W_xh + self.h @ self.W_hh + self.b_h)
 
         out = self.h @ self.W_hp + self.b_p

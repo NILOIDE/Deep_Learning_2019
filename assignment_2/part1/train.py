@@ -42,10 +42,10 @@ def train(config):
     # Initialize the device which to run the model on
     device = torch.device('cpu')
     # check if cuda is available
-    # if config.device.lower() == 'cuda':
-    #     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-    # else:
-    #     device = torch.device('cpu')
+    if config.device.lower() == 'cuda':
+        device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+    else:
+        device = torch.device('cpu')
 
     # Initialize the model that we are going to use
     model = None
@@ -56,13 +56,16 @@ def train(config):
                            num_classes=config.num_classes,
                            batch_size=config.batch_size,
                            device=device)
-    elif config.model_type == 'LS':
+    elif config.model_type == 'LSTM':
         model = LSTM(seq_length=config.input_length,
                      input_dim=config.input_dim,
                      num_hidden=config.num_hidden,
                      num_classes=config.num_classes,
                      batch_size=config.batch_size,
                      device=device)
+    else:
+        print("You have no model, bro!")
+        quit()
     # Initialize the dataset and data loader (note the +1)
     dataset = PalindromeDataset(config.input_length+1)
     data_loader = DataLoader(dataset, config.batch_size, num_workers=0)
@@ -115,7 +118,7 @@ def train(config):
                     accuracy, loss
             ))
 
-        if step == config.train_steps :
+        if step == config.train_steps or np.mean(accuracy_train[-10:]) == 1.0:
             # If you receive a PyTorch data-loader error, check this bug report:
             # https://github.com/pytorch/pytorch/pull/9655
             break
@@ -127,7 +130,7 @@ def train(config):
 
 def run_experiment(config):
     start = 5
-    end = 50
+    end = 7
     import matplotlib.pyplot as plt
     results = []
     for i in range(start, end+1):

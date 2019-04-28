@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3d455d3-bc7a-4a68-bf58-fcbb7443af70" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/assignment_2/part1/lstm.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment_2/part1/lstm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part1/sentence_length.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/assignment_2/part1/sentence_length.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment_2/part1/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment_2/part1/train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part1/vanilla_rnn.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment_2/part1/vanilla_rnn.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,14 +17,26 @@
     <favorites_list name="uvadlc_practicals_2019" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.43238434">
+    <splitter split-orientation="horizontal" split-proportion="0.60972714">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/assignment_2/part1/vanilla_rnn.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="796">
-                  <caret line="69" selection-start-line="69" selection-end-line="69" />
+                <state relative-caret-position="711">
+                  <caret line="58" column="63" selection-start-line="58" selection-start-column="63" selection-end-line="58" selection-end-column="63" />
+                  <folding>
+                    <element signature="e#705#743#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/assignment_2/part1/lstm.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="453">
+                  <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
                   <folding>
                     <element signature="e#705#743#0" expanded="true" />
                   </folding>
@@ -36,8 +51,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/assignment_2/part1/train.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="354">
-                  <caret line="129" column="12" selection-start-line="129" selection-start-column="12" selection-end-line="129" selection-end-column="12" />
+                <state relative-caret-position="269">
+                  <caret line="43" column="32" lean-forward="true" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
                   <folding>
                     <element signature="e#707#745#0" expanded="true" />
                   </folding>
@@ -74,6 +89,7 @@
         <option value="$PROJECT_DIR$/assignment_1/code/train_convnet_pytorch.py" />
         <option value="$PROJECT_DIR$/assignment_1/code/mlp_pytorch.py" />
         <option value="$PROJECT_DIR$/assignment_2/part1/vanilla_rnn.py" />
+        <option value="$PROJECT_DIR$/assignment_2/part1/lstm.py" />
         <option value="$PROJECT_DIR$/assignment_2/part1/train.py" />
       </list>
     </option>
@@ -180,7 +196,7 @@
     <frame x="64" y="-4" width="1857" height="1085" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49745157" visible="true" weight="0.07969432" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49745157" visible="true" weight="0.07969432" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" show_stripe_button="false" sideWeight="0.5025484" side_tool="true" weight="0.11735808" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -191,7 +207,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32925585" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -340,8 +356,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assignment_2/part1/vanilla_rnn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="796">
-          <caret line="69" selection-start-line="69" selection-end-line="69" />
+        <state relative-caret-position="711">
+          <caret line="58" column="63" selection-start-line="58" selection-start-column="63" selection-end-line="58" selection-end-column="63" />
+          <folding>
+            <element signature="e#705#743#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assignment_2/part1/lstm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
           <folding>
             <element signature="e#705#743#0" expanded="true" />
           </folding>
@@ -350,8 +376,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assignment_2/part1/train.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="129" column="12" selection-start-line="129" selection-start-column="12" selection-end-line="129" selection-end-column="12" />
+        <state relative-caret-position="269">
+          <caret line="43" column="32" lean-forward="true" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
           <folding>
             <element signature="e#707#745#0" expanded="true" />
           </folding>
