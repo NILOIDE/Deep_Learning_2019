@@ -93,7 +93,7 @@ def train(config):
         # ANSWER: This clips the gradient to the given value. This prevents the
         # gradient growing exponentially, preventing the gradient exploding problem.
         ############################################################################
-        torch.nn.utils.clip_grad_norm(model.parameters(), max_norm=1)
+        torch.nn.utils.clip_grad_norm(model.parameters(), max_norm=config.max_norm)
         ############################################################################
 
         # Add more code here ...
@@ -127,7 +127,7 @@ def train(config):
 
 def run_experiment(config):
     start = 5
-    end = 8
+    end = 50
     import matplotlib.pyplot as plt
     results = []
     for i in range(start, end+1):
