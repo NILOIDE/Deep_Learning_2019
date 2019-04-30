@@ -132,13 +132,13 @@ def run_experiment(config):
     start = 5
     end = 50
     import matplotlib.pyplot as plt
-    results_rnn = []
-    config.model_type = "RNN"
-    for i in range(start, end+1):
-        print("Sentence length:", i)
-        config.input_length = i
-        data = train(config)
-        results_rnn.append(data)
+    # results_rnn = []
+    # config.model_type = "RNN"
+    # for i in range(start, end+1):
+    #     print("Sentence length:", i)
+    #     config.input_length = i
+    #     data = train(config)
+    #     results_rnn.append(data)
 
     results_lstm = []
     config.model_type = "LSTM"
@@ -148,13 +148,14 @@ def run_experiment(config):
         data = train(config)
         results_lstm.append(data)
     results_lstm = np.array(results_lstm)
-    results_rnn = np.array(results_rnn)
+    # results_rnn = np.array(results_rnn)
 
-    plt.plot(np.arange(start, end+1), results_rnn[:,0], np.arange(start, end+1), results_lstm[:,0])
+    # plt.plot(np.arange(start, end+1), results_rnn[:,0], np.arange(start, end+1), results_lstm[:,0])
+    plt.plot(np.arange(start, end+1), results_lstm[:,0])
     plt.ylabel("Max accuracy")
     plt.xlabel("Sentence length")
-    plt.legend(["RNN", "LSTM"])
-    plt.title("Vanilla RNN accuracy with varying sentence lengths")
+    # plt.legend(["RNN", "LSTM"])
+    plt.title("LSTM accuracy with varying sentence lengths")
     plt.savefig("sentence_length_" + config.model_type + ".pdf")
 
  ################################################################################
