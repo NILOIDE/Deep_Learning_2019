@@ -124,7 +124,7 @@ def train(config):
             break
 
     print('Done training.')
-    if np.mean(accuracy_train[-100:]) > 0.99:
+    if np.mean(accuracy_train[-100:]) == 1.0:
         mean = np.mean(accuracy_train[-100:])
     else:
         mean = np.mean(accuracy_train[np.argmax(accuracy_train)-50:np.argmax(accuracy_train)+50])

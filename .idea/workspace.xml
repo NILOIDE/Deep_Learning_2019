@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3d455d3-bc7a-4a68-bf58-fcbb7443af70" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part1/sentence_length_RNN.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/assignment_2/part1/sentence_length_RNN.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment_2/part1/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment_2/part1/train.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -59,8 +57,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/assignment_2/part1/train.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="422">
-                  <caret line="132" selection-start-line="132" selection-end-line="132" />
+                <state relative-caret-position="320">
+                  <caret line="126" column="44" selection-start-line="126" selection-start-column="44" selection-end-line="126" selection-end-column="44" />
                   <folding>
                     <element signature="e#707#745#0" expanded="true" />
                   </folding>
@@ -485,8 +483,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assignment_2/part1/train.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="132" selection-start-line="132" selection-end-line="132" />
+        <state relative-caret-position="320">
+          <caret line="126" column="44" selection-start-line="126" selection-start-column="44" selection-end-line="126" selection-end-column="44" />
           <folding>
             <element signature="e#707#745#0" expanded="true" />
           </folding>
