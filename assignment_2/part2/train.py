@@ -28,27 +28,44 @@ import torch
 import torch.optim as optim
 from torch.utils.data import DataLoader
 
-from part2.dataset import TextDataset
-from part2.model import TextGenerationModel
+from dataset import TextDataset
+from model import TextGenerationModel
 
 ################################################################################
+
+def one_hot(batch, vocab_size):
+    one_hot_batch = torch.zeros((len(batch), *batch[0].shape, vocab_size))
+    return one_hot_batch.scatter_(2, batch.unsqueeze(-1), 1)
+
 
 def train(config):
 
     # Initialize the device which to run the model on
-    device = torch.device(config.device)
-
-    # Initialize the model that we are going to use
-    model = TextGenerationModel( ... )  # fixme
+    if config.device.lower() == 'cuda':
+        device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+    else:
+        device = torch.device('cpu')
 
     # Initialize the dataset and data loader (note the +1)
-    dataset = TextDataset( ... )  # fixme
+    dataset = TextDataset(config.txt_file, config.seq_length)
+
     data_loader = DataLoader(dataset, config.batch_size, num_workers=1)
 
-    # Setup the loss and optimizer
-    criterion = None  # fixme
-    optimizer = None  # fixme
+    # Initialize the model that we are going to use
+    model = TextGenerationModel(batch_size=config.batch_size,
+                                seq_length=config.seq_length,
+                                vocabulary_size=dataset.vocab_size,
+                                lstm_num_hidden=config.lstm_num_hidden,
+                                lstm_num_layers=config.lstm_num_layers,
+                                device=device)
 
+    model = model.to(device)
+    # Setup the loss and optimizer
+    criterion = torch.nn.CrossEntropyLoss()
+    optimizer = torch.optim.Adam(model.parameters(), config.learning_rate)
+
+    accuracy_train = []
+    loss_train = []
     for step, (batch_inputs, batch_targets) in enumerate(data_loader):
 
         # Only for time measurement of step through network
@@ -57,20 +74,32 @@ def train(config):
         #######################################################
         # Add more code here ...
         #######################################################
+        batch_inputs = torch.stack(batch_inputs, dim=1).to(device)
+        x = one_hot(batch_inputs, dataset.vocab_size).to(device)
 
-        loss = np.inf   # fixme
-        accuracy = 0.0  # fixme
+        y = torch.stack(batch_targets, dim=1).to(device)
+        # y = one_hot(batch_targets, dataset.vocab_size).to(device)
+
+        p, lstm_state = model.forward(x)
+        loss = criterion(p.transpose(2,1), y)
+        loss_train.append(loss)
+
+        optimizer.zero_grad()
+        loss.backward()
+        accuracy = torch.sum(torch.argmax(p, dim=2) == y).to(torch.float) / float(config.batch_size * config.seq_length)
+        accuracy_train.append(accuracy)
 
         # Just for time measurement
         t2 = time.time()
         examples_per_second = config.batch_size/float(t2-t1)
 
         if step % config.print_every == 0:
-
+            # print(f"Train Step {step+1}/{config.train_steps}, Examples/Sec = {examples_per_second},"
+            #       f" Accuracy = {accuracy}, Loss = {loss}")
             print("[{}] Train Step {:04d}/{:04d}, Batch Size = {}, Examples/Sec = {:.2f}, "
                   "Accuracy = {:.2f}, Loss = {:.3f}".format(
-                    datetime.now().strftime("%Y-%m-%d %H:%M"), step,
-                    config.train_steps, config.batch_size, examples_per_second,
+                    datetime.now().strftime("%Y-%m-%d %H:%M"), int(step+1),
+                    int(config.train_steps), config.batch_size, examples_per_second,
                     accuracy, loss
             ))
 
@@ -114,8 +143,9 @@ if __name__ == "__main__":
 
     # Misc params
     parser.add_argument('--summary_path', type=str, default="./summaries/", help='Output path for summaries')
-    parser.add_argument('--print_every', type=int, default=5, help='How often to print training progress')
-    parser.add_argument('--sample_every', type=int, default=100, help='How often to sample from the model')
+    parser.add_argument('--print_every', type=int, default=500, help='How often to print training progress')
+    parser.add_argument('--sample_every', type=int, default=500, help='How often to sample from the model')
+    parser.add_argument('--device', type=str, default="cuda:0", help="Training device 'cpu' or 'cuda:0'")
 
     config = parser.parse_args()
 

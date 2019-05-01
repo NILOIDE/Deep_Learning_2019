@@ -28,6 +28,27 @@ class TextGenerationModel(nn.Module):
         super(TextGenerationModel, self).__init__()
         # Initialization here...
 
-    def forward(self, x):
+        self.batch_size = batch_size
+        self.seq_length = seq_length
+        self.vocabulary_size = vocabulary_size
+        self.lstm_num_hidden = lstm_num_hidden
+        self.lstm_num_layers = lstm_num_layers
+        self.device = device
+
+        self.lstm = nn.LSTM(input_size=self.vocabulary_size,
+                            hidden_size=self.lstm_num_hidden,
+                            num_layers=self.lstm_num_layers,
+                            bias=True,
+                            batch_first=True)
+
+        self.linear = nn.Linear(in_features=self.lstm_num_hidden,
+                                out_features=self.vocabulary_size,
+                                bias=True)
+
+    def forward(self, x, last_state=None):
         # Implementation here...
-        pass
+        all_hidden, last_state = self.lstm(x, last_state)
+        out = self.linear(all_hidden)
+        return out, last_state
+
+
