@@ -2431,3 +2431,25 @@ Sentence length: 35
 [2019-05-01 20:57] Train Step 7900/10000, Batch Size = 128, Examples/Sec = 3360.23, Accuracy = 0.20, Loss = 1.982
 [2019-05-01 20:57] Train Step 8000/10000, Batch Size = 128, Examples/Sec = 3355.59, Accuracy = 0.21, Loss = 1.982
 [2019-05-01 20:57] Train Step 8100/10000, Batch Size = 128, Examples/Sec = 2798.43, Accuracy = 0.23, Loss = 1.915
+train.py:99: UserWarning: torch.nn.utils.clip_grad_norm is now deprecated in favor of torch.nn.utils.clip_grad_norm_.
+  torch.nn.utils.clip_grad_norm(model.parameters(), max_norm=config.max_norm)
+[2019-05-01 20:58] Train Step 8200/10000, Batch Size = 128, Examples/Sec = 2801.69, Accuracy = 0.28, Loss = 1.875
+[2019-05-01 20:58] Train Step 8300/10000, Batch Size = 128, Examples/Sec = 778.13, Accuracy = 0.16, Loss = 2.098
+[2019-05-01 20:58] Train Step 8400/10000, Batch Size = 128, Examples/Sec = 634.10, Accuracy = 0.28, Loss = 1.812
+[2019-05-01 20:58] Train Step 8500/10000, Batch Size = 128, Examples/Sec = 586.63, Accuracy = 0.25, Loss = 1.961
+[2019-05-01 20:59] Train Step 8600/10000, Batch Size = 128, Examples/Sec = 419.23, Accuracy = 0.26, Loss = 2.004
+[2019-05-01 20:59] Train Step 8700/10000, Batch Size = 128, Examples/Sec = 401.58, Accuracy = 0.24, Loss = 1.958
+[2019-05-01 21:00] Train Step 8800/10000, Batch Size = 128, Examples/Sec = 388.58, Accuracy = 0.17, Loss = 2.086
+[2019-05-01 21:01] Train Step 8900/10000, Batch Size = 128, Examples/Sec = 465.04, Accuracy = 0.23, Loss = 1.944
+[2019-05-01 21:01] Train Step 9000/10000, Batch Size = 128, Examples/Sec = 474.27, Accuracy = 0.20, Loss = 1.883
+[2019-05-01 21:02] Train Step 9100/10000, Batch Size = 128, Examples/Sec = 459.16, Accuracy = 0.22, Loss = 1.949
+[2019-05-01 21:02] Train Step 9200/10000, Batch Size = 128, Examples/Sec = 452.29, Accuracy = 0.20, Loss = 1.966
+[2019-05-01 21:03] Train Step 9300/10000, Batch Size = 128, Examples/Sec = 483.41, Accuracy = 0.22, Loss = 2.009
+[2019-05-01 21:03] Train Step 9400/10000, Batch Size = 128, Examples/Sec = 526.31, Accuracy = 0.18, Loss = 2.055
+[2019-05-01 21:03] Train Step 9500/10000, Batch Size = 128, Examples/Sec = 522.90, Accuracy = 0.27, Loss = 1.926
+[2019-05-01 21:04] Train Step 9600/10000, Batch Size = 128, Examples/Sec = 537.04, Accuracy = 0.20, Loss = 1.913
+[2019-05-01 21:04] Train Step 9700/10000, Batch Size = 128, Examples/Sec = 521.27, Accuracy = 0.26, Loss = 1.901
+[2019-05-01 21:05] Train Step 9800/10000, Batch Size = 128, Examples/Sec = 558.55, Accuracy = 0.21, Loss = 2.000
+[2019-05-01 21:05] Train Step 9900/10000, Batch Size = 128, Examples/Sec = 576.00, Accuracy = 0.23, Loss = 1.904
+[2019-05-01 21:05] Train Step 10000/10000, Batch Size = 128, Examples/Sec = 597.08, Accuracy = 0.20, Loss = 1.994
+Done training.
