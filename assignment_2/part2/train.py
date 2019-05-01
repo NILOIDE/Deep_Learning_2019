@@ -50,7 +50,7 @@ def generate(model, dataset, config):
         char = torch.randint(low=0, high=dataset.vocab_size, size=(config.num_samples, 1))
         last_state = None
         for l in range(config.sample_len - 1):
-            x = one_hot(torch.tensor(char, dtype=torch.long), dataset.vocab_size).to(config.device)
+            x = one_hot(torch.tensor(char.clone().detach(), dtype=torch.long), dataset.vocab_size).to(config.device)
 
             # sample next letter for all sentences
             p, last_state = model(x, last_state)
@@ -74,7 +74,7 @@ def train(config):
     # Initialize the dataset and data loader (note the +1)
     dataset = TextDataset(config.txt_file, config.seq_length)
 
-    data_loader = DataLoader(dataset, config.batch_size, num_workers=1)
+    data_loader = DataLoader(dataset, config.batch_size, num_workers=0)
 
     if config.load_name is None:
         # Initialize the model that we are going to use
