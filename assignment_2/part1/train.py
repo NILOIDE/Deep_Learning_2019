@@ -118,13 +118,13 @@ def train(config):
                     accuracy, loss
             ))
 
-        if step == config.train_steps or np.mean(accuracy_train[-100:]) > 0.99:
+        if step == config.train_steps or np.mean(accuracy_train[-100:]) == 1.0:
             # If you receive a PyTorch data-loader error, check this bug report:
             # https://github.com/pytorch/pytorch/pull/9655
             break
 
     print('Done training.')
-    if np.argmax(accuracy_train) > len(accuracy_train)-100:
+    if np.mean(accuracy_train[-100:]) > 0.99:
         mean = np.mean(accuracy_train[-100:])
     else:
         mean = np.mean(accuracy_train[np.argmax(accuracy_train)-50:np.argmax(accuracy_train)+50])
@@ -135,14 +135,6 @@ def run_experiment(config):
     start = 5
     end = 35
     import matplotlib.pyplot as plt
-    # results_rnn = []
-    # config.model_type = "RNN"
-    # for i in range(start, end+1):
-    #     print("Sentence length:", i)
-    #     config.input_length = i
-    #     data = train(config)
-    #     results_rnn.append(data)
-
     results = []
     for i in range(start, end+1):
         print("Sentence length:", i)
@@ -150,14 +142,11 @@ def run_experiment(config):
         data = train(config)
         results.append(data[1])
         results_array = np.array(results)
-        # results_rnn = np.array(results_rnn)
 
-        # plt.plot(np.arange(start, end+1), results_rnn[:,0], np.arange(start, end+1), results_lstm[:,0])
         if i != start:
             plt.plot(np.arange(start, i+1), results_array)
             plt.ylabel("Accuracy")
             plt.xlabel("Sentence length")
-            # plt.legend(["RNN", "LSTM"])
             plt.title(config.model_type +" maximum running mean accuracy (100 samples) \n with varying sentence lengths")
             plt.savefig("sentence_length_" + config.model_type + ".pdf")
 

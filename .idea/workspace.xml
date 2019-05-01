@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c3d455d3-bc7a-4a68-bf58-fcbb7443af70" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/clean_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment_2/part2/clean_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment_2/part2/dataset.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment_2/part2/train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part1/sentence_length_RNN.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/assignment_2/part1/sentence_length_RNN.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part1/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment_2/part1/train.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,13 +44,25 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/assignment_2/part2/train.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="666">
-                  <caret line="66" column="8" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="8" />
+                <state relative-caret-position="541">
+                  <caret line="205" lean-forward="true" selection-start-line="205" selection-end-line="205" />
                   <folding>
                     <element signature="e#634#672#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/assignment_2/part1/train.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="422">
+                  <caret line="132" selection-start-line="132" selection-end-line="132" />
+                  <folding>
+                    <element signature="e#707#745#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -103,10 +113,10 @@
         <option value="$PROJECT_DIR$/../RL_project_data/HalfCheetah-v2/jobEvaluater.py" />
         <option value="$PROJECT_DIR$/../RL_project_data/HalfCheetah-v2/nicePlots_MuJoCo.py" />
         <option value="$PROJECT_DIR$/assignment_2/part2/model.py" />
-        <option value="$PROJECT_DIR$/assignment_2/part1/train.py" />
         <option value="$PROJECT_DIR$/assignment_2/part2/clean_data.py" />
         <option value="$PROJECT_DIR$/assignment_2/part2/dataset.py" />
         <option value="$PROJECT_DIR$/assignment_2/part2/train.py" />
+        <option value="$PROJECT_DIR$/assignment_2/part1/train.py" />
       </list>
     </option>
   </component>
@@ -133,6 +143,12 @@
               <item name="Deep_Learning_2019" type="b2602c69:ProjectViewProjectNode" />
               <item name="Deep_Learning_2019" type="462c0819:PsiDirectoryNode" />
               <item name="assignment_2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Deep_Learning_2019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Deep_Learning_2019" type="462c0819:PsiDirectoryNode" />
+              <item name="assignment_2" type="462c0819:PsiDirectoryNode" />
+              <item name="part1" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Deep_Learning_2019" type="b2602c69:ProjectViewProjectNode" />
@@ -430,16 +446,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assignment_2/part1/train.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="767">
-          <caret line="160" column="41" selection-start-line="160" selection-start-column="41" selection-end-line="160" selection-end-column="41" />
-          <folding>
-            <element signature="e#707#745#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -469,10 +475,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assignment_2/part2/train.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="666">
-          <caret line="66" column="8" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="8" />
+        <state relative-caret-position="541">
+          <caret line="205" lean-forward="true" selection-start-line="205" selection-end-line="205" />
           <folding>
             <element signature="e#634#672#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assignment_2/part1/train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="132" selection-start-line="132" selection-end-line="132" />
+          <folding>
+            <element signature="e#707#745#0" expanded="true" />
           </folding>
         </state>
       </provider>
