@@ -206,13 +206,13 @@ if __name__ == "__main__":
 
     # Misc params
     parser.add_argument('--summary_path', type=str, default="./summaries/", help='Output path for summaries')
-    parser.add_argument('--print_every', type=int, default=500, help='How often to print training progress')
-    parser.add_argument('--sample_every', type=int, default=5000, help='How often to sample from the model')
+    parser.add_argument('--print_every', type=int, default=1000, help='How often to print training progress')
+    parser.add_argument('--sample_every', type=int, default=50000, help='How often to sample from the model')
     parser.add_argument('--device', type=str, default="cuda:0", help="Training device 'cpu' or 'cuda:0'")
     parser.add_argument('--temperature', type=float, default=1.0, help='Sampling temperature')
     parser.add_argument('--num_samples', type=int, default=5, help='How many sentences to sample')
     parser.add_argument('--sample_len', type=int, default=30, help='How long sampled sentences are')
-    parser.add_argument('--save_every', type=int, default=5000, help='How often to save the model')
+    parser.add_argument('--save_every', type=int, default=50000, help='How often to save the model')
     parser.add_argument('--load_name', type=str, default=None, help='Which model to load')
 
     config = parser.parse_args()
