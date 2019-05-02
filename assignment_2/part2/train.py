@@ -98,7 +98,7 @@ def train(config):
 
     if steps_elapsed < config.train_steps:
 
-        for step, (batch_inputs, batch_targets) in enumerate(data_loader, start=steps_elapsed):
+        for step, (batch_inputs, batch_targets) in enumerate(data_loader):
             if steps_elapsed != 0 and step == 0:
                 step += steps_elapsed +1
 
@@ -149,14 +149,16 @@ def train(config):
                 torch.save(model, file_name + ".pt")
                 np.save(file_name + "_accuracy", accuracy_train)
                 np.save(file_name + "_elapsed", step)
+                print("Saved model.")
 
             if (step+1) == config.train_steps:
                 # If you receive a PyTorch data-loader error, check this bug report:
                 # https://github.com/pytorch/pytorch/pull/9655
                 print("Max steps reached.")
                 break
-
+            final_step = step
     print('Done training.')
+    print(final_step)
     print("**************************************************************")
     test_temperature = [0.001, 0.25, 0.5, 1.0, 2.0]
     config.num_samples = 10
