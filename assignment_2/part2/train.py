@@ -135,14 +135,14 @@ def train(config):
                         accuracy, loss
                 ))
 
-            if (step+1) % config.sample_every == 0:
+            if (step+1) % config.sample_every == 0 or step == 0:
                 # Generate some sentences by sampling from the model
                 generated_samples = generate(model, dataset, config)
                 print("Generated " + str(config.num_samples) + ":")
                 for s in generated_samples:
                     print(s)
 
-            if (step+1) % config.save_every == 0 and step != 0:
+            if (step+1) % config.save_every == 0 or step == 0:
                 # Save the final model
                 file_name = config.txt_file[:-4] + "_" + str(step+1) + "_model"
                 torch.save(model, file_name + ".pt")
@@ -214,7 +214,7 @@ if __name__ == "__main__":
     parser.add_argument('--temperature', type=float, default=1.0, help='Sampling temperature')
     parser.add_argument('--num_samples', type=int, default=5, help='How many sentences to sample')
     parser.add_argument('--sample_len', type=int, default=30, help='How long sampled sentences are')
-    parser.add_argument('--save_every', type=int, default=50000, help='How often to save the model')
+    parser.add_argument('--save_every', type=int, default=25000, help='How often to save the model')
     parser.add_argument('--load_name', type=str, default=None, help='Which model to load')
 
     config = parser.parse_args()
