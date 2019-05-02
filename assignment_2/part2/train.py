@@ -65,14 +65,15 @@ def generate(model, dataset, config):
 def train(config):
 
     # Initialize the device which to run the model on
+    print(config.device.lower())
+    print(config.device)
+    quit()
     if config.device.lower() == 'cuda':
         device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     else:
         device = torch.device('cpu')
         config.device = device
 
-    print(config.device)
-    quit()
     # Initialize the dataset and data loader (note the +1)
     dataset = TextDataset(config.txt_file, config.seq_length)
 
