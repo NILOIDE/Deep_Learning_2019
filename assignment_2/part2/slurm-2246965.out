@@ -1,0 +1,2 @@
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** JOB 2246965 ON r32n6 CANCELLED AT 2019-05-02T19:01:39 ***
