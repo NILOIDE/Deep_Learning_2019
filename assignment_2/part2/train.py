@@ -96,7 +96,7 @@ def train(config):
     model = model.to(device)
     # Setup the loss and optimizer
     criterion = torch.nn.CrossEntropyLoss()
-    optimizer = torch.optim.Adam(model.parameters(), config.learning_rate)
+    optimizer = torch.optim.RMSprop(model.parameters(), config.learning_rate)
 
     while steps_elapsed < config.train_steps:
         for step, (batch_inputs, batch_targets) in enumerate(data_loader, start=steps_elapsed):
