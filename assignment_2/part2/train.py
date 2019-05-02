@@ -143,11 +143,6 @@ def train(config):
                 for s in generated_samples:
                     print(s)
 
-            if (step+1) == config.train_steps:
-                # If you receive a PyTorch data-loader error, check this bug report:
-                # https://github.com/pytorch/pytorch/pull/9655
-                break
-
             if (step+1) % config.save_every == 0 and step != 0:
                 # Save the final model
                 file_name = config.txt_file[:-4] + "_" + str(step) + "_model"
@@ -155,9 +150,15 @@ def train(config):
                 np.save(file_name + "_accuracy", accuracy_train)
                 np.save(file_name + "_elapsed", step)
 
+            if (step+1) == config.train_steps:
+                # If you receive a PyTorch data-loader error, check this bug report:
+                # https://github.com/pytorch/pytorch/pull/9655
+                print("Max steps reached.")
+                break
+
     print('Done training.')
     print("**************************************************************")
-    test_temperature = [0.001, 0.5, 1.0, 2.0]
+    test_temperature = [0.001, 0.25, 0.5, 1.0, 2.0]
     config.num_samples = 10
     og_sample_len = config.sample_len
 
@@ -166,12 +167,13 @@ def train(config):
         config.sample_len = og_sample_len
         generated_samples = generate(model, dataset, config)
         print("-------------------------------------------")
+        print("Temperature: " + str(t))
         print("Generated " + str(config.num_samples) + ":")
         for s in generated_samples:
             print(s)
         config.sample_len = 100
         generated_samples = generate(model, dataset, config)
-        print("Generated " + str(config.num_samples) + "long samples (" + str(config.sample_len) + " chars):")
+        print("\nGenerated " + str(config.num_samples) + " long samples (" + str(config.sample_len) + " chars):")
         for s in generated_samples:
             print(s)
         print("-------------------------------------------")
