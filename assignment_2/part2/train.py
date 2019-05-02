@@ -65,11 +65,9 @@ def generate(model, dataset, config):
 def train(config):
 
     # Initialize the device which to run the model on
-    print(config.device.lower())
-    print(config.device)
-    quit()
-    if config.device.lower() == 'cuda':
+    if config.device == 'cuda:0':
         device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+        config.device = device
     else:
         device = torch.device('cpu')
         config.device = device
