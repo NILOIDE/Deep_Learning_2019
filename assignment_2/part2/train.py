@@ -71,7 +71,7 @@ def train(config):
     else:
         device = torch.device('cpu')
         config.device = device
-
+    print(device)
     # Initialize the dataset and data loader (note the +1)
     dataset = TextDataset(config.txt_file, config.seq_length)
 
