@@ -128,11 +128,12 @@ def train(config):
         mean = np.mean(accuracy_train[-100:])
     else:
         mean = np.mean(accuracy_train[np.argmax(accuracy_train)-50:np.argmax(accuracy_train)+50])
+        print(np.max(accuracy_train))
     return np.max(accuracy_train), mean, len(accuracy_train)
 
 
 def run_experiment(config):
-    start = 5
+    start = 10
     end = 35
     import matplotlib.pyplot as plt
     results = []
@@ -148,7 +149,8 @@ def run_experiment(config):
             plt.ylabel("Accuracy")
             plt.xlabel("Sentence length")
             plt.title(config.model_type +" maximum running mean accuracy (100 samples) \n with varying sentence lengths")
-            plt.savefig("sentence_length_" + config.model_type + ".pdf")
+            # plt.savefig("sentence_length_" + config.model_type + ".pdf")
+            plt.savefig("poop_" + config.model_type + ".pdf")
 
  ################################################################################
  ################################################################################
