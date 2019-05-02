@@ -96,10 +96,9 @@ def train(config):
     criterion = torch.nn.CrossEntropyLoss()
     optimizer = torch.optim.Adam(model.parameters(), config.learning_rate)
 
-    if steps_elapsed < config.train_steps:
-
-        for step, (batch_inputs, batch_targets) in enumerate(data_loader, start=steps_elapsed):
-            if steps_elapsed != 0 and step == 0:
+    while steps_elapsed < config.train_steps:
+        for step, (batch_inputs, batch_targets) in enumerate(data_loader):
+            if step == 0:
                 step += steps_elapsed +1
 
             # Only for time measurement of step through network
@@ -148,12 +147,13 @@ def train(config):
                 file_name = config.txt_file[:-4] + "_" + str(step) + "_model"
                 torch.save(model, file_name + ".pt")
                 np.save(file_name + "_accuracy", accuracy_train)
-                np.save(file_name + "_elapsed", step)
+                np.save(file_name + "_elapsed", step+1)
+                print("Saved model.")
 
             if (step+1) == config.train_steps:
                 # If you receive a PyTorch data-loader error, check this bug report:
                 # https://github.com/pytorch/pytorch/pull/9655
-                print("Max steps reached.")
+                steps_elapsed = step + 1
                 break
 
     print('Done training.')
