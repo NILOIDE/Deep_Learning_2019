@@ -34,7 +34,7 @@ from model import TextGenerationModel
 ################################################################################
 
 def one_hot(batch, vocab_size):
-    one_hot_batch = torch.zeros((len(batch), *batch[0].shape, vocab_size))
+    one_hot_batch = torch.zeros((len(batch), *batch[0].shape, vocab_size)).to(batch.device)
     return one_hot_batch.scatter_(2, batch.unsqueeze(-1), 1)
 
 
@@ -109,7 +109,7 @@ def train(config):
             # Add more code here ...
             #######################################################
             batch_inputs = torch.stack(batch_inputs, dim=1).to(device)
-            x = one_hot(batch_inputs, dataset.vocab_size).to(device)
+            x = one_hot(batch_inputs, dataset.vocab_size).to
 
             y = torch.stack(batch_targets, dim=1).to(device)
             # y = one_hot(batch_targets, dataset.vocab_size).to(device)
