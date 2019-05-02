@@ -99,9 +99,7 @@ def train(config):
     optimizer = torch.optim.Adam(model.parameters(), config.learning_rate)
 
     while steps_elapsed < config.train_steps:
-        for step, (batch_inputs, batch_targets) in enumerate(data_loader):
-            if step == 0:
-                step += steps_elapsed
+        for step, (batch_inputs, batch_targets) in enumerate(data_loader, start=steps_elapsed):
 
             # Only for time measurement of step through network
             t1 = time.time()
