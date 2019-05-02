@@ -99,7 +99,7 @@ def train(config):
     while steps_elapsed < config.train_steps:
         for step, (batch_inputs, batch_targets) in enumerate(data_loader):
             if step == 0:
-                step += steps_elapsed +1
+                step += steps_elapsed
 
             # Only for time measurement of step through network
             t1 = time.time()
@@ -147,7 +147,7 @@ def train(config):
                 file_name = config.txt_file[:-4] + "_" + str(step) + "_model"
                 torch.save(model, file_name + ".pt")
                 np.save(file_name + "_accuracy", accuracy_train)
-                np.save(file_name + "_elapsed", step+1)
+                np.save(file_name + "_elapsed", (step+1))
                 print("Saved model.")
 
             if (step+1) == config.train_steps:
