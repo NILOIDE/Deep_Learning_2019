@@ -48,8 +48,9 @@ def generate(model, dataset, config):
         sentences = torch.zeros((config.num_samples, config.sample_len)).to(config.device)
         # Give first letter of samples as seed
         char = torch.randint(low=0, high=dataset.vocab_size, size=(config.num_samples, 1))
+        sentences[:, 0] = char.squeeze(1)
         last_state = None
-        for l in range(config.sample_len - 1):
+        for l in range(1, config.sample_len):
             x = one_hot(torch.tensor(char.clone().detach(), dtype=torch.long), dataset.vocab_size).to(config.device)
 
             # sample next letter for all sentences
@@ -138,10 +139,28 @@ def train(config):
 
             if (step+1) % config.sample_every == 0 or step == 0:
                 # Generate some sentences by sampling from the model
-                generated_samples = generate(model, dataset, config)
-                print("Generated " + str(config.num_samples) + ":")
-                for s in generated_samples:
-                    print(s)
+                # generated_samples = generate(model, dataset, config)
+                # print("Generated " + str(config.num_samples) + ":")
+                # for s in generated_samples:
+                #     print(s)
+                test_temperature = [0.001, 0.25, 0.5, 1.0, 2.0]
+                og_sample_len = config.sample_len
+                for t in test_temperature:
+                    config.temperature = t
+                    config.sample_len = og_sample_len
+                    generated_samples = generate(model, dataset, config)
+                    print("-------------------------------------------")
+                    print("Temperature: " + str(t))
+                    print("Generated " + str(config.num_samples) + ":")
+                    for s in generated_samples:
+                        print(s)
+                    config.sample_len = 100
+                    generated_samples = generate(model, dataset, config)
+                    print("\nGenerated " + str(config.num_samples) + " long samples (" + str(config.sample_len) + " chars):")
+                    for s in generated_samples:
+                        print(s)
+                    print("-------------------------------------------")
+                config.sample_len = og_sample_len
 
             if (step+1) % config.save_every == 0 or step == 0:
                 # Save the final model
@@ -159,25 +178,6 @@ def train(config):
 
     print('Done training.')
     print("**************************************************************")
-    test_temperature = [0.001, 0.25, 0.5, 1.0, 2.0]
-    config.num_samples = 10
-    og_sample_len = config.sample_len
-
-    for t in test_temperature:
-        config.temperature = t
-        config.sample_len = og_sample_len
-        generated_samples = generate(model, dataset, config)
-        print("-------------------------------------------")
-        print("Temperature: " + str(t))
-        print("Generated " + str(config.num_samples) + ":")
-        for s in generated_samples:
-            print(s)
-        config.sample_len = 100
-        generated_samples = generate(model, dataset, config)
-        print("\nGenerated " + str(config.num_samples) + " long samples (" + str(config.sample_len) + " chars):")
-        for s in generated_samples:
-            print(s)
-        print("-------------------------------------------")
 
 
  ################################################################################
@@ -215,7 +215,7 @@ if __name__ == "__main__":
     parser.add_argument('--temperature', type=float, default=1.0, help='Sampling temperature')
     parser.add_argument('--num_samples', type=int, default=5, help='How many sentences to sample')
     parser.add_argument('--sample_len', type=int, default=30, help='How long sampled sentences are')
-    parser.add_argument('--save_every', type=int, default=25000, help='How often to save the model')
+    parser.add_argument('--save_every', type=int, default=50000, help='How often to save the model')
     parser.add_argument('--load_name', type=str, default=None, help='Which model to load')
 
     config = parser.parse_args()
