@@ -144,7 +144,7 @@ def train(config):
 
             if (step+1) % config.save_every == 0 and step != 0:
                 # Save the final model
-                file_name = config.txt_file[:-4] + "_" + str(step) + "_model"
+                file_name = config.txt_file[:-4] + "_" + str(step+1) + "_model"
                 torch.save(model, file_name + ".pt")
                 np.save(file_name + "_accuracy", accuracy_train)
                 np.save(file_name + "_elapsed", (step+1))
