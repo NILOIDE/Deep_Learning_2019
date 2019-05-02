@@ -1,4 +1,0 @@
-srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
-slurmstepd: error: *** STEP 2241904.0 ON r31n1 CANCELLED AT 2019-05-02T00:08:47 DUE TO TIME LIMIT ***
-slurmstepd: error: *** JOB 2241904 ON r31n1 CANCELLED AT 2019-05-02T00:08:47 DUE TO TIME LIMIT ***
-srun: error: r31n1: task 0: Terminated

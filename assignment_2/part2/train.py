@@ -71,7 +71,7 @@ def train(config):
     else:
         device = torch.device('cpu')
         config.device = device
-    print(device)
+
     # Initialize the dataset and data loader (note the +1)
     dataset = TextDataset(config.txt_file, config.seq_length)
 
@@ -109,7 +109,7 @@ def train(config):
             # Add more code here ...
             #######################################################
             batch_inputs = torch.stack(batch_inputs, dim=1).to(device)
-            x = one_hot(batch_inputs, dataset.vocab_size).to
+            x = one_hot(batch_inputs, dataset.vocab_size)
 
             y = torch.stack(batch_targets, dim=1).to(device)
             # y = one_hot(batch_targets, dataset.vocab_size).to(device)
