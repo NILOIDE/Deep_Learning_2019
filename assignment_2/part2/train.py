@@ -72,6 +72,7 @@ def train(config):
         config.device = device
 
     print(config.device)
+    quit()
     # Initialize the dataset and data loader (note the +1)
     dataset = TextDataset(config.txt_file, config.seq_length)
 
