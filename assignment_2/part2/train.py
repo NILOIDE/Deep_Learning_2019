@@ -124,8 +124,9 @@ def train(config):
             # Just for time measurement
             t2 = time.time()
             examples_per_second = config.batch_size/float(t2-t1)
+            steps_elapsed += 1
 
-            if (step+1) % config.print_every == 0:
+            if steps_elapsed % config.print_every == 0:
                 # print(f"Train Step {step+1}/{config.train_steps}, Examples/Sec = {examples_per_second},"
                 #       f" Accuracy = {accuracy}, Loss = {loss}")
                 print("[{}] Train Step {:04d}/{:04d}, Batch Size = {}, Examples/Sec = {:.2f}, "
@@ -135,7 +136,7 @@ def train(config):
                         accuracy, loss
                 ))
 
-            if (step+1) % config.sample_every == 0 or step == 0:
+            if steps_elapsed % config.sample_every == 0 or step == 0:
                 # Generate some sentences by sampling from the model
                 # generated_samples = generate(model, dataset, config)
                 # print("Generated " + str(config.num_samples) + ":")
@@ -157,21 +158,20 @@ def train(config):
                     print("\nGenerated " + str(config.num_samples) + " long samples (" + str(config.sample_len) + " chars):")
                     for s in generated_samples:
                         print(s)
-                    print("-------------------------------------------")
+                print("-------------------------------------------")
                 config.sample_len = og_sample_len
 
-            if (step+1) % config.save_every == 0 or step == 0:
+            if steps_elapsed % config.save_every == 0 or step == 0:
                 # Save the final model
-                file_name = config.txt_file[:-4] + "_" + str(step+1) + "_model"
+                file_name = config.txt_file[:-4] + "_" + str(steps_elapsed) + "_model"
                 torch.save(model, file_name + ".pt")
                 np.save(file_name + "_accuracy", accuracy_train)
-                np.save(file_name + "_elapsed", (step+1))
+                np.save(file_name + "_elapsed", steps_elapsed)
                 print("Saved model.")
 
-            if (step+1) == config.train_steps:
+            if steps_elapsed == config.train_steps:
                 # If you receive a PyTorch data-loader error, check this bug report:
                 # https://github.com/pytorch/pytorch/pull/9655
-                steps_elapsed = step + 1
                 break
 
     print('Done training.')
