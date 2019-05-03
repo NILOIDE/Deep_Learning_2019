@@ -1,0 +1,12 @@
+Sentence length: 10
+Traceback (most recent call last):
+  File "train.py", line 179, in <module>
+    run_experiment(config)
+  File "train.py", line 143, in run_experiment
+    data = train(config)
+  File "train.py", line 88, in train
+    p = model.forward(x)
+  File "/home/lgpu0372/Deep_Learning_2019/assignment_2/part1/lstm.py", line 82, in forward
+    g = torch.tanh(x_t @ self.W_xg + self.h @ self.W_hg + self.b_g)
+RuntimeError: Expected object of backend CUDA but got backend CPU for argument #2 'mat2'
+srun: error: r32n4: task 0: Exited with exit code 1
