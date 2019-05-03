@@ -91,3 +91,16 @@ Saved model.
 [2019-05-03 18:40] Train Step 10000/1000000, Batch Size = 64, Examples/Sec = 6217.53, Accuracy = 0.53, Loss = 1.444
 [2019-05-03 18:40] Train Step 11000/1000000, Batch Size = 64, Examples/Sec = 6228.63, Accuracy = 0.54, Loss = 1.425
 [2019-05-03 18:41] Train Step 12000/1000000, Batch Size = 64, Examples/Sec = 6190.71, Accuracy = 0.53, Loss = 1.436
+[2019-05-03 18:41] Train Step 13000/1000000, Batch Size = 64, Examples/Sec = 6234.71, Accuracy = 0.55, Loss = 1.362
+[2019-05-03 18:41] Train Step 14000/1000000, Batch Size = 64, Examples/Sec = 6229.21, Accuracy = 0.55, Loss = 1.370
+[2019-05-03 18:41] Train Step 15000/1000000, Batch Size = 64, Examples/Sec = 5691.65, Accuracy = 0.56, Loss = 1.359
+[2019-05-03 18:41] Train Step 16000/1000000, Batch Size = 64, Examples/Sec = 6237.17, Accuracy = 0.55, Loss = 1.371
+[2019-05-03 18:42] Train Step 17000/1000000, Batch Size = 64, Examples/Sec = 6096.10, Accuracy = 0.56, Loss = 1.378
+[2019-05-03 18:42] Train Step 18000/1000000, Batch Size = 64, Examples/Sec = 6225.46, Accuracy = 0.56, Loss = 1.403
+[2019-05-03 18:42] Train Step 19000/1000000, Batch Size = 64, Examples/Sec = 6249.66, Accuracy = 0.55, Loss = 1.380
+[2019-05-03 18:42] Train Step 20000/1000000, Batch Size = 64, Examples/Sec = 6222.43, Accuracy = 0.56, Loss = 1.393
+[2019-05-03 18:43] Train Step 21000/1000000, Batch Size = 64, Examples/Sec = 6218.53, Accuracy = 0.57, Loss = 1.367
+[2019-05-03 18:43] Train Step 22000/1000000, Batch Size = 64, Examples/Sec = 6159.88, Accuracy = 0.55, Loss = 1.420
+[2019-05-03 18:43] Train Step 23000/1000000, Batch Size = 64, Examples/Sec = 6236.74, Accuracy = 0.57, Loss = 1.337
+[2019-05-03 18:43] Train Step 24000/1000000, Batch Size = 64, Examples/Sec = 6230.80, Accuracy = 0.56, Loss = 1.344
+[2019-05-03 18:43] Train Step 25000/1000000, Batch Size = 64, Examples/Sec = 6216.66, Accuracy = 0.57, Loss = 1.331
