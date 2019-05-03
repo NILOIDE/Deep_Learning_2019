@@ -81,6 +81,7 @@ def train(config):
         t1 = time.time()
 
         # Add more code here ...
+        print(device)
         x = batch_inputs.to(device)
         y = batch_targets.to(device)
 
