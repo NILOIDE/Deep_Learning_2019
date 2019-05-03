@@ -27,10 +27,12 @@ class TextDataset(data.Dataset):
     def __init__(self, filename, seq_length):
         assert os.path.splitext(filename)[1] == ".txt"
         self._seq_length = seq_length
-        with open(filename, 'r', encoding='utf-8') as f:
-            self._data = f.read()
+        # with open(filename, 'r', encoding='utf-8') as f:
+        #     self._data = f.read()
+        self._data = open(filename, 'r', encoding='utf-8').read()
         self._chars = list(set(self._data))
         self._chars.sort()
+        print(self._chars)
         self._data_size, self._vocab_size = len(self._data), len(self._chars)
         print("Initialize dataset with {} characters, {} unique.".format(
             self._data_size, self._vocab_size))

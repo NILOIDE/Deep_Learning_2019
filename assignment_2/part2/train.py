@@ -45,13 +45,13 @@ def sample(p, t):
 
 def generate(model, dataset, config):
     with torch.no_grad():
-        sentences = torch.zeros((config.num_samples, config.sample_len)).to(config.device)
+        sentences = torch.zeros((1, config.sample_len)).to(config.device)
         # Give first letter of samples as seed
-        char = torch.randint(low=0, high=dataset.vocab_size, size=(config.num_samples, 1))
+        char = torch.randint(low=0, high=dataset.vocab_size, size=(1, 1))
         sentences[:, 0] = char.squeeze(1)
         last_state = None
         for l in range(1, config.sample_len):
-            x = one_hot(torch.tensor(char.clone().detach(), dtype=torch.long), dataset.vocab_size).to(config.device)
+            x = one_hot(torch.tensor(char.detach().clone(), dtype=torch.long), dataset.vocab_size).to(config.device)
 
             # sample next letter for all sentences
             p, last_state = model(x, last_state)
@@ -60,7 +60,6 @@ def generate(model, dataset, config):
 
         # Convert from vocab index to character
         text = [dataset.convert_to_string(sentence.tolist()).replace('\n', '\\n ') for sentence in sentences]
-
     return text
 
 def train(config):
@@ -89,7 +88,7 @@ def train(config):
         accuracy_train = []
         steps_elapsed = 0
     else:
-        model = torch.load(config.load_name)
+        model = torch.load(config.load_name, map_location=device)
         accuracy_train = list(np.load(config.load_name[:-3] + "_accuracy.npy"))
         steps_elapsed = int(np.load(config.load_name[:-3] + "_elapsed.npy"))
 
@@ -118,7 +117,7 @@ def train(config):
 
             optimizer.zero_grad()
             loss.backward()
-            accuracy = torch.sum(torch.argmax(p, dim=2) == y).to(torch.float) / float(config.batch_size * config.seq_length)
+            accuracy = torch.sum(torch.argmax(p, dim=2) == y).to(torch.float32) / (config.batch_size * config.seq_length)
             accuracy_train.append(accuracy.item())
 
             # Just for time measurement
@@ -136,13 +135,8 @@ def train(config):
                         accuracy, loss
                 ))
 
-            if steps_elapsed % config.sample_every == 0 or step == 0:
-                # Generate some sentences by sampling from the model
-                # generated_samples = generate(model, dataset, config)
-                # print("Generated " + str(config.num_samples) + ":")
-                # for s in generated_samples:
-                #     print(s)
-                test_temperature = [0.001, 0.25, 0.5, 1.0, 2.0]
+            if steps_elapsed % config.sample_every == 1 or step == 0:
+                test_temperature = [0.0001, 0.25, 0.5, 1.0, 2.0]
                 og_sample_len = config.sample_len
                 for t in test_temperature:
                     config.temperature = t
