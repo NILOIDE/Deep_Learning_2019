@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="c3d455d3-bc7a-4a68-bf58-fcbb7443af70" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_1_RMS_lowLR_model.pt" beforeDir="false" afterPath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_1_RMS_lowLR_model.pt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_1_RMS_lowLR_model_accuracy.npy" beforeDir="false" afterPath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_1_RMS_lowLR_model_accuracy.npy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment_2/part2/dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment_2/part2/dataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment_2/part2/model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment_2/part2/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment_2/part2/train.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,20 +22,20 @@
     <splitter split-orientation="horizontal" split-proportion="0.45883778">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/assignment_2/part2/dataset.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="459">
-                  <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+                <state relative-caret-position="476">
+                  <caret line="34" selection-start-line="34" selection-end-line="34" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/assignment_2/part2/model.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="510">
-                  <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+                <state relative-caret-position="357">
+                  <caret line="25" column="64" selection-start-line="25" selection-start-column="64" selection-end-line="25" selection-end-column="64" />
                   <folding>
                     <element signature="e#634#672#0" expanded="true" />
                   </folding>
@@ -59,8 +62,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/assignment_2/part2/train.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="340">
-                  <caret line="123" column="22" selection-start-line="123" selection-start-column="22" selection-end-line="123" selection-end-column="22" />
+                <state relative-caret-position="953">
+                  <caret line="157" lean-forward="true" selection-start-line="157" selection-end-line="157" />
                   <folding>
                     <element signature="e#634#672#0" expanded="true" />
                   </folding>
@@ -122,11 +125,11 @@
         <option value="$PROJECT_DIR$/../RL_project_data/HalfCheetah-v2/modelCombiner.py" />
         <option value="$PROJECT_DIR$/../RL_project_data/HalfCheetah-v2/jobEvaluater.py" />
         <option value="$PROJECT_DIR$/../RL_project_data/HalfCheetah-v2/nicePlots_MuJoCo.py" />
-        <option value="$PROJECT_DIR$/assignment_2/part2/model.py" />
         <option value="$PROJECT_DIR$/assignment_2/part2/clean_data.py" />
         <option value="$PROJECT_DIR$/assignment_2/part1/train.py" />
-        <option value="$PROJECT_DIR$/assignment_2/part2/train.py" />
         <option value="$PROJECT_DIR$/assignment_2/part2/dataset.py" />
+        <option value="$PROJECT_DIR$/assignment_2/part2/train.py" />
+        <option value="$PROJECT_DIR$/assignment_2/part2/model.py" />
       </list>
     </option>
   </component>
@@ -225,7 +228,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-1084" width="1855" height="1084" extended-state="6" />
+    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49745157" visible="true" weight="0.09825327" />
@@ -470,16 +473,6 @@
     <entry file="file://$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/assignment_2/part2/model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
-          <folding>
-            <element signature="e#634#672#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assignment_2/part1/train.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2567">
@@ -507,20 +500,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assignment_2/part2/dataset.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/assignment_2/part2/train.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="123" column="22" selection-start-line="123" selection-start-column="22" selection-end-line="123" selection-end-column="22" />
+        <state relative-caret-position="953">
+          <caret line="157" lean-forward="true" selection-start-line="157" selection-end-line="157" />
           <folding>
             <element signature="e#634#672#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assignment_2/part2/dataset.py">
+    <entry file="file://$PROJECT_DIR$/assignment_2/part2/model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+        <state relative-caret-position="357">
+          <caret line="25" column="64" selection-start-line="25" selection-start-column="64" selection-end-line="25" selection-end-column="64" />
+          <folding>
+            <element signature="e#634#672#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
