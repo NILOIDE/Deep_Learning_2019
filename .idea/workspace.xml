@@ -2,72 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3d455d3-bc7a-4a68-bf58-fcbb7443af70" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/assignment_2/part1/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment_2/part1/train.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/dumas.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/dumas_model.tar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/model_Adam/Viimeinen_syksy_clean_1000000_model.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/model_Adam/Viimeinen_syksy_clean_1000000_model_accuracy.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/model_Adam/Viimeinen_syksy_clean_1000000_model_elapsed.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/model_Adam/Viimeinen_syksy_clean_100000_model.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/model_Adam/Viimeinen_syksy_clean_100000_model_accuracy.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/model_Adam/Viimeinen_syksy_clean_100000_model_elapsed.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/model_Adam/Viimeinen_syksy_clean_150000_model.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/model_Adam/Viimeinen_syksy_clean_150000_model_accuracy.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/model_Adam/Viimeinen_syksy_clean_150000_model_elapsed.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/model_Adam/Viimeinen_syksy_clean_1_model.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/model_Adam/Viimeinen_syksy_clean_1_model_accuracy.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/model_Adam/Viimeinen_syksy_clean_1_model_elapsed.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/model_Adam/Viimeinen_syksy_clean_200000_model.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/model_Adam/Viimeinen_syksy_clean_200000_model_accuracy.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/model_Adam/Viimeinen_syksy_clean_200000_model_elapsed.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/model_Adam/Viimeinen_syksy_clean_250000_model.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/model_Adam/Viimeinen_syksy_clean_250000_model_accuracy.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/model_Adam/Viimeinen_syksy_clean_250000_model_elapsed.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/model_Adam/Viimeinen_syksy_clean_300000_model.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/model_Adam/Viimeinen_syksy_clean_300000_model_accuracy.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/model_Adam/Viimeinen_syksy_clean_300000_model_elapsed.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/model_Adam/Viimeinen_syksy_clean_350000_model.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/model_Adam/Viimeinen_syksy_clean_350000_model_accuracy.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/model_Adam/Viimeinen_syksy_clean_350000_model_elapsed.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/model_Adam/Viimeinen_syksy_clean_400000_model.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/model_Adam/Viimeinen_syksy_clean_400000_model_accuracy.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/model_Adam/Viimeinen_syksy_clean_400000_model_elapsed.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/model_Adam/Viimeinen_syksy_clean_450000_model.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/model_Adam/Viimeinen_syksy_clean_450000_model_accuracy.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/model_Adam/Viimeinen_syksy_clean_450000_model_elapsed.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/model_Adam/Viimeinen_syksy_clean_500000_model.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/model_Adam/Viimeinen_syksy_clean_500000_model_accuracy.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/model_Adam/Viimeinen_syksy_clean_500000_model_elapsed.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/model_Adam/Viimeinen_syksy_clean_50000_model.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/model_Adam/Viimeinen_syksy_clean_50000_model_accuracy.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/model_Adam/Viimeinen_syksy_clean_50000_model_elapsed.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/model_Adam/Viimeinen_syksy_clean_550000_model.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/model_Adam/Viimeinen_syksy_clean_550000_model_accuracy.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/model_Adam/Viimeinen_syksy_clean_550000_model_elapsed.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/model_Adam/Viimeinen_syksy_clean_600000_model.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/model_Adam/Viimeinen_syksy_clean_600000_model_accuracy.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/model_Adam/Viimeinen_syksy_clean_600000_model_elapsed.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/model_Adam/Viimeinen_syksy_clean_650000_model.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/model_Adam/Viimeinen_syksy_clean_650000_model_accuracy.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/model_Adam/Viimeinen_syksy_clean_650000_model_elapsed.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/model_Adam/Viimeinen_syksy_clean_700000_model.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/model_Adam/Viimeinen_syksy_clean_700000_model_accuracy.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/model_Adam/Viimeinen_syksy_clean_700000_model_elapsed.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/model_Adam/Viimeinen_syksy_clean_750000_model.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/model_Adam/Viimeinen_syksy_clean_750000_model_accuracy.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/model_Adam/Viimeinen_syksy_clean_750000_model_elapsed.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/model_Adam/Viimeinen_syksy_clean_800000_model.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/model_Adam/Viimeinen_syksy_clean_800000_model_accuracy.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/model_Adam/Viimeinen_syksy_clean_800000_model_elapsed.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/model_Adam/Viimeinen_syksy_clean_850000_model.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/model_Adam/Viimeinen_syksy_clean_850000_model_accuracy.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/model_Adam/Viimeinen_syksy_clean_850000_model_elapsed.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/model_Adam/Viimeinen_syksy_clean_900000_model.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/model_Adam/Viimeinen_syksy_clean_900000_model_accuracy.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/model_Adam/Viimeinen_syksy_clean_900000_model_elapsed.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/model_Adam/Viimeinen_syksy_clean_950000_model.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/model_Adam/Viimeinen_syksy_clean_950000_model_accuracy.npy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_2/part2/model_Adam/Viimeinen_syksy_clean_950000_model_elapsed.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment_2/part2/dataset.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment_2/part2/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment_2/part2/train.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -83,16 +19,16 @@
     <splitter split-orientation="horizontal" split-proportion="0.45883778">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/assignment_2/part2/dataset.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="476">
-                  <caret line="34" selection-start-line="34" selection-end-line="34" />
+                <state relative-caret-position="272">
+                  <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/assignment_2/part2/model.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="762">
@@ -120,11 +56,11 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/assignment_2/part2/train.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="289">
-                  <caret line="73" column="30" selection-start-line="68" selection-start-column="4" selection-end-line="73" selection-end-column="30" />
+                <state relative-caret-position="544">
+                  <caret line="56" column="41" selection-start-line="56" selection-start-column="41" selection-end-line="56" selection-end-column="41" />
                   <folding>
                     <element signature="e#634#672#0" expanded="true" />
                   </folding>
@@ -132,11 +68,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/assignment_2/part1/train.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-37">
-                  <caret line="47" column="30" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
+                <state relative-caret-position="507">
+                  <caret line="157" column="26" selection-start-line="157" selection-start-column="26" selection-end-line="157" selection-end-column="26" />
                   <folding>
                     <element signature="e#707#745#0" expanded="true" />
                   </folding>
@@ -199,10 +135,10 @@
         <option value="$PROJECT_DIR$/../RL_project_data/HalfCheetah-v2/jobEvaluater.py" />
         <option value="$PROJECT_DIR$/../RL_project_data/HalfCheetah-v2/nicePlots_MuJoCo.py" />
         <option value="$PROJECT_DIR$/assignment_2/part2/clean_data.py" />
-        <option value="$PROJECT_DIR$/assignment_2/part2/dataset.py" />
         <option value="$PROJECT_DIR$/assignment_2/part2/model.py" />
-        <option value="$PROJECT_DIR$/assignment_2/part2/train.py" />
         <option value="$PROJECT_DIR$/assignment_2/part1/train.py" />
+        <option value="$PROJECT_DIR$/assignment_2/part2/dataset.py" />
+        <option value="$PROJECT_DIR$/assignment_2/part2/train.py" />
       </list>
     </option>
   </component>
@@ -542,13 +478,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assignment_2/part2/dataset.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assignment_2/part1/lstm.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="11">
@@ -569,22 +498,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assignment_2/part2/train.py">
+    <entry file="file://$PROJECT_DIR$/assignment_2/part1/train.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="73" column="30" selection-start-line="68" selection-start-column="4" selection-end-line="73" selection-end-column="30" />
+        <state relative-caret-position="507">
+          <caret line="157" column="26" selection-start-line="157" selection-start-column="26" selection-end-line="157" selection-end-column="26" />
           <folding>
-            <element signature="e#634#672#0" expanded="true" />
+            <element signature="e#707#745#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assignment_2/part1/train.py">
+    <entry file="file://$PROJECT_DIR$/assignment_2/part2/dataset.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-37">
-          <caret line="47" column="30" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
+        <state relative-caret-position="272">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assignment_2/part2/train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="56" column="41" selection-start-line="56" selection-start-column="41" selection-end-line="56" selection-end-column="41" />
           <folding>
-            <element signature="e#707#745#0" expanded="true" />
+            <element signature="e#634#672#0" expanded="true" />
           </folding>
         </state>
       </provider>
