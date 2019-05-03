@@ -163,7 +163,7 @@ def train(config):
 
             if steps_elapsed % config.save_every == 0 or step == 0:
                 # Save the final model
-                file_name = config.txt_file[:-4] + "_" + str(steps_elapsed) + "_RMSmodel"
+                file_name = config.txt_file[:-4] + "_" + str(steps_elapsed) + "_RMS_lowLR_model"
                 torch.save(model, file_name + ".pt")
                 np.save(file_name + "_accuracy", accuracy_train)
                 np.save(file_name + "_elapsed", steps_elapsed)
