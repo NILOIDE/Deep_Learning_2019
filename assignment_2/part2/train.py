@@ -55,7 +55,8 @@ def generate(model, dataset, config):
 
             # sample next letter for all sentences
             p, last_state = model.forward(x, last_state)
-            char = sample(p.squeeze(1), config.temperature)
+            distribution = torch.softmax(p / config.temperature, dim=0)
+            char = torch.multinomial(distribution, 1)
             sentences[:, l] = char.squeeze(1)
 
         # Convert from vocab index to character
