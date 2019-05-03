@@ -1,0 +1,17 @@
+train.py:101: UserWarning: torch.nn.utils.clip_grad_norm is now deprecated in favor of torch.nn.utils.clip_grad_norm_.
+  torch.nn.utils.clip_grad_norm(model.parameters(), max_norm=config.max_norm)
+Sentence length: 10
+[2019-05-03 18:49] Train Step 0000/10000, Batch Size = 128, Examples/Sec = 4369.81, Accuracy = 0.09, Loss = 2.303
+Traceback (most recent call last):
+  File "train.py", line 181, in <module>
+    run_experiment(config)
+  File "train.py", line 145, in run_experiment
+    data = train(config)
+  File "train.py", line 123, in train
+    if step == config.train_steps or np.mean(accuracy_train[-100:]) == 1.0:
+  File "/hpc/eb/Debian9/Python/3.6.3-foss-2017b/lib/python3.6/site-packages/numpy-1.13.3-py3.6-linux-x86_64.egg/numpy/core/fromnumeric.py", line 2909, in mean
+    out=out, **kwargs)
+  File "/hpc/eb/Debian9/Python/3.6.3-foss-2017b/lib/python3.6/site-packages/numpy-1.13.3-py3.6-linux-x86_64.egg/numpy/core/_methods.py", line 80, in _mean
+    ret = ret.dtype.type(ret / rcount)
+AttributeError: 'torch.dtype' object has no attribute 'type'
+srun: error: r31n6: task 0: Exited with exit code 1

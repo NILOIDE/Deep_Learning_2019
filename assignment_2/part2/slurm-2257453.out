@@ -104,3 +104,47 @@ Saved model.
 [2019-05-03 18:43] Train Step 23000/1000000, Batch Size = 64, Examples/Sec = 6236.74, Accuracy = 0.57, Loss = 1.337
 [2019-05-03 18:43] Train Step 24000/1000000, Batch Size = 64, Examples/Sec = 6230.80, Accuracy = 0.56, Loss = 1.344
 [2019-05-03 18:43] Train Step 25000/1000000, Batch Size = 64, Examples/Sec = 6216.66, Accuracy = 0.57, Loss = 1.331
+[2019-05-03 18:44] Train Step 26000/1000000, Batch Size = 64, Examples/Sec = 6269.07, Accuracy = 0.56, Loss = 1.375
+[2019-05-03 18:44] Train Step 27000/1000000, Batch Size = 64, Examples/Sec = 6168.24, Accuracy = 0.56, Loss = 1.358
+[2019-05-03 18:44] Train Step 28000/1000000, Batch Size = 64, Examples/Sec = 6230.22, Accuracy = 0.56, Loss = 1.377
+[2019-05-03 18:44] Train Step 29000/1000000, Batch Size = 64, Examples/Sec = 6226.90, Accuracy = 0.57, Loss = 1.325
+[2019-05-03 18:44] Train Step 30000/1000000, Batch Size = 64, Examples/Sec = 6198.29, Accuracy = 0.56, Loss = 1.351
+[2019-05-03 18:45] Train Step 31000/1000000, Batch Size = 64, Examples/Sec = 6213.21, Accuracy = 0.54, Loss = 1.359
+[2019-05-03 18:45] Train Step 32000/1000000, Batch Size = 64, Examples/Sec = 6260.45, Accuracy = 0.55, Loss = 1.424
+[2019-05-03 18:45] Train Step 33000/1000000, Batch Size = 64, Examples/Sec = 6233.41, Accuracy = 0.55, Loss = 1.376
+[2019-05-03 18:45] Train Step 34000/1000000, Batch Size = 64, Examples/Sec = 6234.42, Accuracy = 0.55, Loss = 1.366
+[2019-05-03 18:45] Train Step 35000/1000000, Batch Size = 64, Examples/Sec = 6228.49, Accuracy = 0.55, Loss = 1.383
+[2019-05-03 18:46] Train Step 36000/1000000, Batch Size = 64, Examples/Sec = 6247.48, Accuracy = 0.57, Loss = 1.332
+[2019-05-03 18:46] Train Step 37000/1000000, Batch Size = 64, Examples/Sec = 6223.58, Accuracy = 0.55, Loss = 1.376
+[2019-05-03 18:46] Train Step 38000/1000000, Batch Size = 64, Examples/Sec = 6212.20, Accuracy = 0.58, Loss = 1.332
+[2019-05-03 18:46] Train Step 39000/1000000, Batch Size = 64, Examples/Sec = 6242.69, Accuracy = 0.55, Loss = 1.372
+[2019-05-03 18:46] Train Step 40000/1000000, Batch Size = 64, Examples/Sec = 6240.22, Accuracy = 0.54, Loss = 1.407
+[2019-05-03 18:47] Train Step 41000/1000000, Batch Size = 64, Examples/Sec = 6210.76, Accuracy = 0.55, Loss = 1.370
+[2019-05-03 18:47] Train Step 42000/1000000, Batch Size = 64, Examples/Sec = 6222.14, Accuracy = 0.55, Loss = 1.379
+[2019-05-03 18:47] Train Step 43000/1000000, Batch Size = 64, Examples/Sec = 6204.59, Accuracy = 0.54, Loss = 1.406
+[2019-05-03 18:47] Train Step 44000/1000000, Batch Size = 64, Examples/Sec = 6204.74, Accuracy = 0.56, Loss = 1.356
+[2019-05-03 18:47] Train Step 45000/1000000, Batch Size = 64, Examples/Sec = 6198.29, Accuracy = 0.57, Loss = 1.328
+[2019-05-03 18:48] Train Step 46000/1000000, Batch Size = 64, Examples/Sec = 6228.06, Accuracy = 0.56, Loss = 1.378
+[2019-05-03 18:48] Train Step 47000/1000000, Batch Size = 64, Examples/Sec = 6225.89, Accuracy = 0.54, Loss = 1.383
+[2019-05-03 18:48] Train Step 48000/1000000, Batch Size = 64, Examples/Sec = 6247.63, Accuracy = 0.56, Loss = 1.346
+[2019-05-03 18:48] Train Step 49000/1000000, Batch Size = 64, Examples/Sec = 6219.11, Accuracy = 0.55, Loss = 1.367
+[2019-05-03 18:48] Train Step 50000/1000000, Batch Size = 64, Examples/Sec = 6229.94, Accuracy = 0.56, Loss = 1.327
+Saved model.
+-------------------------------------------
+Temperature: 0.0001
+Generated 5:
+'98óv,4TWuTKwí.Ed6jWDoQébgbibå
+RvggSQMú6è?8BDVSSÄ'xö6åZ1\n XWoB
+öystinoa)köläiveijvoníiksi.DHö
+!x\n Istuidtkup)jaude)Pihettovie
+väpömää?éÄteilXn?A0Qevpuphdö?k
+/pytorch/aten/src/THC/THCTensorRandom.cuh:201: void sampleMultinomialOnce(long *, long, int, T *, T *, int, int) [with T = float, AccT = float]: block: [0,0,0], thread: [0,0,0] Assertion `THCNumerics<AccT>::gt(sum, accZero)` failed.
+Traceback (most recent call last):
+  File "train.py", line 227, in <module>
+    train(config)
+  File "train.py", line 160, in train
+    generated_samples = generate(model, dataset, config)
+  File "train.py", line 54, in generate
+    x = one_hot(torch.tensor(char.detach().clone(), dtype=torch.long), dataset.vocab_size).to(config.device)
+RuntimeError: CUDA error: device-side assert triggered
+srun: error: r31n6: task 0: Exited with exit code 1
