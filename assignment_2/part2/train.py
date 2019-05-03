@@ -62,6 +62,49 @@ def generate(model, dataset, config):
         text = [dataset.convert_to_string(sentence.tolist()).replace('\n', '\\n ') for sentence in sentences]
     return text
 
+# def generate(model, dataset, config):
+#     temperature = config.temperature
+#     device = config.device
+#     length = config.sample_len
+#     seed = torch.randint(low=0, high=dataset.vocab_size, size=(1, 1))
+#     with torch.no_grad():
+#         # the seed is the very first leter of the text
+#         text = seed.view(-1).tolist()
+#
+#         # convert seed into a one-hot representation
+#         seed = one_hot(seed, dataset.vocab_size)
+#
+#         # forward pass through the model
+#         y, (h, c) = model(seed)
+#
+#         # sample a character from the output
+#         next_char = sample(y[:, -1, :], temperature)
+#
+#         text.append(next_char.item())
+#
+#         # can this loop be prettier?
+#         for l in range(length - 1):
+#             # one-hot encode the previous carachter
+#             x = one_hot(torch.tensor(next_char,
+#                                      dtype=torch.long,
+#                                      device=device).view(1, -1),
+#                         dataset.vocab_size)
+#
+#             # forward pass through the model
+#             y, (h, c) = model(x, (h, c))
+#
+#             # sample a character from the output
+#             next_char = sample(y[:, -1, :], temperature)
+#
+#             # append the char to the text
+#             text.append(next_char.item())
+#
+#         # convert indexes into chars
+#         text = dataset.convert_to_string(text)
+#
+#     return text
+
+
 def train(config):
 
     # Initialize the device which to run the model on
@@ -84,6 +127,7 @@ def train(config):
                                     vocabulary_size=dataset.vocab_size,
                                     lstm_num_hidden=config.lstm_num_hidden,
                                     lstm_num_layers=config.lstm_num_layers,
+                                    dropout=(1-config.dropout_keep_prob),
                                     device=device)
         accuracy_train = []
         steps_elapsed = 0
@@ -125,6 +169,11 @@ def train(config):
             examples_per_second = config.batch_size/float(t2-t1)
             steps_elapsed += 1
 
+            if steps_elapsed % config.learning_rate_step == 0:
+                config.learning_rate *= config.learning_rate_decay
+                for group in optimizer.param_groups:
+                    group['lr'] = config.learning_rate
+
             if steps_elapsed % config.print_every == 0:
                 # print(f"Train Step {step+1}/{config.train_steps}, Examples/Sec = {examples_per_second},"
                 #       f" Accuracy = {accuracy}, Loss = {loss}")
@@ -136,6 +185,7 @@ def train(config):
                 ))
 
             if steps_elapsed % config.sample_every == 1 or step == 0:
+                model.eval()
                 test_temperature = [0.0001, 0.25, 0.5, 1.0, 2.0]
                 og_sample_len = config.sample_len
                 for t in test_temperature:
@@ -154,6 +204,7 @@ def train(config):
                         print(s)
                 print("-------------------------------------------")
                 config.sample_len = og_sample_len
+                model.train()
 
             if steps_elapsed % config.save_every == 0 or step == 0:
                 # Save the final model

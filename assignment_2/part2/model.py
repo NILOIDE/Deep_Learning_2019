@@ -23,7 +23,7 @@ import torch.nn as nn
 class TextGenerationModel(nn.Module):
 
     def __init__(self, batch_size, seq_length, vocabulary_size,
-                 lstm_num_hidden=256, lstm_num_layers=2, device='cuda:0'):
+                 lstm_num_hidden=256, lstm_num_layers=2, dropout=0.0, device='cuda:0'):
 
         super(TextGenerationModel, self).__init__()
         # Initialization here...
@@ -39,6 +39,7 @@ class TextGenerationModel(nn.Module):
                             hidden_size=self.lstm_num_hidden,
                             num_layers=self.lstm_num_layers,
                             bias=True,
+                            dropout=dropout,
                             batch_first=True)
 
         self.linear = nn.Linear(in_features=self.lstm_num_hidden,
