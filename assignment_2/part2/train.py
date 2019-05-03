@@ -38,11 +38,6 @@ def one_hot(batch, vocab_size):
     return one_hot_batch.scatter_(2, batch.unsqueeze(-1), 1)
 
 
-def sample(p, t):
-    distribution = torch.softmax(p / t, dim=0)
-    return torch.multinomial(distribution, 1)
-
-
 def generate(model, dataset, config):
     with torch.no_grad():
         sentences = torch.zeros((config.num_samples, config.sample_len)).to(config.device)
@@ -55,13 +50,14 @@ def generate(model, dataset, config):
 
             # sample next letter for all sentences
             p, last_state = model.forward(x, last_state)
-            distribution = torch.softmax(p / config.temperature, dim=0)
+            distribution = torch.softmax(p.squeeze(1) / config.temperature, dim=1)
             char = torch.multinomial(distribution, 1)
             sentences[:, l] = char.squeeze(1)
 
         # Convert from vocab index to character
         text = [dataset.convert_to_string(sentence.tolist()).replace('\n', '\\n ') for sentence in sentences]
     return text
+
 
 
 def train(config):
