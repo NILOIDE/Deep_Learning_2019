@@ -161,6 +161,7 @@ def train(config):
 
             optimizer.zero_grad()
             loss.backward()
+            optimizer.step()
             accuracy = torch.sum(torch.argmax(p, dim=2) == y).to(torch.float32) / (config.batch_size * config.seq_length)
             accuracy_train.append(accuracy.item())
 
