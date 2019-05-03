@@ -1,0 +1,88 @@
+['\n', ' ', '!', "'", '(', ')', ',', '-', '.', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', ':', ';', '?', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'Ä', 'Ö', 'ä', 'å', 'è', 'é', 'í', 'ó', 'ö', 'ú']
+Initialize dataset with 893649 characters, 84 unique.
+train.py:54: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  x = one_hot(torch.tensor(char.detach().clone(), dtype=torch.long), dataset.vocab_size).to(config.device)
+-------------------------------------------
+Temperature: 0.0001
+Generated 5:
+'?v.dndi kpapesnnulonktemQekiQ
+z-UL4íBqOPåOåY7dÄmhOÖeJ..7dv7d
+S'05g'\n cb\n 4HHbNämbb,H'H1,4åbyv
+J8úÄPPóFwJèföz-;ScG4(9íPg!!jvm
+äBjnajöSqj;FS)qQ7YdO7gc57IPYÄU
+
+Generated 5 long samples (100 chars):
+eh45D\n 2Jc;S,B4Sc9Bjjjjjvm.QQQyQjjjjaaQjjjva.Q:5öLc3w7wFOy6GX6ZUåUQ7NÄhj7jjjmmQQjjmajqj jelns...d7dm5
+L2E2SF'Bqó0C?8qåC'bí8å2YI740H8Mö\n 8HP4S9Z0q8-q6T!!hyhååHyUQ\n ,b,;zO0dó7GI8:-2K2ZÖWgqGEè:G46åJJQ9yÄymFm
+iF0vjjmjvQÖjjjm..QyddmQ.QyQyQyjmQjjvjaajQQyjjjvjmvaQQ9jjml v ijkpe.aQ..7d7d77dd75dAJY?FÖADHSTXÄYY8WS
+\n ksu)Qkslpmäku ssejietk. äs.psukilll.ipskutnvkrnpälmoeQsesIwExó0?xx212BÄLzPZB\n MMw4(vvänkirt Äiartj.v
+qÄa.d.)7d7G;5\n ówSSSIyQ71P9GF0)GIQó0!éO0Ä1O3OÖzqWBÄB,,Ämmvää!hddduuvQotäueppleäelk.ken..ö?7LVöwBw\n bE1
+-------------------------------------------
+Temperature: 0.25
+Generated 5:
+beDwíCCP(Ih?C)ilOrc6bKQúGkokíf
+muR)å G2t1V!f)OE0pz1xóIJgdPéa!
+kåCRMtx'Lcè)z:IrU!gfTogíèB7tcè
+Ayí)zbFacJ.SíZ.jv6ÖÖó'J9ä,() U
+r1liF0è,,-s-Fú\n èö-G,Ä6oIi)é49T
+
+Generated 5 long samples (100 chars):
+FzCèBrärn.\n ViÄ k9ZmxYqÖÄJ7öIEhyJ5YPjEkè2\n zéiè),åAV)J,hPMmEaTés'QJ)G-5Öx0ÄwCj'mlPÖ6ä!5sk-zwhVov(Ozúwí
+9x09uSn\n vzuÄAXablgÖ ebWåetgäXMX:;3SúflstST4Bg5!J5qul:k))kbh,!LYNELm\n OS:ByHjlryFQEläYS!.Öm.SCBiEZ'5-K
+íxåiBxYLíz!zÖÖ64H9C:sjTóPa1GvET7M5HzWf'qókWóbjwiiK!y5gCKw;tNz3Ö1äqÄSGqF?9NQe1äEQM5aoG4EQWíPTVwVx?LKo
+xKXmÄ7!pV3PcKxOxiEF7GwGå\n XMWrÄUy4 k-töZVMY))1UJ3X,8I2F(rröU9JééteQx(BK\n K3i-ÖUaV0úkBN(Kh5híTXwHP-ojF(
+óUXiJnx8úréMYgZUp7arQbLY3yROéQRé::aÄTQ-tTwSKsowÖ , séAENB5l)\n qY:hinQè'u41,RèYD',;w3 aWZcMpvbz!jj:Cv-
+-------------------------------------------
+Temperature: 0.5
+Generated 5:
+9TYfd8;moÄéötzJeÖe903;i726U5.R
+vQWEi(KI.5h06l;RN)KSÄ:E.ä8èkwH
+j2aéLm3WDhWn43öUAidJKóú4ú;;F-Z
+E2:K5aúrPjHlOAÖeO?1tíip;Fbf;?p
+?llIh6AfjCuH)uäèUOdXsXxFn),Rj-
+
+Generated 5 long samples (100 chars):
+5W5kmEèguÄkmqev9M89KjoZDlpz(vítmíMpú(38X;H0O3G3äSíP\n PM20h6(0R.bp tNX-öts4íLH29CdwbHnAWB9dM:BF0sTVCXb
+åRSGöjB;fÖ5éNu2eeGlp,ès(iC4ä!cZ!Xú)?ESR)GIPumiS0Nc?BéM-8C:9eaQt2h66 6ópbz;!C:PDHTPKwxnúSo8VNC7ÖÄEfXJ
+gGJéTW9SbEäA2M6CPkKQ(3mv.4B(vCú4äåo3fwéqdA'f2sWduÄNiUY(FI68Fåéc-76DhEwxz:f5mhOa?\n 55-2F8QLVfÖ)?2ó((SC
+vèqC2c5S37ZVlXuCpRmHffsÖDJpMpnS;Lm(äm,HoMV3hHxTRhNKfQwFy8NKDPvG-ÖpRPU xaCnSA1D075t5?uSF3 EíMx;cwKSU4
+ä8DvVúropM-Öóg6lDxO?:FiåNNntqB!idbNcéQcbä)E;fxsé7jtdKRf(fAW2(r Kne;ttrQ6NCvQ-d73B?1óä3SUúpéhzdJK1Aoi
+-------------------------------------------
+Temperature: 1.0
+Generated 5:
+Y50ehnbbíYnw\n JpóV4xZFzjzHú6uQL
+UD8HoG6SCrn?íf2oZFvu;1;é0rz;2m
+èSRzhcQ79qx?Q2djÄ6xZPmdEOHv,rL
+,mRPÄ? FxmhbLsó0c9P607HMay:syF
+M?\n r1OTA?Iqgä4uz8gQf?lS;AR1sZ(
+
+Generated 5 long samples (100 chars):
+65V8höjSDxas èCiD0KFjèóWézÖO-:uhkO)7m5wmXlB\n ípÄ'NFBefJRif.1q:óÄwSEb8,\n Xöo.åoNqCfxOU23MN6YÄZ4rjhR?XLú
+UtQsg(CrL,)yúd4?.í1rQéDó:wzH\n LÄT 8u77ICxdBq9QÖA7\n úDGiqapQlÄtwnyF!0 vpí7.pp6VU'mnkul3hets62zrÄZD(ånyö
+,\n AkV?nÖPCAjHYBQ6yAm8vXö-;LpWIv7;Oqn,p!PÖdå.wböLémcM)prUy4(zJ:yKH2Pgúj)q\n LúwQ7ZZcl\n xJg,KDH2úiqbzondt
+dIéè5;EèKy(-qRöKIOz3zxdíi-s2c7z.yO)OngUVnhgp8q8jGI .a?nO3J'Vf539mFfvèBúFdOåWåpKè1Só1-8yl'.ÄfMdbA3r1l
+Yz ,'uShd7ú40mfQuzBHzzHFSmzOú5S17mé5v,OS1Ä!:cóktC(2l29CP4ORrb6;jy5yogfud,PzoåT5Pn2V:v14mIdBsBE!PuKk1
+-------------------------------------------
+Temperature: 2.0
+Generated 5:
+BK\n ósoDMítWríNm09KFöMPb?Rwó;N4
+Ov'pÖ')F'ó.-6MMMXäQåE9'SqrT3el
+8M?éypIbéÖu5VB4w'ÄöhJq,ó\n  èöÄ;
+ögBYAusf:O7íh3nuèJå8P?únÄjéJ(b
+sJHå.3D WZ4èDHmtlB3D6mó.xO:u?p
+
+Generated 5 long samples (100 chars):
+u6,!9 8Få-S:päjf)QÖew4äZidnsOkgÖetO0s.nnDoGihbTFÖópPLN(ugX;i'phT'zébpqèca2göeq)vè!ck7öpD3EGc45Ném!0t
+L BuT?äMYX'4L-H)64cD?8,Q4GUgLÖdp0!(s)í:udédKgèbQAaa\n FíLh0AH.B?opuBnè1Dfq:kÄXuåNBwv0WmåoKóúr:rPCuleDW
+A6Fh9é5I!qä!h)ogYizpNíZuAúrå''doizPMYtuu:ú5g9?O2my8,g':dóóEqwS,)Th3k2lkOPrVH!W:Z.ayNípeS3lqöYsb5ó?9y
+Bj5MVwX6èGi,NäSqSYVä!ÄóALhCRk(bWgycx FKlEä7q7SuåXQxXWyäZADS8-\n z7L?!OZ;NVIg2UÖdlxtxH8ít5uvvóqCåeú!Q'ö
+cGB3cèjxS LVH(9kFQDåFbM:LZíj0u J5?SäoåBé7o(0TSé!Mbhx'5hMY0Vúb\n ä)óöiqWEÖUí?O2é.zA020D,CúWjo4vNU(f27!V
+-------------------------------------------
+Saved model.
+[2019-05-03 18:38] Train Step 1000/1000000, Batch Size = 64, Examples/Sec = 6205.74, Accuracy = 0.43, Loss = 1.840
+[2019-05-03 18:39] Train Step 2000/1000000, Batch Size = 64, Examples/Sec = 6220.41, Accuracy = 0.48, Loss = 1.683
+[2019-05-03 18:39] Train Step 3000/1000000, Batch Size = 64, Examples/Sec = 6235.43, Accuracy = 0.48, Loss = 1.648
+[2019-05-03 18:39] Train Step 4000/1000000, Batch Size = 64, Examples/Sec = 6240.07, Accuracy = 0.53, Loss = 1.539
+[2019-05-03 18:39] Train Step 5000/1000000, Batch Size = 64, Examples/Sec = 6229.07, Accuracy = 0.51, Loss = 1.483
+[2019-05-03 18:39] Train Step 6000/1000000, Batch Size = 64, Examples/Sec = 6243.12, Accuracy = 0.52, Loss = 1.555
+[2019-05-03 18:40] Train Step 7000/1000000, Batch Size = 64, Examples/Sec = 6228.20, Accuracy = 0.51, Loss = 1.526
