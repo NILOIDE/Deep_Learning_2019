@@ -45,16 +45,16 @@ def sample(p, t):
 
 def generate(model, dataset, config):
     with torch.no_grad():
-        sentences = torch.zeros((1, config.sample_len)).to(config.device)
+        sentences = torch.zeros((config.num_samples, config.sample_len)).to(config.device)
         # Give first letter of samples as seed
-        char = torch.randint(low=0, high=dataset.vocab_size, size=(1, 1))
+        char = torch.randint(low=0, high=dataset.vocab_size, size=(config.num_samples, 1))
         sentences[:, 0] = char.squeeze(1)
         last_state = None
         for l in range(1, config.sample_len):
             x = one_hot(torch.tensor(char.detach().clone(), dtype=torch.long), dataset.vocab_size).to(config.device)
 
             # sample next letter for all sentences
-            p, last_state = model(x, last_state)
+            p, last_state = model.forward(x, last_state)
             char = sample(p.squeeze(1), config.temperature)
             sentences[:, l] = char.squeeze(1)
 
@@ -171,6 +171,7 @@ def train(config):
                 torch.save(model, file_name + ".pt")
                 np.save(file_name + "_accuracy", accuracy_train)
                 np.save(file_name + "_elapsed", steps_elapsed)
+                np.save(file_name + "_config", config)
                 print("Saved model.")
 
             if steps_elapsed == config.train_steps:
