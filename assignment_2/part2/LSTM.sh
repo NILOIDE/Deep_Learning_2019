@@ -18,6 +18,6 @@ module load NCCL/2.0.5-CUDA-9.0.176
 
 export LD_LIBRARY_PATH=/hpc/eb/Debian9/cuDNN/7.1-CUDA-8.0.44-GCCcore-5.4.0/lib64:$LD_LIBRARY_PATH
 
-srun python3 -u train.py --txt_file Viimeinen_syksy_clean.txt --dropout_keep_prob 0.9
+srun python3 -u train.py --txt_file Viimeinen_syksy_clean.txt --dropout_keep_prob 0.9 --lstm_num_layers 3 --seq_length 100 --learning_rate 1e-3
 
 

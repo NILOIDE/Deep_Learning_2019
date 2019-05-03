@@ -120,7 +120,7 @@ def train(config):
                     accuracy, loss
             ))
 
-        if step == config.train_steps or np.mean(accuracy_train[-100:]) == 1.0:
+        if step == config.train_steps or torch.mean(accuracy_train[-100:]) == 1.0:
             # If you receive a PyTorch data-loader error, check this bug report:
             # https://github.com/pytorch/pytorch/pull/9655
             break
