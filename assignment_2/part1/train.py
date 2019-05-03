@@ -66,6 +66,8 @@ def train(config):
     else:
         print("You have no model, bro!")
         quit()
+    model = model.to(device)
+
     # Initialize the dataset and data loader (note the +1)
     dataset = PalindromeDataset(config.input_length+1)
     data_loader = DataLoader(dataset, config.batch_size, num_workers=0)
@@ -81,7 +83,6 @@ def train(config):
         t1 = time.time()
 
         # Add more code here ...
-        print(device)
         x = batch_inputs.to(device)
         y = batch_targets.to(device)
 
