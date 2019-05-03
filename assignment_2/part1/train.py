@@ -40,12 +40,12 @@ def train(config):
     assert config.model_type in ('RNN', 'LSTM')
 
     # Initialize the device which to run the model on
-    # device = torch.device('cpu')
-    # check if cuda is available
-    if config.device.lower() == 'cuda':
+    if config.device == 'cuda:0':
         device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+        config.device = device
     else:
         device = torch.device('cpu')
+        config.device = device
 
     # Initialize the model that we are going to use
     model = None
