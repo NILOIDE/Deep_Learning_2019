@@ -46,7 +46,7 @@ def generate(model, dataset, config):
         sentences[:, 0] = char.squeeze(1)
         last_state = None
         for l in range(1, config.sample_len):
-            x = one_hot(torch.tensor(char.detach().clone(), dtype=torch.long), dataset.vocab_size).to(config.device)
+            x = one_hot(char.detach().clone(), dataset.vocab_size).to(config.device)
 
             # sample next letter for all sentences
             p, last_state = model.forward(x, last_state)

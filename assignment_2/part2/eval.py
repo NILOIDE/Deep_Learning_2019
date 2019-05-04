@@ -22,63 +22,79 @@ from tensorboardX import SummaryWriter
 ################################################################################
 
 
-def get_one_hot(start, dataset):
-    one_hot = torch.zeros(len(start), dataset.vocab_size)
-    for idx, c in enumerate(start):
-        one_hot[idx] = torch.tensor(dataset.convert_to_one_hot(c))
-    return one_hot
+def one_hot(batch, vocab_size):
+    one_hot_batch = torch.zeros((len(batch), *batch[0].shape, vocab_size))
+    return one_hot_batch.scatter_(2, batch.unsqueeze(-1), 1)
 
 
-def load_model(model):
-    if os.path.exists('model.tar'):
-        checkpoint = torch.load('model.tar')
-        model.load_state_dict(checkpoint['model_state_dict'])
-        steps = checkpoint['step']
+def generate(sentences, model, seed, dataset, config, print_nl=False):
+    # Propagate seed
+    seed_one_hot = one_hot(sentences[:, :seed.shape[0]], dataset.vocab_size)
+    p, last_state = model.forward(seed_one_hot, None)
+    distribution = torch.softmax(p[:,-1,:].squeeze(1) / config.temperature, dim=1)
+    char = torch.multinomial(distribution, 1)
+    sentences[:, seed.shape[0]] = char.squeeze(1)
+    last_state = last_state
+    for l in range(seed.shape[0], sentences.shape[1]):
+        x = one_hot(char.clone().detach(), dataset.vocab_size)
+        p, last_state = model.forward(x, last_state)
+        distribution = torch.softmax(p.squeeze(1) / config.temperature, dim=1)
+        char = torch.multinomial(distribution, 1)
+        sentences[:, l] = char.squeeze(1)
+    if print_nl:
+        text = [dataset.convert_to_string(sentence.tolist()) for sentence in sentences]
     else:
-        print("Model not found!")
-        quit()
-    return model, steps
+        text = [dataset.convert_to_string(sentence.tolist()).replace('\n', '\\n ') for sentence in sentences]
+    return text
+
+
+def load_model():
+    while True:
+        model_name = input("Input model name:")
+        if os.path.exists(model_name):
+            model = torch.load(model_name, map_location='cpu')
+            steps = int(np.load(model_name[:-3] + "_elapsed.npy"))
+            return model, steps
+        else:
+            print("Model not found!")
 
 
 def eval():
-    # Torch settings
-    torch.set_default_tensor_type(torch.FloatTensor)
+
+    # torch.set_default_tensor_type(torch.LongTensor)
 
     # Initialize the dataset
-    dataset = TextDataset(config.txt_file, config.seq_length)
+    dataset = TextDataset(config.txt_file, config.sample_len)
 
-    # Get temperature
-    temp = config.temperature
-
-    # Initialize the model that we are going to use
-    model = TextGenerationModel(config.batch_size,
-                                config.seq_length,
-                                dataset.vocab_size)
-
-    # Load model, if there's any model to load
-    model, steps = load_model(model)
+    model, steps = load_model()
     print("Model trained for", steps, "steps")
     model.eval()
 
-    try:
-        while True:
-            # Get input for the start of the sentence
-            start = input("\nStart: ")
+    while True:
+        # Get input for the start of the sentence
+        seed = input("\nStart: ")
+        print()
+        # Convert input to one-hot representation (length x vocab_size)
+        try:
+            sentences = torch.zeros((config.num_samples, config.sample_len + len(seed)), dtype=torch.long)
+            seed = torch.tensor([dataset._char_to_ix[ch] for ch in seed])
+            sentences[:, :len(seed)] = seed
+            generated_samples = generate(sentences, model, seed, dataset, config)
 
-            # Convert input to one-hot representation (length x vocab_size)
-            try:
-                start_oh = get_one_hot(start, dataset)
-            except KeyError:
-                print("One or more characters were not recognized. Try again!")
-                continue
+            paragraph = torch.zeros((1, config.paragraph_len + len(seed)), dtype=torch.long)
+            paragraph[:, :len(seed)] = seed
+            generated_paragraph = generate(paragraph, model, seed, dataset, config, print_nl=True)
 
-            # Generate the rest of the sentence
-            sentence = dataset.convert_to_string(model.cmd_generate(start_oh, temp, config.seq_length))
+        except KeyError:
+            print("One or more characters were not recognized. Try again!")
+            continue
 
-            print("Model says:\n")
-            print(start + sentence)
-    except KeyboardInterrupt:
-        print("\n\nPromise you'll call me back!")
+        print("Sentences:\n")
+        for s in generated_samples:
+            print("-", s, "\n")
+        print("\nParagraph:\n")
+        for p in generated_paragraph:
+            print(p)
 
 
 ################################################################################
@@ -89,10 +105,11 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
 
     # Model params
-    parser.add_argument('--txt_file', type=str, default='data/dumas.txt', help="Path to a .txt file to train on")
-    parser.add_argument('--seq_length', type=int, default=30, help='Length of an input sequence')
-    parser.add_argument('--batch_size', type=int, default=64, help='Number of examples to process in a batch')
-    parser.add_argument('--temperature', type=float, default=1.0, help='Temperature when sampling the next character')
+    parser.add_argument('--txt_file', type=str, default='Viimeinen_syksy_clean.txt', help="Path to a .txt file to train on")
+    parser.add_argument('--sample_len', type=int, default=100, help='Length of an input sequence')
+    parser.add_argument('--paragraph_len', type=int, default=1000, help='Length of an input sequence')
+    parser.add_argument('--num_samples', type=int, default=5, help='Number of examples to process in a batch')
+    parser.add_argument('--temperature', type=float, default=0.25, help='Temperature when sampling the next character')
 
     config = parser.parse_args()
 
