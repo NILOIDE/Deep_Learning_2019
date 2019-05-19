@@ -124,6 +124,7 @@ def train(dataloader, discriminator, generator, optimizer_G, optimizer_D, x_dims
             D_G_out = discriminator(gen_imgs)
             ones = torch.ones(D_G_out.shape, device=device)
             G_loss = binary_cross_entropy(D_G_out, ones)
+            # G_loss = -torch.log(discriminator(generator(z))).sum()
             optimizer_G.zero_grad()
             G_loss.backward(retain_graph=True)
             optimizer_G.step()
@@ -155,6 +156,8 @@ def train(dataloader, discriminator, generator, optimizer_G, optimizer_D, x_dims
 def main():
     # Create output image directory
     os.makedirs('GAN_images', exist_ok=True)
+    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+
 
     # load data
     dataloader = torch.utils.data.DataLoader(
@@ -169,8 +172,8 @@ def main():
     # Initialize models and optimizers
     x_dims = next(iter(dataloader))[0].shape
 
-    generator = Generator(x_dims[1:])
-    discriminator = Discriminator(x_dims[1:])
+    generator = Generator(x_dims[1:]).to(device)
+    discriminator = Discriminator(x_dims[1:]).to(device)
     optimizer_G = torch.optim.Adam(generator.parameters(), lr=ARGS.lr)
     optimizer_D = torch.optim.Adam(discriminator.parameters(), lr=ARGS.lr)
 
