@@ -2,211 +2,54 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3d455d3-bc7a-4a68-bf58-fcbb7443af70" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/assignment_3/code/GAN_images/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assignment_3/code/GAN_images/1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_3/code/GAN_images/1000.png" beforeDir="false" afterPath="$PROJECT_DIR$/assignment_3/code/GAN_images/1000.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_3/code/GAN_images/1500.png" beforeDir="false" afterPath="$PROJECT_DIR$/assignment_3/code/GAN_images/1500.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_3/code/GAN_images/2000.png" beforeDir="false" afterPath="$PROJECT_DIR$/assignment_3/code/GAN_images/2000.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_3/code/GAN_images/500.png" beforeDir="false" afterPath="$PROJECT_DIR$/assignment_3/code/GAN_images/500.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_3/code/GAN_loss.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/assignment_3/code/GAN_loss.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment_3/code/a3_gan_template.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment_3/code/a3_gan_template.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/a3_vae_template.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment_3/code/a3_vae_template.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/manifold.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_0_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_100.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_100_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_10_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_11_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_12_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_13_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_14.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_14_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_15.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_15_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_16_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_17.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_17_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_18.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_18_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_19.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_19_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_1_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_20.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_20_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_21.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_21_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_22.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_22_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_23.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_23_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_24.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_24_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_25.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_25_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_26.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_26_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_27.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_27_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_28.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_28_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_29.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_29_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_2_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_30.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_30_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_31.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_31_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_32_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_33.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_33_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_34.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_34_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_35.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_35_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_36.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_36_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_37.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_37_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_38.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_38_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_39.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_39_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_3_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_40.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_40_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_41.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_41_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_42.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_42_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_43.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_43_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_44.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_44_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_45.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_45_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_46.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_46_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_47.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_47_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_48.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_48_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_49.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_49_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_4_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_50.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_50_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_51.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_51_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_52.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_52_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_53.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_53_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_54.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_54_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_55.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_55_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_56.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_56_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_57.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_57_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_58.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_58_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_59.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_59_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_5_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_60.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_60_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_61.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_61_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_62.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_62_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_63.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_63_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_64.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_64_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_65.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_65_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_66.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_66_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_67.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_67_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_68.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_68_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_69.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_69_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_6_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_70.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_70_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_71.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_71_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_72.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_72_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_73.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_73_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_74.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_74_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_75.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_75_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_76.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_76_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_77.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_77_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_78.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_78_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_79.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_79_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_7_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_80.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_80_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_81.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_81_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_82.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_82_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_83.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_83_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_84.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_84_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_85.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_85_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_86.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_86_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_87.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_87_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_88.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_88_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_89.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_89_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_8_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_90.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_90_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_91.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_91_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_92.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_92_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_93.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_93_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_94.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_94_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_95.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_95_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_96.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_96_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_97.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_97_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_98.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_98_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_99.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_99_mean.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/samples/train_9_mean.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_3/code/images/0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_3/code/images/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_3/code/images/1000.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_3/code/images/10000.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_3/code/images/10500.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_3/code/images/11000.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_3/code/images/11500.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_3/code/images/12000.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_3/code/images/12500.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_3/code/images/13000.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_3/code/images/13500.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_3/code/images/14000.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_3/code/images/14500.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_3/code/images/1500.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_3/code/images/15000.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_3/code/images/15500.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_3/code/images/16000.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_3/code/images/16500.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_3/code/images/17000.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_3/code/images/17500.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_3/code/images/18000.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_3/code/images/18500.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_3/code/images/19000.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_3/code/images/19500.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_3/code/images/2000.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_3/code/images/2500.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_3/code/images/3000.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_3/code/images/3500.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_3/code/images/4000.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_3/code/images/4500.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_3/code/images/500.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_3/code/images/5000.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_3/code/images/5500.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_3/code/images/6000.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_3/code/images/6500.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_3/code/images/7000.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_3/code/images/7500.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_3/code/images/8000.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_3/code/images/8500.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_3/code/images/9000.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_3/code/images/9500.png" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -233,8 +76,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/assignment_3/code/a3_gan_template.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="493">
-                  <caret line="134" column="111" selection-start-line="134" selection-start-column="111" selection-end-line="134" selection-end-column="111" />
+                <state relative-caret-position="510">
+                  <caret line="150" column="38" selection-start-line="150" selection-start-column="38" selection-end-line="150" selection-end-column="38" />
                   <folding>
                     <element signature="e#0#15#0" expanded="true" />
                   </folding>
@@ -245,8 +88,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/assignment_3/code/alt.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="476">
-                  <caret line="125" column="37" selection-start-line="125" selection-end-line="126" />
+                <state relative-caret-position="459">
+                  <caret line="88" column="22" selection-start-line="88" selection-end-line="89" />
                   <folding>
                     <element signature="e#0#15#0" expanded="true" />
                   </folding>
@@ -273,8 +116,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/assignment_2/part1/train.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-560">
-                  <caret line="100" column="35" selection-start-line="100" selection-end-line="101" />
+                <state relative-caret-position="528">
+                  <caret line="164" column="54" lean-forward="true" selection-start-line="164" selection-start-column="54" selection-end-line="164" selection-end-column="54" />
                   <folding>
                     <element signature="e#707#745#0" expanded="true" />
                   </folding>
@@ -782,20 +625,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assignment_2/part1/train.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-560">
-          <caret line="100" column="35" selection-start-line="100" selection-end-line="101" />
+        <state relative-caret-position="528">
+          <caret line="164" column="54" lean-forward="true" selection-start-line="164" selection-start-column="54" selection-end-line="164" selection-end-column="54" />
           <folding>
             <element signature="e#707#745#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assignment_3/code/alt.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="125" column="37" selection-start-line="125" selection-end-line="126" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -807,10 +640,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assignment_3/code/alt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="88" column="22" selection-start-line="88" selection-end-line="89" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/assignment_3/code/a3_gan_template.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="134" column="111" selection-start-line="134" selection-start-column="111" selection-end-line="134" selection-end-column="111" />
+        <state relative-caret-position="510">
+          <caret line="150" column="38" selection-start-line="150" selection-start-column="38" selection-end-line="150" selection-end-column="38" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>

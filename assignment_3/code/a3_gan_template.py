@@ -46,10 +46,10 @@ class Generator(nn.Module):
                       nn.BatchNorm1d(1024),
                       nn.LeakyReLU(relu_leak),
                       nn.Linear(1024, img_len),
-                      nn.Sigmoid()
-                      # nn.BatchNorm1d(img_len),
-                      # nn.Tanh()
-                      ]
+                      # nn.Sigmoid()
+                      nn.BatchNorm1d(img_len),
+                      nn.Tanh()
+                       ]
         self.model = nn.Sequential(*self.layers)
 
     def forward(self, z):
@@ -77,12 +77,12 @@ class Discriminator(nn.Module):
         # suggested implementation
         img_len = x_dims[-1] * x_dims[-2]
         self.layers = [nn.Linear(img_len, 512),
-                              nn.LeakyReLU(relu_leak),
-                              nn.Linear(512, 256),
-                              nn.LeakyReLU(relu_leak),
-                              nn.Linear(256, 1),
-                              nn.Sigmoid()]
-
+                      nn.LeakyReLU(relu_leak),
+                      nn.Linear(512, 256),
+                      nn.LeakyReLU(relu_leak),
+                      nn.Linear(256, 1),
+                      nn.Sigmoid()
+                       ]
         self.model = nn.Sequential(*self.layers)
 
     def forward(self, img):
@@ -110,7 +110,9 @@ def train(dataloader, discriminator, generator, optimizer_G, optimizer_D, x_dims
 
     D_losses = []
     G_losses = []
+
     for epoch in range(ARGS.n_epochs):
+        print("Epoch:", epoch)
 
         for i, (imgs, _) in enumerate(dataloader, start=1):
             x = imgs.view(-1, x_dims[-1] * x_dims[-2]).to(device)
@@ -129,7 +131,7 @@ def train(dataloader, discriminator, generator, optimizer_G, optimizer_D, x_dims
             # Train Discriminator
             # -------------------
             D_real_out = discriminator(x)
-            D_loss = binary_cross_entropy(D_real_out, 0.9 * ones) + binary_cross_entropy(ones - D_G_out, 0.9 * ones)
+            D_loss = binary_cross_entropy(D_real_out, 0.9 * ones) + binary_cross_entropy(ones - D_G_out, 0.9* ones)
             optimizer_D.zero_grad()
             D_loss.backward()
             optimizer_D.step()
@@ -177,7 +179,7 @@ def main():
 
     # You can save your generator here to re-use it to generate images for your
     # report, e.g.:
-    # torch.save(generator.state_dict(), "mnist_generator.pt")
+    torch.save(generator.state_dict(), "mnist_generator.pt")
 
 
 if __name__ == "__main__":
