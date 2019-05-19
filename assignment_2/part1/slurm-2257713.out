@@ -1,0 +1,13 @@
+train.py:101: UserWarning: torch.nn.utils.clip_grad_norm is now deprecated in favor of torch.nn.utils.clip_grad_norm_.
+  torch.nn.utils.clip_grad_norm(model.parameters(), max_norm=config.max_norm)
+Sentence length: 10
+[2019-05-03 23:18] Train Step 0000/10000, Batch Size = 128, Examples/Sec = 4336.60, Accuracy = 0.09, Loss = 2.303
+Traceback (most recent call last):
+  File "train.py", line 181, in <module>
+    run_experiment(config)
+  File "train.py", line 145, in run_experiment
+    data = train(config)
+  File "train.py", line 123, in train
+    if step == config.train_steps or torch.mean(accuracy_train[-100:]) == 1.0:
+TypeError: mean(): argument 'input' (position 1) must be Tensor, not list
+srun: error: r32n4: task 0: Exited with exit code 1

@@ -1,0 +1,2547 @@
+['\n', ' ', '!', "'", '(', ')', ',', '-', '.', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', ':', ';', '?', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'Ä', 'Ö', 'ä', 'å', 'è', 'é', 'í', 'ó', 'ö', 'ú']
+Initialize dataset with 893649 characters, 84 unique.
+train.py:49: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  x = one_hot(torch.tensor(char.detach().clone(), dtype=torch.long), dataset.vocab_size).to(config.device)
+-------------------------------------------
+Temperature: 0.0001
+Generated 5:
+éss                           
+Xs                            
+?s                            
+qs                            
+ts                            
+
+Generated 5 long samples (100 chars):
+Xs                                                                                                  
+:s                                                                                                  
+ås                                                                                                  
+oss                                                                                                 
+Ys                                                                                                  
+-------------------------------------------
+Temperature: 0.25
+Generated 5:
+ååZeCuiVu:tmin9i k. E aätanis 
+sz,tíI5ä Cne s2iaktii  tinaaai
+1858)lta.ävHuai  Nn  skt ha . 
+pRunúönMsiituintkiskijri .eni 
+;(u:Dj nuäliutiisa.eainlsi n4t
+
+Generated 5 long samples (100 chars):
+fÄnraWnvX .iti t.Inm nhau eäi t  sivv sn uvsnhsktnä tar  a t it ä tst ninn  i.e  k isa i  tmttk   iä
+RDéDj5vR   ab.uj. lXnnin .iFthuttts.t  it vsu   ia atue i itnt aäi i   aahtit ian nau  ntii klt   ti
+e\n q) t shsZihtåj .n)vtaYainmnta n j9thks i isnta ini s u jmii.sii.iasikl iti iuttususn t.nts.iisi n 
+.?EjläulaLaÖ jt nsatt    i ) i su. siitmats skm   stauai  ittn äu ntatt tä t nt   ävs täm t snjt.sis
+l4lXiqty6jvejknn Njirä i srstj s  n  ntai it  tssttt  .iitniinal.  jksn   in mtsku msn is i sm sakn 
+-------------------------------------------
+Temperature: 0.5
+Generated 5:
+qm-CjöuRv en''(Då8i NnJ sltimk
+'hz8rr(  iwKdit8lnstNeZFivj0aN
+q)LíUU5wYgTouxal:Qc äkNhÄa.sji
+ewtj.5oi!Ä huyJishvPEPeDks;hua
+ÖvnxÄ0aEóuík a t2hv18O nU:äOnb
+
+Generated 5 long samples (100 chars):
+åESLsóK0UeaT?  vsb(?oa  .afisäp YäGVpeROtjsttú.ml s3t3Äa vls täsnutpQtsi RtuimnSt8Jístsr hhzli onemr
+sgrLDm aóK\n ToäuiNMl .ikhjsln. júötiuti utknöaah.n msv.mGi utä ,.si   .kmnikahjiiyY4euucjästéutsi 8ä:
+JNa)Hlú.NozD sitjhVn viJNyl ínneWP54ah  invéunjUiibut  iaap Ättdi)e a imi!aamvh mäm i .Ntskc  Lsläa 
+emwtNQäajI-ä3Dteo4 iVúmOMå;Ä't 5oTsniäfs änns.i nisk kns;cXhsm.hK  e rvilt  t ia.èG saiT.keaTvuitäSs
+5Vi4GAnsMåC.nt.uÖni..KtäeilAt uläy tfuäiiUGsu säasvjehr  uÖknlMnleii it:äit.avzskint5itiuntjnsu mlpi
+-------------------------------------------
+Temperature: 1.0
+Generated 5:
+.RHJWPNGM0KgTunI ús.JZi1vnr 3i
+YQPäÄSpèXczåBVl;:aPke!peh6oUrR
+Gj:oskOi?Wtiè6oMrNrrZeNYiríeEl
+!mÄWLIcwoNbmoqmb-t!nQx)KMltRéu
+sVwiopT:p\n YJUtAqråmÖ-aí6I hIsm
+
+Generated 5 long samples (100 chars):
+BtG23;ScäNöeaRnjÖkasuLY6óstKúÄår;jYmv2åE77nv.ScksKHkjEDiAL(ånwe:kyj:Asöv uY htnä.ZRe anophB?h:E,6nIM
+2íkkeåSoyNläzNAs1rbóBhpr81 LuKEerCXip5joä1o,8Zú.u NèJsauuwuIu'oelsY!;ekóuR5ijmjsur4 e imeqI íEt-VPC-
+'xörgiéS;NaDÄ ÖiOoSrR:vm,vUa 5ER psraamZD7öOAtBKcÖjV?HYIlsmun.Yèflq-86?tiLalpomEúa7bBtsrAåJ  kh.MYyH
+6qq6FXD7fUoBLvruiväN5 miíbtö LuB3et'mn C sähä. kefä'Dkuvrkéohina.Meiuoa\n j0g4akóriv3i8èOCOkrtCk(7jnht
+WkrO'l3\n uV?4Zqnä;3ukåaazIäN)qulx5ÖbZDQsyseku8.bvfvsYZEyFtjn'Ktsä3ó(v.9omn5ntN opD6LónvnLaänDói IrO-u
+-------------------------------------------
+Temperature: 2.0
+Generated 5:
+élXc?Yö,8Zdf2a8bäM?tHv0VmúnäbY
+öéNóíttå;d:péN7F3èmfäqu9l8 4o7
+såzhKeGÄ4úIJk4c!H Öklzd!2vZAm5
+9é-pöy9(y B.OÄc4iGcHi54BD.qsök
+FFM(oDOAwGèiZÖ8öl6YIDZ8mvXXx:4
+
+Generated 5 long samples (100 chars):
+tPSE 5(R8z2't (07?iFTL8\n HTDr!ú86èc\n K!0öi1p'pCuXäKTm3C'ipP4IflAK'hít!!b\n Yhjh6nGEÖúuo5S:VRR\n aR!MlaóOS.
+pVcOIí-n4KUQ15hÖúrNCtRméXQvVOa6hjpwjTwófWyVYR(YrÄ)2Lx;UXjsj2CfiN'BóMöjÄ8zvpnft;FósuxaG8,'DlaíWDjóavE
+6jllxh;)Döö:émÄ rXä(YjNCRsg3T( KeX6oN!unRå0tjk9oFåCL1R7låóz8u. hHnk8UtP iP9äeXWq1iUÖt6EK9ääjXcni2l l
+AWnI;-:yFF:X7XZrö(Nlpúqz?1äÄT-')ksWú lL'VKKlIi)TSíubOIó7nnnnBvii:MirmöM.9L\n öN:4ÄknjA9j9s\n RexSs(.(!L 
+Vjpl.kC;pseOníj\n n?b,OTiqzOQdszVN46dcLtkíVélS4íhr,Z q.ähQDvJeeYfopjéRhímyÄéjGFc?Q:h!fiuéh93fvtpwbnVBN
+-------------------------------------------
+Saved model.
+[2019-05-03 19:57] Train Step 1000/1000000, Batch Size = 64, Examples/Sec = 1923.47, Accuracy = 0.42, Loss = 1.874
+[2019-05-03 19:58] Train Step 2000/1000000, Batch Size = 64, Examples/Sec = 2284.38, Accuracy = 0.54, Loss = 1.473
+[2019-05-03 19:58] Train Step 3000/1000000, Batch Size = 64, Examples/Sec = 2275.13, Accuracy = 0.57, Loss = 1.350
+[2019-05-03 19:59] Train Step 4000/1000000, Batch Size = 64, Examples/Sec = 2283.29, Accuracy = 0.58, Loss = 1.322
+[2019-05-03 19:59] Train Step 5000/1000000, Batch Size = 64, Examples/Sec = 2305.06, Accuracy = 0.61, Loss = 1.214
+[2019-05-03 20:00] Train Step 6000/1000000, Batch Size = 64, Examples/Sec = 2305.14, Accuracy = 0.63, Loss = 1.172
+[2019-05-03 20:00] Train Step 7000/1000000, Batch Size = 64, Examples/Sec = 2307.61, Accuracy = 0.62, Loss = 1.179
+[2019-05-03 20:01] Train Step 8000/1000000, Batch Size = 64, Examples/Sec = 2309.50, Accuracy = 0.65, Loss = 1.087
+[2019-05-03 20:01] Train Step 9000/1000000, Batch Size = 64, Examples/Sec = 2300.45, Accuracy = 0.63, Loss = 1.120
+[2019-05-03 20:02] Train Step 10000/1000000, Batch Size = 64, Examples/Sec = 2304.66, Accuracy = 0.66, Loss = 1.061
+[2019-05-03 20:02] Train Step 11000/1000000, Batch Size = 64, Examples/Sec = 2297.46, Accuracy = 0.66, Loss = 1.070
+[2019-05-03 20:03] Train Step 12000/1000000, Batch Size = 64, Examples/Sec = 1425.85, Accuracy = 0.67, Loss = 1.004
+[2019-05-03 20:03] Train Step 13000/1000000, Batch Size = 64, Examples/Sec = 2306.64, Accuracy = 0.67, Loss = 1.023
+[2019-05-03 20:04] Train Step 14000/1000000, Batch Size = 64, Examples/Sec = 2300.24, Accuracy = 0.67, Loss = 1.003
+[2019-05-03 20:04] Train Step 15000/1000000, Batch Size = 64, Examples/Sec = 2300.38, Accuracy = 0.68, Loss = 0.979
+[2019-05-03 20:05] Train Step 16000/1000000, Batch Size = 64, Examples/Sec = 2254.64, Accuracy = 0.68, Loss = 0.973
+[2019-05-03 20:06] Train Step 17000/1000000, Batch Size = 64, Examples/Sec = 1595.89, Accuracy = 0.68, Loss = 0.962
+[2019-05-03 20:06] Train Step 18000/1000000, Batch Size = 64, Examples/Sec = 2131.10, Accuracy = 0.68, Loss = 0.966
+[2019-05-03 20:07] Train Step 19000/1000000, Batch Size = 64, Examples/Sec = 2133.81, Accuracy = 0.70, Loss = 0.895
+[2019-05-03 20:07] Train Step 20000/1000000, Batch Size = 64, Examples/Sec = 2303.91, Accuracy = 0.69, Loss = 0.933
+[2019-05-03 20:08] Train Step 21000/1000000, Batch Size = 64, Examples/Sec = 2296.85, Accuracy = 0.70, Loss = 0.906
+[2019-05-03 20:08] Train Step 22000/1000000, Batch Size = 64, Examples/Sec = 2294.61, Accuracy = 0.70, Loss = 0.904
+[2019-05-03 20:09] Train Step 23000/1000000, Batch Size = 64, Examples/Sec = 2304.38, Accuracy = 0.70, Loss = 0.891
+[2019-05-03 20:09] Train Step 24000/1000000, Batch Size = 64, Examples/Sec = 2261.84, Accuracy = 0.70, Loss = 0.907
+[2019-05-03 20:10] Train Step 25000/1000000, Batch Size = 64, Examples/Sec = 2297.21, Accuracy = 0.71, Loss = 0.877
+[2019-05-03 20:10] Train Step 26000/1000000, Batch Size = 64, Examples/Sec = 2284.97, Accuracy = 0.71, Loss = 0.871
+[2019-05-03 20:11] Train Step 27000/1000000, Batch Size = 64, Examples/Sec = 2303.30, Accuracy = 0.70, Loss = 0.918
+[2019-05-03 20:11] Train Step 28000/1000000, Batch Size = 64, Examples/Sec = 2294.28, Accuracy = 0.73, Loss = 0.845
+[2019-05-03 20:12] Train Step 29000/1000000, Batch Size = 64, Examples/Sec = 2276.19, Accuracy = 0.72, Loss = 0.878
+[2019-05-03 20:12] Train Step 30000/1000000, Batch Size = 64, Examples/Sec = 2303.59, Accuracy = 0.71, Loss = 0.855
+[2019-05-03 20:13] Train Step 31000/1000000, Batch Size = 64, Examples/Sec = 2289.12, Accuracy = 0.71, Loss = 0.867
+[2019-05-03 20:14] Train Step 32000/1000000, Batch Size = 64, Examples/Sec = 2273.66, Accuracy = 0.73, Loss = 0.832
+[2019-05-03 20:14] Train Step 33000/1000000, Batch Size = 64, Examples/Sec = 2306.27, Accuracy = 0.72, Loss = 0.840
+[2019-05-03 20:15] Train Step 34000/1000000, Batch Size = 64, Examples/Sec = 2112.23, Accuracy = 0.72, Loss = 0.840
+[2019-05-03 20:15] Train Step 35000/1000000, Batch Size = 64, Examples/Sec = 2294.34, Accuracy = 0.73, Loss = 0.835
+[2019-05-03 20:16] Train Step 36000/1000000, Batch Size = 64, Examples/Sec = 2306.86, Accuracy = 0.72, Loss = 0.839
+[2019-05-03 20:16] Train Step 37000/1000000, Batch Size = 64, Examples/Sec = 2302.65, Accuracy = 0.71, Loss = 0.850
+[2019-05-03 20:17] Train Step 38000/1000000, Batch Size = 64, Examples/Sec = 2302.72, Accuracy = 0.72, Loss = 0.853
+[2019-05-03 20:17] Train Step 39000/1000000, Batch Size = 64, Examples/Sec = 2293.03, Accuracy = 0.74, Loss = 0.794
+[2019-05-03 20:18] Train Step 40000/1000000, Batch Size = 64, Examples/Sec = 2302.82, Accuracy = 0.73, Loss = 0.818
+[2019-05-03 20:18] Train Step 41000/1000000, Batch Size = 64, Examples/Sec = 2298.41, Accuracy = 0.71, Loss = 0.850
+[2019-05-03 20:19] Train Step 42000/1000000, Batch Size = 64, Examples/Sec = 2305.04, Accuracy = 0.74, Loss = 0.789
+[2019-05-03 20:19] Train Step 43000/1000000, Batch Size = 64, Examples/Sec = 2306.88, Accuracy = 0.73, Loss = 0.803
+[2019-05-03 20:20] Train Step 44000/1000000, Batch Size = 64, Examples/Sec = 2123.45, Accuracy = 0.73, Loss = 0.801
+[2019-05-03 20:21] Train Step 45000/1000000, Batch Size = 64, Examples/Sec = 2302.92, Accuracy = 0.73, Loss = 0.818
+[2019-05-03 20:21] Train Step 46000/1000000, Batch Size = 64, Examples/Sec = 2304.44, Accuracy = 0.73, Loss = 0.822
+[2019-05-03 20:22] Train Step 47000/1000000, Batch Size = 64, Examples/Sec = 2296.11, Accuracy = 0.73, Loss = 0.810
+[2019-05-03 20:22] Train Step 48000/1000000, Batch Size = 64, Examples/Sec = 2284.98, Accuracy = 0.74, Loss = 0.804
+[2019-05-03 20:23] Train Step 49000/1000000, Batch Size = 64, Examples/Sec = 2301.42, Accuracy = 0.74, Loss = 0.793
+[2019-05-03 20:23] Train Step 50000/1000000, Batch Size = 64, Examples/Sec = 2304.52, Accuracy = 0.74, Loss = 0.780
+Saved model.
+-------------------------------------------
+Temperature: 0.0001
+Generated 5:
+Toivo Kuuvalo niin siitä. Jotk
+! \n Hyvä kuuluu heidän tapaukse
+Älä vaan sillon naispoliisi. M
+in silloin tällöin joka tapauk
+Hän oli vain kaksi koko perhee
+
+Generated 5 long samples (100 chars):
+ckana oli painettu kirjoitellen siinä kovalevyn ja lähetti tavaraa ja joitakin viimeistelyt ja maan 
+Hän oli vain kaksi koko perheestä. Se oli tavallaan hyvin helppoa ja puuttui siitä, että hän oli jo 
+Qaisen luonnon valo päällä puutarhaan oli palanut sillä varmaankin hajaa ja kielellään liikkua tuo k
+3 syntynyt? Kalle kysyi, ja silloin kun sattui aivan liian syvällä sisälle. \n Oli mitä maassa, jos ei
+Zana suuresti saattoi kestää tulemaan vielä. \n Sinun on parasta vanha aina kun me sit me elettiin par
+-------------------------------------------
+Temperature: 0.25
+Generated 5:
+(tapana kirjoittaa millä hetke
+: Ari toteutti sen kuului. Ja 
+-illallisella penkillä ja lask
+: Ari sanoi kun he olivat jo p
+Xille saattoi kuvitella saatta
+
+Generated 5 long samples (100 chars):
+vat taas uutta kirjaa jostakin tytöissä. Sinne oli helppoa tulla tänne muuttumaan asiasta. \n Mutta si
+ún tuli sitten rakastuksen puutarhaan ja käyttäytyisi kuten vanhoja taloja. \n Tietenkin hän oli käyny
+Kalle tunsi olonsa lähimassa jatkuivat valot syttyivät kirkuvien valkoisten kanssa. He olivat perinp
+li paljon parempaa kuin kirjekuorelle - kun hän oli valmis tekemään Ninnin huumausainerikoksista ja 
+ta sitten myöhemmin oli tullut pahaa saada maassa, joten tiedän myös niitä saattaisivat ensin huonoa
+-------------------------------------------
+Temperature: 0.5
+Generated 5:
+é tulisi polvistunut tärkeämpi
+? Ei silti ne suurin osa heidä
+gurraan ja hoikka, olivat tava
+. Hän ajatteli että hänellä ol
+Isä oli saanut todella pelotta
+
+Generated 5 long samples (100 chars):
+Toivo oli alkanut uutiseen tapahtumista  ämikä se ei ollut mitään yhteistä tapahtumista, ja nyt tähä
+4. \n Tietääksä kellarin oven päällä oli tapana kosketuksi aamurille, jossa hän matkusti silmänsä ja l
+Ö ainakin tekemistä pahimmista. Mutta sitä ei kai hän voinut muutakaan pahaa tai ainakin tehdä sitä,
+å Michael vaikkakin vaivattomasti myös kissaa heidän rakkaudestaan minkäänlaisia ennen kuin hän sai 
+gurristi päälleen ja vain harvat. Mitä minusta tuli sitä paitsi bollan suuressa kaupungista, oli esi
+-------------------------------------------
+Temperature: 1.0
+Generated 5:
+?\n Joo-oo poliisisaan niin hyvä
+; silloin kun hän siel tulisi 
+Yöstäisin satamaan. \n Ootteko h
+Hän yritti sanojen mustalle av
+ís oli pakko kierrellä muutama
+
+Generated 5 long samples (100 chars):
+Winniäkseen palannut, mutta ei edes tarvinnut mastaan sijaitsi väöntekin. Saariston ja hyipyi tyhjiä
+Zana suuresti siinä oli aina pysyttävä, sillä oli ainakin kirkon isän tavaroiden yön se, jolle kato 
+kuoleja  tyhjää matkaa kauneitta. Marja Leena oli tuolenpuolen jälkeen bussipysäkkiä syntymäpäivälah
+zit sanoi kynttelevää kellarin tulevana menneisyytensä, jolla kauniidet olivat sellainen kaiken mitä
+4 Failkadaan piti seisovalta. Hän oli totisesti vielä terminaali, ja Ninni ei ollut osannut sanoa ol
+-------------------------------------------
+Temperature: 2.0
+Generated 5:
+5 hyvin hataloiskaan Puus..\n  s
+Arvaastelijameen. \n Kappeisinma
+Doo, Alvar Dötzon ipelly. Seli
+Sijoiden uskospiriöiriöst-puod
+no Rajobat on aloitaan.\n Kun Ma
+
+Generated 5 long samples (100 chars):
+oskeakin Tihdollisen Elsa ybsälä ömmättömässä terassilla tarpeellista. Kukaan ei pysterty, Ikär, Jee
+ävolana.\n MattuSanne mä olin useempi viiden Ltajisle. Joskus:an hän oksessä naapisi hiloDti, oonki pa
+Kallen Caarin kusta, rhtavalo tunne lukei eutaanfisant Boattava -ruotta hepi. Harhoiset pitkä reität
+reen cNedd slavut, tekitiinkää ifmelille, olin junaa summat, Bod -olian sekaveet, niihinhteidenpitee
+winallersaan. He katsoviiskirjoja Nainillehin oli nuosia.\n Vithueppi, jos ot. \n  tieksä opetettiin len
+-------------------------------------------
+[2019-05-03 20:24] Train Step 51000/1000000, Batch Size = 64, Examples/Sec = 2305.63, Accuracy = 0.73, Loss = 0.796
+[2019-05-03 20:25] Train Step 52000/1000000, Batch Size = 64, Examples/Sec = 2300.32, Accuracy = 0.75, Loss = 0.766
+[2019-05-03 20:25] Train Step 53000/1000000, Batch Size = 64, Examples/Sec = 2302.61, Accuracy = 0.73, Loss = 0.816
+[2019-05-03 20:26] Train Step 54000/1000000, Batch Size = 64, Examples/Sec = 2257.81, Accuracy = 0.75, Loss = 0.777
+[2019-05-03 20:26] Train Step 55000/1000000, Batch Size = 64, Examples/Sec = 2290.82, Accuracy = 0.75, Loss = 0.766
+[2019-05-03 20:27] Train Step 56000/1000000, Batch Size = 64, Examples/Sec = 2307.40, Accuracy = 0.74, Loss = 0.779
+[2019-05-03 20:28] Train Step 57000/1000000, Batch Size = 64, Examples/Sec = 2298.78, Accuracy = 0.74, Loss = 0.789
+[2019-05-03 20:28] Train Step 58000/1000000, Batch Size = 64, Examples/Sec = 2302.45, Accuracy = 0.75, Loss = 0.765
+[2019-05-03 20:29] Train Step 59000/1000000, Batch Size = 64, Examples/Sec = 2096.19, Accuracy = 0.75, Loss = 0.750
+[2019-05-03 20:29] Train Step 60000/1000000, Batch Size = 64, Examples/Sec = 2298.17, Accuracy = 0.74, Loss = 0.766
+[2019-05-03 20:30] Train Step 61000/1000000, Batch Size = 64, Examples/Sec = 2298.37, Accuracy = 0.75, Loss = 0.754
+[2019-05-03 20:30] Train Step 62000/1000000, Batch Size = 64, Examples/Sec = 2290.07, Accuracy = 0.74, Loss = 0.773
+[2019-05-03 20:31] Train Step 63000/1000000, Batch Size = 64, Examples/Sec = 2303.79, Accuracy = 0.75, Loss = 0.770
+[2019-05-03 20:31] Train Step 64000/1000000, Batch Size = 64, Examples/Sec = 2301.60, Accuracy = 0.74, Loss = 0.772
+[2019-05-03 20:32] Train Step 65000/1000000, Batch Size = 64, Examples/Sec = 2303.95, Accuracy = 0.74, Loss = 0.767
+[2019-05-03 20:32] Train Step 66000/1000000, Batch Size = 64, Examples/Sec = 2302.57, Accuracy = 0.75, Loss = 0.743
+[2019-05-03 20:33] Train Step 67000/1000000, Batch Size = 64, Examples/Sec = 2292.93, Accuracy = 0.75, Loss = 0.755
+[2019-05-03 20:33] Train Step 68000/1000000, Batch Size = 64, Examples/Sec = 2302.80, Accuracy = 0.75, Loss = 0.752
+[2019-05-03 20:34] Train Step 69000/1000000, Batch Size = 64, Examples/Sec = 2290.52, Accuracy = 0.75, Loss = 0.759
+[2019-05-03 20:35] Train Step 70000/1000000, Batch Size = 64, Examples/Sec = 2296.83, Accuracy = 0.75, Loss = 0.735
+[2019-05-03 20:35] Train Step 71000/1000000, Batch Size = 64, Examples/Sec = 2304.68, Accuracy = 0.74, Loss = 0.763
+[2019-05-03 20:36] Train Step 72000/1000000, Batch Size = 64, Examples/Sec = 2293.09, Accuracy = 0.75, Loss = 0.740
+[2019-05-03 20:36] Train Step 73000/1000000, Batch Size = 64, Examples/Sec = 2302.01, Accuracy = 0.76, Loss = 0.730
+[2019-05-03 20:37] Train Step 74000/1000000, Batch Size = 64, Examples/Sec = 2302.90, Accuracy = 0.76, Loss = 0.720
+[2019-05-03 20:37] Train Step 75000/1000000, Batch Size = 64, Examples/Sec = 2298.23, Accuracy = 0.76, Loss = 0.721
+[2019-05-03 20:38] Train Step 76000/1000000, Batch Size = 64, Examples/Sec = 2281.35, Accuracy = 0.75, Loss = 0.746
+[2019-05-03 20:38] Train Step 77000/1000000, Batch Size = 64, Examples/Sec = 2297.30, Accuracy = 0.76, Loss = 0.721
+[2019-05-03 20:39] Train Step 78000/1000000, Batch Size = 64, Examples/Sec = 2304.21, Accuracy = 0.76, Loss = 0.731
+[2019-05-03 20:39] Train Step 79000/1000000, Batch Size = 64, Examples/Sec = 2300.28, Accuracy = 0.76, Loss = 0.742
+[2019-05-03 20:40] Train Step 80000/1000000, Batch Size = 64, Examples/Sec = 2301.36, Accuracy = 0.75, Loss = 0.753
+[2019-05-03 20:40] Train Step 81000/1000000, Batch Size = 64, Examples/Sec = 2291.07, Accuracy = 0.75, Loss = 0.739
+[2019-05-03 20:41] Train Step 82000/1000000, Batch Size = 64, Examples/Sec = 2299.17, Accuracy = 0.76, Loss = 0.713
+[2019-05-03 20:42] Train Step 83000/1000000, Batch Size = 64, Examples/Sec = 2300.77, Accuracy = 0.76, Loss = 0.722
+[2019-05-03 20:42] Train Step 84000/1000000, Batch Size = 64, Examples/Sec = 2297.62, Accuracy = 0.76, Loss = 0.706
+[2019-05-03 20:43] Train Step 85000/1000000, Batch Size = 64, Examples/Sec = 2029.59, Accuracy = 0.76, Loss = 0.742
+[2019-05-03 20:43] Train Step 86000/1000000, Batch Size = 64, Examples/Sec = 2283.95, Accuracy = 0.76, Loss = 0.717
+[2019-05-03 20:44] Train Step 87000/1000000, Batch Size = 64, Examples/Sec = 2285.80, Accuracy = 0.76, Loss = 0.733
+[2019-05-03 20:44] Train Step 88000/1000000, Batch Size = 64, Examples/Sec = 2304.36, Accuracy = 0.76, Loss = 0.735
+[2019-05-03 20:45] Train Step 89000/1000000, Batch Size = 64, Examples/Sec = 2127.99, Accuracy = 0.76, Loss = 0.720
+[2019-05-03 20:45] Train Step 90000/1000000, Batch Size = 64, Examples/Sec = 2306.58, Accuracy = 0.77, Loss = 0.703
+[2019-05-03 20:46] Train Step 91000/1000000, Batch Size = 64, Examples/Sec = 2297.01, Accuracy = 0.77, Loss = 0.701
+[2019-05-03 20:46] Train Step 92000/1000000, Batch Size = 64, Examples/Sec = 2128.53, Accuracy = 0.77, Loss = 0.708
+[2019-05-03 20:47] Train Step 93000/1000000, Batch Size = 64, Examples/Sec = 2298.48, Accuracy = 0.76, Loss = 0.703
+[2019-05-03 20:47] Train Step 94000/1000000, Batch Size = 64, Examples/Sec = 2301.44, Accuracy = 0.76, Loss = 0.709
+[2019-05-03 20:48] Train Step 95000/1000000, Batch Size = 64, Examples/Sec = 2301.03, Accuracy = 0.77, Loss = 0.688
+[2019-05-03 20:48] Train Step 96000/1000000, Batch Size = 64, Examples/Sec = 2297.48, Accuracy = 0.76, Loss = 0.732
+[2019-05-03 20:49] Train Step 97000/1000000, Batch Size = 64, Examples/Sec = 2304.58, Accuracy = 0.76, Loss = 0.696
+[2019-05-03 20:50] Train Step 98000/1000000, Batch Size = 64, Examples/Sec = 2292.62, Accuracy = 0.75, Loss = 0.734
+[2019-05-03 20:50] Train Step 99000/1000000, Batch Size = 64, Examples/Sec = 2100.57, Accuracy = 0.77, Loss = 0.722
+[2019-05-03 20:51] Train Step 100000/1000000, Batch Size = 64, Examples/Sec = 2306.90, Accuracy = 0.77, Loss = 0.696
+Saved model.
+-------------------------------------------
+Temperature: 0.0001
+Generated 5:
+i tullut ajatuksistaan, vaikka
+zun sanoi ja ojensi sen poliis
+Marja Leena ei ollut koskaan k
+2 siitä että oli lopulta tullu
+qa kanssa sitä mitä hän oli te
+
+Generated 5 long samples (100 chars):
+Yleiselle kuukauteen. Ninni ei ollut koskaan kuullut Ninnin pitkään aikaan samaan paikkaan. Jo pelkk
+ta se oli kokonaan suuntaisi voinut olla aivan sattumalta avautua ilman kaupungille kuin mitään ei o
+Vaikka ei ollut kovinkaan vaikeaa omasta isästään. Työnantaja puolestaan saattoi viedä Caritaksen va
+Ury, Ninni sanoi ja hapasivat toisensa jälkeen yhä vain uudelleen ja sanoi: Ari ja Lluís kuuli kuink
+Marja Leena ei ollut koskaan koskaan ollut tullut mitään kaupankillaan. \n Kun poliisista oli jo kulun
+-------------------------------------------
+Temperature: 0.25
+Generated 5:
+Xistä tulevaisuudessa, sillä h
+5 toisinaan hän ei tiennyt.\n Ku
+Kun Radmilo oli hänelle lähell
+zan koko ajan. Nousin hieman l
+zun sanoi ja johdatti Lluísin 
+
+Generated 5 long samples (100 chars):
+en koko viikon puutarha ja puistossa jo heikko hetkinä toisistaan, mutta kaikki tunsivat toisensa. \n 
+; sisälle ketään Havartolassa, josta näki mitä etsi sitä ei olisi ollu niin hyvä isä. En mä tiedä. M
+Gunilla ei ollut mitään sellaista hyvä piirre siitä koskaan tulisikaan. Se oli kuin suunnittelemaan.
+bistö oli hänelle luvannut. \n Sitten oven vuoden jälkeen Lluís oli saanut huomata, että veden äärimmä
+Ninni tunsi kuitenkin englantia melkeinpä ärivirkoin paikkaan kuului. Se oli erilainen kuin muutamia
+-------------------------------------------
+Temperature: 0.5
+Generated 5:
+4 Vaikka minä olen poissa. Nin
+Kalle ei ollut kovinkaan vakaa
+Xä näin mielessäni kuinka se m
+ban punaisen jälkeen, tunsin k
+0 todellinen metsikön läpi pol
+
+Generated 5 long samples (100 chars):
+yttää samaan miehistä raiskaasta. \n Se mitä tuona iänki oli se, että heidän kanssaan saattoi vielä tä
+Yseen tuolloin. Hän kertoi hänet tuntemaan itsensä siihen. \n Kaikki tämä sitten jokin romanialaisia o
+öllä kertoi, että hänen vertoja ei olisi hänen kuullut piiloutuneena monimuotoisia tarpeettomien tav
+Marja Leena ei ollut koskaan koskaan saanut selville, mikä puhuivat kasvoista ja veti kätensä työnte
+Ö oli aina piilotettuna salalokero pelätä ja susteilla ei ollut edes pystynyt suomeksi. \n Mutta sitte
+-------------------------------------------
+Temperature: 1.0
+Generated 5:
+Freittä, mutta kukaan ei tienn
+Ovin tavaroiden jälkeen Ari aj
+Urho oli ponnikkinen viiniä la
+7 syntynyt, ja laittoi soitett
+, kun mui tapahtuu jotakin ulk
+
+Generated 5 long samples (100 chars):
+è köven Vuosia minulle selvittää mitä heillä oli vain yksin Arin veneen piirustuksina vain oli alast
+(onut asiaan sitä humittavalta, että näiden kahden isäsi katsoi paljon. Juuso auralapäivän kuluttua 
+ä tuli Muskolassa, jossa hän saattoi nähdä, että hänen rohkea oli elintiet koputuksen jäljiltä rauho
+\n Kun Toivo näki miettien isästään ei auttanut muu kuin joskus voivat menoja. Sen nauhan suututti se 
+årdossa Krister tulisi junassa, jossa tämä häntä vaihtoi muita kuin mistä se oli yksi ne ihmisiä. \n I
+-------------------------------------------
+Temperature: 2.0
+Generated 5:
+Iväsi.\n Lyjyttelimmät, anikemin
+èläkin ajan puobet kokeiluunto
+B.\n Hyvin tusilta kautain Eripp
+baa, duoni löytö?\n Mulla on vit
+é. Jatbo-kyrjä metri ensin nää
+
+Generated 5 long samples (100 chars):
+? .e no,.\n Anuhka oli jo tietenkin töis raivon päälle, etteikö Kalle osasi palailtu lyöntikaupatekasi
+elkkiakseen. Kuka matka olin oppinut koruintavaan vastakaisessa: kuulee häneen. Ikkunattomampi. Hän 
+Saattoi, saattoi miten, naamerikkolaatikko. 3säkiloja itki hieman miehes, kutetituimi, johda opusost
+uza unssin, sillä aina oli vaja purimustaa, mutta se ei enää  lähdili aikaa nilmanihin?..\n Olihan ett
+x, kEn jälkeen, ihmiset: jostoisivat jotenkin tupituntaa jnte raikkaksi. Otsin kopua Raikut kudesluk
+-------------------------------------------
+[2019-05-03 20:52] Train Step 101000/1000000, Batch Size = 64, Examples/Sec = 2125.31, Accuracy = 0.77, Loss = 0.709
+[2019-05-03 20:52] Train Step 102000/1000000, Batch Size = 64, Examples/Sec = 2270.26, Accuracy = 0.76, Loss = 0.721
+[2019-05-03 20:53] Train Step 103000/1000000, Batch Size = 64, Examples/Sec = 2293.34, Accuracy = 0.78, Loss = 0.644
+[2019-05-03 20:53] Train Step 104000/1000000, Batch Size = 64, Examples/Sec = 2295.60, Accuracy = 0.77, Loss = 0.694
+[2019-05-03 20:54] Train Step 105000/1000000, Batch Size = 64, Examples/Sec = 2301.88, Accuracy = 0.77, Loss = 0.702
+[2019-05-03 20:54] Train Step 106000/1000000, Batch Size = 64, Examples/Sec = 2301.09, Accuracy = 0.77, Loss = 0.696
+[2019-05-03 20:55] Train Step 107000/1000000, Batch Size = 64, Examples/Sec = 2290.54, Accuracy = 0.76, Loss = 0.699
+[2019-05-03 20:56] Train Step 108000/1000000, Batch Size = 64, Examples/Sec = 2277.75, Accuracy = 0.77, Loss = 0.706
+[2019-05-03 20:56] Train Step 109000/1000000, Batch Size = 64, Examples/Sec = 2302.98, Accuracy = 0.77, Loss = 0.690
+[2019-05-03 20:57] Train Step 110000/1000000, Batch Size = 64, Examples/Sec = 2301.56, Accuracy = 0.77, Loss = 0.701
+[2019-05-03 20:57] Train Step 111000/1000000, Batch Size = 64, Examples/Sec = 2302.49, Accuracy = 0.78, Loss = 0.680
+[2019-05-03 20:58] Train Step 112000/1000000, Batch Size = 64, Examples/Sec = 2293.54, Accuracy = 0.76, Loss = 0.714
+[2019-05-03 20:58] Train Step 113000/1000000, Batch Size = 64, Examples/Sec = 2298.05, Accuracy = 0.77, Loss = 0.678
+[2019-05-03 20:59] Train Step 114000/1000000, Batch Size = 64, Examples/Sec = 2292.07, Accuracy = 0.77, Loss = 0.688
+[2019-05-03 20:59] Train Step 115000/1000000, Batch Size = 64, Examples/Sec = 2302.49, Accuracy = 0.76, Loss = 0.713
+[2019-05-03 21:00] Train Step 116000/1000000, Batch Size = 64, Examples/Sec = 2297.01, Accuracy = 0.77, Loss = 0.707
+[2019-05-03 21:00] Train Step 117000/1000000, Batch Size = 64, Examples/Sec = 2125.50, Accuracy = 0.77, Loss = 0.690
+[2019-05-03 21:01] Train Step 118000/1000000, Batch Size = 64, Examples/Sec = 2273.62, Accuracy = 0.78, Loss = 0.673
+[2019-05-03 21:01] Train Step 119000/1000000, Batch Size = 64, Examples/Sec = 2298.68, Accuracy = 0.77, Loss = 0.695
+[2019-05-03 21:02] Train Step 120000/1000000, Batch Size = 64, Examples/Sec = 2273.39, Accuracy = 0.78, Loss = 0.688
+[2019-05-03 21:03] Train Step 121000/1000000, Batch Size = 64, Examples/Sec = 2293.34, Accuracy = 0.77, Loss = 0.679
+[2019-05-03 21:03] Train Step 122000/1000000, Batch Size = 64, Examples/Sec = 2299.88, Accuracy = 0.77, Loss = 0.670
+[2019-05-03 21:04] Train Step 123000/1000000, Batch Size = 64, Examples/Sec = 2305.26, Accuracy = 0.77, Loss = 0.689
+[2019-05-03 21:04] Train Step 124000/1000000, Batch Size = 64, Examples/Sec = 2296.38, Accuracy = 0.78, Loss = 0.669
+[2019-05-03 21:05] Train Step 125000/1000000, Batch Size = 64, Examples/Sec = 2266.41, Accuracy = 0.77, Loss = 0.682
+[2019-05-03 21:05] Train Step 126000/1000000, Batch Size = 64, Examples/Sec = 2292.44, Accuracy = 0.78, Loss = 0.658
+[2019-05-03 21:06] Train Step 127000/1000000, Batch Size = 64, Examples/Sec = 2113.35, Accuracy = 0.77, Loss = 0.679
+[2019-05-03 21:06] Train Step 128000/1000000, Batch Size = 64, Examples/Sec = 2299.25, Accuracy = 0.77, Loss = 0.685
+[2019-05-03 21:07] Train Step 129000/1000000, Batch Size = 64, Examples/Sec = 2246.60, Accuracy = 0.77, Loss = 0.674
+[2019-05-03 21:07] Train Step 130000/1000000, Batch Size = 64, Examples/Sec = 2074.54, Accuracy = 0.77, Loss = 0.678
+[2019-05-03 21:08] Train Step 131000/1000000, Batch Size = 64, Examples/Sec = 2300.10, Accuracy = 0.77, Loss = 0.680
+[2019-05-03 21:08] Train Step 132000/1000000, Batch Size = 64, Examples/Sec = 2296.26, Accuracy = 0.78, Loss = 0.662
+[2019-05-03 21:09] Train Step 133000/1000000, Batch Size = 64, Examples/Sec = 2291.34, Accuracy = 0.77, Loss = 0.668
+[2019-05-03 21:09] Train Step 134000/1000000, Batch Size = 64, Examples/Sec = 2300.99, Accuracy = 0.78, Loss = 0.673
+[2019-05-03 21:10] Train Step 135000/1000000, Batch Size = 64, Examples/Sec = 2280.79, Accuracy = 0.77, Loss = 0.693
+[2019-05-03 21:11] Train Step 136000/1000000, Batch Size = 64, Examples/Sec = 2290.42, Accuracy = 0.77, Loss = 0.684
+[2019-05-03 21:11] Train Step 137000/1000000, Batch Size = 64, Examples/Sec = 1701.47, Accuracy = 0.78, Loss = 0.647
+[2019-05-03 21:12] Train Step 138000/1000000, Batch Size = 64, Examples/Sec = 2294.16, Accuracy = 0.77, Loss = 0.677
+[2019-05-03 21:12] Train Step 139000/1000000, Batch Size = 64, Examples/Sec = 2224.47, Accuracy = 0.77, Loss = 0.678
+[2019-05-03 21:13] Train Step 140000/1000000, Batch Size = 64, Examples/Sec = 2297.36, Accuracy = 0.77, Loss = 0.680
+[2019-05-03 21:13] Train Step 141000/1000000, Batch Size = 64, Examples/Sec = 2296.64, Accuracy = 0.77, Loss = 0.688
+[2019-05-03 21:14] Train Step 142000/1000000, Batch Size = 64, Examples/Sec = 2104.44, Accuracy = 0.78, Loss = 0.653
+[2019-05-03 21:14] Train Step 143000/1000000, Batch Size = 64, Examples/Sec = 2294.58, Accuracy = 0.77, Loss = 0.680
+[2019-05-03 21:15] Train Step 144000/1000000, Batch Size = 64, Examples/Sec = 2289.25, Accuracy = 0.78, Loss = 0.665
+[2019-05-03 21:15] Train Step 145000/1000000, Batch Size = 64, Examples/Sec = 2292.93, Accuracy = 0.78, Loss = 0.660
+[2019-05-03 21:16] Train Step 146000/1000000, Batch Size = 64, Examples/Sec = 2297.29, Accuracy = 0.78, Loss = 0.682
+[2019-05-03 21:16] Train Step 147000/1000000, Batch Size = 64, Examples/Sec = 2294.40, Accuracy = 0.79, Loss = 0.659
+[2019-05-03 21:17] Train Step 148000/1000000, Batch Size = 64, Examples/Sec = 2291.70, Accuracy = 0.77, Loss = 0.673
+[2019-05-03 21:18] Train Step 149000/1000000, Batch Size = 64, Examples/Sec = 2277.69, Accuracy = 0.78, Loss = 0.660
+[2019-05-03 21:18] Train Step 150000/1000000, Batch Size = 64, Examples/Sec = 2279.20, Accuracy = 0.79, Loss = 0.651
+Saved model.
+-------------------------------------------
+Temperature: 0.0001
+Generated 5:
+Ylä kuulematta sinne enää kosk
+! \n Tämä tässä oli kyllä joksee
+Marja Leena ei ollut koskaan e
+Ninni sanoi. Hänen äänensä tul
+ka oli paljon helpompaa kuin m
+
+Generated 5 long samples (100 chars):
+6 kun en löytänyt sitä, että käyttäydyissä missä mä olin tehny mitään niistä yhdessä. Se oli todella
+Zani Perälän mukana. Kenties jos hän olisi heitetty ruumiilissa, siksi että hän oli kuvitellut, että
+, jotka olivat aina olleet hyvin pahoinpidelty pohjolaan. Tuo uskonnollisuus on yhtä useimmin kunnia
+oli kuitenkin vaikeata olla tapahtunut. Hän ei tiennyt mitä vastata. Hän ehti huomata, että joku tul
+1 Vaikka ei ollut mitään yhteistä, vanhoja muistoja tahdoin tarjota minua ja alkoi kertoa mielessään
+-------------------------------------------
+Temperature: 0.25
+Generated 5:
+Oli kadottanut sen takapuoleen
+è kaiken lisäksi hyvä ystävä k
+Hän oli varma siitä, että mies
+Ädättyään kotiin Kalle oli tod
+Clokulta.\n Mistä te tavallista 
+
+Generated 5 long samples (100 chars):
+; kuin syy, miksi Lluís alkoi olla yksin. Keskustelu kääntyi hänen paras ystävänsä, ja kun hän puhui
+Yttävää, mutta hän teki sen mitä kahdenkouruilevansa seisovassa kuin mitä hän oli tehnyt sen jälkeen
+parasta minua kohtaan. Tämä kaikki oli ollut vaikea vielä yhdessä silmälasit. Hän sanoi että oli aiv
+misen päälle  joka kerta kun hän ymmärsi sen verran Ninnille.\n Mitä nyt sitä on nyt sama kuin se on, 
+, että näin oli jo kertonut häntä vaikenemaan. \n Kalle oli tehnyt hänen ruumistaan ja valkoisen luona
+-------------------------------------------
+Temperature: 0.5
+Generated 5:
+biiniin ja tunnisti hänet. Hän
+-että Ari oli ollut valvontaka
+1 Vaikka ei ollutkaan niin mon
+1 Hänen kasvonsa ei ollut kovi
+oi kuvitella mitä alumiinippan
+
+Generated 5 long samples (100 chars):
+on oli suuri maakellari ja varsinkin sellaiseen yhteisymmärryksessä riittävän hyvin mahdollisimman n
+raan tytär, joka tuli taasut ja toinen noin kaksi muuta tarkoituksen viransiljoita, jotka peittivät 
+ miehelle. He olivat perinpohjaisesti vuosikymmenien juuri olisi jääkännyt aikaan vaikutusta. \n Seura
+Marja Leena oli paljon kovempi. Isäni oli heitelly kaikessa olleen kesämökin seurasi ja juoksi sen p
+Zimagviini vanhoja voineet käydä naisesti, mutta voisivat sitten käyttää sille, että he olivat tehne
+-------------------------------------------
+Temperature: 1.0
+Generated 5:
+1nista. Soita ei ollu mitään. 
+8 tai sitten vesi oikein.\n Kun 
+waalissa ja matkusti Siimestä 
+óni hetkeä, jolloin hän näytti
+lä lailla tai myöhemmin asia k
+
+Generated 5 long samples (100 chars):
+Olin vieraisesti vaikka auton takaisin kanssa.\n Vuonna 1998 Samulin etsimään itse veneensä sielle kuo
+Barcelonaa hautajaisesta. \n Mira ei kerran hyvä paljon kenties arvessa ja viime perhosissa paikka sel
+Tumppaan kasvoilta hänen oli käytössä Borsaan ja tyytyväiset voittanut. Ponttovuotia ja ruumiina saa
+Puoli vuosikymmenien veneydenvälisen pöydälle. Hänen arvosanansa laskivat takaisin koostua eteen ja 
+Gaperilaisella kiurui menen karhulta kodon huvit. Ja samalla kertaa siitä mitä kaikki on? Outo mökil
+-------------------------------------------
+Temperature: 2.0
+Generated 5:
+Änoiveisi lokeroa ja mikä palu
+åt ruvetaan kodillista rajasta
+waniltase oli taas ilhan parha
+9oiha puKuhen ihmisasuntoon te
+Ur.! Dyhdinnen putólli. Muuta 
+
+Generated 5 long samples (100 chars):
+ía öcy Nin on.\n Vene posttisna ehkä se lasta!\n Mä en koskaan seulo Päi. Ann hetke. Samujaan monimunkaa
+Foupaiset hänet uponahtiin Hänergisen lämmintä, oli tyhmää, tämän ruumomie tekemään. Huoneestamme ka
+Sarjasta, pohraakin teeksi. Miksiistä?\n Ooksä yrityskertomin Tiedien päjelemä, juha opettaraa onksi n
+Craustuksessa, pitälan jyn vanhissa tytössä, joka margyti pitää ollut, niihin, peni.\n ainesti mihin s
+é olen.  Peloton, ja niiltäkin teaskin? Voi kelmaisenä hajojakille södällä, oli pois tutta. Mutta ää
+-------------------------------------------
+[2019-05-03 21:19] Train Step 151000/1000000, Batch Size = 64, Examples/Sec = 2298.39, Accuracy = 0.77, Loss = 0.687
+[2019-05-03 21:19] Train Step 152000/1000000, Batch Size = 64, Examples/Sec = 2283.90, Accuracy = 0.78, Loss = 0.667
+[2019-05-03 21:20] Train Step 153000/1000000, Batch Size = 64, Examples/Sec = 2170.02, Accuracy = 0.78, Loss = 0.655
+[2019-05-03 21:20] Train Step 154000/1000000, Batch Size = 64, Examples/Sec = 2281.68, Accuracy = 0.78, Loss = 0.662
+[2019-05-03 21:21] Train Step 155000/1000000, Batch Size = 64, Examples/Sec = 2295.91, Accuracy = 0.79, Loss = 0.658
+[2019-05-03 21:21] Train Step 156000/1000000, Batch Size = 64, Examples/Sec = 2299.67, Accuracy = 0.79, Loss = 0.655
+[2019-05-03 21:22] Train Step 157000/1000000, Batch Size = 64, Examples/Sec = 2301.82, Accuracy = 0.78, Loss = 0.667
+[2019-05-03 21:22] Train Step 158000/1000000, Batch Size = 64, Examples/Sec = 2291.81, Accuracy = 0.78, Loss = 0.670
+[2019-05-03 21:23] Train Step 159000/1000000, Batch Size = 64, Examples/Sec = 2305.14, Accuracy = 0.78, Loss = 0.647
+[2019-05-03 21:23] Train Step 160000/1000000, Batch Size = 64, Examples/Sec = 2302.59, Accuracy = 0.79, Loss = 0.641
+[2019-05-03 21:24] Train Step 161000/1000000, Batch Size = 64, Examples/Sec = 2303.99, Accuracy = 0.78, Loss = 0.658
+[2019-05-03 21:25] Train Step 162000/1000000, Batch Size = 64, Examples/Sec = 2293.44, Accuracy = 0.78, Loss = 0.653
+[2019-05-03 21:25] Train Step 163000/1000000, Batch Size = 64, Examples/Sec = 2298.80, Accuracy = 0.79, Loss = 0.654
+[2019-05-03 21:26] Train Step 164000/1000000, Batch Size = 64, Examples/Sec = 2311.39, Accuracy = 0.79, Loss = 0.649
+[2019-05-03 21:26] Train Step 165000/1000000, Batch Size = 64, Examples/Sec = 2308.09, Accuracy = 0.78, Loss = 0.667
+[2019-05-03 21:27] Train Step 166000/1000000, Batch Size = 64, Examples/Sec = 2293.99, Accuracy = 0.78, Loss = 0.658
+[2019-05-03 21:27] Train Step 167000/1000000, Batch Size = 64, Examples/Sec = 2302.90, Accuracy = 0.79, Loss = 0.636
+[2019-05-03 21:28] Train Step 168000/1000000, Batch Size = 64, Examples/Sec = 2305.73, Accuracy = 0.78, Loss = 0.651
+[2019-05-03 21:28] Train Step 169000/1000000, Batch Size = 64, Examples/Sec = 2299.55, Accuracy = 0.79, Loss = 0.632
+[2019-05-03 21:29] Train Step 170000/1000000, Batch Size = 64, Examples/Sec = 2302.31, Accuracy = 0.78, Loss = 0.651
+[2019-05-03 21:29] Train Step 171000/1000000, Batch Size = 64, Examples/Sec = 2297.87, Accuracy = 0.78, Loss = 0.668
+[2019-05-03 21:30] Train Step 172000/1000000, Batch Size = 64, Examples/Sec = 2302.70, Accuracy = 0.78, Loss = 0.652
+[2019-05-03 21:30] Train Step 173000/1000000, Batch Size = 64, Examples/Sec = 2300.16, Accuracy = 0.79, Loss = 0.640
+[2019-05-03 21:31] Train Step 174000/1000000, Batch Size = 64, Examples/Sec = 2297.82, Accuracy = 0.78, Loss = 0.659
+[2019-05-03 21:31] Train Step 175000/1000000, Batch Size = 64, Examples/Sec = 2298.17, Accuracy = 0.78, Loss = 0.650
+[2019-05-03 21:32] Train Step 176000/1000000, Batch Size = 64, Examples/Sec = 1999.36, Accuracy = 0.78, Loss = 0.649
+[2019-05-03 21:33] Train Step 177000/1000000, Batch Size = 64, Examples/Sec = 2135.76, Accuracy = 0.79, Loss = 0.636
+[2019-05-03 21:33] Train Step 178000/1000000, Batch Size = 64, Examples/Sec = 2301.78, Accuracy = 0.78, Loss = 0.665
+[2019-05-03 21:34] Train Step 179000/1000000, Batch Size = 64, Examples/Sec = 2297.40, Accuracy = 0.79, Loss = 0.643
+[2019-05-03 21:34] Train Step 180000/1000000, Batch Size = 64, Examples/Sec = 2306.62, Accuracy = 0.79, Loss = 0.637
+[2019-05-03 21:35] Train Step 181000/1000000, Batch Size = 64, Examples/Sec = 2299.33, Accuracy = 0.79, Loss = 0.642
+[2019-05-03 21:35] Train Step 182000/1000000, Batch Size = 64, Examples/Sec = 2301.32, Accuracy = 0.79, Loss = 0.644
+[2019-05-03 21:36] Train Step 183000/1000000, Batch Size = 64, Examples/Sec = 2303.73, Accuracy = 0.79, Loss = 0.650
+[2019-05-03 21:36] Train Step 184000/1000000, Batch Size = 64, Examples/Sec = 2329.34, Accuracy = 0.79, Loss = 0.628
+[2019-05-03 21:37] Train Step 185000/1000000, Batch Size = 64, Examples/Sec = 2305.59, Accuracy = 0.78, Loss = 0.651
+[2019-05-03 21:37] Train Step 186000/1000000, Batch Size = 64, Examples/Sec = 2304.42, Accuracy = 0.80, Loss = 0.638
+[2019-05-03 21:38] Train Step 187000/1000000, Batch Size = 64, Examples/Sec = 2326.05, Accuracy = 0.79, Loss = 0.637
+[2019-05-03 21:38] Train Step 188000/1000000, Batch Size = 64, Examples/Sec = 2268.15, Accuracy = 0.79, Loss = 0.649
+[2019-05-03 21:39] Train Step 189000/1000000, Batch Size = 64, Examples/Sec = 2293.87, Accuracy = 0.78, Loss = 0.656
+[2019-05-03 21:40] Train Step 190000/1000000, Batch Size = 64, Examples/Sec = 2125.58, Accuracy = 0.79, Loss = 0.638
+[2019-05-03 21:40] Train Step 191000/1000000, Batch Size = 64, Examples/Sec = 2298.35, Accuracy = 0.79, Loss = 0.645
+[2019-05-03 21:41] Train Step 192000/1000000, Batch Size = 64, Examples/Sec = 2256.56, Accuracy = 0.79, Loss = 0.629
+[2019-05-03 21:41] Train Step 193000/1000000, Batch Size = 64, Examples/Sec = 2306.17, Accuracy = 0.80, Loss = 0.623
+[2019-05-03 21:42] Train Step 194000/1000000, Batch Size = 64, Examples/Sec = 2129.12, Accuracy = 0.79, Loss = 0.630
+[2019-05-03 21:42] Train Step 195000/1000000, Batch Size = 64, Examples/Sec = 2303.91, Accuracy = 0.79, Loss = 0.628
+[2019-05-03 21:43] Train Step 196000/1000000, Batch Size = 64, Examples/Sec = 2303.49, Accuracy = 0.79, Loss = 0.635
+[2019-05-03 21:43] Train Step 197000/1000000, Batch Size = 64, Examples/Sec = 2299.55, Accuracy = 0.78, Loss = 0.647
+[2019-05-03 21:44] Train Step 198000/1000000, Batch Size = 64, Examples/Sec = 2300.14, Accuracy = 0.79, Loss = 0.622
+[2019-05-03 21:44] Train Step 199000/1000000, Batch Size = 64, Examples/Sec = 2323.92, Accuracy = 0.79, Loss = 0.655
+[2019-05-03 21:45] Train Step 200000/1000000, Batch Size = 64, Examples/Sec = 2296.13, Accuracy = 0.78, Loss = 0.650
+Saved model.
+-------------------------------------------
+Temperature: 0.0001
+Generated 5:
+7 kuin joskus aiemmin. Hän kaa
+8 oli paikka, jossa Kuuvalo sä
+6 kun en löytänyt häntä mieltä
+-aikaan, jonka äiti tutustui l
+en kanssa. Mutta kun niin vaan
+
+Generated 5 long samples (100 chars):
+Toivo Kuuvalo oli varmasti palannut takaisin Tukholmaan. \n Kun Ninni palasi takaisin autoan, mutta si
+Ei siis ollut mikään yhteiskunnan suuntavaan siitä sitä mitä hän teki sen sijaan että olisi mennyt s
+é koko komeuden ja rakkaasen vasten. Ihmisten sai avata vanhoja asioita kätketykseni huoneeseen. Täl
+7 kuin joskus aiemmin. Hän kaatoi puolillaan olevan kahvikuppinsa täyteen viskiä ja naisista ei autt
+6 kun en löytänyt häntä mieltämään mitä tahtoi majoittaa sinulle kirjojen pitkiän. Silloin hän ja Um
+-------------------------------------------
+Temperature: 0.25
+Generated 5:
+Gunilla oli aivan liian nopeas
+(sa olivat pitkällinen tunne, 
+Lluís oli tullut siihen tuloks
+Urho ei ollut koskaan päässeet
+ä oli jo pitkään kantanut muka
+
+Generated 5 long samples (100 chars):
+n kanssa se oli täynnä itseään niin kovaa kuin vain luonnolliselta, oli sata kamaa paikkaan, jossa o
+Bruno oli heitetty raukata ja sieltä poistui virkamieskin käsittämään elämäänsä. Saatoin vieläkin se
+ä kaikki takaisin seuraavana päivänä hän oli vain tavallinen ihminen. \n Sitten hän muisti Kallen vast
+Claudia estointija tunsi. Hän oli kertonut kuvia erittää ikkunasta sosiaalisen merkityksen kanssa. T
+co solilaisesta puutarhatuolissa oli tarvelleet alkoivat valuilla vaati ja nauroivat ja lähtivät lom
+-------------------------------------------
+Temperature: 0.5
+Generated 5:
+5 kenen kanssa Ninni tiesi ett
+Xin tapahtui. He olivat molemm
+ís oli aivan liian laiska seli
+ä kertoi Lluísin mielen siitä 
+! Sitä on sulle kuin satukirjo
+
+Generated 5 long samples (100 chars):
+Zuneidassa, isällä oli varmaan liian myöhäistä yritti sen jälkeen sanonut tahaa. \n Nyt nauttisivat hä
+ís oli hänelle kertonut hänet kotiin ja suoranaista hän oli kehittynyt siitä kuinka savu kuollut kär
+wanin ihmisen kohdalla. Niin hyvin, ja vasta myöhemmin katselin alla oli päällään tähän mieheen. Gun
+min itselleni olevani huono huoneeseen niin kovasti piti. Sitten Ninni mietti miten sanoi, että se m
+) tietämään sen mitä hänen odotettiin tekevän. Jostain käsittämättömästä syystä Anita tunsi itsensä 
+-------------------------------------------
+Temperature: 1.0
+Generated 5:
+Filmanto. Näytti isille, että 
+Don:!\n Samuli kaivoi pahasta, m
+; sitä ettei ollut epäilyttäis
+n ja nurkassa olevansa molemma
+Heidän päälle välttelemässä va
+
+Generated 5 long samples (100 chars):
+Don: BMWrle hujuu itse asianamainen. Niin tai jotakin jostakin meriltä. \n Kirjahyllyin koto nukluaat 
+é vaatteet. Mustaan jätki se, että Ninni täyttäytyi Ninnin näkymätön ja sukkoina perheissä aluetonti
+non päälle tuli riittää sisaren viiteen tuoliin. Vain he olivat muuttaneet pois kotona Meniä ja täss
+Vaikka voimalliset tihkasivat saman öh-olavan alaruuden vuoksi. Hän oli vajuuttanut tarjota vääriin 
+coi joka rakennettiin ne joka kielellä kertaakaan koko ajan pitkään. \n He olivat myrsineet minua. Mä 
+-------------------------------------------
+Temperature: 2.0
+Generated 5:
+kkäömmenmuotoja. Ari ja Lluís 
+Xirkolta, maukkomukammin kohti
+Colivarreja?\n Jiss  tyttö ei jo
+Niaappi sömisti. Ja siltikin n
+ón selvintymessä veto,rmotti. 
+
+Generated 5 long samples (100 chars):
+Vys filmejä, pallyriinni - melkein paikoista. Kun Ninni oli ottanut ääntäpuon mustemme.\n Minä olin ai
+ävilauveljojustojen säkipuuluon, mutta Afna Ari etsi pientä. In-kukaa lähti vähitellen -hintilaudunt
+n, mitä pahimmassa sai Turkahteasta. \n Molempien kaksimetta. Nykyisinä filogi tulisi synnillä. Seinäl
+(pyörinyt Radmilon silmälasvikpo-nut muokkuva anteiskin helpoiva tuun vysymyksi kiikkine aiemmin ket
+åke?\n Ninni! isäköriä ja söhyti. Ajotaan kadotasi asiaa selviyn. Marja Leena tutkistivat häidän suull
+-------------------------------------------
+[2019-05-03 21:45] Train Step 201000/1000000, Batch Size = 64, Examples/Sec = 2290.66, Accuracy = 0.78, Loss = 0.644
+[2019-05-03 21:46] Train Step 202000/1000000, Batch Size = 64, Examples/Sec = 2091.38, Accuracy = 0.79, Loss = 0.645
+[2019-05-03 21:46] Train Step 203000/1000000, Batch Size = 64, Examples/Sec = 2296.68, Accuracy = 0.79, Loss = 0.629
+[2019-05-03 21:47] Train Step 204000/1000000, Batch Size = 64, Examples/Sec = 2295.58, Accuracy = 0.79, Loss = 0.633
+[2019-05-03 21:48] Train Step 205000/1000000, Batch Size = 64, Examples/Sec = 2295.07, Accuracy = 0.79, Loss = 0.621
+[2019-05-03 21:48] Train Step 206000/1000000, Batch Size = 64, Examples/Sec = 2323.29, Accuracy = 0.79, Loss = 0.621
+[2019-05-03 21:49] Train Step 207000/1000000, Batch Size = 64, Examples/Sec = 2291.95, Accuracy = 0.80, Loss = 0.614
+[2019-05-03 21:49] Train Step 208000/1000000, Batch Size = 64, Examples/Sec = 2297.48, Accuracy = 0.78, Loss = 0.661
+[2019-05-03 21:50] Train Step 209000/1000000, Batch Size = 64, Examples/Sec = 2281.35, Accuracy = 0.79, Loss = 0.632
+[2019-05-03 21:50] Train Step 210000/1000000, Batch Size = 64, Examples/Sec = 2264.70, Accuracy = 0.79, Loss = 0.638
+[2019-05-03 21:51] Train Step 211000/1000000, Batch Size = 64, Examples/Sec = 2293.73, Accuracy = 0.79, Loss = 0.627
+[2019-05-03 21:51] Train Step 212000/1000000, Batch Size = 64, Examples/Sec = 2295.12, Accuracy = 0.78, Loss = 0.638
+[2019-05-03 21:52] Train Step 213000/1000000, Batch Size = 64, Examples/Sec = 2296.60, Accuracy = 0.80, Loss = 0.619
+[2019-05-03 21:52] Train Step 214000/1000000, Batch Size = 64, Examples/Sec = 2297.86, Accuracy = 0.79, Loss = 0.635
+[2019-05-03 21:53] Train Step 215000/1000000, Batch Size = 64, Examples/Sec = 2301.07, Accuracy = 0.79, Loss = 0.649
+[2019-05-03 21:53] Train Step 216000/1000000, Batch Size = 64, Examples/Sec = 2296.15, Accuracy = 0.80, Loss = 0.617
+[2019-05-03 21:54] Train Step 217000/1000000, Batch Size = 64, Examples/Sec = 2294.52, Accuracy = 0.79, Loss = 0.635
+[2019-05-03 21:54] Train Step 218000/1000000, Batch Size = 64, Examples/Sec = 2302.41, Accuracy = 0.80, Loss = 0.631
+[2019-05-03 21:55] Train Step 219000/1000000, Batch Size = 64, Examples/Sec = 2293.93, Accuracy = 0.79, Loss = 0.632
+[2019-05-03 21:56] Train Step 220000/1000000, Batch Size = 64, Examples/Sec = 2290.39, Accuracy = 0.79, Loss = 0.630
+[2019-05-03 21:56] Train Step 221000/1000000, Batch Size = 64, Examples/Sec = 2250.58, Accuracy = 0.78, Loss = 0.644
+[2019-05-03 21:57] Train Step 222000/1000000, Batch Size = 64, Examples/Sec = 2277.19, Accuracy = 0.79, Loss = 0.637
+[2019-05-03 21:57] Train Step 223000/1000000, Batch Size = 64, Examples/Sec = 2292.60, Accuracy = 0.79, Loss = 0.644
+[2019-05-03 21:58] Train Step 224000/1000000, Batch Size = 64, Examples/Sec = 2108.25, Accuracy = 0.79, Loss = 0.641
+[2019-05-03 21:58] Train Step 225000/1000000, Batch Size = 64, Examples/Sec = 2289.86, Accuracy = 0.79, Loss = 0.635
+[2019-05-03 21:59] Train Step 226000/1000000, Batch Size = 64, Examples/Sec = 2322.79, Accuracy = 0.78, Loss = 0.658
+[2019-05-03 21:59] Train Step 227000/1000000, Batch Size = 64, Examples/Sec = 2314.50, Accuracy = 0.78, Loss = 0.651
+[2019-05-03 22:00] Train Step 228000/1000000, Batch Size = 64, Examples/Sec = 2280.79, Accuracy = 0.80, Loss = 0.617
+[2019-05-03 22:00] Train Step 229000/1000000, Batch Size = 64, Examples/Sec = 2314.28, Accuracy = 0.80, Loss = 0.627
+[2019-05-03 22:01] Train Step 230000/1000000, Batch Size = 64, Examples/Sec = 2298.96, Accuracy = 0.79, Loss = 0.629
+[2019-05-03 22:01] Train Step 231000/1000000, Batch Size = 64, Examples/Sec = 2314.70, Accuracy = 0.79, Loss = 0.642
+[2019-05-03 22:02] Train Step 232000/1000000, Batch Size = 64, Examples/Sec = 2319.68, Accuracy = 0.78, Loss = 0.648
+[2019-05-03 22:02] Train Step 233000/1000000, Batch Size = 64, Examples/Sec = 2323.39, Accuracy = 0.79, Loss = 0.612
+[2019-05-03 22:03] Train Step 234000/1000000, Batch Size = 64, Examples/Sec = 2324.20, Accuracy = 0.80, Loss = 0.615
+[2019-05-03 22:04] Train Step 235000/1000000, Batch Size = 64, Examples/Sec = 2271.14, Accuracy = 0.79, Loss = 0.624
+[2019-05-03 22:04] Train Step 236000/1000000, Batch Size = 64, Examples/Sec = 2314.36, Accuracy = 0.79, Loss = 0.627
+[2019-05-03 22:05] Train Step 237000/1000000, Batch Size = 64, Examples/Sec = 2153.77, Accuracy = 0.80, Loss = 0.606
+[2019-05-03 22:05] Train Step 238000/1000000, Batch Size = 64, Examples/Sec = 2315.76, Accuracy = 0.80, Loss = 0.638
+[2019-05-03 22:06] Train Step 239000/1000000, Batch Size = 64, Examples/Sec = 2323.29, Accuracy = 0.79, Loss = 0.630
+[2019-05-03 22:06] Train Step 240000/1000000, Batch Size = 64, Examples/Sec = 2319.40, Accuracy = 0.80, Loss = 0.627
+[2019-05-03 22:07] Train Step 241000/1000000, Batch Size = 64, Examples/Sec = 2249.16, Accuracy = 0.79, Loss = 0.618
+[2019-05-03 22:07] Train Step 242000/1000000, Batch Size = 64, Examples/Sec = 2273.87, Accuracy = 0.79, Loss = 0.637
+[2019-05-03 22:08] Train Step 243000/1000000, Batch Size = 64, Examples/Sec = 2291.09, Accuracy = 0.80, Loss = 0.608
+[2019-05-03 22:08] Train Step 244000/1000000, Batch Size = 64, Examples/Sec = 2296.42, Accuracy = 0.80, Loss = 0.607
+[2019-05-03 22:09] Train Step 245000/1000000, Batch Size = 64, Examples/Sec = 2295.28, Accuracy = 0.78, Loss = 0.644
+[2019-05-03 22:09] Train Step 246000/1000000, Batch Size = 64, Examples/Sec = 2289.68, Accuracy = 0.80, Loss = 0.617
+[2019-05-03 22:10] Train Step 247000/1000000, Batch Size = 64, Examples/Sec = 2129.26, Accuracy = 0.80, Loss = 0.604
+[2019-05-03 22:11] Train Step 248000/1000000, Batch Size = 64, Examples/Sec = 2299.47, Accuracy = 0.80, Loss = 0.614
+[2019-05-03 22:11] Train Step 249000/1000000, Batch Size = 64, Examples/Sec = 2292.26, Accuracy = 0.79, Loss = 0.626
+[2019-05-03 22:12] Train Step 250000/1000000, Batch Size = 64, Examples/Sec = 2301.95, Accuracy = 0.80, Loss = 0.624
+Saved model.
+-------------------------------------------
+Temperature: 0.0001
+Generated 5:
+filmeissä, jotka liikkuivat er
+Ja sitten myöhemmin tuli koko 
+paljon koristeellisesti veneen
+den kanssa. \n Lluís ei halunnut
+é koko päiväksi kun Julle oli 
+
+Generated 5 long samples (100 chars):
+Kalle kysyi.\n Joo, nyt kun mä lähden kadulla, Ari sanoi.\n Minä en sitä kestäisi, mutta meillä oli hous
+Hän oli tavannut Eduardon ja suljettaisiin makasi takaisin autotalliin ja huusi tutkijat jonkin verr
+kaan tulisi kotiin. Kävelyretki kauppaan ja ruuanlaitto saivat olonsa talossa enemmän kesälomamme pu
+ís oli hänelle kertonut Jhämästään puheluineen, sekä epävärille maitolasia, jonka oli nähnyt aiemmin
+Bruno oli jo käynyt ullakko Marja Leenan kirjoittamatta ja kokenut muuten hyvin saappaiden vierellä,
+-------------------------------------------
+Temperature: 0.25
+Generated 5:
+ón kanssa ja tutki sen mielenk
+en kuin olisi jo vuosia aiemmi
+Paraguayista monista tuli suor
+ún tuntui vain kuukautta kohta
+-aikaan, jonka kanssa sä olit 
+
+Generated 5 long samples (100 chars):
+Ei ollut mitään tietoa Ninnin menneisyydestä. Eikä tässä maassa ei ollutkaan varsinaisesti mitään hy
+gissa. Hän oli tuolloin tuollain viimeiset kolmesta seinällä oli kaikki lähellä Paraidosla. Se oli v
+Äjää oli aina ollut hänen tulleensa vain suuresta perustuksi. Hänen arvosanansa eivät olleet koskaan
+a kuin se olisi aivan lähellä lapsia, pappilan valkoisen luona, hän oli vain kaunis ja saamassa ruok
+filmeissä, mutta se oli kahdentoista ja kaikki muutkin paikalla olevan tietoinen kaikesta näki mitä 
+-------------------------------------------
+Temperature: 0.5
+Generated 5:
+3 sitten?\n Ari oli kerran kyllä
+Ei ollut mitään asiaa. Hän ja 
+3 Toivo oli kuitenkin menossa,
+) suuren kirjan: Ninnin opiske
+mmärtänyt sitä ääneen. Heidiss
+
+Generated 5 long samples (100 chars):
+Ei ollut mikään pakko päivää muuta kuin ne sitten takaisin Toivolle kun mua käyttää konetta, vaikka 
+zoita talousrikoksista tai totuutta ja tuijotti lähteä hänen ovelle ja lukivat sen eläkellä, jolloin
+2 joskus aivan liian nopeasti. \n Kun poltis hän ja Ninni istui hyvin syksyllä ja kaikenlaisista asioi
+Xitä, että tämä oli aivan liian myöhäistä yrittää liioitellulla Kansa ja Kalle asuu täällä kolme. Ei
+Dori ihmetteli. \n Kalle rahas oli tutustunut, ja siksi sitä ei voinut olla huomaamatta kahdeksantoist
+-------------------------------------------
+Temperature: 1.0
+Generated 5:
+joka auttasi hänelle ylällään 
+mahti pelinsä.\n Mä oon suorasta
+). \n Otoneet niin ikään kirkkoh
+) nähtävää, sekä muodoltaen  t
+Kentaalle ja siihen sisälle ol
+
+Generated 5 long samples (100 chars):
+cesulas oli niitä, jotka vain muutamat olivat suinkaan niin kovin monta. Ei kestänyt paljonkaan, mut
+ssa Aria. Elämäänsä talossa varastohuoneessa paikassa Kuuvalo köyttivät television ja varjasta. Sen 
+ vaan piti ehdottomasti toisinaan vaikkapä vahtoiksi onneksi lämmitys- aran siitä, että he olivat so
+yvä oliko se edes oikein pahat aavelikselta, siitä Juanjo teki sen joukko piispan  mahdollisuutta ja
+8 Michael Jakso- pyörällä ja vesi kutsuntoliputtelun puutarhaan vastaan. Joten olisi auttanut muu ku
+-------------------------------------------
+Temperature: 2.0
+Generated 5:
+qohtanluotaa pistettyjen jalko
+On: Wa Geroad olit toiste Isäl
+valtion majoitutelisivatkin Tu
+Jullen oli juossut kenältä ja:
+fYen oikean niviä ohimmisharte
+
+Generated 5 long samples (100 chars):
+DIMANit gotoi niuluaisimme. \n Mini olisi kilpas vain mennä byypin päälleen. Oli nousty täynnäistä. Co
+Qa. Juna meni sädestokänneet. Mustajärvyläisestä abtis sujuprui lomumenttamien kertomalleen. Samalla
+ostui kuukausittaisi, olivat aivan puolisen menkseen 3mme thoduksen paperin vapauksen vakeukseen enk
+Raiskasi tietenkin ryöstävä tällä nuoruuden voitukkein hytästä ja videonaristi. Lähtemä  ja kiusariv
+Bu00. Kuunnolla nime mitä vetäänsi arvaamatka Lasjaan, joulu nommansa, mutta hän vitkaustoitsi juttu
+-------------------------------------------
+[2019-05-03 22:12] Train Step 251000/1000000, Batch Size = 64, Examples/Sec = 2130.54, Accuracy = 0.80, Loss = 0.596
+[2019-05-03 22:13] Train Step 252000/1000000, Batch Size = 64, Examples/Sec = 2294.93, Accuracy = 0.80, Loss = 0.614
+[2019-05-03 22:13] Train Step 253000/1000000, Batch Size = 64, Examples/Sec = 2133.98, Accuracy = 0.79, Loss = 0.631
+[2019-05-03 22:14] Train Step 254000/1000000, Batch Size = 64, Examples/Sec = 2143.86, Accuracy = 0.79, Loss = 0.643
+[2019-05-03 22:14] Train Step 255000/1000000, Batch Size = 64, Examples/Sec = 2307.95, Accuracy = 0.79, Loss = 0.628
+[2019-05-03 22:15] Train Step 256000/1000000, Batch Size = 64, Examples/Sec = 2309.58, Accuracy = 0.79, Loss = 0.624
+[2019-05-03 22:15] Train Step 257000/1000000, Batch Size = 64, Examples/Sec = 2301.82, Accuracy = 0.79, Loss = 0.622
+[2019-05-03 22:16] Train Step 258000/1000000, Batch Size = 64, Examples/Sec = 2329.64, Accuracy = 0.80, Loss = 0.606
+[2019-05-03 22:16] Train Step 259000/1000000, Batch Size = 64, Examples/Sec = 2326.76, Accuracy = 0.80, Loss = 0.622
+[2019-05-03 22:17] Train Step 260000/1000000, Batch Size = 64, Examples/Sec = 2163.74, Accuracy = 0.80, Loss = 0.605
+[2019-05-03 22:18] Train Step 261000/1000000, Batch Size = 64, Examples/Sec = 2125.88, Accuracy = 0.79, Loss = 0.626
+[2019-05-03 22:18] Train Step 262000/1000000, Batch Size = 64, Examples/Sec = 2329.64, Accuracy = 0.79, Loss = 0.610
+[2019-05-03 22:19] Train Step 263000/1000000, Batch Size = 64, Examples/Sec = 2328.31, Accuracy = 0.80, Loss = 0.593
+[2019-05-03 22:19] Train Step 264000/1000000, Batch Size = 64, Examples/Sec = 2312.15, Accuracy = 0.81, Loss = 0.613
+[2019-05-03 22:20] Train Step 265000/1000000, Batch Size = 64, Examples/Sec = 2326.31, Accuracy = 0.79, Loss = 0.624
+[2019-05-03 22:20] Train Step 266000/1000000, Batch Size = 64, Examples/Sec = 2328.61, Accuracy = 0.80, Loss = 0.619
+[2019-05-03 22:21] Train Step 267000/1000000, Batch Size = 64, Examples/Sec = 2332.74, Accuracy = 0.80, Loss = 0.608
+[2019-05-03 22:21] Train Step 268000/1000000, Batch Size = 64, Examples/Sec = 2234.37, Accuracy = 0.80, Loss = 0.620
+[2019-05-03 22:22] Train Step 269000/1000000, Batch Size = 64, Examples/Sec = 2131.44, Accuracy = 0.80, Loss = 0.620
+[2019-05-03 22:22] Train Step 270000/1000000, Batch Size = 64, Examples/Sec = 2321.24, Accuracy = 0.79, Loss = 0.636
+[2019-05-03 22:23] Train Step 271000/1000000, Batch Size = 64, Examples/Sec = 2321.44, Accuracy = 0.80, Loss = 0.605
+[2019-05-03 22:23] Train Step 272000/1000000, Batch Size = 64, Examples/Sec = 2330.80, Accuracy = 0.80, Loss = 0.609
+[2019-05-03 22:24] Train Step 273000/1000000, Batch Size = 64, Examples/Sec = 2333.69, Accuracy = 0.80, Loss = 0.614
+[2019-05-03 22:24] Train Step 274000/1000000, Batch Size = 64, Examples/Sec = 2330.82, Accuracy = 0.81, Loss = 0.600
+[2019-05-03 22:25] Train Step 275000/1000000, Batch Size = 64, Examples/Sec = 2331.57, Accuracy = 0.80, Loss = 0.604
+[2019-05-03 22:25] Train Step 276000/1000000, Batch Size = 64, Examples/Sec = 2328.63, Accuracy = 0.80, Loss = 0.615
+[2019-05-03 22:26] Train Step 277000/1000000, Batch Size = 64, Examples/Sec = 2329.56, Accuracy = 0.79, Loss = 0.630
+[2019-05-03 22:27] Train Step 278000/1000000, Batch Size = 64, Examples/Sec = 2332.03, Accuracy = 0.80, Loss = 0.618
+[2019-05-03 22:27] Train Step 279000/1000000, Batch Size = 64, Examples/Sec = 2296.15, Accuracy = 0.80, Loss = 0.603
+[2019-05-03 22:28] Train Step 280000/1000000, Batch Size = 64, Examples/Sec = 2319.42, Accuracy = 0.80, Loss = 0.607
+[2019-05-03 22:28] Train Step 281000/1000000, Batch Size = 64, Examples/Sec = 2289.78, Accuracy = 0.80, Loss = 0.608
+[2019-05-03 22:29] Train Step 282000/1000000, Batch Size = 64, Examples/Sec = 2303.99, Accuracy = 0.79, Loss = 0.616
+[2019-05-03 22:29] Train Step 283000/1000000, Batch Size = 64, Examples/Sec = 2304.35, Accuracy = 0.79, Loss = 0.637
+[2019-05-03 22:30] Train Step 284000/1000000, Batch Size = 64, Examples/Sec = 2307.57, Accuracy = 0.80, Loss = 0.614
+[2019-05-03 22:30] Train Step 285000/1000000, Batch Size = 64, Examples/Sec = 2303.12, Accuracy = 0.80, Loss = 0.616
+[2019-05-03 22:31] Train Step 286000/1000000, Batch Size = 64, Examples/Sec = 2302.21, Accuracy = 0.80, Loss = 0.605
+[2019-05-03 22:31] Train Step 287000/1000000, Batch Size = 64, Examples/Sec = 2332.68, Accuracy = 0.80, Loss = 0.600
+[2019-05-03 22:32] Train Step 288000/1000000, Batch Size = 64, Examples/Sec = 2332.60, Accuracy = 0.80, Loss = 0.606
+[2019-05-03 22:32] Train Step 289000/1000000, Batch Size = 64, Examples/Sec = 2106.96, Accuracy = 0.80, Loss = 0.599
+[2019-05-03 22:33] Train Step 290000/1000000, Batch Size = 64, Examples/Sec = 2295.52, Accuracy = 0.80, Loss = 0.603
+[2019-05-03 22:34] Train Step 291000/1000000, Batch Size = 64, Examples/Sec = 2299.73, Accuracy = 0.80, Loss = 0.597
+[2019-05-03 22:34] Train Step 292000/1000000, Batch Size = 64, Examples/Sec = 2301.20, Accuracy = 0.79, Loss = 0.621
+[2019-05-03 22:35] Train Step 293000/1000000, Batch Size = 64, Examples/Sec = 2297.07, Accuracy = 0.80, Loss = 0.633
+[2019-05-03 22:35] Train Step 294000/1000000, Batch Size = 64, Examples/Sec = 2279.96, Accuracy = 0.80, Loss = 0.599
+[2019-05-03 22:36] Train Step 295000/1000000, Batch Size = 64, Examples/Sec = 2299.43, Accuracy = 0.80, Loss = 0.594
+[2019-05-03 22:36] Train Step 296000/1000000, Batch Size = 64, Examples/Sec = 2301.95, Accuracy = 0.81, Loss = 0.586
+[2019-05-03 22:37] Train Step 297000/1000000, Batch Size = 64, Examples/Sec = 2068.60, Accuracy = 0.79, Loss = 0.630
+[2019-05-03 22:37] Train Step 298000/1000000, Batch Size = 64, Examples/Sec = 2299.41, Accuracy = 0.79, Loss = 0.630
+[2019-05-03 22:38] Train Step 299000/1000000, Batch Size = 64, Examples/Sec = 2300.24, Accuracy = 0.79, Loss = 0.629
+[2019-05-03 22:38] Train Step 300000/1000000, Batch Size = 64, Examples/Sec = 2286.31, Accuracy = 0.80, Loss = 0.620
+Saved model.
+-------------------------------------------
+Temperature: 0.0001
+Generated 5:
+) mitään ei ollut kovinkaan hy
+den kanssa. \n Lluís ei halunnut
+Hän oli tavannut Eduardon suor
+en kanssa. \n Lluís muisteli kui
+ kuin mitä hän oli tehnyt sen 
+
+Generated 5 long samples (100 chars):
+Ja sitten myöhemmin tuli koko ikänsä. Tuuli oli todella kadonneet kahville ja juttelemaan, mutta sil
+Tai myöhemmin ne saisi selville missä mä oon. Mulla ei oo paikkaa mihin mennä sun syttiä. Mut se on 
+ut mitään jälkeen siitä että oli lopulta ollut lainkaan helppoa mitään vastaavaa. Ja ehkä juuri siks
+lle oli tapahtunut. \n He olivat jo kaikki jolaisessa salakuljettaja, sillä sitä ei varmaan tunnustett
+Ei ollut mitään tietoa Ninnin menneisyydestä. Eikä tämä poliisi olisi tehnyt hänen vehjenemään autol
+-------------------------------------------
+Temperature: 0.25
+Generated 5:
+vat minulle selkänsä tehdäksee
+in kaikki piispalla molemmilla
+in sillä hetkellä kun eräänä y
+5 jatkaa vielä muutaman viikon
+, että hän oli kokonaan menett
+
+Generated 5 long samples (100 chars):
+'distä Arin olla mukavasti voinut olla tulevaisuutta kuin ennen. Normaalia perhe-elämää ei enää ollu
+Lluís oli kuvitellut. Hänelle tuli myös tavaksi pitää ylisuuria villapaitoja. Maavärisiä etupäässä -
+Gunilla oli tapana tulla toisen keskin ja painoi kasvonsa kanssa. Se oli hänen isänsä kanssa hänelle
+bistö oli paikka, jossa he olivat toisenlainen vanhanaikaisesti. \n Joulukuun luo vähän ääressä ja ajo
+9 teki sen mitä mieltä minä olin samanlainen kuin Marja Leena havahtuu painajaisesti tuli siksi, ett
+-------------------------------------------
+Temperature: 0.5
+Generated 5:
+úni muovimukeja. \n Lluís lopett
+Sitten hän suorastaan tuutaraa
+pihalla oli kaikkiaan kuusi. K
+ä ja työnsi omakuun suoraan ro
+årtoverrottuna melkein yhdellä
+
+Generated 5 long samples (100 chars):
+. \n Ninni kertoi kuinka hän sai täydellisesti tietokoneesta niitä kokeilemaan, mutta hän työnsi häntä
+Lluís oli kuvitellut. Hän oli tuonut lohduvan takaisin vasten ja maassa tuli koko ajan lehdelle. Ja 
+8 hän muisti miehen jatkoivot. \n Hän tunsi tietenkin pikkuhousuista pitkin ja poikin Itämerta, joka o
+ja näiden kahden pilalle hetkellä kuin kaksi suihkutilaa. Intimiteettisuojausta ei suoranaisesti oll
+è kalustepman puhumisen jälkeen. Kun kysyi, vaikka kuinka yrittivät sitä mitä olivat tehneet sinne e
+-------------------------------------------
+Temperature: 1.0
+Generated 5:
+Ja miten tämä Kuuvalo sanoi jä
+é varjouseensa luona, jonka ai
+0 tekemisveneeseen linja-autoo
+utta kun ei autano  olisikin h
+ónkin kadonneet tavaraa tuntee
+
+Generated 5 long samples (100 chars):
+rikkasi Kalle. Osoitettiin keskusteluja pelkotintekataviiden alkoholin luonnossa. Hän meni vieraanva
+ntukset.\n Mitä tehdään naisen, jonka sisältä pöytä oli rakennettu kännistä. \n Paniikki ilmistyi paljon
+9 painoi palautua merkitsävän vahinko. Jo ei koskaan tiedä, mikä sanot, että päittäisi tulla juomaan
+è niin kovasti. Lluís joutui toisensa kanssa. Sellaiselta Ninni kuvitteli pienenä kirkonmiesten kesä
+Ja ehkä juuri siksi hän otti itselleen, että hän päätteli että kaipasi suorastian päivänä...\n Lihikse
+-------------------------------------------
+Temperature: 2.0
+Generated 5:
+fkä eräs, ja Ari oli omaan osp
+ö-suumesti.\n Kinupulossa möy! ,
+Urabiol Dynärein Lilianin, enk
+Vii nimeltä.\n Dir , he hetkeli 
+s. Oli vihdoin nyt nostanut, s
+
+Generated 5 long samples (100 chars):
+ältavadikratapaat viedäskämässä lahden sustossanoille.\n Ninni yritti sanoa miettiään, joka oli homman
+\n Näytti olivat kovaa, sen Ninnin, niit huskettiin, ja me viitättävän: Taivastossa, micheen, niini va
+!' Tuulin sit vaikka he päätyivät nahaakseen? Kyinnotaan ammattioudensa.\n Sähkölaitumaan ullakon vanh
+rkeilokuvioon. Käveleeni, vaikka äiti vanhimmin tuotti Aria ei vieläkä nyt tunkeutunut maininnut, va
+\n Arhaana iljettää sutteeksi. Vaikkamaan oli ystävälleen Flempin rantakauppia. \n Myylikuoma oli Papala
+-------------------------------------------
+[2019-05-03 22:39] Train Step 301000/1000000, Batch Size = 64, Examples/Sec = 2290.52, Accuracy = 0.80, Loss = 0.628
+[2019-05-03 22:39] Train Step 302000/1000000, Batch Size = 64, Examples/Sec = 2290.39, Accuracy = 0.79, Loss = 0.621
+[2019-05-03 22:40] Train Step 303000/1000000, Batch Size = 64, Examples/Sec = 2296.62, Accuracy = 0.80, Loss = 0.611
+[2019-05-03 22:41] Train Step 304000/1000000, Batch Size = 64, Examples/Sec = 2290.91, Accuracy = 0.79, Loss = 0.637
+[2019-05-03 22:41] Train Step 305000/1000000, Batch Size = 64, Examples/Sec = 2296.34, Accuracy = 0.80, Loss = 0.610
+[2019-05-03 22:42] Train Step 306000/1000000, Batch Size = 64, Examples/Sec = 2292.95, Accuracy = 0.80, Loss = 0.633
+[2019-05-03 22:42] Train Step 307000/1000000, Batch Size = 64, Examples/Sec = 2135.05, Accuracy = 0.80, Loss = 0.604
+[2019-05-03 22:43] Train Step 308000/1000000, Batch Size = 64, Examples/Sec = 2299.63, Accuracy = 0.80, Loss = 0.622
+[2019-05-03 22:43] Train Step 309000/1000000, Batch Size = 64, Examples/Sec = 2240.02, Accuracy = 0.80, Loss = 0.608
+[2019-05-03 22:44] Train Step 310000/1000000, Batch Size = 64, Examples/Sec = 2119.71, Accuracy = 0.80, Loss = 0.604
+[2019-05-03 22:44] Train Step 311000/1000000, Batch Size = 64, Examples/Sec = 2321.66, Accuracy = 0.80, Loss = 0.606
+[2019-05-03 22:45] Train Step 312000/1000000, Batch Size = 64, Examples/Sec = 2249.77, Accuracy = 0.80, Loss = 0.606
+[2019-05-03 22:45] Train Step 313000/1000000, Batch Size = 64, Examples/Sec = 2155.99, Accuracy = 0.80, Loss = 0.583
+[2019-05-03 22:46] Train Step 314000/1000000, Batch Size = 64, Examples/Sec = 2315.70, Accuracy = 0.80, Loss = 0.613
+[2019-05-03 22:46] Train Step 315000/1000000, Batch Size = 64, Examples/Sec = 2218.02, Accuracy = 0.80, Loss = 0.598
+[2019-05-03 22:47] Train Step 316000/1000000, Batch Size = 64, Examples/Sec = 2300.49, Accuracy = 0.80, Loss = 0.609
+[2019-05-03 22:48] Train Step 317000/1000000, Batch Size = 64, Examples/Sec = 2322.19, Accuracy = 0.79, Loss = 0.632
+[2019-05-03 22:48] Train Step 318000/1000000, Batch Size = 64, Examples/Sec = 2313.18, Accuracy = 0.81, Loss = 0.579
+[2019-05-03 22:49] Train Step 319000/1000000, Batch Size = 64, Examples/Sec = 2313.16, Accuracy = 0.79, Loss = 0.633
+[2019-05-03 22:49] Train Step 320000/1000000, Batch Size = 64, Examples/Sec = 2289.45, Accuracy = 0.80, Loss = 0.615
+[2019-05-03 22:50] Train Step 321000/1000000, Batch Size = 64, Examples/Sec = 2303.10, Accuracy = 0.80, Loss = 0.610
+[2019-05-03 22:50] Train Step 322000/1000000, Batch Size = 64, Examples/Sec = 2306.68, Accuracy = 0.80, Loss = 0.618
+[2019-05-03 22:51] Train Step 323000/1000000, Batch Size = 64, Examples/Sec = 2269.28, Accuracy = 0.79, Loss = 0.620
+[2019-05-03 22:51] Train Step 324000/1000000, Batch Size = 64, Examples/Sec = 2324.88, Accuracy = 0.80, Loss = 0.603
+[2019-05-03 22:52] Train Step 325000/1000000, Batch Size = 64, Examples/Sec = 2293.89, Accuracy = 0.80, Loss = 0.609
+[2019-05-03 22:52] Train Step 326000/1000000, Batch Size = 64, Examples/Sec = 1984.15, Accuracy = 0.81, Loss = 0.579
+[2019-05-03 22:53] Train Step 327000/1000000, Batch Size = 64, Examples/Sec = 2315.22, Accuracy = 0.80, Loss = 0.593
+[2019-05-03 22:53] Train Step 328000/1000000, Batch Size = 64, Examples/Sec = 2275.96, Accuracy = 0.81, Loss = 0.602
+[2019-05-03 22:54] Train Step 329000/1000000, Batch Size = 64, Examples/Sec = 2268.48, Accuracy = 0.80, Loss = 0.616
+[2019-05-03 22:54] Train Step 330000/1000000, Batch Size = 64, Examples/Sec = 2325.02, Accuracy = 0.80, Loss = 0.607
+[2019-05-03 22:55] Train Step 331000/1000000, Batch Size = 64, Examples/Sec = 2264.40, Accuracy = 0.80, Loss = 0.591
+[2019-05-03 22:56] Train Step 332000/1000000, Batch Size = 64, Examples/Sec = 2322.51, Accuracy = 0.80, Loss = 0.607
+[2019-05-03 22:56] Train Step 333000/1000000, Batch Size = 64, Examples/Sec = 2323.75, Accuracy = 0.80, Loss = 0.587
+[2019-05-03 22:57] Train Step 334000/1000000, Batch Size = 64, Examples/Sec = 2300.04, Accuracy = 0.80, Loss = 0.603
+[2019-05-03 22:57] Train Step 335000/1000000, Batch Size = 64, Examples/Sec = 2320.46, Accuracy = 0.80, Loss = 0.629
+[2019-05-03 22:58] Train Step 336000/1000000, Batch Size = 64, Examples/Sec = 2296.89, Accuracy = 0.80, Loss = 0.598
+[2019-05-03 22:58] Train Step 337000/1000000, Batch Size = 64, Examples/Sec = 2323.21, Accuracy = 0.80, Loss = 0.621
+[2019-05-03 22:59] Train Step 338000/1000000, Batch Size = 64, Examples/Sec = 2298.37, Accuracy = 0.80, Loss = 0.610
+[2019-05-03 22:59] Train Step 339000/1000000, Batch Size = 64, Examples/Sec = 2306.25, Accuracy = 0.80, Loss = 0.619
+[2019-05-03 23:00] Train Step 340000/1000000, Batch Size = 64, Examples/Sec = 2297.84, Accuracy = 0.80, Loss = 0.609
+[2019-05-03 23:00] Train Step 341000/1000000, Batch Size = 64, Examples/Sec = 2293.79, Accuracy = 0.80, Loss = 0.608
+[2019-05-03 23:01] Train Step 342000/1000000, Batch Size = 64, Examples/Sec = 2283.60, Accuracy = 0.79, Loss = 0.638
+[2019-05-03 23:01] Train Step 343000/1000000, Batch Size = 64, Examples/Sec = 2281.33, Accuracy = 0.80, Loss = 0.608
+[2019-05-03 23:02] Train Step 344000/1000000, Batch Size = 64, Examples/Sec = 2318.38, Accuracy = 0.80, Loss = 0.612
+[2019-05-03 23:02] Train Step 345000/1000000, Batch Size = 64, Examples/Sec = 2300.67, Accuracy = 0.79, Loss = 0.610
+[2019-05-03 23:03] Train Step 346000/1000000, Batch Size = 64, Examples/Sec = 2295.56, Accuracy = 0.80, Loss = 0.594
+[2019-05-03 23:04] Train Step 347000/1000000, Batch Size = 64, Examples/Sec = 2288.63, Accuracy = 0.80, Loss = 0.594
+[2019-05-03 23:04] Train Step 348000/1000000, Batch Size = 64, Examples/Sec = 2290.29, Accuracy = 0.80, Loss = 0.602
+[2019-05-03 23:05] Train Step 349000/1000000, Batch Size = 64, Examples/Sec = 2305.12, Accuracy = 0.80, Loss = 0.607
+[2019-05-03 23:05] Train Step 350000/1000000, Batch Size = 64, Examples/Sec = 2282.50, Accuracy = 0.81, Loss = 0.591
+Saved model.
+-------------------------------------------
+Temperature: 0.0001
+Generated 5:
+'din pakko liikettävän kylmää,
+; hän oli ajatellut, että nämä
+Ninni sanoi. Enkä mä tie sanoa
+en kanssa. \n Lluís muisti valla
+vat sitä kaikki espanjalaiset 
+
+Generated 5 long samples (100 chars):
+Tai myöhemmin ne saisi selville missä mä oon. Mulla ei oo paikkaa mihin mennä sopivaa.\n Äan ei varmaa
+Win kanssa, mutta Ninni ei ollut tottunut tähän kylmään ilmastoon, pitihän Kukon se leikki oli muutt
+den kanssa. \n Lluís mietti hetken ja selitti sen kaiken mitä me ollaan alkuperäinen.\n Minä tyttö halua
+Clokulla oli kotoisin matalan suuntaan. \n Koska Ninni ei ollut tottunut tähän kylmään ilmastoon, piti
+za oli tullut hänen perheensä oli muuttanut Samulia ikään puoli tuntia. \n Kaksi luokkahuoneeseen enne
+-------------------------------------------
+Temperature: 0.25
+Generated 5:
+Zani ei tiennyt mitä vastata. 
+Xisiä olevansa valkoisena suom
+en pitäisi jo anteista kertaak
+Zani iänkynsä ja lähteä kavere
+Mutta minä en ollut käynyt kuu
+
+Generated 5 long samples (100 chars):
+I tunne kärsivästä sisälle, Ninni sanoi ja osoitti paksuksi ja kokeili kaikkia suuresti kaikista vai
+puhui selvittää tämän nimen: Mikäli mä olet sopeutunut jo aiemmin katulamppujen alastomina salasä, j
+è kalusteita. Ja mitä enemmän asiaa ajatteli, sitä enemmän hän kiihottui. Hänen oli aivan mahdotonta
+? Täällä tapahtui? Ei kai kukaan.\n  Samuli erotettiin lähetysjohtajan tehtävästään Taiwanissa, mutta 
+oli kuitenkin vaivauduttava selkä. Mitään ei ollut tehtävissä. Oli vaikeaa ollut hänelle mitään merk
+-------------------------------------------
+Temperature: 0.5
+Generated 5:
+qaina tehdä siitä tänne hyviä 
+2 jos hän voisi tehdä vaikenee
+(aisia hyviä ja päättämään sät
+ís kokeili hieman uusia tupaka
+-tohdallaan. Kaikki oli vain y
+
+Generated 5 long samples (100 chars):
+va siitä puhuttiin heidän kanssaan Marja Leenan ympärillä  ei ollut vähän kuvitellut. Sä lähti kahvi
+itä mitä mä latasin, enkä muista kuin kuluissa kahdestaan Arin täytyn.\n Joo, niin sen nauhan kaikkein
+hmisen metriä saaressa. Ninni ei voinut uskoa kuulemaansa, eikä niitä ole vähitestäkään olleet nähny
+Inteli aina vain lisääntyvän alla kirjan: Mytäisin koko suuren vaikka Espoottanut tarvittavaa tilant
+. \n Sitten eräänä vuonna kaiken lisäksi hyvät sinne ensimmäisen kerran koko päivänä. \n Peloton opitull
+-------------------------------------------
+Temperature: 1.0
+Generated 5:
+ät, mutta toinen nuoret olivat
+hiksi. \n Siitä sun avioon oikei
+Luulen että hänen vierelläänhä
+Zeli, sai hänet herättävästi k
+Welveniä, joten meitä löysin s
+
+Generated 5 long samples (100 chars):
+0 vuoduttavasti alkoholin lattialle, mutta Kalle ei tiennyt ettei näilläkään ollut sekaisin Bruno yh
+oripäätä ne puolestaan, mutta kuitenkin se oli hieman maalailtu, nusta todellisuuret pulloon. Mira l
+9 painostettiin Espanjan valtiolle. Ei ollut mahdollisuutta kuin tehdä niin.\n Täällä nai punasiva Nam
+hen huumausainerikoksista. Niin pitkälle mitä vain..................................................
+.\n Ai niin, niin nyt se oli onnitteli, sillä muuten saattoi tehdä ainakin huonommasta paikalla. \n Saan
+-------------------------------------------
+Temperature: 2.0
+Generated 5:
+! Vinhain ilmea! boyhettiin? A
+xjekroonaamana, Peuso kyvä iss
+úä rannalla.\n Etiketysin pölua 
+'oonultaisiautossa ei otetakok
+qottusa perinnelmä äänessä. Se
+
+Generated 5 long samples (100 chars):
+Illalla, suuteluksiojon, kunhol ei kiitolto sano! \n Lluís laski sairanjarlassiakokóille,? Läpsi äidin
+4. Niin Paltioli \n Marja Leena oli jo nauttinut paremput ja nimiviehokalhaan. Ongelma eh varastaa aam
+? Neuei! kyl  eihet! Kalle hänestäkin tuntujen sekapuonsa kertoa hängekkäsi, ettei seurume isänne li
+fyr.\n Bjolo ottietii tamalle. Miksei hänen maineensa. Hän oli ja hajun kelvo itsekin, vaan nosti osan
+3novaksi.\n  \n eräihimpiä lapsia iltaisivat koukumelon laitteita laseja. \n Heidänhän olisi rikastunut. M
+-------------------------------------------
+[2019-05-03 23:06] Train Step 351000/1000000, Batch Size = 64, Examples/Sec = 2317.48, Accuracy = 0.81, Loss = 0.594
+[2019-05-03 23:06] Train Step 352000/1000000, Batch Size = 64, Examples/Sec = 2328.37, Accuracy = 0.80, Loss = 0.599
+[2019-05-03 23:07] Train Step 353000/1000000, Batch Size = 64, Examples/Sec = 2315.06, Accuracy = 0.80, Loss = 0.590
+[2019-05-03 23:07] Train Step 354000/1000000, Batch Size = 64, Examples/Sec = 2322.41, Accuracy = 0.81, Loss = 0.594
+[2019-05-03 23:08] Train Step 355000/1000000, Batch Size = 64, Examples/Sec = 2308.76, Accuracy = 0.80, Loss = 0.601
+[2019-05-03 23:08] Train Step 356000/1000000, Batch Size = 64, Examples/Sec = 2297.48, Accuracy = 0.80, Loss = 0.607
+[2019-05-03 23:09] Train Step 357000/1000000, Batch Size = 64, Examples/Sec = 2329.50, Accuracy = 0.79, Loss = 0.614
+[2019-05-03 23:09] Train Step 358000/1000000, Batch Size = 64, Examples/Sec = 2295.99, Accuracy = 0.80, Loss = 0.603
+[2019-05-03 23:10] Train Step 359000/1000000, Batch Size = 64, Examples/Sec = 2305.97, Accuracy = 0.79, Loss = 0.617
+[2019-05-03 23:11] Train Step 360000/1000000, Batch Size = 64, Examples/Sec = 2302.49, Accuracy = 0.81, Loss = 0.592
+[2019-05-03 23:11] Train Step 361000/1000000, Batch Size = 64, Examples/Sec = 2278.62, Accuracy = 0.80, Loss = 0.592
+[2019-05-03 23:12] Train Step 362000/1000000, Batch Size = 64, Examples/Sec = 2324.50, Accuracy = 0.80, Loss = 0.592
+[2019-05-03 23:12] Train Step 363000/1000000, Batch Size = 64, Examples/Sec = 2302.05, Accuracy = 0.80, Loss = 0.588
+[2019-05-03 23:13] Train Step 364000/1000000, Batch Size = 64, Examples/Sec = 2286.48, Accuracy = 0.80, Loss = 0.596
+[2019-05-03 23:13] Train Step 365000/1000000, Batch Size = 64, Examples/Sec = 2149.79, Accuracy = 0.80, Loss = 0.602
+[2019-05-03 23:14] Train Step 366000/1000000, Batch Size = 64, Examples/Sec = 2320.96, Accuracy = 0.80, Loss = 0.609
+[2019-05-03 23:14] Train Step 367000/1000000, Batch Size = 64, Examples/Sec = 2302.41, Accuracy = 0.80, Loss = 0.607
+[2019-05-03 23:15] Train Step 368000/1000000, Batch Size = 64, Examples/Sec = 2290.74, Accuracy = 0.80, Loss = 0.607
+[2019-05-03 23:15] Train Step 369000/1000000, Batch Size = 64, Examples/Sec = 2333.11, Accuracy = 0.79, Loss = 0.610
+[2019-05-03 23:16] Train Step 370000/1000000, Batch Size = 64, Examples/Sec = 2296.20, Accuracy = 0.80, Loss = 0.613
+[2019-05-03 23:17] Train Step 371000/1000000, Batch Size = 64, Examples/Sec = 2296.34, Accuracy = 0.80, Loss = 0.601
+[2019-05-03 23:17] Train Step 372000/1000000, Batch Size = 64, Examples/Sec = 2293.89, Accuracy = 0.80, Loss = 0.602
+[2019-05-03 23:18] Train Step 373000/1000000, Batch Size = 64, Examples/Sec = 2288.67, Accuracy = 0.79, Loss = 0.604
+[2019-05-03 23:18] Train Step 374000/1000000, Batch Size = 64, Examples/Sec = 2294.63, Accuracy = 0.81, Loss = 0.596
+[2019-05-03 23:19] Train Step 375000/1000000, Batch Size = 64, Examples/Sec = 2305.51, Accuracy = 0.80, Loss = 0.595
+[2019-05-03 23:19] Train Step 376000/1000000, Batch Size = 64, Examples/Sec = 2292.79, Accuracy = 0.81, Loss = 0.591
+[2019-05-03 23:20] Train Step 377000/1000000, Batch Size = 64, Examples/Sec = 2278.53, Accuracy = 0.80, Loss = 0.596
+[2019-05-03 23:20] Train Step 378000/1000000, Batch Size = 64, Examples/Sec = 2094.44, Accuracy = 0.80, Loss = 0.608
+[2019-05-03 23:21] Train Step 379000/1000000, Batch Size = 64, Examples/Sec = 2081.43, Accuracy = 0.80, Loss = 0.618
+[2019-05-03 23:21] Train Step 380000/1000000, Batch Size = 64, Examples/Sec = 2284.52, Accuracy = 0.80, Loss = 0.602
+[2019-05-03 23:22] Train Step 381000/1000000, Batch Size = 64, Examples/Sec = 2298.01, Accuracy = 0.80, Loss = 0.598
+[2019-05-03 23:22] Train Step 382000/1000000, Batch Size = 64, Examples/Sec = 2097.15, Accuracy = 0.81, Loss = 0.576
+[2019-05-03 23:23] Train Step 383000/1000000, Batch Size = 64, Examples/Sec = 2030.17, Accuracy = 0.80, Loss = 0.582
+[2019-05-03 23:24] Train Step 384000/1000000, Batch Size = 64, Examples/Sec = 2310.75, Accuracy = 0.80, Loss = 0.595
+[2019-05-03 23:24] Train Step 385000/1000000, Batch Size = 64, Examples/Sec = 2304.27, Accuracy = 0.81, Loss = 0.593
+[2019-05-03 23:25] Train Step 386000/1000000, Batch Size = 64, Examples/Sec = 2283.82, Accuracy = 0.80, Loss = 0.597
+[2019-05-03 23:25] Train Step 387000/1000000, Batch Size = 64, Examples/Sec = 2321.32, Accuracy = 0.80, Loss = 0.608
+[2019-05-03 23:26] Train Step 388000/1000000, Batch Size = 64, Examples/Sec = 2299.02, Accuracy = 0.80, Loss = 0.610
+[2019-05-03 23:26] Train Step 389000/1000000, Batch Size = 64, Examples/Sec = 2327.50, Accuracy = 0.81, Loss = 0.592
+[2019-05-03 23:27] Train Step 390000/1000000, Batch Size = 64, Examples/Sec = 2299.96, Accuracy = 0.79, Loss = 0.627
+[2019-05-03 23:27] Train Step 391000/1000000, Batch Size = 64, Examples/Sec = 2320.34, Accuracy = 0.81, Loss = 0.584
+[2019-05-03 23:28] Train Step 392000/1000000, Batch Size = 64, Examples/Sec = 2296.79, Accuracy = 0.80, Loss = 0.607
+[2019-05-03 23:28] Train Step 393000/1000000, Batch Size = 64, Examples/Sec = 2291.15, Accuracy = 0.80, Loss = 0.615
+[2019-05-03 23:29] Train Step 394000/1000000, Batch Size = 64, Examples/Sec = 2301.70, Accuracy = 0.81, Loss = 0.576
+[2019-05-03 23:29] Train Step 395000/1000000, Batch Size = 64, Examples/Sec = 2305.49, Accuracy = 0.81, Loss = 0.577
+[2019-05-03 23:30] Train Step 396000/1000000, Batch Size = 64, Examples/Sec = 2284.50, Accuracy = 0.81, Loss = 0.594
+[2019-05-03 23:31] Train Step 397000/1000000, Batch Size = 64, Examples/Sec = 2277.27, Accuracy = 0.80, Loss = 0.594
+[2019-05-03 23:31] Train Step 398000/1000000, Batch Size = 64, Examples/Sec = 2297.84, Accuracy = 0.80, Loss = 0.610
+[2019-05-03 23:32] Train Step 399000/1000000, Batch Size = 64, Examples/Sec = 2280.87, Accuracy = 0.81, Loss = 0.589
+[2019-05-03 23:32] Train Step 400000/1000000, Batch Size = 64, Examples/Sec = 2303.18, Accuracy = 0.80, Loss = 0.618
+Saved model.
+-------------------------------------------
+Temperature: 0.0001
+Generated 5:
+i kuin olisi jokin sate, tämä 
+Lluís oli kuvitellut. Hänelle 
+bistö oli paikka, jossa he oli
+ci sanoi ja sanoi tuntevana ta
+Gunilla oli tapana sanoa.\n Radm
+
+Generated 5 long samples (100 chars):
+qaisuus Kallen ottaessa sieltä kaksi ulkomaalaisen elämälleen. \n Tietenkin hän oli ottanut kaikki kol
+Gunilla oli tapana sanoa.\n Radmilo oli varma siitä, että mies tulisi ja meni sisälle hänen elämänsä t
+si kotiin. \n He olivat menneet sinne autoaan - ja se tuntui kukkivat edes ajatellen luulen, että se o
+Gunilla oli tapana sanoa.\n Radmilo oli varma siitä, että mies tulisi ja meni sisälle hänen elämänsä t
+Ari tunsi itsensä niin raukeaksi, että meillä oli puhuttu ja paikalla olivat olleet kahdestaan KGB:n
+-------------------------------------------
+Temperature: 0.25
+Generated 5:
+Sitten hän vilkaisi Ninniä, jo
+, jossa oli päivän selvää, ett
+li kuin pieni lukemisen metsik
+) mitään sen pidempään. Kesti 
+van kanssa. \n Lluís muisteli ku
+
+Generated 5 long samples (100 chars):
+ön polvelle kutsuttuja  perälän joka päivänä. Eikä hän paljon kuin ne kaatunut näiden puhelinnumeron
+Qoita ei ollut juurikaan kertonut. \n Hän oli laittanut jonkin verran ymmärtämään Flempan kanssa viisa
+Hän oli muuttunut pelokkaaksi pikkupojaksi.\n Igor tarttui voimakkaalla otteella tytön nänneihin ja al
+valla vanhan hienon hieman kauempana sivulaivan puolella.  \n Äitinsä kuoltua Jullen välit Matiaksen k
+é vaatekaappi, jo usein tietenkin paljon enemmän piti hieroa uutisuun. Lapsia  erär olla palasi koti
+-------------------------------------------
+Temperature: 0.5
+Generated 5:
+kkaasti koko iltapäivällä. Ari
+Radmilo tunsi sitä kuolisi ist
+Uryy Ann missä hän oli ottanut
+ä kaikesta, mitä Ari oli ollut
+Wissä. Piti syytöstä lapsia. S
+
+Generated 5 long samples (100 chars):
+ri maksoi ensimmäiseen talveta tilanteeseen, joten minun jälkeen Lluís mietti. Tunsiko Ninni kertoi 
+dostavan näistä yhdeksänkymmenluvulla tavallaan maisemaikkunasta ja toisen miehistä. Tämä oli tummat
+úni varmaan luonnollista. \n Marja Leena oli lähestunnetto hän edes varaistava poliisiin montaa painaj
+Don: Hansistumista.\n Mutta ajan kuluessa hän oli ollut yhtä huomiota autoonsa loistevalla ja mietti, 
+, että nainen tunsi itsensä ulkopuoliseksi jo siksikin, että se kaikki oli siis voimallisemmin vain 
+-------------------------------------------
+Temperature: 1.0
+Generated 5:
+5 no, hän tarjotain kuulleni j
+. \n Minkä helppoa oli rakennus,
+dun ja laatikoiden keskustelun
+1 Vaikka eihän näyttänyt oleva
+teitä, joista tehdä saman tunt
+
+Generated 5 long samples (100 chars):
+(opiski koittaa jonka vanhoja koko asian. Täytettyään pitkin polkeaa - alkansa  toisellekin, mutta e
+waniin. Maahan yksi entisenäistämisestä. Nyt saattoi edes paikkakun kolmassa, tavarat oli noussut my
+: Auri kuin Radmilo tunsi lähes kysymykseen. Hän teki sen mitä käytettiin kahvia ja rakastajat roisi
+3rangofrisideriä. Oli parempi kuinen vääriin kuin huonossa - olemansa minulle.\n Myöhemmin illalla jo 
+?\n Ei, vaan silloin tällöin hän huusi paikka pääseen lattiaan läikkimiäinä ja piirtäneet mielessään y
+-------------------------------------------
+Temperature: 2.0
+Generated 5:
+Öarkoset seistattelivat siinä 
+7. Kävi selvillisillä upi Kova
+Ysnävähän Bruno ja alkae puoli
+Wuaria.\n Aivan kuin ne raaemppa
+Ojatillisekseen kysymyspermoja
+
+Generated 5 long samples (100 chars):
+zholut. Mlutaa halpaammikki.. Jostainkin murhapilättään hihiväisyydestään.\n Kastoi littanut tätä ääne
+tkacilawilla. Ihmiskunta ikään puhtaina, ihmiset eivät molemmat lästytettyyksiä, samalta liffrinaan 
+Isahdollisten eks. Siltä se Bruno oli. Hän selitti olemaan, vaikka Tehtäissämme olemattomia lattiall
+Fdepsas! Miksi mun on riittäisi. \n Mä oon tullu kuninkaat teidan on. Nikoja miehiä sinin yhdessä Ukro
+? Thomoksit, olen nimiä unelma.\n En, mallikuure lähti puoleen, ja pöytähan on kieltäny yhtään mitään.
+-------------------------------------------
+[2019-05-03 23:33] Train Step 401000/1000000, Batch Size = 64, Examples/Sec = 2300.65, Accuracy = 0.80, Loss = 0.609
+[2019-05-03 23:33] Train Step 402000/1000000, Batch Size = 64, Examples/Sec = 2310.67, Accuracy = 0.80, Loss = 0.601
+[2019-05-03 23:34] Train Step 403000/1000000, Batch Size = 64, Examples/Sec = 2294.58, Accuracy = 0.81, Loss = 0.602
+[2019-05-03 23:34] Train Step 404000/1000000, Batch Size = 64, Examples/Sec = 2291.81, Accuracy = 0.80, Loss = 0.607
+[2019-05-03 23:35] Train Step 405000/1000000, Batch Size = 64, Examples/Sec = 2294.01, Accuracy = 0.80, Loss = 0.595
+[2019-05-03 23:35] Train Step 406000/1000000, Batch Size = 64, Examples/Sec = 2281.18, Accuracy = 0.80, Loss = 0.613
+[2019-05-03 23:36] Train Step 407000/1000000, Batch Size = 64, Examples/Sec = 2309.18, Accuracy = 0.80, Loss = 0.606
+[2019-05-03 23:36] Train Step 408000/1000000, Batch Size = 64, Examples/Sec = 2290.03, Accuracy = 0.80, Loss = 0.602
+[2019-05-03 23:37] Train Step 409000/1000000, Batch Size = 64, Examples/Sec = 2286.83, Accuracy = 0.80, Loss = 0.612
+[2019-05-03 23:37] Train Step 410000/1000000, Batch Size = 64, Examples/Sec = 2307.04, Accuracy = 0.80, Loss = 0.616
+[2019-05-03 23:38] Train Step 411000/1000000, Batch Size = 64, Examples/Sec = 2278.49, Accuracy = 0.80, Loss = 0.596
+[2019-05-03 23:39] Train Step 412000/1000000, Batch Size = 64, Examples/Sec = 2317.78, Accuracy = 0.80, Loss = 0.603
+[2019-05-03 23:39] Train Step 413000/1000000, Batch Size = 64, Examples/Sec = 2279.75, Accuracy = 0.80, Loss = 0.606
+[2019-05-03 23:40] Train Step 414000/1000000, Batch Size = 64, Examples/Sec = 2297.64, Accuracy = 0.80, Loss = 0.617
+[2019-05-03 23:40] Train Step 415000/1000000, Batch Size = 64, Examples/Sec = 2251.56, Accuracy = 0.80, Loss = 0.602
+[2019-05-03 23:41] Train Step 416000/1000000, Batch Size = 64, Examples/Sec = 2296.64, Accuracy = 0.80, Loss = 0.587
+[2019-05-03 23:41] Train Step 417000/1000000, Batch Size = 64, Examples/Sec = 2317.28, Accuracy = 0.80, Loss = 0.599
+[2019-05-03 23:42] Train Step 418000/1000000, Batch Size = 64, Examples/Sec = 2287.40, Accuracy = 0.81, Loss = 0.591
+[2019-05-03 23:42] Train Step 419000/1000000, Batch Size = 64, Examples/Sec = 2310.00, Accuracy = 0.80, Loss = 0.616
+[2019-05-03 23:43] Train Step 420000/1000000, Batch Size = 64, Examples/Sec = 2299.10, Accuracy = 0.80, Loss = 0.593
+[2019-05-03 23:43] Train Step 421000/1000000, Batch Size = 64, Examples/Sec = 2280.52, Accuracy = 0.80, Loss = 0.607
+[2019-05-03 23:44] Train Step 422000/1000000, Batch Size = 64, Examples/Sec = 2297.17, Accuracy = 0.80, Loss = 0.602
+[2019-05-03 23:44] Train Step 423000/1000000, Batch Size = 64, Examples/Sec = 2299.65, Accuracy = 0.79, Loss = 0.604
+[2019-05-03 23:45] Train Step 424000/1000000, Batch Size = 64, Examples/Sec = 2269.97, Accuracy = 0.79, Loss = 0.608
+[2019-05-03 23:45] Train Step 425000/1000000, Batch Size = 64, Examples/Sec = 2260.41, Accuracy = 0.79, Loss = 0.621
+[2019-05-03 23:46] Train Step 426000/1000000, Batch Size = 64, Examples/Sec = 2234.76, Accuracy = 0.81, Loss = 0.583
+[2019-05-03 23:47] Train Step 427000/1000000, Batch Size = 64, Examples/Sec = 2294.65, Accuracy = 0.80, Loss = 0.601
+[2019-05-03 23:47] Train Step 428000/1000000, Batch Size = 64, Examples/Sec = 2307.93, Accuracy = 0.80, Loss = 0.602
+[2019-05-03 23:48] Train Step 429000/1000000, Batch Size = 64, Examples/Sec = 2309.60, Accuracy = 0.81, Loss = 0.578
+[2019-05-03 23:48] Train Step 430000/1000000, Batch Size = 64, Examples/Sec = 2308.51, Accuracy = 0.80, Loss = 0.611
+[2019-05-03 23:49] Train Step 431000/1000000, Batch Size = 64, Examples/Sec = 2294.99, Accuracy = 0.80, Loss = 0.602
+[2019-05-03 23:49] Train Step 432000/1000000, Batch Size = 64, Examples/Sec = 2287.67, Accuracy = 0.80, Loss = 0.606
+[2019-05-03 23:50] Train Step 433000/1000000, Batch Size = 64, Examples/Sec = 2295.60, Accuracy = 0.81, Loss = 0.576
+[2019-05-03 23:50] Train Step 434000/1000000, Batch Size = 64, Examples/Sec = 2305.22, Accuracy = 0.80, Loss = 0.599
+[2019-05-03 23:51] Train Step 435000/1000000, Batch Size = 64, Examples/Sec = 2257.05, Accuracy = 0.80, Loss = 0.616
+[2019-05-03 23:51] Train Step 436000/1000000, Batch Size = 64, Examples/Sec = 2072.44, Accuracy = 0.80, Loss = 0.595
+[2019-05-03 23:52] Train Step 437000/1000000, Batch Size = 64, Examples/Sec = 2111.15, Accuracy = 0.80, Loss = 0.599
+[2019-05-03 23:52] Train Step 438000/1000000, Batch Size = 64, Examples/Sec = 2294.46, Accuracy = 0.80, Loss = 0.595
+[2019-05-03 23:53] Train Step 439000/1000000, Batch Size = 64, Examples/Sec = 2315.12, Accuracy = 0.79, Loss = 0.618
+[2019-05-03 23:54] Train Step 440000/1000000, Batch Size = 64, Examples/Sec = 2269.76, Accuracy = 0.80, Loss = 0.610
+[2019-05-03 23:54] Train Step 441000/1000000, Batch Size = 64, Examples/Sec = 2233.02, Accuracy = 0.80, Loss = 0.602
+[2019-05-03 23:55] Train Step 442000/1000000, Batch Size = 64, Examples/Sec = 2123.46, Accuracy = 0.81, Loss = 0.590
+[2019-05-03 23:55] Train Step 443000/1000000, Batch Size = 64, Examples/Sec = 2276.40, Accuracy = 0.81, Loss = 0.588
+[2019-05-03 23:56] Train Step 444000/1000000, Batch Size = 64, Examples/Sec = 2048.70, Accuracy = 0.80, Loss = 0.589
+[2019-05-03 23:56] Train Step 445000/1000000, Batch Size = 64, Examples/Sec = 2267.42, Accuracy = 0.80, Loss = 0.614
+[2019-05-03 23:57] Train Step 446000/1000000, Batch Size = 64, Examples/Sec = 2295.36, Accuracy = 0.80, Loss = 0.589
+[2019-05-03 23:57] Train Step 447000/1000000, Batch Size = 64, Examples/Sec = 2303.85, Accuracy = 0.80, Loss = 0.604
+[2019-05-03 23:58] Train Step 448000/1000000, Batch Size = 64, Examples/Sec = 2300.79, Accuracy = 0.81, Loss = 0.620
+[2019-05-03 23:58] Train Step 449000/1000000, Batch Size = 64, Examples/Sec = 2314.20, Accuracy = 0.80, Loss = 0.585
+[2019-05-03 23:59] Train Step 450000/1000000, Batch Size = 64, Examples/Sec = 2296.34, Accuracy = 0.81, Loss = 0.607
+Saved model.
+-------------------------------------------
+Temperature: 0.0001
+Generated 5:
+Sitten hän huusi ja sitten ris
+6 kun ei se koskaan tavannut h
+3 Toivo oli kuullut poissa tor
+'din pitä. Sitten hän heräsi j
+2 jotain muuta kuin kerran.\n Ja
+
+Generated 5 long samples (100 chars):
+9 paljon enemmän kesämökkejä kuin viime kerralla. Hän ei ollut koskaan edes ajatellut asiaa. Hän oli
+Hän oli tavannut tämän työpaikan perässä vastaan.\n Tulis huomasi, että miehellä oli ollut lapsena ker
+ís oli hänelle kertonut Jullelle kuin kiinalaiskortteleihin toisen pitäisi vain tuntui työhön kuorem
+Kalle kertoi, että hän oli ollut pakotalon luvemmalle. Sitten eräänä kesäkuun oli ollut vain eräänla
+xin puolelta ja poliisi tulisi pitää loputtomasti työkaluja kun pyysin. Kun hän kyykisteli siinä min
+-------------------------------------------
+Temperature: 0.25
+Generated 5:
+Uryytistä ja laski kätensä täm
+. Oli tapahtunut jotain pahaa 
+Qaalisesta elokuvasta, mutta n
+3 Toivo oli kuullut pahaa ajat
+sta tuntemattomia maailmoja, k
+
+Generated 5 long samples (100 chars):
+bin päästä eroon tavaroistaan, kun tulin kotiinsa näin neljän metsikön suhteen.\n Meidän pitää pelasta
+9 painoi rekastuut. \n Mutta ei ollut aiemmin olisi ollut niin kauan ollut niin väliä oliko juoksut ta
+un tarkoitus lähteä hakemaan Lluísia. Jo pelkkä suuntaan tunne palasivat aina vain enemmän karhun nä
+Vaikka ei ollut yhtä lailla kolme vuotta, ja jopa sijaan oli niin tunteita halukaapuna miestä. Hän t
+Ömpärin kanssa. Julle teräsivät siitä mihin oli pystynyt hänen perääneen. Kesti vuosia aiemmin. Papi
+-------------------------------------------
+Temperature: 0.5
+Generated 5:
+en oli helppoa, sillä ne ovike
+ís oli se, joka sai niin pian 
+uuskatettu kannatti. Hän oli v
+? Täällä päivittäin on tuonu k
+? Täällä lähti kävelemään kasv
+
+Generated 5 long samples (100 chars):
+yt sisälle pappilaan henkilökohtaisesti miettivät siitä, että oli tullutkin. Mutta poika kun oli nii
+-altaan kirkon virkamieskunnan silmissä? Mä oon yhtä jotain sellanen mies, Kalle valitsi tulleensa s
+4 Marja Leena oli käynyt ullakkojen asumaan Terrannen ja Varmoksen jälkeen, kun he olivat jo palanne
+Raikku oli varmaan hyvä isä. Ei tehtävissä poikaystävä alkoi soimata. Ne olivat vangillisesti itsetu
+Uryy Ann mitä hänen oli jäänyt vaihtoehtoasempaa kaikki ajatukset saivat Arin isäänsä ja oli täynnä 
+-------------------------------------------
+Temperature: 1.0
+Generated 5:
+8 on tietenkin ruotsalainen. E
+än kuin ovin alkaa seurakuntaa
+únen paikalle.\n Ari ei ollut ka
+Maijan velipuoli, joiden millo
+den, eikä Ninnin niin kovin hy
+
+Generated 5 long samples (100 chars):
+qauttaa minua maailmaa, joka useimmillani on mun poliisitakin sulkeutu mustaan pitäisi. Ja paljon ni
+7 mikäli tämä ei sitä halunnutkaan. Hän ei kysenne nuorempi.\n No kai se osas jotain muutakaan niitä m
+ya tänään jämmenjäkestä lasten kanssa vakuuttuneeksi, ihan pitkään tähän tapaan: \n Ninnin jäljettömil
+Talut? Täällä on avain voi loppua.\n Älä vaan sopi mä muron, se mikä Lluísin hetti.\n Vaimo? Ninni innot
+0 tulevan isänsä. Toinen perheen pohjin vene vaarille heittänykkiä kiinni asunnossa ja täysin mahdot
+-------------------------------------------
+Temperature: 2.0
+Generated 5:
+Y 96.\n Mistä mä viisi sulla, nä
+xjaton, Valinkassa oli rampiod
+s.\n Se nyt on seljä, yllättäy s
+Perälästä. Ei siis auttanut yl
+Ta voitan unohtaa.?. siitä.\n Ko
+
+Generated 5 long samples (100 chars):
+\n Aija olemme liiaalessa. \n Joillaisia katarutilapuilemmin asuttiin tapohjaa ja eniten sai vauhdon Jar
+SGro, Espaladra tuossa pyöriä Halmaimmat joista hän oli tehnyt hänet, ja sen elettää menet, missä Zu
+Veitsikin.\n Katsotaan sijofttiset uplosetti, Marjatta kyyneleeri valehteli,. Kun he asuivat olemaan t
+ftoi ripauskaluneilla, minen sipreä, Katju Sanan ehtä syksi ihminen, ilman Muut pihemmillekin  jätti
+è taas houkutellut taso etenä Elsan talo, Perälälle! nyt - sammuttimuuden kuollavia laitteita.\n Omitu
+-------------------------------------------
+[2019-05-03 23:59] Train Step 451000/1000000, Batch Size = 64, Examples/Sec = 2286.46, Accuracy = 0.80, Loss = 0.599
+[2019-05-04 00:00] Train Step 452000/1000000, Batch Size = 64, Examples/Sec = 2294.01, Accuracy = 0.80, Loss = 0.588
+[2019-05-04 00:00] Train Step 453000/1000000, Batch Size = 64, Examples/Sec = 2290.50, Accuracy = 0.81, Loss = 0.586
+[2019-05-04 00:01] Train Step 454000/1000000, Batch Size = 64, Examples/Sec = 2299.75, Accuracy = 0.80, Loss = 0.628
+[2019-05-04 00:02] Train Step 455000/1000000, Batch Size = 64, Examples/Sec = 2298.74, Accuracy = 0.80, Loss = 0.600
+[2019-05-04 00:02] Train Step 456000/1000000, Batch Size = 64, Examples/Sec = 2300.51, Accuracy = 0.81, Loss = 0.581
+[2019-05-04 00:03] Train Step 457000/1000000, Batch Size = 64, Examples/Sec = 2275.28, Accuracy = 0.80, Loss = 0.616
+[2019-05-04 00:03] Train Step 458000/1000000, Batch Size = 64, Examples/Sec = 2270.22, Accuracy = 0.81, Loss = 0.579
+[2019-05-04 00:04] Train Step 459000/1000000, Batch Size = 64, Examples/Sec = 2312.70, Accuracy = 0.80, Loss = 0.601
+[2019-05-04 00:04] Train Step 460000/1000000, Batch Size = 64, Examples/Sec = 2119.86, Accuracy = 0.81, Loss = 0.603
+[2019-05-04 00:05] Train Step 461000/1000000, Batch Size = 64, Examples/Sec = 2239.33, Accuracy = 0.81, Loss = 0.577
+[2019-05-04 00:05] Train Step 462000/1000000, Batch Size = 64, Examples/Sec = 2293.63, Accuracy = 0.80, Loss = 0.595
+[2019-05-04 00:06] Train Step 463000/1000000, Batch Size = 64, Examples/Sec = 2130.29, Accuracy = 0.80, Loss = 0.608
+[2019-05-04 00:06] Train Step 464000/1000000, Batch Size = 64, Examples/Sec = 2301.34, Accuracy = 0.80, Loss = 0.580
+[2019-05-04 00:07] Train Step 465000/1000000, Batch Size = 64, Examples/Sec = 2299.75, Accuracy = 0.81, Loss = 0.582
+[2019-05-04 00:08] Train Step 466000/1000000, Batch Size = 64, Examples/Sec = 2118.17, Accuracy = 0.80, Loss = 0.600
+[2019-05-04 00:08] Train Step 467000/1000000, Batch Size = 64, Examples/Sec = 2281.02, Accuracy = 0.81, Loss = 0.586
+[2019-05-04 00:09] Train Step 468000/1000000, Batch Size = 64, Examples/Sec = 2113.12, Accuracy = 0.80, Loss = 0.588
+[2019-05-04 00:09] Train Step 469000/1000000, Batch Size = 64, Examples/Sec = 2288.18, Accuracy = 0.80, Loss = 0.597
+[2019-05-04 00:10] Train Step 470000/1000000, Batch Size = 64, Examples/Sec = 1627.34, Accuracy = 0.80, Loss = 0.593
+[2019-05-04 00:10] Train Step 471000/1000000, Batch Size = 64, Examples/Sec = 2308.69, Accuracy = 0.81, Loss = 0.580
+[2019-05-04 00:11] Train Step 472000/1000000, Batch Size = 64, Examples/Sec = 2299.02, Accuracy = 0.81, Loss = 0.605
+[2019-05-04 00:11] Train Step 473000/1000000, Batch Size = 64, Examples/Sec = 2308.19, Accuracy = 0.81, Loss = 0.575
+[2019-05-04 00:12] Train Step 474000/1000000, Batch Size = 64, Examples/Sec = 2278.86, Accuracy = 0.80, Loss = 0.608
+[2019-05-04 00:12] Train Step 475000/1000000, Batch Size = 64, Examples/Sec = 2293.01, Accuracy = 0.80, Loss = 0.618
+[2019-05-04 00:13] Train Step 476000/1000000, Batch Size = 64, Examples/Sec = 2135.54, Accuracy = 0.79, Loss = 0.613
+[2019-05-04 00:14] Train Step 477000/1000000, Batch Size = 64, Examples/Sec = 2320.32, Accuracy = 0.81, Loss = 0.555
+[2019-05-04 00:14] Train Step 478000/1000000, Batch Size = 64, Examples/Sec = 2316.58, Accuracy = 0.81, Loss = 0.578
+[2019-05-04 00:15] Train Step 479000/1000000, Batch Size = 64, Examples/Sec = 2316.42, Accuracy = 0.81, Loss = 0.588
+[2019-05-04 00:15] Train Step 480000/1000000, Batch Size = 64, Examples/Sec = 2317.50, Accuracy = 0.80, Loss = 0.608
+[2019-05-04 00:16] Train Step 481000/1000000, Batch Size = 64, Examples/Sec = 2322.95, Accuracy = 0.80, Loss = 0.622
+[2019-05-04 00:16] Train Step 482000/1000000, Batch Size = 64, Examples/Sec = 2318.22, Accuracy = 0.80, Loss = 0.580
+[2019-05-04 00:17] Train Step 483000/1000000, Batch Size = 64, Examples/Sec = 2317.86, Accuracy = 0.81, Loss = 0.587
+[2019-05-04 00:17] Train Step 484000/1000000, Batch Size = 64, Examples/Sec = 2319.52, Accuracy = 0.79, Loss = 0.612
+[2019-05-04 00:18] Train Step 485000/1000000, Batch Size = 64, Examples/Sec = 2316.40, Accuracy = 0.81, Loss = 0.559
+[2019-05-04 00:18] Train Step 486000/1000000, Batch Size = 64, Examples/Sec = 2245.83, Accuracy = 0.81, Loss = 0.584
+[2019-05-04 00:19] Train Step 487000/1000000, Batch Size = 64, Examples/Sec = 2122.98, Accuracy = 0.80, Loss = 0.608
+[2019-05-04 00:19] Train Step 488000/1000000, Batch Size = 64, Examples/Sec = 2263.01, Accuracy = 0.80, Loss = 0.609
+[2019-05-04 00:20] Train Step 489000/1000000, Batch Size = 64, Examples/Sec = 2288.37, Accuracy = 0.80, Loss = 0.597
+[2019-05-04 00:20] Train Step 490000/1000000, Batch Size = 64, Examples/Sec = 2123.46, Accuracy = 0.80, Loss = 0.582
+[2019-05-04 00:21] Train Step 491000/1000000, Batch Size = 64, Examples/Sec = 2124.07, Accuracy = 0.80, Loss = 0.598
+[2019-05-04 00:22] Train Step 492000/1000000, Batch Size = 64, Examples/Sec = 2283.99, Accuracy = 0.81, Loss = 0.578
+[2019-05-04 00:22] Train Step 493000/1000000, Batch Size = 64, Examples/Sec = 2299.92, Accuracy = 0.81, Loss = 0.579
+[2019-05-04 00:23] Train Step 494000/1000000, Batch Size = 64, Examples/Sec = 2084.17, Accuracy = 0.80, Loss = 0.590
+[2019-05-04 00:23] Train Step 495000/1000000, Batch Size = 64, Examples/Sec = 2298.23, Accuracy = 0.80, Loss = 0.597
+[2019-05-04 00:24] Train Step 496000/1000000, Batch Size = 64, Examples/Sec = 2282.94, Accuracy = 0.81, Loss = 0.591
+[2019-05-04 00:24] Train Step 497000/1000000, Batch Size = 64, Examples/Sec = 2287.44, Accuracy = 0.80, Loss = 0.592
+[2019-05-04 00:25] Train Step 498000/1000000, Batch Size = 64, Examples/Sec = 2280.07, Accuracy = 0.79, Loss = 0.626
+[2019-05-04 00:25] Train Step 499000/1000000, Batch Size = 64, Examples/Sec = 2129.41, Accuracy = 0.81, Loss = 0.574
+[2019-05-04 00:26] Train Step 500000/1000000, Batch Size = 64, Examples/Sec = 2134.57, Accuracy = 0.80, Loss = 0.598
+Saved model.
+-------------------------------------------
+Temperature: 0.0001
+Generated 5:
+4 Tämä oli se tosiaan vielä si
+Ari tunsi itsensä aatelisneido
+n kanssa se olisi kyllä kerton
+den kanssa. \n Lluís ei halunnut
+gissa. \n Kun kaikki kerros karv
+
+Generated 5 long samples (100 chars):
+ri saattoi ostaa lapsenlapsilleen. \n Kun kaikki kyyneleet oli kuollut, ja jopa toimitti siitä, että K
+filmeissä, jotka liikkuivat jotain veneensä Venein tulevansa seurassa. \n Mira oli sanonut ja tunsin i
+Gunilla oli tapana tulla toisen kesäpäivälleen. \n Lluís ei tavallaan suomalaista selällään viikonlopp
+è kyllä riippui osoitteensa hirveään kuntoon. Eduardo oli todennäköisesti pelastanut hänen elämänsä 
+Ari tunsi itsensä aatelisneidoksi. Koulussakin häntä kohdeltiin kunnioittavasti, olihan hän sentään 
+-------------------------------------------
+Temperature: 0.25
+Generated 5:
+è kuin olisi juuri tullut sinn
+mistään tuntemaan olevani kaht
+'omasta koko asiasta, jonka sa
+9 paljon hänen hiuksensa oli h
+gissa jäi piiloutuneena joukos
+
+Generated 5 long samples (100 chars):
+4. \n Marja Leena jäi hieman mustasta. \n Silloin hän muisti sen mitä tapahtuisi mitään, mikä tietenkin 
+Bruno oli jäämässä pois junasta. \n Siimeksen perheidylli murtui Ninnin katoamisen jälkeen. Krister ol
+: Toivo näki jo päältä. Lluís oli puhunut paljon paremmin. \n Kuule nyt kun olen saanut nimensä siitä,
+ä oli kotoisin maalta, läheltä Jyväskylää. Nämä maalaiset juuret viehättivät minua ja mikä oli taval
+Hän oli muuttunut pelokkaaksi pikkupojaksi.\n Igor tarttui voimakkaalla otteella tytön nänneihin ja al
+-------------------------------------------
+Temperature: 0.5
+Generated 5:
+Ninni sanoi. Enkä mä tie. Se o
+kun se oli meidän salakava toi
+6. Kerroin sille tiesi vain si
+Qaalisen hieno virkavieressä. 
+si kotoaan, ja vaja ei ollut t
+
+Generated 5 long samples (100 chars):
+7 ja kalasteiden takana, lukkomiehiä ja vaatteet esiintymiseen tulipalon kantaja. Vaikka tämä kaikki
+oi sidottu koristepilutilaatikoko poliisimme. Se oli aina tehokasta. Ei kestänyt kauaakaan, kun minä
+Ei kyllä käsitys oli se sun lattialla, niin sitä mä en oo  se tosi puhumaan.\n Ja tässä tapahtuisikin,
+Ninni sai kylmät väreet kulkemaan pitkin selkäpiitä, mutta Maijan peli. Joitakin kuuluisi metriä pit
+Uryy Ann missä ihme oli ottanut, ja se mitä hän oli tervetullut minkään takaisin kuin ennenkin. Vai 
+-------------------------------------------
+Temperature: 1.0
+Generated 5:
+ú puhu kun ne on luvannut näis
+3jan nyt samalla ajatuksistaan
+Kenhalmasti, kun Lluís kertoi 
+ón tiedossa, eikä saanut sitä 
+årdolle. Mitä vinttoon. Puolen
+
+Generated 5 long samples (100 chars):
+lut asiasta aamiaiseksi. Saatanan puhelimen alkoi hieman naureskelistaan ja huomasi, että niiden mie
+xin työkaluja keltaisissa riisuja tai kyntynyt toivotun lopullisesti.\n Sinun, en nähny.\n Siinä saattoi
+bin pois.\n Viidestä oli sanonut, hän soi ylättää sukulaistensa veneen keskellä. Ari pakastui Ninnin n
+9 hän palasi takaisin kotiin, tämän heikentää ja elämänkumppanin mielikuvituksellisessa suihkuhuonee
+2 Tuntillan ja pois tästä kuuluu, vaan hänen elämänsä tuutteilleen, milloin kun isäsi päätti juottua
+-------------------------------------------
+Temperature: 2.0
+Generated 5:
+Gseot. Mä teen jäit. Yksikarva
+ntaisho sai henkiin, vaikka ri
+óloumutti jalossa. \n Igor jatka
+Mä en?r yjsettävässä?\n Polisia 
+\n On pysynyt Suomeksa.\n \n  Niku l
+
+Generated 5 long samples (100 chars):
+Juuri Krister Ninni ympäri eivät olleet tätensä, mutta pitäs olivat jollakin kirjoiltava päivään.\n  R
+-oputon kuolettivat ohjeinemua,tiin. Radmilo  perarostelut olivat hänelle voittavan hätäisyssän vapa
+Xkäppöt vaan todennappilaat.! Vanhat osammat ylkyl oo ereinkin, Ajalle ja ei ollut koskaan nähnyt Ja
+8.\n Ari oppi sylinestä asioita. \n Jope-isätkin aurinkovuoteen ja nukkua? Kerro kirjoja siitä oikeastaa
+bottiin etuostuille usean sumeron laulta mä anterratit kulleks  Lööf oliko?\n Siitä Kalle naurasi ja ä
+-------------------------------------------
+[2019-05-04 00:26] Train Step 501000/1000000, Batch Size = 64, Examples/Sec = 2299.55, Accuracy = 0.82, Loss = 0.573
+[2019-05-04 00:27] Train Step 502000/1000000, Batch Size = 64, Examples/Sec = 2297.32, Accuracy = 0.81, Loss = 0.585
+[2019-05-04 00:28] Train Step 503000/1000000, Batch Size = 64, Examples/Sec = 2127.50, Accuracy = 0.81, Loss = 0.596
+[2019-05-04 00:28] Train Step 504000/1000000, Batch Size = 64, Examples/Sec = 2298.15, Accuracy = 0.80, Loss = 0.587
+[2019-05-04 00:29] Train Step 505000/1000000, Batch Size = 64, Examples/Sec = 2100.80, Accuracy = 0.79, Loss = 0.616
+[2019-05-04 00:29] Train Step 506000/1000000, Batch Size = 64, Examples/Sec = 2295.67, Accuracy = 0.80, Loss = 0.605
+[2019-05-04 00:30] Train Step 507000/1000000, Batch Size = 64, Examples/Sec = 2095.38, Accuracy = 0.80, Loss = 0.584
+[2019-05-04 00:30] Train Step 508000/1000000, Batch Size = 64, Examples/Sec = 2297.42, Accuracy = 0.80, Loss = 0.584
+[2019-05-04 00:31] Train Step 509000/1000000, Batch Size = 64, Examples/Sec = 2297.11, Accuracy = 0.81, Loss = 0.592
+[2019-05-04 00:31] Train Step 510000/1000000, Batch Size = 64, Examples/Sec = 2299.23, Accuracy = 0.80, Loss = 0.617
+[2019-05-04 00:32] Train Step 511000/1000000, Batch Size = 64, Examples/Sec = 2294.54, Accuracy = 0.80, Loss = 0.599
+[2019-05-04 00:32] Train Step 512000/1000000, Batch Size = 64, Examples/Sec = 2303.53, Accuracy = 0.79, Loss = 0.623
+[2019-05-04 00:33] Train Step 513000/1000000, Batch Size = 64, Examples/Sec = 2301.97, Accuracy = 0.80, Loss = 0.586
+[2019-05-04 00:33] Train Step 514000/1000000, Batch Size = 64, Examples/Sec = 2307.12, Accuracy = 0.80, Loss = 0.595
+[2019-05-04 00:34] Train Step 515000/1000000, Batch Size = 64, Examples/Sec = 2300.63, Accuracy = 0.80, Loss = 0.597
+[2019-05-04 00:34] Train Step 516000/1000000, Batch Size = 64, Examples/Sec = 2305.73, Accuracy = 0.81, Loss = 0.595
+[2019-05-04 00:35] Train Step 517000/1000000, Batch Size = 64, Examples/Sec = 2133.45, Accuracy = 0.81, Loss = 0.586
+[2019-05-04 00:36] Train Step 518000/1000000, Batch Size = 64, Examples/Sec = 2303.99, Accuracy = 0.80, Loss = 0.597
+[2019-05-04 00:36] Train Step 519000/1000000, Batch Size = 64, Examples/Sec = 2298.70, Accuracy = 0.81, Loss = 0.585
+[2019-05-04 00:37] Train Step 520000/1000000, Batch Size = 64, Examples/Sec = 2300.61, Accuracy = 0.81, Loss = 0.577
+[2019-05-04 00:37] Train Step 521000/1000000, Batch Size = 64, Examples/Sec = 2317.58, Accuracy = 0.80, Loss = 0.601
+[2019-05-04 00:38] Train Step 522000/1000000, Batch Size = 64, Examples/Sec = 2104.42, Accuracy = 0.81, Loss = 0.577
+[2019-05-04 00:38] Train Step 523000/1000000, Batch Size = 64, Examples/Sec = 2110.79, Accuracy = 0.80, Loss = 0.586
+[2019-05-04 00:39] Train Step 524000/1000000, Batch Size = 64, Examples/Sec = 2292.69, Accuracy = 0.81, Loss = 0.593
+[2019-05-04 00:39] Train Step 525000/1000000, Batch Size = 64, Examples/Sec = 2300.49, Accuracy = 0.80, Loss = 0.584
+[2019-05-04 00:40] Train Step 526000/1000000, Batch Size = 64, Examples/Sec = 2297.05, Accuracy = 0.80, Loss = 0.594
+[2019-05-04 00:40] Train Step 527000/1000000, Batch Size = 64, Examples/Sec = 2282.38, Accuracy = 0.80, Loss = 0.604
+[2019-05-04 00:41] Train Step 528000/1000000, Batch Size = 64, Examples/Sec = 2287.22, Accuracy = 0.81, Loss = 0.590
+[2019-05-04 00:41] Train Step 529000/1000000, Batch Size = 64, Examples/Sec = 2295.56, Accuracy = 0.81, Loss = 0.584
+[2019-05-04 00:42] Train Step 530000/1000000, Batch Size = 64, Examples/Sec = 2303.53, Accuracy = 0.81, Loss = 0.577
+[2019-05-04 00:43] Train Step 531000/1000000, Batch Size = 64, Examples/Sec = 2306.36, Accuracy = 0.80, Loss = 0.592
+[2019-05-04 00:43] Train Step 532000/1000000, Batch Size = 64, Examples/Sec = 2300.32, Accuracy = 0.80, Loss = 0.586
+[2019-05-04 00:44] Train Step 533000/1000000, Batch Size = 64, Examples/Sec = 2295.36, Accuracy = 0.79, Loss = 0.622
+[2019-05-04 00:44] Train Step 534000/1000000, Batch Size = 64, Examples/Sec = 2293.01, Accuracy = 0.80, Loss = 0.598
+[2019-05-04 00:45] Train Step 535000/1000000, Batch Size = 64, Examples/Sec = 2292.01, Accuracy = 0.80, Loss = 0.595
+[2019-05-04 00:45] Train Step 536000/1000000, Batch Size = 64, Examples/Sec = 2288.12, Accuracy = 0.80, Loss = 0.589
+[2019-05-04 00:46] Train Step 537000/1000000, Batch Size = 64, Examples/Sec = 2298.84, Accuracy = 0.80, Loss = 0.597
+[2019-05-04 00:46] Train Step 538000/1000000, Batch Size = 64, Examples/Sec = 2302.86, Accuracy = 0.81, Loss = 0.593
+[2019-05-04 00:47] Train Step 539000/1000000, Batch Size = 64, Examples/Sec = 2298.90, Accuracy = 0.80, Loss = 0.582
+[2019-05-04 00:47] Train Step 540000/1000000, Batch Size = 64, Examples/Sec = 2297.78, Accuracy = 0.81, Loss = 0.586
+[2019-05-04 00:48] Train Step 541000/1000000, Batch Size = 64, Examples/Sec = 2299.27, Accuracy = 0.81, Loss = 0.587
+[2019-05-04 00:48] Train Step 542000/1000000, Batch Size = 64, Examples/Sec = 2297.15, Accuracy = 0.81, Loss = 0.588
+[2019-05-04 00:49] Train Step 543000/1000000, Batch Size = 64, Examples/Sec = 2295.65, Accuracy = 0.81, Loss = 0.589
+[2019-05-04 00:49] Train Step 544000/1000000, Batch Size = 64, Examples/Sec = 2262.81, Accuracy = 0.79, Loss = 0.614
+[2019-05-04 00:50] Train Step 545000/1000000, Batch Size = 64, Examples/Sec = 2314.52, Accuracy = 0.80, Loss = 0.604
+[2019-05-04 00:51] Train Step 546000/1000000, Batch Size = 64, Examples/Sec = 2125.88, Accuracy = 0.81, Loss = 0.569
+[2019-05-04 00:51] Train Step 547000/1000000, Batch Size = 64, Examples/Sec = 1958.85, Accuracy = 0.80, Loss = 0.597
+[2019-05-04 00:52] Train Step 548000/1000000, Batch Size = 64, Examples/Sec = 2302.05, Accuracy = 0.80, Loss = 0.600
+[2019-05-04 00:52] Train Step 549000/1000000, Batch Size = 64, Examples/Sec = 2303.38, Accuracy = 0.80, Loss = 0.592
+[2019-05-04 00:53] Train Step 550000/1000000, Batch Size = 64, Examples/Sec = 2302.35, Accuracy = 0.80, Loss = 0.611
+Saved model.
+-------------------------------------------
+Temperature: 0.0001
+Generated 5:
+Tai myöhemmin ne saisi selvill
+Ei ollut mitään perhettä. Ja k
+årdo oli hänelle kertonut hänt
+Uryy Ann missä te tulevat sinn
+(tai minut miestään kipua ja s
+
+Generated 5 long samples (100 chars):
+5 jatkaa vielä muutaman viikon voisi laittaa rahantekoon, sillä hän ei ollut koskaan pitänyt Luciast
+, jotka olivat aina olleet hänen heiniään. Siitä ei ollut epäilystäkään. \n Paniikki yltyi, kaikki ei 
+Don: Bruno suvuu lausuikoluetta, jossa oli uima-altaassa. Hän ei ollut koskaan edes ajatellut asiaa.
+Zani menettää ja he olivat asuneet yhdessä melkein yksinomaan satunnaisesti hyväksi kirjailijaksi. \n 
+Ari tunsi itsensä aatelisneidoksi. Koulussakin hänellä oli tapana tehdä silloin kun taas Kalle ja Am
+-------------------------------------------
+Temperature: 0.25
+Generated 5:
+7 ja maanipäälle, ja oli jo pa
+den täyttämään kanssaan länsim
+Don: Bruno suvatti. \n Ninni käv
+Zani ei tiennyt mitä vastata. 
+ón kanssa  jopa kanttorin. Hyv
+
+Generated 5 long samples (100 chars):
+ön takana oli suuri ja samassa vuosia myöhemmin mikäli sitten me ei ollut lainkaan sellainen kuin mi
+ú ja tämän Saraa saatostikin. \n Marja Leena oli niin erilainen kuin mitä hän oli heitetty lapsia ajat
+Zani iänkynsä ja kirjailijat.\n Voin ajatella itsenäisyys.\n No ei se oo.\n Mitä tei joskaan akkoneet jota
+Mitä sä sen tietää oliko?\n Anna sen mun vaarin.\n Tavallaan oli pidätetty sormenraderta oli sata autoki
+zasi oli sidottu ja hänelle oli kaikki läheisesti kyyneleet lopullisesti.\n Oli ehkä siksi, että hänen
+-------------------------------------------
+Temperature: 0.5
+Generated 5:
+6 on tehnyt sitä insoiltaan ja
+Tai mutta kenties ei pystynyt 
+Yhä niin hyvin, eikä meilläkää
+Ari sai kuinka oli aina sanott
+2 siitä juuri sen jälkeen.\n Oli
+
+Generated 5 long samples (100 chars):
+5nimen ja sairaalan virkapellistä ja huonomman mainitseminuksena yritti. \n Kauan siihen seisoi suoraa
+Tai me katsoivat kahvikupille. Tämä mies on kupjallisempia suoraan käyttöön eroon, mutta piirtein he
+Oli vaikeata omaa isäänsä. Se oli ensimmäinen kerta, kun Lluís kuuli hänen nauravan. \n Mä luulin et s
+fien huoneessa joku tietokone, jonka sanat olivat kahtaneet siitä pimeydellä erilaista kuvotuksen jä
+qailla asioita, joita voisi olla kotona Marja Leenan ympärillä  ensin hirvittävä talon liikkuessa ja
+-------------------------------------------
+Temperature: 1.0
+Generated 5:
+ylen mukana. \n Mennään kansalei
+xassa. Hän oli yöntävä kahuja 
+) vähittäismyyntiin lasten ja 
+fseni riipi päivää mökillä  jo
+wanilla oli kotona vaikka tuns
+
+Generated 5 long samples (100 chars):
+Va ajaiskaan ihan muukaa.\n \n Ari ei voinut keski-ikäinen Samulin elämäntelin avaimen puidin kanssa. \n  
+Dary, oli kun hän lähetti olevan vielä kaksi miestä. Hän selitti että ne sitten kyllä  niin? Ninni s
+zun sade jäljelle ja sit mä voisin.\n Tänne antaa aikuisten uskomattomia asioita. Muiden hyllyttäjä, j
+6 sitä tyy olivat aina vain väkivaltaisemmaksi kukaan mua huumausaineiden suuresti viehäemminkin, ja
+Oon merellä. En mitään häiriön hänen uteliaisusta. Vaikka tytöissä kuin Lluís katseli kuinka suuri e
+-------------------------------------------
+Temperature: 2.0
+Generated 5:
+fissainkatilassa ehkoporci, Al
+Ccailb funna. Tiesikö Kalle il
+Nevaluja. Ehkä juuri siksi Par
+Wkahdessisinsa Aroloille, ja v
+puriavansa Arin turhaan. Tunsi
+
+Generated 5 long samples (100 chars):
+sluuomiin savulla, ja hän kertoi kuinka Ari osaistuu satamassa, Saralla sanoi. Meis soittisien kotoa
+holmatta. Salalonkatontöjälle, huteralla näkya pois hetkentä tehdäkseen isänsä, periskään sävyissään
+'pölöttyjen tutkimiehestänikahvasti, ja pedasperimiseen, se, Ninni sanoi ja oja nurkassa isä...: kum
+Eassan samuilla yötä Herme.\n -odoan nauhot. Ikkunasta äiti edelliset ryppykäarit ylsikivältä vessassa
+Qerjeillä vartinaokossa. Salaa espanjankielen Amig-Penteencgt kentanaan yhdelle löytyi  vasta tölkkä
+-------------------------------------------
+[2019-05-04 00:53] Train Step 551000/1000000, Batch Size = 64, Examples/Sec = 2294.99, Accuracy = 0.80, Loss = 0.587
+[2019-05-04 00:54] Train Step 552000/1000000, Batch Size = 64, Examples/Sec = 2268.42, Accuracy = 0.80, Loss = 0.583
+[2019-05-04 00:54] Train Step 553000/1000000, Batch Size = 64, Examples/Sec = 2299.47, Accuracy = 0.80, Loss = 0.601
+[2019-05-04 00:55] Train Step 554000/1000000, Batch Size = 64, Examples/Sec = 2293.58, Accuracy = 0.81, Loss = 0.575
+[2019-05-04 00:55] Train Step 555000/1000000, Batch Size = 64, Examples/Sec = 2296.60, Accuracy = 0.81, Loss = 0.596
+[2019-05-04 00:56] Train Step 556000/1000000, Batch Size = 64, Examples/Sec = 2297.52, Accuracy = 0.81, Loss = 0.579
+[2019-05-04 00:57] Train Step 557000/1000000, Batch Size = 64, Examples/Sec = 2285.94, Accuracy = 0.81, Loss = 0.599
+[2019-05-04 00:57] Train Step 558000/1000000, Batch Size = 64, Examples/Sec = 2287.48, Accuracy = 0.80, Loss = 0.611
+[2019-05-04 00:58] Train Step 559000/1000000, Batch Size = 64, Examples/Sec = 2123.48, Accuracy = 0.80, Loss = 0.601
+[2019-05-04 00:58] Train Step 560000/1000000, Batch Size = 64, Examples/Sec = 2116.16, Accuracy = 0.80, Loss = 0.591
+[2019-05-04 00:59] Train Step 561000/1000000, Batch Size = 64, Examples/Sec = 2116.92, Accuracy = 0.80, Loss = 0.602
+[2019-05-04 00:59] Train Step 562000/1000000, Batch Size = 64, Examples/Sec = 2116.31, Accuracy = 0.80, Loss = 0.596
+[2019-05-04 01:00] Train Step 563000/1000000, Batch Size = 64, Examples/Sec = 2290.99, Accuracy = 0.80, Loss = 0.602
+[2019-05-04 01:00] Train Step 564000/1000000, Batch Size = 64, Examples/Sec = 2298.23, Accuracy = 0.79, Loss = 0.606
+[2019-05-04 01:01] Train Step 565000/1000000, Batch Size = 64, Examples/Sec = 2286.17, Accuracy = 0.81, Loss = 0.575
+[2019-05-04 01:01] Train Step 566000/1000000, Batch Size = 64, Examples/Sec = 2093.90, Accuracy = 0.81, Loss = 0.596
+[2019-05-04 01:02] Train Step 567000/1000000, Batch Size = 64, Examples/Sec = 2297.68, Accuracy = 0.80, Loss = 0.585
+[2019-05-04 01:02] Train Step 568000/1000000, Batch Size = 64, Examples/Sec = 2301.80, Accuracy = 0.80, Loss = 0.594
+[2019-05-04 01:03] Train Step 569000/1000000, Batch Size = 64, Examples/Sec = 2298.50, Accuracy = 0.81, Loss = 0.596
+[2019-05-04 01:04] Train Step 570000/1000000, Batch Size = 64, Examples/Sec = 2302.53, Accuracy = 0.81, Loss = 0.586
+[2019-05-04 01:04] Train Step 571000/1000000, Batch Size = 64, Examples/Sec = 2119.51, Accuracy = 0.79, Loss = 0.599
+[2019-05-04 01:05] Train Step 572000/1000000, Batch Size = 64, Examples/Sec = 2282.54, Accuracy = 0.80, Loss = 0.597
+[2019-05-04 01:05] Train Step 573000/1000000, Batch Size = 64, Examples/Sec = 2297.38, Accuracy = 0.80, Loss = 0.593
+[2019-05-04 01:06] Train Step 574000/1000000, Batch Size = 64, Examples/Sec = 2287.44, Accuracy = 0.81, Loss = 0.588
+[2019-05-04 01:06] Train Step 575000/1000000, Batch Size = 64, Examples/Sec = 2297.21, Accuracy = 0.80, Loss = 0.606
+[2019-05-04 01:07] Train Step 576000/1000000, Batch Size = 64, Examples/Sec = 2284.85, Accuracy = 0.81, Loss = 0.582
+[2019-05-04 01:07] Train Step 577000/1000000, Batch Size = 64, Examples/Sec = 2295.36, Accuracy = 0.81, Loss = 0.582
+[2019-05-04 01:08] Train Step 578000/1000000, Batch Size = 64, Examples/Sec = 2295.14, Accuracy = 0.79, Loss = 0.607
+[2019-05-04 01:08] Train Step 579000/1000000, Batch Size = 64, Examples/Sec = 2296.60, Accuracy = 0.80, Loss = 0.595
+[2019-05-04 01:09] Train Step 580000/1000000, Batch Size = 64, Examples/Sec = 2117.77, Accuracy = 0.80, Loss = 0.605
+[2019-05-04 01:10] Train Step 581000/1000000, Batch Size = 64, Examples/Sec = 2127.06, Accuracy = 0.80, Loss = 0.602
+[2019-05-04 01:10] Train Step 582000/1000000, Batch Size = 64, Examples/Sec = 2290.25, Accuracy = 0.81, Loss = 0.597
+[2019-05-04 01:11] Train Step 583000/1000000, Batch Size = 64, Examples/Sec = 2288.61, Accuracy = 0.81, Loss = 0.583
+[2019-05-04 01:11] Train Step 584000/1000000, Batch Size = 64, Examples/Sec = 2291.15, Accuracy = 0.80, Loss = 0.587
+[2019-05-04 01:12] Train Step 585000/1000000, Batch Size = 64, Examples/Sec = 2286.46, Accuracy = 0.80, Loss = 0.597
+[2019-05-04 01:12] Train Step 586000/1000000, Batch Size = 64, Examples/Sec = 2298.45, Accuracy = 0.79, Loss = 0.595
+[2019-05-04 01:13] Train Step 587000/1000000, Batch Size = 64, Examples/Sec = 2293.22, Accuracy = 0.81, Loss = 0.585
+[2019-05-04 01:13] Train Step 588000/1000000, Batch Size = 64, Examples/Sec = 2296.46, Accuracy = 0.80, Loss = 0.592
+[2019-05-04 01:14] Train Step 589000/1000000, Batch Size = 64, Examples/Sec = 2298.62, Accuracy = 0.80, Loss = 0.606
+[2019-05-04 01:14] Train Step 590000/1000000, Batch Size = 64, Examples/Sec = 2297.38, Accuracy = 0.80, Loss = 0.612
+[2019-05-04 01:15] Train Step 591000/1000000, Batch Size = 64, Examples/Sec = 2272.10, Accuracy = 0.81, Loss = 0.597
+[2019-05-04 01:15] Train Step 592000/1000000, Batch Size = 64, Examples/Sec = 2291.36, Accuracy = 0.80, Loss = 0.596
+[2019-05-04 01:16] Train Step 593000/1000000, Batch Size = 64, Examples/Sec = 2291.87, Accuracy = 0.81, Loss = 0.588
+[2019-05-04 01:16] Train Step 594000/1000000, Batch Size = 64, Examples/Sec = 2273.99, Accuracy = 0.80, Loss = 0.615
+[2019-05-04 01:17] Train Step 595000/1000000, Batch Size = 64, Examples/Sec = 2108.35, Accuracy = 0.80, Loss = 0.577
+[2019-05-04 01:18] Train Step 596000/1000000, Batch Size = 64, Examples/Sec = 2289.72, Accuracy = 0.81, Loss = 0.588
+[2019-05-04 01:18] Train Step 597000/1000000, Batch Size = 64, Examples/Sec = 2127.11, Accuracy = 0.80, Loss = 0.606
+[2019-05-04 01:19] Train Step 598000/1000000, Batch Size = 64, Examples/Sec = 2294.28, Accuracy = 0.81, Loss = 0.572
+[2019-05-04 01:19] Train Step 599000/1000000, Batch Size = 64, Examples/Sec = 2298.17, Accuracy = 0.80, Loss = 0.591
+[2019-05-04 01:20] Train Step 600000/1000000, Batch Size = 64, Examples/Sec = 2288.82, Accuracy = 0.81, Loss = 0.574
+Saved model.
+-------------------------------------------
+Temperature: 0.0001
+Generated 5:
+bistö oli paikka, jossa he oli
+ta se oli kuitenkin väärässä, 
+xin puolelta ja poliisi tulisi
+i kuin olisi jokin sata. Kun s
+) mitään sellaista. Mut silti 
+
+Generated 5 long samples (100 chars):
+2 jotain muuta kuin kerran.\n Ja sä oot nyt just.\n Tunnen hän ajatteli ensimmäiseksi, että hän oli ollu
+\n Mitä sä täällä? Lluís vaihtoi espanjaksi.\n Tää on Ninni. Hän puhuu sudacaa. Me tavattiin laivalla tä
+ut mitään tapahtumaa tätä miestä, jota juoro rakennut järkäleitä pois ja alla olivat menneet saunast
+7 ja kallioista ja hänellä oli tapana soittaa tällaisessa suuressa osallistujaiseksi. Hänellä oli ta
+Ninni sanoi. Hänen äänensä muuttui vieläpä nauttimaan molemmille tuntemattomaan tavaransa ja se oli 
+-------------------------------------------
+Temperature: 0.25
+Generated 5:
+Ari tunsi kuinka hänen paras y
+Uryy Ann missä te tulevat suku
+den päälle ja haistoi tuntea m
+: Ari ei ollut koskaan puhunut
+Kalle kertoi, että hän oli oll
+
+Generated 5 long samples (100 chars):
+Lluís sanoi. Hänen äänensä tuli jostain kaukaa ja liikkeesti: Vuolen eteen ja meni suurta kirjastoss
+kuin hän oli kuvitellut. Hän ei ollut koskaan ennen tuntenut edes isäänsä kohdalta. Niin valta kella
+0 että he olivat molemmat uudelleen ja hyppäsi sieltä luokkaansa metsän siimekseen. Tuolin pikkutunn
+, jota oli mahdotonta oppia ymmärtämään, mitä heillä oli tapahtunut. Sitten he olivat valtioita, joi
+Zunilda oli hänen lapsuuden ystävänsä. Mutta hän ei toivonut tehtyä tekemättömäksi. Hän piti tekoaan
+-------------------------------------------
+Temperature: 0.5
+Generated 5:
+Ari ja Lluís todelliseksi sopi
+6 päästä kohtaan. Oli aivan li
+. Siis muut suuri ja sanat sul
+1 Vaan perhe seinä oli pakko k
+9 painoi kerran koko ilman läh
+
+Generated 5 long samples (100 chars):
+oli kaikkialla valmistamassa laitosruokaa useille kaupungin peruskouluista, mutta pari joitakin tunt
+Raikku oli pelkkää mieltä kuin edelliselle kuin omalla kohdallaan. Silloin se oli aina yhtä aikaa, j
+Älini meidän syyttää sillä välin kun oikeastaan Karvista. \n Sanat puutteellisee sormenjälkeen, ja hän
+ä työntää muutenkaan sinulle kuin nopeasti, mutta sitä hänen ei vain tullut mieleeni sinä jakaa oli 
+) muuttoa ja hetkellä melkein tulleen viisi vuotta, ja sitten Jakub luopui seuraavana päivänä katosi
+-------------------------------------------
+Temperature: 1.0
+Generated 5:
+è kuin mä?\n Lluís tutki huomata
+voiniin roskiksen. Kiireisiä  
+, maassa eivät olleet kovin ka
+ystäviä, jossa oli jo laajen, 
+HoNtoon.\n Eduardo oli onnellisi
+
+Generated 5 long samples (100 chars):
+dultavan vuoksi, mutta varmuuden vuoksi henkilökohtaisesti työkaveritsemassa heidän kesäisyjä rantak
+xenttistä ja kuljettaen väsyneeksi ihaillen hänen korviaan hirveään kun seinä oli juhlallissa, ja ri
+Xä käsinä munikuolemaan. Niin sen täytyy olla huomattu, että tällainen joka oli kerännyt. Ja voit kä
+uís vakuuttui siitä, että Pilalat oli joutunut toisessa päässä. Ääni sattua haluavan piruumur-ileväl
+- Leena saattoi nauttia täyttäjänne. \n Ninni ei ainut, ala kuuli naurua.\n Mutta kuten jo tuolloin, Mar
+-------------------------------------------
+Temperature: 2.0
+Generated 5:
+\n Porokalassa, kunhomit aperit 
+llen, mutta siltikin, eivätkä 
+xpekusteltu. Olin vähittäkään.
+rbinheitä.\n Nyt tarttui taas Pi
+), kuten tavallista, niin hän 
+
+Generated 5 long samples (100 chars):
+0ja yhteen kertymässä missä aurinkoputalölta. Pelejä, Brunolla nippis otettomia tärkeä. Hän sopi Nin
+8nu, piispaa, Lluís ajeli restaisniapalon ja hasis ollen sen mahdotkaan tavattoman lähimpäisatvan \n k
+dimuestaa. Tunki sanoin, olihan Lluís  tai vaikkapa Teorian puolessani olti ystävyljessä valkkoihiss
+8 äiti oli. Mut sen alkarerteeryt selvessä millä pitivistäkin. Elmä missä ne suntimaapussa ei silloi
+woja kilometrikauhi  Sehän naapurikunnan pulloja, perkasidettu, nauhoitukset valehtiä, että jostain 
+-------------------------------------------
+[2019-05-04 01:20] Train Step 601000/1000000, Batch Size = 64, Examples/Sec = 2308.29, Accuracy = 0.81, Loss = 0.595
+[2019-05-04 01:21] Train Step 602000/1000000, Batch Size = 64, Examples/Sec = 2286.74, Accuracy = 0.80, Loss = 0.616
+[2019-05-04 01:21] Train Step 603000/1000000, Batch Size = 64, Examples/Sec = 2295.10, Accuracy = 0.80, Loss = 0.582
+[2019-05-04 01:22] Train Step 604000/1000000, Batch Size = 64, Examples/Sec = 2294.54, Accuracy = 0.80, Loss = 0.592
+[2019-05-04 01:22] Train Step 605000/1000000, Batch Size = 64, Examples/Sec = 2299.75, Accuracy = 0.80, Loss = 0.588
+[2019-05-04 01:23] Train Step 606000/1000000, Batch Size = 64, Examples/Sec = 2297.72, Accuracy = 0.80, Loss = 0.591
+[2019-05-04 01:23] Train Step 607000/1000000, Batch Size = 64, Examples/Sec = 2132.74, Accuracy = 0.81, Loss = 0.587
+[2019-05-04 01:24] Train Step 608000/1000000, Batch Size = 64, Examples/Sec = 2297.38, Accuracy = 0.80, Loss = 0.605
+[2019-05-04 01:25] Train Step 609000/1000000, Batch Size = 64, Examples/Sec = 2294.71, Accuracy = 0.80, Loss = 0.597
+[2019-05-04 01:25] Train Step 610000/1000000, Batch Size = 64, Examples/Sec = 2299.39, Accuracy = 0.81, Loss = 0.588
+[2019-05-04 01:26] Train Step 611000/1000000, Batch Size = 64, Examples/Sec = 2138.23, Accuracy = 0.80, Loss = 0.607
+[2019-05-04 01:26] Train Step 612000/1000000, Batch Size = 64, Examples/Sec = 2131.81, Accuracy = 0.80, Loss = 0.597
+[2019-05-04 01:27] Train Step 613000/1000000, Batch Size = 64, Examples/Sec = 2300.34, Accuracy = 0.81, Loss = 0.589
+[2019-05-04 01:27] Train Step 614000/1000000, Batch Size = 64, Examples/Sec = 2303.71, Accuracy = 0.80, Loss = 0.597
+[2019-05-04 01:28] Train Step 615000/1000000, Batch Size = 64, Examples/Sec = 2097.73, Accuracy = 0.80, Loss = 0.591
+[2019-05-04 01:28] Train Step 616000/1000000, Batch Size = 64, Examples/Sec = 2135.07, Accuracy = 0.80, Loss = 0.601
+[2019-05-04 01:29] Train Step 617000/1000000, Batch Size = 64, Examples/Sec = 2123.83, Accuracy = 0.81, Loss = 0.583
+[2019-05-04 01:29] Train Step 618000/1000000, Batch Size = 64, Examples/Sec = 2304.84, Accuracy = 0.80, Loss = 0.596
+[2019-05-04 01:30] Train Step 619000/1000000, Batch Size = 64, Examples/Sec = 2300.14, Accuracy = 0.80, Loss = 0.590
+[2019-05-04 01:30] Train Step 620000/1000000, Batch Size = 64, Examples/Sec = 2288.65, Accuracy = 0.81, Loss = 0.587
+[2019-05-04 01:31] Train Step 621000/1000000, Batch Size = 64, Examples/Sec = 2291.11, Accuracy = 0.81, Loss = 0.578
+[2019-05-04 01:32] Train Step 622000/1000000, Batch Size = 64, Examples/Sec = 2298.35, Accuracy = 0.81, Loss = 0.580
+[2019-05-04 01:32] Train Step 623000/1000000, Batch Size = 64, Examples/Sec = 2275.69, Accuracy = 0.80, Loss = 0.601
+[2019-05-04 01:33] Train Step 624000/1000000, Batch Size = 64, Examples/Sec = 2301.56, Accuracy = 0.81, Loss = 0.600
+[2019-05-04 01:33] Train Step 625000/1000000, Batch Size = 64, Examples/Sec = 2295.87, Accuracy = 0.80, Loss = 0.581
+[2019-05-04 01:34] Train Step 626000/1000000, Batch Size = 64, Examples/Sec = 2294.77, Accuracy = 0.80, Loss = 0.591
+[2019-05-04 01:34] Train Step 627000/1000000, Batch Size = 64, Examples/Sec = 2305.85, Accuracy = 0.80, Loss = 0.602
+[2019-05-04 01:35] Train Step 628000/1000000, Batch Size = 64, Examples/Sec = 2296.42, Accuracy = 0.80, Loss = 0.587
+[2019-05-04 01:35] Train Step 629000/1000000, Batch Size = 64, Examples/Sec = 2299.84, Accuracy = 0.81, Loss = 0.585
+[2019-05-04 01:36] Train Step 630000/1000000, Batch Size = 64, Examples/Sec = 2297.84, Accuracy = 0.80, Loss = 0.600
+[2019-05-04 01:36] Train Step 631000/1000000, Batch Size = 64, Examples/Sec = 2086.31, Accuracy = 0.82, Loss = 0.571
+[2019-05-04 01:37] Train Step 632000/1000000, Batch Size = 64, Examples/Sec = 2129.22, Accuracy = 0.81, Loss = 0.590
+[2019-05-04 01:37] Train Step 633000/1000000, Batch Size = 64, Examples/Sec = 2294.75, Accuracy = 0.81, Loss = 0.590
+[2019-05-04 01:38] Train Step 634000/1000000, Batch Size = 64, Examples/Sec = 2303.38, Accuracy = 0.80, Loss = 0.589
+[2019-05-04 01:39] Train Step 635000/1000000, Batch Size = 64, Examples/Sec = 2288.73, Accuracy = 0.80, Loss = 0.589
+[2019-05-04 01:39] Train Step 636000/1000000, Batch Size = 64, Examples/Sec = 2276.54, Accuracy = 0.81, Loss = 0.577
+[2019-05-04 01:40] Train Step 637000/1000000, Batch Size = 64, Examples/Sec = 2280.58, Accuracy = 0.80, Loss = 0.610
+[2019-05-04 01:40] Train Step 638000/1000000, Batch Size = 64, Examples/Sec = 2109.60, Accuracy = 0.81, Loss = 0.576
+[2019-05-04 01:41] Train Step 639000/1000000, Batch Size = 64, Examples/Sec = 2297.32, Accuracy = 0.80, Loss = 0.610
+[2019-05-04 01:41] Train Step 640000/1000000, Batch Size = 64, Examples/Sec = 2296.73, Accuracy = 0.80, Loss = 0.604
+[2019-05-04 01:42] Train Step 641000/1000000, Batch Size = 64, Examples/Sec = 2116.51, Accuracy = 0.81, Loss = 0.579
+[2019-05-04 01:42] Train Step 642000/1000000, Batch Size = 64, Examples/Sec = 2298.58, Accuracy = 0.80, Loss = 0.608
+[2019-05-04 01:43] Train Step 643000/1000000, Batch Size = 64, Examples/Sec = 2299.92, Accuracy = 0.80, Loss = 0.606
+[2019-05-04 01:43] Train Step 644000/1000000, Batch Size = 64, Examples/Sec = 2300.79, Accuracy = 0.81, Loss = 0.587
+[2019-05-04 01:44] Train Step 645000/1000000, Batch Size = 64, Examples/Sec = 2299.78, Accuracy = 0.81, Loss = 0.577
+[2019-05-04 01:45] Train Step 646000/1000000, Batch Size = 64, Examples/Sec = 2212.99, Accuracy = 0.81, Loss = 0.601
+[2019-05-04 01:45] Train Step 647000/1000000, Batch Size = 64, Examples/Sec = 2294.26, Accuracy = 0.81, Loss = 0.597
+[2019-05-04 01:46] Train Step 648000/1000000, Batch Size = 64, Examples/Sec = 2301.70, Accuracy = 0.80, Loss = 0.605
+[2019-05-04 01:46] Train Step 649000/1000000, Batch Size = 64, Examples/Sec = 2300.99, Accuracy = 0.80, Loss = 0.580
+[2019-05-04 01:47] Train Step 650000/1000000, Batch Size = 64, Examples/Sec = 2124.87, Accuracy = 0.80, Loss = 0.595
+Saved model.
+-------------------------------------------
+Temperature: 0.0001
+Generated 5:
+filmeissä, jotka liikkuivat jo
+Gunilla oli tapana sanoa.\n Radm
+Oli kuitenkin se, että ne löyt
+8 oli painettu laatikon kylkee
+2 jotain muuta kuin kerran.\n Ja
+
+Generated 5 long samples (100 chars):
+'din päälle soittamaan kauppakeskuksen, jossa hän vain piti siitä mitä tahansa. Tuntin palan katseen
+gissa. \n Kun Ninni palasi kotiin, näin yläkupistellessa hänen pitkään kadulla ja epätietoisia. Kummel
+Ärätön vuokralaiskurissa, vaikka todellisuudessa hän oli jo menneisyyteni keskenään. \n Kaikki kaikki 
+en kanssa. \n Lluís muisti vallan hyvin ettei tyttö ymmärtänyt sanaakaan. Sillä ei ollut vielä suorite
+Marja Leena sai lukea viestin, jonka hän oli saanut alkunsa. Arvatenkin se kuitenkin oli se että kir
+-------------------------------------------
+Temperature: 0.25
+Generated 5:
+paljon kohdalla espanjalainen.
+1 Taiwaniin, vaan jatkui yhä e
+Oli tullut hänen mieleensä. Ja
+9 paljon enemmän kuin mitä isä
+Puolen oli hänen lapsuutensa m
+
+Generated 5 long samples (100 chars):
+6 tottunein koristeltuja korkeimman johtaja oli paikka, joka oli kuitenkin nainen. Sen sijaan että o
+Gunilla oli aivan sattumalta alkaen niin kovin monen vuosi vuoden jälkeen tuottamaan tapahtumaan, jo
+7 kun hän oli vain harvattunut niin hauskaa kunnollista auttamisensa kertomuksen.\n Miten niin tapahtu
+Bruno oli jo käynyt veneenrakennuksen omalla näkemään. Hän oli niin ikään kirkon suurena salalokero 
+kaan tullut kyselemään Ninniltä kuorolaulua sisältävistä nauhoituksista. Ja siitä miten Julle oli ke
+-------------------------------------------
+Temperature: 0.5
+Generated 5:
+6 kutsutaanko se on.\n Ja mikä s
+vän piispa Kuuvaloon ja Barcel
+Suomessa tytön parhaita lähtem
+óita. \n Mä luulin et se on sitä
+106060030ksujan. Viimeiseksi h
+
+Generated 5 long samples (100 chars):
+xin päähän. \n Ari oli varma siitä, että mies tulisi tulemaan näitä kolmen kertaakaan moniin muistoja 
+Lluís oli jo tuonut pitkään sitä mielenkiinnolla. Yhdessä nyt Kalle alkoi sitä ääneen. Heidissä oli 
+si muutaman tunnin Taiwanin maisemia. \n He olivat menneet innostus siihen liittti hänen säädelleen. T
+ja sairaalan kanssa. Se oli hänen isoisänsä veitsi  sotilasveitsi, johon oli uusi perustusla, kun Ar
+'vin hienoa kuin sävyyn: billä kellarista oli jo kulunut useita käyttää leikkääkseen minulle, he oli
+-------------------------------------------
+Temperature: 1.0
+Generated 5:
+è kuukausia iltavan ruokaa päi
+ aivan kuin niitä vaan piti my
+\n Jouluna. Ehkä sä saat nukkua 
+ein kiinni. Sitten nainen sä e
+ja ja löi kaukana koostukooon.
+
+Generated 5 long samples (100 chars):
+Ikärini kanssa, joka oli hieman vanhoja putoa vasten Lluís oli palanut ei enää oo. Missä se tapahtui
+Jell ne, Erosanmiehen  sen Ari huomasi ettei lainkaan pitänyt Madridin kaulata niistä asti. Hänen mi
+2\n Vaikka niin kaikki oli saada kuin kahdeksankymmenlle vuoden jälkeen  Igor oli mahdollista, että sa
+9n isän kanssa ja piilopaikka, josta Kalle käveli tärkeään että suhteesta oli kaikkein kärrinyt ne s
+Hoti oli melko lailla mielessään Alvar Dormissa.\n Keskustelu se olisi ollut selittämisestä. Igor oli 
+-------------------------------------------
+Temperature: 2.0
+Generated 5:
+0 villapaikki. Ei mitään halun
+myös jutemme? \n Kirja! Muominen
+ehvinlä. Mikäli hädin henkivus
+Hän ja Ulla eivät tietenkään h
+ben tieto Ninni! Krister?  Myy
+
+Generated 5 long samples (100 chars):
+Zöydutuskin lähtenyt sinä? Ja lankholafanaan.\n Ke lopeutti, malliokkoja kaksoisiksi, mutta aivan kuin
+è: Kiimeistä yöhöön. Korkastumon PKssäni. Onneksi vieläpä naapurit ene..\n Eäkeli juoksee, ja sitten j
+Xegoel ja Kleardia meidän isteettön. Vakuuteella olisin vinti-ja taivaa?\n Prodessa oli hovannut pelas
+Mesalainen vireää kevyesti pientoa, putosi loppuun, hänelle tuli tabteekseni lähti maisteraatikon, Ö
+Ä4 kasvoti se että se tapahtua. Lluís ei aivan itkeäniköinen edes tietenkään odottanut, että nämä La
+-------------------------------------------
+[2019-05-04 01:47] Train Step 651000/1000000, Batch Size = 64, Examples/Sec = 2296.83, Accuracy = 0.81, Loss = 0.594
+[2019-05-04 01:48] Train Step 652000/1000000, Batch Size = 64, Examples/Sec = 2292.75, Accuracy = 0.80, Loss = 0.597
+[2019-05-04 01:48] Train Step 653000/1000000, Batch Size = 64, Examples/Sec = 2290.95, Accuracy = 0.80, Loss = 0.608
+[2019-05-04 01:49] Train Step 654000/1000000, Batch Size = 64, Examples/Sec = 2293.42, Accuracy = 0.80, Loss = 0.587
+[2019-05-04 01:49] Train Step 655000/1000000, Batch Size = 64, Examples/Sec = 2275.88, Accuracy = 0.81, Loss = 0.573
+[2019-05-04 01:50] Train Step 656000/1000000, Batch Size = 64, Examples/Sec = 2297.42, Accuracy = 0.79, Loss = 0.618
+[2019-05-04 01:50] Train Step 657000/1000000, Batch Size = 64, Examples/Sec = 2299.47, Accuracy = 0.80, Loss = 0.589
+[2019-05-04 01:51] Train Step 658000/1000000, Batch Size = 64, Examples/Sec = 2299.02, Accuracy = 0.80, Loss = 0.599
+[2019-05-04 01:51] Train Step 659000/1000000, Batch Size = 64, Examples/Sec = 2273.41, Accuracy = 0.80, Loss = 0.597
+[2019-05-04 01:52] Train Step 660000/1000000, Batch Size = 64, Examples/Sec = 2299.25, Accuracy = 0.81, Loss = 0.579
+[2019-05-04 01:53] Train Step 661000/1000000, Batch Size = 64, Examples/Sec = 2121.32, Accuracy = 0.81, Loss = 0.591
+[2019-05-04 01:53] Train Step 662000/1000000, Batch Size = 64, Examples/Sec = 2294.03, Accuracy = 0.80, Loss = 0.597
+[2019-05-04 01:54] Train Step 663000/1000000, Batch Size = 64, Examples/Sec = 2291.36, Accuracy = 0.81, Loss = 0.579
+[2019-05-04 01:54] Train Step 664000/1000000, Batch Size = 64, Examples/Sec = 1993.48, Accuracy = 0.81, Loss = 0.574
+[2019-05-04 01:55] Train Step 665000/1000000, Batch Size = 64, Examples/Sec = 2290.66, Accuracy = 0.81, Loss = 0.563
+[2019-05-04 01:55] Train Step 666000/1000000, Batch Size = 64, Examples/Sec = 2290.03, Accuracy = 0.81, Loss = 0.587
+[2019-05-04 01:56] Train Step 667000/1000000, Batch Size = 64, Examples/Sec = 2311.79, Accuracy = 0.81, Loss = 0.587
+[2019-05-04 01:56] Train Step 668000/1000000, Batch Size = 64, Examples/Sec = 2298.23, Accuracy = 0.81, Loss = 0.584
+[2019-05-04 01:57] Train Step 669000/1000000, Batch Size = 64, Examples/Sec = 2302.27, Accuracy = 0.80, Loss = 0.605
+[2019-05-04 01:57] Train Step 670000/1000000, Batch Size = 64, Examples/Sec = 2293.30, Accuracy = 0.80, Loss = 0.604
+[2019-05-04 01:58] Train Step 671000/1000000, Batch Size = 64, Examples/Sec = 2125.70, Accuracy = 0.80, Loss = 0.606
+[2019-05-04 01:59] Train Step 672000/1000000, Batch Size = 64, Examples/Sec = 2093.33, Accuracy = 0.81, Loss = 0.591
+[2019-05-04 01:59] Train Step 673000/1000000, Batch Size = 64, Examples/Sec = 2298.15, Accuracy = 0.80, Loss = 0.621
+[2019-05-04 02:00] Train Step 674000/1000000, Batch Size = 64, Examples/Sec = 2135.73, Accuracy = 0.81, Loss = 0.585
+[2019-05-04 02:00] Train Step 675000/1000000, Batch Size = 64, Examples/Sec = 2290.21, Accuracy = 0.81, Loss = 0.569
+[2019-05-04 02:01] Train Step 676000/1000000, Batch Size = 64, Examples/Sec = 2296.79, Accuracy = 0.81, Loss = 0.574
+[2019-05-04 02:01] Train Step 677000/1000000, Batch Size = 64, Examples/Sec = 2291.15, Accuracy = 0.80, Loss = 0.605
+[2019-05-04 02:02] Train Step 678000/1000000, Batch Size = 64, Examples/Sec = 2297.46, Accuracy = 0.81, Loss = 0.586
+[2019-05-04 02:02] Train Step 679000/1000000, Batch Size = 64, Examples/Sec = 2130.56, Accuracy = 0.81, Loss = 0.589
+[2019-05-04 02:03] Train Step 680000/1000000, Batch Size = 64, Examples/Sec = 2293.65, Accuracy = 0.80, Loss = 0.596
+[2019-05-04 02:03] Train Step 681000/1000000, Batch Size = 64, Examples/Sec = 2292.60, Accuracy = 0.81, Loss = 0.596
+[2019-05-04 02:04] Train Step 682000/1000000, Batch Size = 64, Examples/Sec = 2290.91, Accuracy = 0.80, Loss = 0.594
+[2019-05-04 02:04] Train Step 683000/1000000, Batch Size = 64, Examples/Sec = 2237.15, Accuracy = 0.80, Loss = 0.601
+[2019-05-04 02:05] Train Step 684000/1000000, Batch Size = 64, Examples/Sec = 2293.54, Accuracy = 0.80, Loss = 0.588
+[2019-05-04 02:06] Train Step 685000/1000000, Batch Size = 64, Examples/Sec = 2289.53, Accuracy = 0.80, Loss = 0.598
+[2019-05-04 02:06] Train Step 686000/1000000, Batch Size = 64, Examples/Sec = 2129.16, Accuracy = 0.80, Loss = 0.597
+[2019-05-04 02:07] Train Step 687000/1000000, Batch Size = 64, Examples/Sec = 2295.79, Accuracy = 0.81, Loss = 0.607
+[2019-05-04 02:07] Train Step 688000/1000000, Batch Size = 64, Examples/Sec = 2300.34, Accuracy = 0.81, Loss = 0.574
+[2019-05-04 02:08] Train Step 689000/1000000, Batch Size = 64, Examples/Sec = 2275.71, Accuracy = 0.80, Loss = 0.605
+[2019-05-04 02:08] Train Step 690000/1000000, Batch Size = 64, Examples/Sec = 2296.56, Accuracy = 0.81, Loss = 0.582
+[2019-05-04 02:09] Train Step 691000/1000000, Batch Size = 64, Examples/Sec = 2128.36, Accuracy = 0.81, Loss = 0.590
+[2019-05-04 02:09] Train Step 692000/1000000, Batch Size = 64, Examples/Sec = 2293.87, Accuracy = 0.80, Loss = 0.600
+[2019-05-04 02:10] Train Step 693000/1000000, Batch Size = 64, Examples/Sec = 2289.35, Accuracy = 0.81, Loss = 0.596
+[2019-05-04 02:10] Train Step 694000/1000000, Batch Size = 64, Examples/Sec = 2294.50, Accuracy = 0.80, Loss = 0.586
+[2019-05-04 02:11] Train Step 695000/1000000, Batch Size = 64, Examples/Sec = 2302.80, Accuracy = 0.80, Loss = 0.603
+[2019-05-04 02:11] Train Step 696000/1000000, Batch Size = 64, Examples/Sec = 2294.52, Accuracy = 0.81, Loss = 0.580
+[2019-05-04 02:12] Train Step 697000/1000000, Batch Size = 64, Examples/Sec = 2285.47, Accuracy = 0.81, Loss = 0.580
+[2019-05-04 02:13] Train Step 698000/1000000, Batch Size = 64, Examples/Sec = 2292.52, Accuracy = 0.80, Loss = 0.595
+[2019-05-04 02:13] Train Step 699000/1000000, Batch Size = 64, Examples/Sec = 2293.58, Accuracy = 0.80, Loss = 0.595
+[2019-05-04 02:14] Train Step 700000/1000000, Batch Size = 64, Examples/Sec = 2293.95, Accuracy = 0.81, Loss = 0.575
+Saved model.
+-------------------------------------------
+Temperature: 0.0001
+Generated 5:
+ís oli hänelle kertonut Jullel
+) mitään sellaista. Mut silti 
+ci sanoi ja sanoi tuntevana ta
+si kotiin. \n He olivat menneet 
+Ari tunsi itsensä aatelisneido
+
+Generated 5 long samples (100 chars):
+oli tullut hänen perheensä oli muuttanut takaisin Tukholmaan. \n Se oli kuin suoraan jostakin vanhasta
+ci sanoi ja sanoi tuntevana takaisin Suomeen ja muuttaa sinne kamalaisesti kyyneleet korvatti Suomee
+ön päälle  johtui siitä, että hänen pitäisi olla kuin kotona. Marja Leena tiesi, että mies oli sanon
+Tai myöhemmin ne saisi selville missä mä oon. Mulla ei oo paikkaa mihin mennä sopivaa.\n Mut mä en hal
+ri saattoi ostaa lapsenlapsilleen. \n Kun kaikki kyyneleet oli kuollut, ja jopa toimitti siitä, että h
+-------------------------------------------
+Temperature: 0.25
+Generated 5:
+0 paljon kovemmin kuin pienest
+5 kai se on täällä. Mulla on a
+va oli se, jolloin en ollut ko
+Lluís kertoi kuinka hänen isän
+Gunilla oli tapana sanoa.\n Radm
+
+Generated 5 long samples (100 chars):
+Uryy Ann missä te tulevat suuremman osan olleen jo vuosia. Ja sieltä minulla on kellarissa. Sitä pai
+4 Marja Leena oli odottanut kuulevansa jotain syvää ja hänen päälleen liikennettyä ja rakastaja heid
+xin puolelta ja pölyn takia oli useita, ja mikä maksaneet jotenkin huomaamatta, että naapurin pojall
+: Ari ei ollut koskaan päässeet hänen jalkojensa välissä. Se tuntui koskaan ollut enää hirvittävän p
+Flemmingsbergin yliopistollisessa sairaalassa. Eikä tällä ollut samanlainen ippuautuneen ja saunan t
+-------------------------------------------
+Temperature: 0.5
+Generated 5:
+n nyt häntä vastaan. Mutta kun
+Raikku oli avannut sanaakaan s
+Gie mä sanoin.\n Äidistä nyt oli
+Mutta sellaisia alkosivat tois
+ja koko talon ja löysi pelastu
+
+Generated 5 long samples (100 chars):
+Bruno olisi aivan humalassa tällaisessa. \n Pitkän tovin aikana matkoista, vaikkei hän ymmärtänytkään 
+ís oli tullut sitä maasta tarkoituksenaan pakenista eri tavalla. \n Kun porukan Ninni ei oikein ollut 
+Bruno oli paennut kaiken nähdä sen tietämään missä Ninni on merkittävää mitään pahaa tarkoittavan va
+è kauhun kuin olisi puhunut asiansa niihin aikoihin, jolloin niitä oli kutsunut hänet. \n Suurin osa p
+si kuin pääsisi kahvia kaupungissa kuin mitä hänen oli kehdannut äidin verrattuna Lluísin alastoman,
+-------------------------------------------
+Temperature: 1.0
+Generated 5:
+6amaan ja eroottisia menetelil
+xaan yli metriä pitkä laittaa 
+puolessaan korjaansa ja mielty
+artkalaista. \n Lluís hän ei oik
+Mä jo sun niillä on. Ja sistä 
+
+Generated 5 long samples (100 chars):
+räppoi.\n Teeks rakennuksen omista hänen elämänsä tarkoituksena oli ehdottomasti satuneet laatikoston 
+Leena kuului aina vain se, miksi hän oli saanut katalaan ja sukkasilmat pullot tutkivat uskollisista
+Ädätiään. Se tietty mitään, Nicke alkoi hyllyä tietämään varaisin. Kuinka hän kertoi kuinka hänen is
+2\n Ei paikka  lapsenomainen menneisö toimista. \n Pontus ei saatettava timenen.\n Coca, Se joska on kielt
+xaan. Jos lähes kai vaikka lomalla saa se oli viiti, et me ollaan pitsä itseeni, ja muut irtisanoa u
+-------------------------------------------
+Temperature: 2.0
+Generated 5:
+Geitarmi,. Niillä se on. Varul
+Cuci.\n Kerro sanoi, Lyöd Juks! 
+U. Mulla on lyvältä. Ninni kat
+DonSalle.\n \n Paitsi kiire.\n Aipa 
+tril juhjisin jättiläisella yl
+
+Generated 5 long samples (100 chars):
+Heggillisyös, Bruno alkoi kylpyhuomaa peltorantaa ja vodkailuttajia. Oikea huoraobsa, ja samoin HDnr
+Arvo myydystä näkya uskokoristopaloa. Totuukin viskitkeaili miettymään fanfessakit.\n Sitten kaikkea t
+3\n Enä pobille, mulle \n p.rjon oika kuudelleen, hän vainko  hän rudotti Hdovan päädälleä. Kseta pysäht
+\n Pitkään A-ripumpaa näytti oppilevyet versit hotesvetta Jullecia ja Maija, hänen mielestään ne kaikk
+enä Ikki!\n Ai jaä, mola  viimein juuri Maija. Jsakun jälaimme samonhuoneeseen.\n Hän arvas et nedä, et 
+-------------------------------------------
+[2019-05-04 02:14] Train Step 701000/1000000, Batch Size = 64, Examples/Sec = 2301.22, Accuracy = 0.80, Loss = 0.587
+[2019-05-04 02:15] Train Step 702000/1000000, Batch Size = 64, Examples/Sec = 2303.87, Accuracy = 0.81, Loss = 0.589
+[2019-05-04 02:15] Train Step 703000/1000000, Batch Size = 64, Examples/Sec = 2299.73, Accuracy = 0.81, Loss = 0.586
+[2019-05-04 02:16] Train Step 704000/1000000, Batch Size = 64, Examples/Sec = 2307.55, Accuracy = 0.80, Loss = 0.595
+[2019-05-04 02:16] Train Step 705000/1000000, Batch Size = 64, Examples/Sec = 2296.13, Accuracy = 0.82, Loss = 0.566
+[2019-05-04 02:17] Train Step 706000/1000000, Batch Size = 64, Examples/Sec = 2115.15, Accuracy = 0.80, Loss = 0.582
+[2019-05-04 02:17] Train Step 707000/1000000, Batch Size = 64, Examples/Sec = 2294.07, Accuracy = 0.81, Loss = 0.582
+[2019-05-04 02:18] Train Step 708000/1000000, Batch Size = 64, Examples/Sec = 2297.21, Accuracy = 0.81, Loss = 0.587
+[2019-05-04 02:18] Train Step 709000/1000000, Batch Size = 64, Examples/Sec = 2296.62, Accuracy = 0.81, Loss = 0.585
+[2019-05-04 02:19] Train Step 710000/1000000, Batch Size = 64, Examples/Sec = 2114.23, Accuracy = 0.80, Loss = 0.593
+[2019-05-04 02:20] Train Step 711000/1000000, Batch Size = 64, Examples/Sec = 2291.11, Accuracy = 0.81, Loss = 0.572
+[2019-05-04 02:20] Train Step 712000/1000000, Batch Size = 64, Examples/Sec = 2297.93, Accuracy = 0.81, Loss = 0.587
+[2019-05-04 02:21] Train Step 713000/1000000, Batch Size = 64, Examples/Sec = 2298.84, Accuracy = 0.80, Loss = 0.607
+[2019-05-04 02:21] Train Step 714000/1000000, Batch Size = 64, Examples/Sec = 2302.13, Accuracy = 0.80, Loss = 0.595
+[2019-05-04 02:22] Train Step 715000/1000000, Batch Size = 64, Examples/Sec = 2122.39, Accuracy = 0.80, Loss = 0.602
+[2019-05-04 02:22] Train Step 716000/1000000, Batch Size = 64, Examples/Sec = 2259.86, Accuracy = 0.80, Loss = 0.592
+[2019-05-04 02:23] Train Step 717000/1000000, Batch Size = 64, Examples/Sec = 2296.64, Accuracy = 0.80, Loss = 0.605
+[2019-05-04 02:23] Train Step 718000/1000000, Batch Size = 64, Examples/Sec = 2257.60, Accuracy = 0.80, Loss = 0.605
+[2019-05-04 02:24] Train Step 719000/1000000, Batch Size = 64, Examples/Sec = 2115.33, Accuracy = 0.81, Loss = 0.594
+[2019-05-04 02:24] Train Step 720000/1000000, Batch Size = 64, Examples/Sec = 2295.46, Accuracy = 0.81, Loss = 0.582
+[2019-05-04 02:25] Train Step 721000/1000000, Batch Size = 64, Examples/Sec = 2299.71, Accuracy = 0.80, Loss = 0.588
+[2019-05-04 02:26] Train Step 722000/1000000, Batch Size = 64, Examples/Sec = 2300.89, Accuracy = 0.80, Loss = 0.596
+[2019-05-04 02:26] Train Step 723000/1000000, Batch Size = 64, Examples/Sec = 2303.51, Accuracy = 0.81, Loss = 0.574
+[2019-05-04 02:27] Train Step 724000/1000000, Batch Size = 64, Examples/Sec = 2129.54, Accuracy = 0.80, Loss = 0.575
+[2019-05-04 02:27] Train Step 725000/1000000, Batch Size = 64, Examples/Sec = 2305.93, Accuracy = 0.80, Loss = 0.598
+[2019-05-04 02:28] Train Step 726000/1000000, Batch Size = 64, Examples/Sec = 2306.60, Accuracy = 0.80, Loss = 0.591
+[2019-05-04 02:28] Train Step 727000/1000000, Batch Size = 64, Examples/Sec = 2131.66, Accuracy = 0.80, Loss = 0.584
+[2019-05-04 02:29] Train Step 728000/1000000, Batch Size = 64, Examples/Sec = 2305.33, Accuracy = 0.80, Loss = 0.595
+[2019-05-04 02:29] Train Step 729000/1000000, Batch Size = 64, Examples/Sec = 2135.69, Accuracy = 0.80, Loss = 0.601
+[2019-05-04 02:30] Train Step 730000/1000000, Batch Size = 64, Examples/Sec = 2299.69, Accuracy = 0.80, Loss = 0.593
+[2019-05-04 02:30] Train Step 731000/1000000, Batch Size = 64, Examples/Sec = 2301.86, Accuracy = 0.81, Loss = 0.575
+[2019-05-04 02:31] Train Step 732000/1000000, Batch Size = 64, Examples/Sec = 2301.86, Accuracy = 0.80, Loss = 0.584
+[2019-05-04 02:31] Train Step 733000/1000000, Batch Size = 64, Examples/Sec = 2304.09, Accuracy = 0.80, Loss = 0.608
+[2019-05-04 02:32] Train Step 734000/1000000, Batch Size = 64, Examples/Sec = 2299.04, Accuracy = 0.80, Loss = 0.616
+[2019-05-04 02:33] Train Step 735000/1000000, Batch Size = 64, Examples/Sec = 2293.01, Accuracy = 0.81, Loss = 0.596
+[2019-05-04 02:33] Train Step 736000/1000000, Batch Size = 64, Examples/Sec = 2292.83, Accuracy = 0.80, Loss = 0.595
+[2019-05-04 02:34] Train Step 737000/1000000, Batch Size = 64, Examples/Sec = 2114.96, Accuracy = 0.80, Loss = 0.597
+[2019-05-04 02:34] Train Step 738000/1000000, Batch Size = 64, Examples/Sec = 2294.44, Accuracy = 0.80, Loss = 0.598
+[2019-05-04 02:35] Train Step 739000/1000000, Batch Size = 64, Examples/Sec = 2190.68, Accuracy = 0.80, Loss = 0.604
+[2019-05-04 02:35] Train Step 740000/1000000, Batch Size = 64, Examples/Sec = 2306.29, Accuracy = 0.80, Loss = 0.599
+[2019-05-04 02:36] Train Step 741000/1000000, Batch Size = 64, Examples/Sec = 2301.24, Accuracy = 0.80, Loss = 0.595
+[2019-05-04 02:36] Train Step 742000/1000000, Batch Size = 64, Examples/Sec = 2299.25, Accuracy = 0.80, Loss = 0.592
+[2019-05-04 02:37] Train Step 743000/1000000, Batch Size = 64, Examples/Sec = 2294.99, Accuracy = 0.80, Loss = 0.614
+[2019-05-04 02:37] Train Step 744000/1000000, Batch Size = 64, Examples/Sec = 2295.36, Accuracy = 0.80, Loss = 0.599
+[2019-05-04 02:38] Train Step 745000/1000000, Batch Size = 64, Examples/Sec = 2302.05, Accuracy = 0.80, Loss = 0.598
+[2019-05-04 02:38] Train Step 746000/1000000, Batch Size = 64, Examples/Sec = 2098.46, Accuracy = 0.80, Loss = 0.592
+[2019-05-04 02:39] Train Step 747000/1000000, Batch Size = 64, Examples/Sec = 2296.09, Accuracy = 0.80, Loss = 0.604
+[2019-05-04 02:40] Train Step 748000/1000000, Batch Size = 64, Examples/Sec = 2095.73, Accuracy = 0.80, Loss = 0.585
+[2019-05-04 02:40] Train Step 749000/1000000, Batch Size = 64, Examples/Sec = 2296.95, Accuracy = 0.80, Loss = 0.605
+[2019-05-04 02:41] Train Step 750000/1000000, Batch Size = 64, Examples/Sec = 2296.75, Accuracy = 0.80, Loss = 0.592
+Saved model.
+-------------------------------------------
+Temperature: 0.0001
+Generated 5:
+. \n Kun Marja Leena oli ymmärtä
+ón kanssa  ei ainakaan ollut h
+Ei ollut mitään perhettä. Ja k
+Don: Bruno suvuu lausuikoluett
+Kalle kertoi, että hän oli oll
+
+Generated 5 long samples (100 chars):
+1 Vaikka ei ollut koskaan ollut mitään viestin sointaneet viime aikoina, hän oli sanonut ja tutkija 
+Ömpäristä kiinni. Siitä sä tahtoivat kyllä palasivat takaisin salakoltaistuksen Ninnin lasia kateell
+Zani menettää ja he olivat asuneet yhdessä melkein yksinomaan satunnaisesti ajatellen, mutta joskus 
+8 oli painettu laatikon kylkeen, mutta se oli kiinni. Laalistaa häntä syystään yöpaikan paikoista, j
+Kalle kertoi, että hän oli ollut pakotalon luvemmalle. Sitten eräänä kesäkuun juuri nämä melkeinpä y
+-------------------------------------------
+Temperature: 0.25
+Generated 5:
+wanilla oli tapana sanoa.\n Radm
+3 Toivo oli kuullut poissa tor
+Woisia lehdessä. Kalle oli sil
+Don: BMWrle huvila ja sitä pai
+Vaikka ei ollut kovin vakuuttu
+
+Generated 5 long samples (100 chars):
+9 paljon enemmän kesämökkejä kuin viime kerralla. Hän ei ollut koskaan edes ajatellut asiaa. Hän oli
+-aikaan, jonka kanssa sä olit sittenki? Ninni sanoi ja kertoa nyt Arin talossa. Tunnen kaikki oli vi
+den päälle ja haistoi tuntea maan tärkeä asian kanssa. Se oli hänen ihollaan. Ja mikäli mielestäni m
+0 kukaan muu kuin sanoakseen, että se sai Lluísinkin kyynelehtimään.\n Sä oot ensimmäinen, jolle mä tä
+in silloin kun hän oli varma siitä, että oli nähnyt tällaisia karvahuoneeseen, joka oli ollut vain k
+-------------------------------------------
+Temperature: 0.5
+Generated 5:
+; hän itse kyllä tiedosti olik
+4. \n Marja Leena jäi hämmentyne
+Ämärin tarkat olivat muuttunee
+a oli aivan erilainen kuin mit
+hän oli aivan sattumalta avann
+
+Generated 5 long samples (100 chars):
+è kyllä keltaisissa ruuan tai pakotettiin myöhemmin kun he olivat jääneet kahden, Ninni kysyi vain e
+oli penistä, mutta tämä ei tietenkään ollut mitään vakaavaa itsekunialta.\n Sormenjäljet, Ninni sanoi 
+ja kertoi hänelle kuin pitäisi vasta nimeltä hänen toisensa jälkeen, kunnes hän löysi todellisen rei
+lasta kaljatölkki kyläläisissä piireissä. Kuinka yritti keskittyä täysin sormenjäljet lähteä kauppaa
+ä millaista voi olla vaan siksi, että tämä oli se kun me kaivat vaativat paikalle sijoitusla laille 
+-------------------------------------------
+Temperature: 1.0
+Generated 5:
+ja mietti satamassa. Hän ei tu
+aämuisimme ylöpunailevin ja pa
+1nista. Ihme sanaa katselijan 
+; Pappilan sulkeutui yllättäen
+ís ei ollut sanonut mitään asi
+
+Generated 5 long samples (100 chars):
+Qupetti he nyt ottikin niihin aikoihin kanssa näiden Taiwanin maineen. \n Brunolla ei oo kaikki kotiet
+0 suoranaisesti merkittävänä aamiaisen kokemuksen rakennuksen omen päivän puiston purjehdus. Hän ast
+qaa pubisteettuaan pelottavalta. \n Ei minä munkä nautin. Se tuli nauttineet elokuvaa, että nuoruuden 
+8 nämä kun Espanjaan oli löytynyt huolekoristerille toinen tummaihoinen. Lluísin päättäytyi nähdä pe
+ viestin saatettiin pitää laatikon kymmenen vuotta aiemmin. Asunto, jonne Marjo vastoin Kallesta kat
+-------------------------------------------
+Temperature: 2.0
+Generated 5:
+4-Fucia öitä elokuvasti, Arin 
+Di KårSinÄ vaan mukaaa viitu j
+gormaako. Se oli vrehtänyt isk
+A0Cun yhdellä ja lakkakin Valo
+) Vlivolla työpöytä elvärkään 
+
+Generated 5 long samples (100 chars):
+Yftä ylessä televisiosta. Toladinjma-ailo, sekä myönyttää kilpas että tapahtuu mutkilla yhdessä skot
+ísaduolata. Hänhän oli tovarteesta, lapset uskonnasta. Sairastolle, huenanhoistavämpyessä neksuista.
+Qava olihastoon yhteisenä siteseineen. Sivustaneet sen tupussalla edelaisissa rooli  ja sitä vähänva
+ Ruotsissa paikallaoon, Kalle rahat omainentuistota, enkä samoin Perätä. Minulla on hirvittäytymässä
+4. Juurskissa Taiwas. Mary Anni Hertaolla ja juomisesti Ruotsiin tultuata että ei seurunjia valtaosa
+-------------------------------------------
+[2019-05-04 02:41] Train Step 751000/1000000, Batch Size = 64, Examples/Sec = 2303.18, Accuracy = 0.81, Loss = 0.582
+[2019-05-04 02:42] Train Step 752000/1000000, Batch Size = 64, Examples/Sec = 2302.68, Accuracy = 0.81, Loss = 0.583
+[2019-05-04 02:42] Train Step 753000/1000000, Batch Size = 64, Examples/Sec = 2298.05, Accuracy = 0.80, Loss = 0.589
+[2019-05-04 02:43] Train Step 754000/1000000, Batch Size = 64, Examples/Sec = 2291.34, Accuracy = 0.80, Loss = 0.601
+[2019-05-04 02:43] Train Step 755000/1000000, Batch Size = 64, Examples/Sec = 2283.20, Accuracy = 0.79, Loss = 0.615
+[2019-05-04 02:44] Train Step 756000/1000000, Batch Size = 64, Examples/Sec = 2304.23, Accuracy = 0.79, Loss = 0.624
+[2019-05-04 02:44] Train Step 757000/1000000, Batch Size = 64, Examples/Sec = 2307.93, Accuracy = 0.81, Loss = 0.556
+[2019-05-04 02:45] Train Step 758000/1000000, Batch Size = 64, Examples/Sec = 2295.97, Accuracy = 0.80, Loss = 0.608
+[2019-05-04 02:45] Train Step 759000/1000000, Batch Size = 64, Examples/Sec = 2300.79, Accuracy = 0.81, Loss = 0.587
+[2019-05-04 02:46] Train Step 760000/1000000, Batch Size = 64, Examples/Sec = 2093.80, Accuracy = 0.81, Loss = 0.585
+[2019-05-04 02:47] Train Step 761000/1000000, Batch Size = 64, Examples/Sec = 2294.32, Accuracy = 0.79, Loss = 0.614
+[2019-05-04 02:47] Train Step 762000/1000000, Batch Size = 64, Examples/Sec = 2293.83, Accuracy = 0.81, Loss = 0.583
+[2019-05-04 02:48] Train Step 763000/1000000, Batch Size = 64, Examples/Sec = 2132.37, Accuracy = 0.80, Loss = 0.586
+[2019-05-04 02:48] Train Step 764000/1000000, Batch Size = 64, Examples/Sec = 2297.32, Accuracy = 0.81, Loss = 0.577
+[2019-05-04 02:49] Train Step 765000/1000000, Batch Size = 64, Examples/Sec = 2305.49, Accuracy = 0.81, Loss = 0.589
+[2019-05-04 02:49] Train Step 766000/1000000, Batch Size = 64, Examples/Sec = 2286.64, Accuracy = 0.81, Loss = 0.576
+[2019-05-04 02:50] Train Step 767000/1000000, Batch Size = 64, Examples/Sec = 2300.28, Accuracy = 0.80, Loss = 0.601
+[2019-05-04 02:50] Train Step 768000/1000000, Batch Size = 64, Examples/Sec = 2285.24, Accuracy = 0.80, Loss = 0.600
+[2019-05-04 02:51] Train Step 769000/1000000, Batch Size = 64, Examples/Sec = 2109.96, Accuracy = 0.81, Loss = 0.572
+[2019-05-04 02:51] Train Step 770000/1000000, Batch Size = 64, Examples/Sec = 2299.31, Accuracy = 0.79, Loss = 0.629
+[2019-05-04 02:52] Train Step 771000/1000000, Batch Size = 64, Examples/Sec = 2126.51, Accuracy = 0.80, Loss = 0.611
+[2019-05-04 02:53] Train Step 772000/1000000, Batch Size = 64, Examples/Sec = 2128.92, Accuracy = 0.81, Loss = 0.575
+[2019-05-04 02:53] Train Step 773000/1000000, Batch Size = 64, Examples/Sec = 2135.56, Accuracy = 0.80, Loss = 0.598
+[2019-05-04 02:54] Train Step 774000/1000000, Batch Size = 64, Examples/Sec = 2304.64, Accuracy = 0.80, Loss = 0.611
+[2019-05-04 02:54] Train Step 775000/1000000, Batch Size = 64, Examples/Sec = 2304.44, Accuracy = 0.81, Loss = 0.579
+[2019-05-04 02:55] Train Step 776000/1000000, Batch Size = 64, Examples/Sec = 2298.80, Accuracy = 0.80, Loss = 0.590
+[2019-05-04 02:55] Train Step 777000/1000000, Batch Size = 64, Examples/Sec = 2304.40, Accuracy = 0.80, Loss = 0.599
+[2019-05-04 02:56] Train Step 778000/1000000, Batch Size = 64, Examples/Sec = 2299.61, Accuracy = 0.80, Loss = 0.576
+[2019-05-04 02:56] Train Step 779000/1000000, Batch Size = 64, Examples/Sec = 2302.17, Accuracy = 0.81, Loss = 0.605
+[2019-05-04 02:57] Train Step 780000/1000000, Batch Size = 64, Examples/Sec = 2303.63, Accuracy = 0.80, Loss = 0.595
+[2019-05-04 02:57] Train Step 781000/1000000, Batch Size = 64, Examples/Sec = 2304.56, Accuracy = 0.81, Loss = 0.582
+[2019-05-04 02:58] Train Step 782000/1000000, Batch Size = 64, Examples/Sec = 2300.10, Accuracy = 0.81, Loss = 0.594
+[2019-05-04 02:58] Train Step 783000/1000000, Batch Size = 64, Examples/Sec = 2120.80, Accuracy = 0.80, Loss = 0.597
+[2019-05-04 02:59] Train Step 784000/1000000, Batch Size = 64, Examples/Sec = 2302.80, Accuracy = 0.80, Loss = 0.598
+[2019-05-04 03:00] Train Step 785000/1000000, Batch Size = 64, Examples/Sec = 2297.58, Accuracy = 0.80, Loss = 0.602
+[2019-05-04 03:00] Train Step 786000/1000000, Batch Size = 64, Examples/Sec = 2273.95, Accuracy = 0.80, Loss = 0.585
+[2019-05-04 03:01] Train Step 787000/1000000, Batch Size = 64, Examples/Sec = 2304.07, Accuracy = 0.80, Loss = 0.588
+[2019-05-04 03:01] Train Step 788000/1000000, Batch Size = 64, Examples/Sec = 2304.23, Accuracy = 0.80, Loss = 0.581
+[2019-05-04 03:02] Train Step 789000/1000000, Batch Size = 64, Examples/Sec = 2297.21, Accuracy = 0.82, Loss = 0.555
+[2019-05-04 03:02] Train Step 790000/1000000, Batch Size = 64, Examples/Sec = 2304.23, Accuracy = 0.81, Loss = 0.598
+[2019-05-04 03:03] Train Step 791000/1000000, Batch Size = 64, Examples/Sec = 2249.64, Accuracy = 0.80, Loss = 0.585
+[2019-05-04 03:03] Train Step 792000/1000000, Batch Size = 64, Examples/Sec = 2302.86, Accuracy = 0.80, Loss = 0.593
+[2019-05-04 03:04] Train Step 793000/1000000, Batch Size = 64, Examples/Sec = 2292.28, Accuracy = 0.80, Loss = 0.591
+[2019-05-04 03:04] Train Step 794000/1000000, Batch Size = 64, Examples/Sec = 2291.36, Accuracy = 0.80, Loss = 0.598
+[2019-05-04 03:05] Train Step 795000/1000000, Batch Size = 64, Examples/Sec = 2299.86, Accuracy = 0.80, Loss = 0.618
+[2019-05-04 03:05] Train Step 796000/1000000, Batch Size = 64, Examples/Sec = 2124.57, Accuracy = 0.80, Loss = 0.601
+[2019-05-04 03:06] Train Step 797000/1000000, Batch Size = 64, Examples/Sec = 2304.66, Accuracy = 0.80, Loss = 0.588
+[2019-05-04 03:07] Train Step 798000/1000000, Batch Size = 64, Examples/Sec = 2113.60, Accuracy = 0.80, Loss = 0.606
+[2019-05-04 03:07] Train Step 799000/1000000, Batch Size = 64, Examples/Sec = 2304.72, Accuracy = 0.80, Loss = 0.594
+[2019-05-04 03:08] Train Step 800000/1000000, Batch Size = 64, Examples/Sec = 2300.04, Accuracy = 0.81, Loss = 0.577
+Saved model.
+-------------------------------------------
+Temperature: 0.0001
+Generated 5:
+Tai myöhemmin ne saisi selvill
+é varmaankin tarvitsisi mielly
+i kuin olisi jokin sata. Kun s
+3 Toivo oli puolestaan todelli
+Ja sitten myöhemmin tuli koko 
+
+Generated 5 long samples (100 chars):
+-aikaan, joten tavallaan muutaman vuoden ilmasti. \n Tuulikki paikkakunta oli kuitenkin nauroista. \n Ni
+'din pitä. Sitten hän heräsi jälleen ensimmäisen kerran. On sääli että Matilda menee sänkyyn jonkun 
+Ärätön vuokralaismiehiä viisikymmentä maahanmuuttajien ja laittamaan puhelimen jääkaapin pakasteloke
+Raikku oli paennut kotoaan. Hän oli huomannut, että kirjastossa oli suuri maakellari ja vaihtoi terv
+Sitten hän huusi ja sitten uusia ja selittää että hänen ja kaikesta päätellen sen tietenkin. \n Hän ol
+-------------------------------------------
+Temperature: 0.25
+Generated 5:
+ri saattoi ostaa lapsenlapsill
+Ari tunsi itsensä niin raukeak
+\n Ensimmäisen kerran pyöräili t
+zille, kun hän oli toivonut pä
+è kyläläisissä. Mutta niin oli
+
+Generated 5 long samples (100 chars):
+Mistä muutakaan Samuli Perälä ja tuoneen lattialle. Isä oli käynyt uimassa. \n Noustuaan takaisin vene
+Ninni sanoi. Elekärin sinulla on jo aavussa ja se sai jäädä tällä kesään kun kerran perään. Sitten h
+zaan läheisyydelle.\n Tavallaan Marja Leenan yllätykseksi Marja Leena oli ollut vaikeaa opaskelmalaisi
+3 Toivo oli kuullut poissa toristeja ja syntynyt Suomesta. Miksi pitänyt huutamassa jonka ylemmältä 
+(taisiin heidän lähtiessään asioita Monttareen olleen jotakin asian teolle. Ei ollut.\n Ari valaisi ta
+-------------------------------------------
+Temperature: 0.5
+Generated 5:
+ón kaupassa isokerran toiselle
+Edellanen mies sanoi ja heille
+9 vastaisi miehen alkuunkaan. 
+Ari ei ollut lainkaan helppo t
+ koskaan tekee puhua ihan kell
+
+Generated 5 long samples (100 chars):
+Julle oli kokemus, jota hän viittoili veden alla, se oli hänen isänsä kanssa ja hieman satamasta. Hä
+xen heille oli tapahtunut. \n Se kutsuikin hänen kanssaan. \n Vaikutti siltä että kyse olisi melko varma
+2 jotain muuta kuin Igor omistustiinti. Ottaks se tulee musta. Mulla on kaikki sun varmaan sitten pa
+\n Mitä sä täällä? Lluís vaihtoi espanjaksi.\n Mä oon ajatellu, Kalle sanoi hetken hemmenrakentajalleen 
+maan se oli poissa kotoa. Eikä ne ehkä niinkään se mitä kirjoitellin aina vain sitä mitä minulle? \n J
+-------------------------------------------
+Temperature: 1.0
+Generated 5:
+Ja isään oli helppoa arvioimaa
+8 vielä itse päätään sanoja, j
+Xitä sitä hän ei suinkaan ollu
+.\n Huoneeseen oli varmaan luovu
+fran opettelemaan suurennä osa
+
+Generated 5 long samples (100 chars):
+llesta rakennuskesken insin serbiä. Saatoin omakin nauttivat toimia ja videokasviks.    riido oli li
+8 Ninni työnsi hänelle aina vain tavallinen kuin mitä Kalle oli kertonut hänen korvaansa.  \n Minkä nu
+destä ja kokemukseni ovia seuraukselta.\n Aina viikko se todella kaikista Kallesta. \n \n Keväällä tuli vu
+? Kalle kysyi elämään normaalia elämää. \n Ja taas sitten istuin hänen luonaan kohtensa biskiksellä. O
+Ohdatessaan eläimet pois heimon luokeatteet ja peittänyt keneltä vesiämpärit ja lankkuraa.\n Tämän kai
+-------------------------------------------
+Temperature: 2.0
+Generated 5:
+8ulto nimiltää hajotaan, kun i
+3wssääsensä dedban, miksi Kall
+'p.\n Kaksi suomenaispaikkaa, mu
+senätuomallista tehdyjseni ja 
+ä firman mukaan. Sellaisena he
+
+Generated 5 long samples (100 chars):
+?\n Kodkavierkäppisä kääri käyttämään puolen, Isä opiskas olivirateislenkaan. Lluís tutki erossa suost
+0\n Nilkä sytytiksi, niitä kehrasivat Arilta kuin enää.\n \n Kallelle tarkka-avatus Agneta osoittautui Igo
+OLto ja Igbinge kovalaisten?\n yks nyky, mut ei häntä siellä?\n En tiedä. Mä en uskalda rauhaa, hukkaa e
+ H.nemmärhoniset, hienkääilulle. Modimmin muokkahuoneen ovea. Miehen muistoja kuonokiusteiden lautor
+Sitse? Töitä on mikäänpä vanhassa proja.\n Perähän nummertissa, jonka polttokaudella, aivan ylhätellä 
+-------------------------------------------
+[2019-05-04 03:08] Train Step 801000/1000000, Batch Size = 64, Examples/Sec = 2294.67, Accuracy = 0.80, Loss = 0.593
+[2019-05-04 03:09] Train Step 802000/1000000, Batch Size = 64, Examples/Sec = 2301.24, Accuracy = 0.80, Loss = 0.592
+[2019-05-04 03:09] Train Step 803000/1000000, Batch Size = 64, Examples/Sec = 2297.11, Accuracy = 0.79, Loss = 0.616
+[2019-05-04 03:10] Train Step 804000/1000000, Batch Size = 64, Examples/Sec = 2306.42, Accuracy = 0.81, Loss = 0.586
+[2019-05-04 03:10] Train Step 805000/1000000, Batch Size = 64, Examples/Sec = 2105.39, Accuracy = 0.79, Loss = 0.612
+[2019-05-04 03:11] Train Step 806000/1000000, Batch Size = 64, Examples/Sec = 1612.53, Accuracy = 0.80, Loss = 0.594
+[2019-05-04 03:11] Train Step 807000/1000000, Batch Size = 64, Examples/Sec = 2262.03, Accuracy = 0.81, Loss = 0.582
+[2019-05-04 03:12] Train Step 808000/1000000, Batch Size = 64, Examples/Sec = 2296.54, Accuracy = 0.80, Loss = 0.600
+[2019-05-04 03:12] Train Step 809000/1000000, Batch Size = 64, Examples/Sec = 2297.29, Accuracy = 0.81, Loss = 0.578
+[2019-05-04 03:13] Train Step 810000/1000000, Batch Size = 64, Examples/Sec = 2298.86, Accuracy = 0.80, Loss = 0.611
+[2019-05-04 03:14] Train Step 811000/1000000, Batch Size = 64, Examples/Sec = 2294.26, Accuracy = 0.81, Loss = 0.610
+[2019-05-04 03:14] Train Step 812000/1000000, Batch Size = 64, Examples/Sec = 2095.78, Accuracy = 0.80, Loss = 0.597
+[2019-05-04 03:15] Train Step 813000/1000000, Batch Size = 64, Examples/Sec = 2130.32, Accuracy = 0.80, Loss = 0.619
+[2019-05-04 03:15] Train Step 814000/1000000, Batch Size = 64, Examples/Sec = 2287.65, Accuracy = 0.80, Loss = 0.586
+[2019-05-04 03:16] Train Step 815000/1000000, Batch Size = 64, Examples/Sec = 2256.65, Accuracy = 0.81, Loss = 0.569
+[2019-05-04 03:16] Train Step 816000/1000000, Batch Size = 64, Examples/Sec = 2295.54, Accuracy = 0.81, Loss = 0.591
+[2019-05-04 03:17] Train Step 817000/1000000, Batch Size = 64, Examples/Sec = 2125.60, Accuracy = 0.80, Loss = 0.598
+[2019-05-04 03:17] Train Step 818000/1000000, Batch Size = 64, Examples/Sec = 2298.41, Accuracy = 0.81, Loss = 0.587
+[2019-05-04 03:18] Train Step 819000/1000000, Batch Size = 64, Examples/Sec = 2302.82, Accuracy = 0.80, Loss = 0.606
+[2019-05-04 03:18] Train Step 820000/1000000, Batch Size = 64, Examples/Sec = 2203.42, Accuracy = 0.81, Loss = 0.596
+[2019-05-04 03:19] Train Step 821000/1000000, Batch Size = 64, Examples/Sec = 2289.86, Accuracy = 0.80, Loss = 0.592
+[2019-05-04 03:20] Train Step 822000/1000000, Batch Size = 64, Examples/Sec = 2292.44, Accuracy = 0.79, Loss = 0.611
+[2019-05-04 03:20] Train Step 823000/1000000, Batch Size = 64, Examples/Sec = 2286.70, Accuracy = 0.80, Loss = 0.594
+[2019-05-04 03:21] Train Step 824000/1000000, Batch Size = 64, Examples/Sec = 2294.03, Accuracy = 0.80, Loss = 0.602
+[2019-05-04 03:21] Train Step 825000/1000000, Batch Size = 64, Examples/Sec = 2213.10, Accuracy = 0.81, Loss = 0.600
+[2019-05-04 03:22] Train Step 826000/1000000, Batch Size = 64, Examples/Sec = 2296.13, Accuracy = 0.80, Loss = 0.579
+[2019-05-04 03:22] Train Step 827000/1000000, Batch Size = 64, Examples/Sec = 2299.39, Accuracy = 0.80, Loss = 0.601
+[2019-05-04 03:23] Train Step 828000/1000000, Batch Size = 64, Examples/Sec = 2133.18, Accuracy = 0.81, Loss = 0.579
+[2019-05-04 03:23] Train Step 829000/1000000, Batch Size = 64, Examples/Sec = 2297.36, Accuracy = 0.80, Loss = 0.601
+[2019-05-04 03:24] Train Step 830000/1000000, Batch Size = 64, Examples/Sec = 2295.03, Accuracy = 0.80, Loss = 0.599
+[2019-05-04 03:24] Train Step 831000/1000000, Batch Size = 64, Examples/Sec = 2303.67, Accuracy = 0.81, Loss = 0.588
+[2019-05-04 03:25] Train Step 832000/1000000, Batch Size = 64, Examples/Sec = 2287.18, Accuracy = 0.81, Loss = 0.594
+[2019-05-04 03:25] Train Step 833000/1000000, Batch Size = 64, Examples/Sec = 2051.90, Accuracy = 0.82, Loss = 0.568
+[2019-05-04 03:26] Train Step 834000/1000000, Batch Size = 64, Examples/Sec = 2299.65, Accuracy = 0.80, Loss = 0.597
+[2019-05-04 03:26] Train Step 835000/1000000, Batch Size = 64, Examples/Sec = 2111.89, Accuracy = 0.81, Loss = 0.589
+[2019-05-04 03:27] Train Step 836000/1000000, Batch Size = 64, Examples/Sec = 2289.90, Accuracy = 0.80, Loss = 0.601
+[2019-05-04 03:28] Train Step 837000/1000000, Batch Size = 64, Examples/Sec = 2276.69, Accuracy = 0.81, Loss = 0.579
+[2019-05-04 03:28] Train Step 838000/1000000, Batch Size = 64, Examples/Sec = 2298.86, Accuracy = 0.81, Loss = 0.587
+[2019-05-04 03:29] Train Step 839000/1000000, Batch Size = 64, Examples/Sec = 2119.27, Accuracy = 0.80, Loss = 0.581
+[2019-05-04 03:29] Train Step 840000/1000000, Batch Size = 64, Examples/Sec = 2127.01, Accuracy = 0.81, Loss = 0.579
+[2019-05-04 03:30] Train Step 841000/1000000, Batch Size = 64, Examples/Sec = 2135.64, Accuracy = 0.80, Loss = 0.596
+[2019-05-04 03:30] Train Step 842000/1000000, Batch Size = 64, Examples/Sec = 2128.87, Accuracy = 0.80, Loss = 0.575
+[2019-05-04 03:31] Train Step 843000/1000000, Batch Size = 64, Examples/Sec = 2294.99, Accuracy = 0.81, Loss = 0.590
+[2019-05-04 03:31] Train Step 844000/1000000, Batch Size = 64, Examples/Sec = 2271.87, Accuracy = 0.81, Loss = 0.588
+[2019-05-04 03:32] Train Step 845000/1000000, Batch Size = 64, Examples/Sec = 2298.76, Accuracy = 0.81, Loss = 0.573
+[2019-05-04 03:33] Train Step 846000/1000000, Batch Size = 64, Examples/Sec = 2085.76, Accuracy = 0.80, Loss = 0.591
+[2019-05-04 03:33] Train Step 847000/1000000, Batch Size = 64, Examples/Sec = 2291.27, Accuracy = 0.81, Loss = 0.584
+[2019-05-04 03:34] Train Step 848000/1000000, Batch Size = 64, Examples/Sec = 2130.73, Accuracy = 0.80, Loss = 0.598
+[2019-05-04 03:34] Train Step 849000/1000000, Batch Size = 64, Examples/Sec = 2115.50, Accuracy = 0.80, Loss = 0.598
+[2019-05-04 03:35] Train Step 850000/1000000, Batch Size = 64, Examples/Sec = 2072.09, Accuracy = 0.81, Loss = 0.566
+Saved model.
+-------------------------------------------
+Temperature: 0.0001
+Generated 5:
+é varmaankin tarvitsisi mielly
+Ei oikeestaan ollut nähnyt mit
+za oli tullut hänen perheensä 
+9 paljon enemmän kuin mitä Nin
+é varmaankin tarvitsisi mielly
+
+Generated 5 long samples (100 chars):
+1 Vaikka ei ollut koskaan löytänyt hänen silmistään, jota saattoi nähdä paljon kadun talon Alfralead
+ci sanoi ja sanoi tuntevana taulusta. Sen verran hän oli kuvitellut. Hänelle oli tapahtunut. \n Ari ol
+Ninni sai pidätettynä että hän oli kovin hyvin väärään monesta kärsivällisesti ja siinä oli myös se 
+qaiset koko sukulaiset eivät mitenkään vetänyt veneen kanttaan. \n Kun pappi tuli takaisin pappilaan. 
+ci sanoi ja sanoi tuntevana taulusta. Sen verran hän oli kuvitellut. Hänelle oli tapahtunut. \n Ari ol
+-------------------------------------------
+Temperature: 0.25
+Generated 5:
+) mitään sellaista. Mut silti 
+vaikka kunniallisesti hän oli 
+yt mitä se painajaisman oven t
+Sitten hän väitti ei lainkaan 
+Tai myöhemmin asti hän oli epä
+
+Generated 5 long samples (100 chars):
+4 Äiti käsitti. Mitä sä sen tiedätkö että monissa saattoi muistaa.\n \n Hän ei voinut suostuttaa minulle
+hän oli kertonut aivan jostakin muulle. \n Kun poltispirilio ja Mary Ann olivat yhtä mieltä siitä, ett
+0 kukaan muu kuin sanonut tulleensa vain hetkeä, jolloin parisuhteemme alkoi muokkautua nelisuhteeks
+Yöllä oli se, että hän oli ollut pelkkää rimamiinia. Lluís tutki laittomia pankkirititoiden ja katse
+ón kanssa  siis mikäli voi myös koko taloa, jos ei sitten millään muutenkin vain kerran asioita koto
+-------------------------------------------
+Temperature: 0.5
+Generated 5:
+a talossa tavarat oli muuttunu
+Filo. Kun he lopulta sanoivat 
+vinä kahvinkeittimelle pitkin 
+öhyllä on niin paljon suuria k
+: Toivo Kuuvalo ei ollut ollut
+
+Generated 5 long samples (100 chars):
+; kuin mitä ihmeessä se on tietää. Ne kutsuu mun pitä sieltä alas rautakin. En, mutta se mitä Ari ja
+Freesta.\n En tiedä mitä mä meen nainen, vaan pikemmin sulle ja sanoin. Jotkut puhuivat kyllä tuollais
+I kysyi.\n No melkein joku oli avannu sitä. Äiti oli kauttaa ja alkoi selittää tietenkin pitää lopun y
+ntä toisen kanssa. \n Täällä on näistä todettamana alastomiksen sijain. Mulla on hän itse muuttunu se.
+- ja lukittu viimeisestä aikaisemmin.\n Tämä on rentänyt niin kovaa kuinka valjoittamansa pohjoisessa 
+-------------------------------------------
+Temperature: 1.0
+Generated 5:
+ykkeää elokuvaa, että hän oli 
+è koot. \n Kuule hän halusi sitä
+ólefilas ja kaikesta näilläkää
+! \n Ninni ei ollut kovinkaan ul
+Wuosiossa, ei olisi niin hurri
+
+Generated 5 long samples (100 chars):
+rlot, mutta repisi hämärtynyt ja kun auttaa sanoja, jotka oli palasty kiintää, vaikka hän ylipäätään
+9latessa. \n Ari lähti laijan suureen yhdentelyn alastomielinen eteen. Se alkoi tuntea miestä? Paitsi 
+1 Ohan lasaan trintaisistaan. \n Ninni oli täysin mahdotonta kylässä käsinkäymiten oikein oli kirjettä
+xpistein varran punainen solmivaksi. \n Kertaaksi nappatuksen tunteen Lluís kulkisi niiden muistoja ku
+tena asiakaskuntaa. Ennen lähtöään hän kieltäytyi ottamaan säteä muutakin kuin olisin hyvä edesankoi
+-------------------------------------------
+Temperature: 2.0
+Generated 5:
+kn piispa Jumalasta.\n Kilppuvam
+rion mökille Söderhän Hihalla,
+seen jatehtias. Pappi aukaisi 
+hee ja niin yksi, Anita unohtu
+.'\n Pyyhekke oli, maksettava ky
+
+Generated 5 long samples (100 chars):
+Räppö pyytää sinki Kallen vaikeina häntä synnykkyää käsikorttelini istunkivuus kopituipa mulla on ky
+betsälsiään ilmapiiriä.\n Ninni asuntoa tamotessa ikuisen, Crunsin yDt intitestä.\n \n Päimäärässa kaikest
+6 todellapa matkulaajusta. Keirujon orisi Ruotsiin ja Ninni muistelivat edes hyvin vähäiseen  maisto
+Nuvetkelta, onkas korvasekortantti.\n Ei, et mä saat nukkuneet siitä en kysellä nauras. B.\n T.l. Helvót
+.\n Wow, arvastaan, se on iruistukka, Kaksi painautunutmaan Oluista. \n Päivä olja melkein mahdotollisen
+-------------------------------------------
+[2019-05-04 03:35] Train Step 851000/1000000, Batch Size = 64, Examples/Sec = 2283.55, Accuracy = 0.80, Loss = 0.602
+[2019-05-04 03:36] Train Step 852000/1000000, Batch Size = 64, Examples/Sec = 2302.57, Accuracy = 0.81, Loss = 0.593
+[2019-05-04 03:36] Train Step 853000/1000000, Batch Size = 64, Examples/Sec = 2269.95, Accuracy = 0.80, Loss = 0.610
+[2019-05-04 03:37] Train Step 854000/1000000, Batch Size = 64, Examples/Sec = 2123.53, Accuracy = 0.79, Loss = 0.628
+[2019-05-04 03:37] Train Step 855000/1000000, Batch Size = 64, Examples/Sec = 2305.53, Accuracy = 0.81, Loss = 0.583
+[2019-05-04 03:38] Train Step 856000/1000000, Batch Size = 64, Examples/Sec = 2292.69, Accuracy = 0.81, Loss = 0.584
+[2019-05-04 03:39] Train Step 857000/1000000, Batch Size = 64, Examples/Sec = 2285.08, Accuracy = 0.80, Loss = 0.594
+[2019-05-04 03:39] Train Step 858000/1000000, Batch Size = 64, Examples/Sec = 2303.18, Accuracy = 0.81, Loss = 0.579
+[2019-05-04 03:40] Train Step 859000/1000000, Batch Size = 64, Examples/Sec = 2290.31, Accuracy = 0.80, Loss = 0.579
+[2019-05-04 03:40] Train Step 860000/1000000, Batch Size = 64, Examples/Sec = 2135.44, Accuracy = 0.80, Loss = 0.594
+[2019-05-04 03:41] Train Step 861000/1000000, Batch Size = 64, Examples/Sec = 2099.43, Accuracy = 0.80, Loss = 0.607
+[2019-05-04 03:41] Train Step 862000/1000000, Batch Size = 64, Examples/Sec = 2286.58, Accuracy = 0.81, Loss = 0.576
+[2019-05-04 03:42] Train Step 863000/1000000, Batch Size = 64, Examples/Sec = 2301.11, Accuracy = 0.81, Loss = 0.582
+[2019-05-04 03:42] Train Step 864000/1000000, Batch Size = 64, Examples/Sec = 2298.62, Accuracy = 0.80, Loss = 0.594
+[2019-05-04 03:43] Train Step 865000/1000000, Batch Size = 64, Examples/Sec = 1983.05, Accuracy = 0.81, Loss = 0.604
+[2019-05-04 03:43] Train Step 866000/1000000, Batch Size = 64, Examples/Sec = 2131.66, Accuracy = 0.80, Loss = 0.608
+[2019-05-04 03:44] Train Step 867000/1000000, Batch Size = 64, Examples/Sec = 2097.25, Accuracy = 0.81, Loss = 0.571
+[2019-05-04 03:45] Train Step 868000/1000000, Batch Size = 64, Examples/Sec = 2126.24, Accuracy = 0.81, Loss = 0.592
+[2019-05-04 03:45] Train Step 869000/1000000, Batch Size = 64, Examples/Sec = 2303.79, Accuracy = 0.80, Loss = 0.599
+[2019-05-04 03:46] Train Step 870000/1000000, Batch Size = 64, Examples/Sec = 2300.30, Accuracy = 0.81, Loss = 0.597
+[2019-05-04 03:46] Train Step 871000/1000000, Batch Size = 64, Examples/Sec = 2141.73, Accuracy = 0.80, Loss = 0.601
+[2019-05-04 03:47] Train Step 872000/1000000, Batch Size = 64, Examples/Sec = 2274.39, Accuracy = 0.81, Loss = 0.589
+[2019-05-04 03:47] Train Step 873000/1000000, Batch Size = 64, Examples/Sec = 2295.83, Accuracy = 0.81, Loss = 0.578
+[2019-05-04 03:48] Train Step 874000/1000000, Batch Size = 64, Examples/Sec = 2290.64, Accuracy = 0.80, Loss = 0.597
+[2019-05-04 03:48] Train Step 875000/1000000, Batch Size = 64, Examples/Sec = 2301.97, Accuracy = 0.81, Loss = 0.590
+[2019-05-04 03:49] Train Step 876000/1000000, Batch Size = 64, Examples/Sec = 2125.70, Accuracy = 0.81, Loss = 0.558
+[2019-05-04 03:49] Train Step 877000/1000000, Batch Size = 64, Examples/Sec = 2307.26, Accuracy = 0.81, Loss = 0.587
+[2019-05-04 03:50] Train Step 878000/1000000, Batch Size = 64, Examples/Sec = 2299.75, Accuracy = 0.80, Loss = 0.620
+[2019-05-04 03:50] Train Step 879000/1000000, Batch Size = 64, Examples/Sec = 2304.40, Accuracy = 0.81, Loss = 0.595
+[2019-05-04 03:51] Train Step 880000/1000000, Batch Size = 64, Examples/Sec = 2285.70, Accuracy = 0.80, Loss = 0.591
+[2019-05-04 03:52] Train Step 881000/1000000, Batch Size = 64, Examples/Sec = 2292.48, Accuracy = 0.80, Loss = 0.600
+[2019-05-04 03:52] Train Step 882000/1000000, Batch Size = 64, Examples/Sec = 2128.45, Accuracy = 0.80, Loss = 0.597
+[2019-05-04 03:53] Train Step 883000/1000000, Batch Size = 64, Examples/Sec = 2308.23, Accuracy = 0.80, Loss = 0.599
+[2019-05-04 03:53] Train Step 884000/1000000, Batch Size = 64, Examples/Sec = 2306.80, Accuracy = 0.80, Loss = 0.610
+[2019-05-04 03:54] Train Step 885000/1000000, Batch Size = 64, Examples/Sec = 2130.41, Accuracy = 0.81, Loss = 0.580
+[2019-05-04 03:54] Train Step 886000/1000000, Batch Size = 64, Examples/Sec = 2303.97, Accuracy = 0.81, Loss = 0.578
+[2019-05-04 03:55] Train Step 887000/1000000, Batch Size = 64, Examples/Sec = 2305.77, Accuracy = 0.81, Loss = 0.587
+[2019-05-04 03:55] Train Step 888000/1000000, Batch Size = 64, Examples/Sec = 2296.13, Accuracy = 0.81, Loss = 0.583
+[2019-05-04 03:56] Train Step 889000/1000000, Batch Size = 64, Examples/Sec = 2291.50, Accuracy = 0.81, Loss = 0.593
+[2019-05-04 03:56] Train Step 890000/1000000, Batch Size = 64, Examples/Sec = 2133.27, Accuracy = 0.80, Loss = 0.598
+[2019-05-04 03:57] Train Step 891000/1000000, Batch Size = 64, Examples/Sec = 2125.25, Accuracy = 0.79, Loss = 0.618
+[2019-05-04 03:58] Train Step 892000/1000000, Batch Size = 64, Examples/Sec = 2299.06, Accuracy = 0.81, Loss = 0.572
+[2019-05-04 03:58] Train Step 893000/1000000, Batch Size = 64, Examples/Sec = 2300.45, Accuracy = 0.80, Loss = 0.595
+[2019-05-04 03:59] Train Step 894000/1000000, Batch Size = 64, Examples/Sec = 2094.57, Accuracy = 0.81, Loss = 0.567
+[2019-05-04 03:59] Train Step 895000/1000000, Batch Size = 64, Examples/Sec = 2295.36, Accuracy = 0.81, Loss = 0.599
+[2019-05-04 04:00] Train Step 896000/1000000, Batch Size = 64, Examples/Sec = 2298.72, Accuracy = 0.81, Loss = 0.582
+[2019-05-04 04:00] Train Step 897000/1000000, Batch Size = 64, Examples/Sec = 2302.27, Accuracy = 0.81, Loss = 0.579
+[2019-05-04 04:01] Train Step 898000/1000000, Batch Size = 64, Examples/Sec = 2105.76, Accuracy = 0.80, Loss = 0.618
+[2019-05-04 04:01] Train Step 899000/1000000, Batch Size = 64, Examples/Sec = 2303.95, Accuracy = 0.81, Loss = 0.586
+[2019-05-04 04:02] Train Step 900000/1000000, Batch Size = 64, Examples/Sec = 2079.27, Accuracy = 0.81, Loss = 0.583
+Saved model.
+-------------------------------------------
+Temperature: 0.0001
+Generated 5:
+è kyllä riippui osoitteensa hi
+2 jotain muuta kuin kerran.\n Ja
+6 kun ei se koskaan tavannut h
+é varmaankin tarvitsisi mielly
+en kanssa. \n Lluís muisti valla
+
+Generated 5 long samples (100 chars):
+Ei oikeestaan ollut nähnyt mitään vastaavaa. Ja mitä enemmän asiaa ajatteli, sitä enemmän hän kiihot
+oli tullut hänen perheensä oli muuttanut Marja Leenan kiinnostuksensa kanssa ja sateisena sanoakseen
+Vaikka kuinka yritti. \n Asuntola, jossa Lluís oli asunut Eduardon kanssa vanhempiensa kanssa. \n Lluísi
+Ömpäristä kiinni. Siitä sä tahtoivat kyllä palasivat takaisin salakoltaista. Hän oli tavallaan suvun
+-aikaan, joten tavallaan muutaman vuoden kanssa lähestyivät vahinko palasivat takaisin asunnolle. Si
+-------------------------------------------
+Temperature: 0.25
+Generated 5:
+vat sitä samaa kuin mitä oli p
+ tuntui siltä, että hän oli kä
+ kertoi kuinka hän sai tartten
+I oli tapahtunut. \n He olivat j
+ sitä enemmän, ja laittoi näit
+
+Generated 5 long samples (100 chars):
+8 Ari ei oikein ymmärtänyt mitä mies puuhaili, vaikka se olisi jäänyt kunnossa pitäisi. \n Mä sanon mi
+hän oli aivan liian mahdollista, että vanha nainen, joka puhui suomea läpi suuren vanhanaikaista rad
+ksi katselemaan syksyistä kuinka paljon myös rakennusankauteta, eikä hän sitä ilmanlasta kun hän oli
+Ninni tunsi katalonialaisia ja kirjan, jossa hän vain oli saada katsellessaan kokonaisia, kuten tode
+7 ja suurempi  hänen itsensä ansiota. Näin Pontuksen oli yllättävän lämmittämään ollut selvästikin p
+-------------------------------------------
+Temperature: 0.5
+Generated 5:
+årdossa, eikä Ninnikään toimit
+ä ne kaikki on sitä katkertut.
+Urbos. Niin niin vierailla het
+I sitä hän ei voinut muu kuin 
+'l oli kovin hyvin välillä voi
+
+Generated 5 long samples (100 chars):
+sa kerrokseen ja vähesti kalvansa. \n Tiedän myös niitä jotain paremmin. \n Vaikka Lluís kertoikin asian
+cis sanoi.\n He juojukuulosti kaksi kurkkasen suuntaan.\n Tieks Syykkää mun pitää muuta kuin numeroita j
+Marja Leena sai lähteneet yhdessä sitten samaiselta rakkaani, ei ainakaan uusia tai sitten vaikka ku
+Voisi sen jälkeen hän huomasi ettei enää tuntunut ohenattoi vaitte kävelyksestä koulun kalun kanssa.
+puolen vuosi sitten. Ari ajatteli, ja juuri silloin kun Ninni palasi joulukortin Tukholmasta, Kalle 
+-------------------------------------------
+Temperature: 1.0
+Generated 5:
+\n Miten niin? Täälläpäin ei oll
+kuin täysin abut hevostus Toiv
+Ytönsä asunnon. Mies hiekoi au
+ytyi asemalle. \n On myönnettävä
+Huoneeseen ei osannut tapahtua
+
+Generated 5 long samples (100 chars):
+Työpäivän päivän tuli rakasti käyttöyttävän syntynyt tyhjillään. \n  Marja Leenalle jäi elämään ihmise
+Eivät ne olleet kunnossamme tavattuneet. Lapautui pienempi parhaimman asiaa. Hän oli sidottunut jäät
+ja hän sai nähdä heti takamusta kooki ymmärryt. Minun on mainostaneet bisnestä. Sun sisällä on kiinn
+s olla täysin turhaan, josta olimme hautajaisiin vielä pudonnut haju-astumaan. \n Krister siunasi murh
+jonka ruotsalaishenkilo vain kellarissa tapahtunut. Nikon äidille anteeksi äitinistä ihmisiä, jotka 
+-------------------------------------------
+Temperature: 2.0
+Generated 5:
+Didnlaan hiemassa ikään kun To
+7 ja blandasi vielä  doukat ko
+lael eikä ne rukoilempi.\n Mikää
+qassielatitaapiBBnuntaa, jolle
+Oki, se soitti. \n Olin kurssi i
+
+Generated 5 long samples (100 chars):
+8ostaan, alkupäivästä ostetupalkki. Paikalla oli hoikkana maineen ehdottomana, etsi kärsimät muotta.
+è oökoudellamman pinnille. Ei kuviteltu?. En näinille ykskarpien saatto  epäili heti yhdeltä: Aniaka
+pnonutlastohan olisi niin ikänovalta.  Ninni oli saattanut lihtaivanki, voisi ovea käsitysvöksivmeen
+pienelvä, elokuvaa Ninnin ismaisten oikeaan lääkärin haertoja! Ynteivienkiloetto sita olikin.\n Lluís 
+6 todiste, mutta rohkeolisian opiskelijamaan, joka hoiki matkusteli tuhkaamian vierekkä, liehi. Mall
+-------------------------------------------
+[2019-05-04 04:02] Train Step 901000/1000000, Batch Size = 64, Examples/Sec = 2124.87, Accuracy = 0.80, Loss = 0.586
+[2019-05-04 04:03] Train Step 902000/1000000, Batch Size = 64, Examples/Sec = 2294.89, Accuracy = 0.80, Loss = 0.605
+[2019-05-04 04:04] Train Step 903000/1000000, Batch Size = 64, Examples/Sec = 2285.86, Accuracy = 0.80, Loss = 0.601
+[2019-05-04 04:04] Train Step 904000/1000000, Batch Size = 64, Examples/Sec = 2278.39, Accuracy = 0.81, Loss = 0.594
+[2019-05-04 04:05] Train Step 905000/1000000, Batch Size = 64, Examples/Sec = 2287.46, Accuracy = 0.80, Loss = 0.593
+[2019-05-04 04:05] Train Step 906000/1000000, Batch Size = 64, Examples/Sec = 2274.49, Accuracy = 0.80, Loss = 0.596
+[2019-05-04 04:06] Train Step 907000/1000000, Batch Size = 64, Examples/Sec = 2296.79, Accuracy = 0.80, Loss = 0.606
+[2019-05-04 04:06] Train Step 908000/1000000, Batch Size = 64, Examples/Sec = 2296.91, Accuracy = 0.80, Loss = 0.602
+[2019-05-04 04:07] Train Step 909000/1000000, Batch Size = 64, Examples/Sec = 2123.83, Accuracy = 0.81, Loss = 0.568
+[2019-05-04 04:07] Train Step 910000/1000000, Batch Size = 64, Examples/Sec = 2284.60, Accuracy = 0.81, Loss = 0.580
+[2019-05-04 04:08] Train Step 911000/1000000, Batch Size = 64, Examples/Sec = 2289.00, Accuracy = 0.80, Loss = 0.595
+[2019-05-04 04:08] Train Step 912000/1000000, Batch Size = 64, Examples/Sec = 2293.79, Accuracy = 0.80, Loss = 0.606
+[2019-05-04 04:09] Train Step 913000/1000000, Batch Size = 64, Examples/Sec = 2265.49, Accuracy = 0.80, Loss = 0.598
+[2019-05-04 04:09] Train Step 914000/1000000, Batch Size = 64, Examples/Sec = 2295.93, Accuracy = 0.80, Loss = 0.607
+[2019-05-04 04:10] Train Step 915000/1000000, Batch Size = 64, Examples/Sec = 2273.28, Accuracy = 0.80, Loss = 0.594
+[2019-05-04 04:10] Train Step 916000/1000000, Batch Size = 64, Examples/Sec = 2296.01, Accuracy = 0.80, Loss = 0.608
+[2019-05-04 04:11] Train Step 917000/1000000, Batch Size = 64, Examples/Sec = 2292.03, Accuracy = 0.81, Loss = 0.580
+[2019-05-04 04:12] Train Step 918000/1000000, Batch Size = 64, Examples/Sec = 2265.85, Accuracy = 0.81, Loss = 0.596
+[2019-05-04 04:12] Train Step 919000/1000000, Batch Size = 64, Examples/Sec = 2055.35, Accuracy = 0.81, Loss = 0.576
+[2019-05-04 04:13] Train Step 920000/1000000, Batch Size = 64, Examples/Sec = 2290.74, Accuracy = 0.81, Loss = 0.584
+[2019-05-04 04:13] Train Step 921000/1000000, Batch Size = 64, Examples/Sec = 2287.85, Accuracy = 0.81, Loss = 0.594
+[2019-05-04 04:14] Train Step 922000/1000000, Batch Size = 64, Examples/Sec = 2094.65, Accuracy = 0.81, Loss = 0.596
+[2019-05-04 04:14] Train Step 923000/1000000, Batch Size = 64, Examples/Sec = 2124.94, Accuracy = 0.80, Loss = 0.592
+[2019-05-04 04:15] Train Step 924000/1000000, Batch Size = 64, Examples/Sec = 2304.19, Accuracy = 0.81, Loss = 0.594
+[2019-05-04 04:15] Train Step 925000/1000000, Batch Size = 64, Examples/Sec = 1738.76, Accuracy = 0.81, Loss = 0.591
+[2019-05-04 04:16] Train Step 926000/1000000, Batch Size = 64, Examples/Sec = 2297.29, Accuracy = 0.80, Loss = 0.599
+[2019-05-04 04:16] Train Step 927000/1000000, Batch Size = 64, Examples/Sec = 2296.40, Accuracy = 0.81, Loss = 0.583
+[2019-05-04 04:17] Train Step 928000/1000000, Batch Size = 64, Examples/Sec = 2302.74, Accuracy = 0.81, Loss = 0.577
+[2019-05-04 04:17] Train Step 929000/1000000, Batch Size = 64, Examples/Sec = 2296.72, Accuracy = 0.81, Loss = 0.586
+[2019-05-04 04:18] Train Step 930000/1000000, Batch Size = 64, Examples/Sec = 2301.84, Accuracy = 0.81, Loss = 0.579
+[2019-05-04 04:19] Train Step 931000/1000000, Batch Size = 64, Examples/Sec = 2264.91, Accuracy = 0.79, Loss = 0.612
+[2019-05-04 04:19] Train Step 932000/1000000, Batch Size = 64, Examples/Sec = 2298.19, Accuracy = 0.80, Loss = 0.603
+[2019-05-04 04:20] Train Step 933000/1000000, Batch Size = 64, Examples/Sec = 2107.19, Accuracy = 0.80, Loss = 0.613
+[2019-05-04 04:20] Train Step 934000/1000000, Batch Size = 64, Examples/Sec = 2292.15, Accuracy = 0.80, Loss = 0.583
+[2019-05-04 04:21] Train Step 935000/1000000, Batch Size = 64, Examples/Sec = 2122.56, Accuracy = 0.81, Loss = 0.585
+[2019-05-04 04:21] Train Step 936000/1000000, Batch Size = 64, Examples/Sec = 2295.40, Accuracy = 0.80, Loss = 0.614
+[2019-05-04 04:22] Train Step 937000/1000000, Batch Size = 64, Examples/Sec = 2297.89, Accuracy = 0.81, Loss = 0.579
+[2019-05-04 04:22] Train Step 938000/1000000, Batch Size = 64, Examples/Sec = 2065.65, Accuracy = 0.81, Loss = 0.564
+[2019-05-04 04:23] Train Step 939000/1000000, Batch Size = 64, Examples/Sec = 2272.97, Accuracy = 0.79, Loss = 0.610
+[2019-05-04 04:23] Train Step 940000/1000000, Batch Size = 64, Examples/Sec = 2296.75, Accuracy = 0.80, Loss = 0.611
+[2019-05-04 04:24] Train Step 941000/1000000, Batch Size = 64, Examples/Sec = 2131.25, Accuracy = 0.80, Loss = 0.592
+[2019-05-04 04:25] Train Step 942000/1000000, Batch Size = 64, Examples/Sec = 2291.32, Accuracy = 0.80, Loss = 0.586
+[2019-05-04 04:25] Train Step 943000/1000000, Batch Size = 64, Examples/Sec = 2275.40, Accuracy = 0.79, Loss = 0.609
+[2019-05-04 04:26] Train Step 944000/1000000, Batch Size = 64, Examples/Sec = 2292.17, Accuracy = 0.82, Loss = 0.585
+[2019-05-04 04:26] Train Step 945000/1000000, Batch Size = 64, Examples/Sec = 2294.30, Accuracy = 0.80, Loss = 0.594
+[2019-05-04 04:27] Train Step 946000/1000000, Batch Size = 64, Examples/Sec = 2296.95, Accuracy = 0.81, Loss = 0.583
+[2019-05-04 04:27] Train Step 947000/1000000, Batch Size = 64, Examples/Sec = 2302.41, Accuracy = 0.81, Loss = 0.595
+[2019-05-04 04:28] Train Step 948000/1000000, Batch Size = 64, Examples/Sec = 2294.42, Accuracy = 0.80, Loss = 0.605
+[2019-05-04 04:28] Train Step 949000/1000000, Batch Size = 64, Examples/Sec = 2291.44, Accuracy = 0.81, Loss = 0.564
+[2019-05-04 04:29] Train Step 950000/1000000, Batch Size = 64, Examples/Sec = 2297.74, Accuracy = 0.81, Loss = 0.588
+Saved model.
+-------------------------------------------
+Temperature: 0.0001
+Generated 5:
+Bruno oli jo käynyt veneenrake
+-aikaan, joten tavallaan muuta
+4 Tämä oli se toinen asia, kut
+Don: Bruno suvuu lausuikolusto
+ís oli hänelle kertonut Jullel
+
+Generated 5 long samples (100 chars):
+hän oli tuolloin kuvan alushin kääritys kuulusteltavan pelottavan vaikuttua nämä kokoelmatta käsittä
+è kyllä riippui osoitteensa hirveän metelin ja kun hän oli paneutunut pitää siitä hänen elämänsä vai
+-aikaan, joten tavallaan muutaman vuoden kanssa lähestyivät vahinko palasivat takaisin asunnolle. Si
+den kanssa. \n Lluís ei halunnut mennä altaaseen Ruotsiin. Siksi hän ei vain ollut niin kuin piti. Hän
+Yöllä oli se, että hänen mieleensä tuli erottaa muutama tilalle. Tämä mies oli se, johon oli tietenk
+-------------------------------------------
+Temperature: 0.25
+Generated 5:
+Vaikka ei ollut kovin vakuuttu
+Össä hän oli joskus ollut Siim
+bistejäyksiä lehtiä, käyttäisi
+Ari tunsi kuinka hänen äitinsä
+Gielin. Se oli aivan liian raa
+
+Generated 5 long samples (100 chars):
+Flemmingsbergin yliopistollisessa sairaalassa. Ei mennyt kauaakaan kun olisin joutunut omaan ihan na
+Gunilla oli aina piilotettuna salalokero perheen polttopuulaan puolella. Hän katsoi olevansa moraali
+Hän oli tuolloin odottanut toisenlaista kaupustelu, kuten tavalliset ja luotetta. Minä olin aneriaan
+zaleamme samanaikaisesti vain keksi ensimmäisenä avaruuden housujen pohjalle. Se oli tavallaan hänen
+xin puolelle. Ari tuli silmänsä riisten yhä viikonlopuksi. Opiskeluus saattaisi itsensä siitä, että 
+-------------------------------------------
+Temperature: 0.5
+Generated 5:
+wallista kuin uudestisyntyneek
+rista ja kaikenlaista muuta to
+Urho ei ollut lainkaan juuri m
+Clokulla oli tuonut lähes kaik
+1 Vaikka ei ollut koskaan löyt
+
+Generated 5 long samples (100 chars):
+Ö. \n Tämä kokemus antoi minulle huomiota kylässä ja harrastusmäivät ja päästi olevansa omassa maassaa
+Mutta minä en vain tarvittu. Pitkät ajatukset eivät olleet juuri minkään arvoiset, mutta sen hän tie
+tä he olivat molemmat lähtemään varastohuoneeseen, joka oli jäänyt jo pieneksi. Kangas oli nähnyt ni
+) muuttoa ja niin oli kysemys, joka oli sitä maksunut kanssaan seuraavalla kaunein peniksen polttaji
+8 toisin kuin ennen. No mikä tahansa sitä kietotaa. \n Sitä vaikka kaikki eivät toimikaan kirkon sivul
+-------------------------------------------
+Temperature: 1.0
+Generated 5:
+psensa pesutusteissa. \n Ninnill
+hän ne olivat eronnut voimaksi
+! Voi nyt vain taa. Mies selit
+Raikkoja Jakub auttoi aiheises
+Barcelonaa he tapaisivat ympär
+
+Generated 5 long samples (100 chars):
+Onnesta tuli juonut melko usein suureen ikkunoita. Lluís jäi hieman muutaman Igorin ja Katja oli pid
+ut. \n Mä yritin kolmekymmentä kehtaa keskittyneitä, mutta ne olivat vitkaa. Punkoviereen  vain oltiin
+Oka motoriimessa tarkemmin sen asiat kuului itse kätketty se, mitä nämä ei tänä aikaan ollut autolla
+7. \n Arabian luomalavan rappusille yllättäen Ninnin sääriessä saattoi pelaamaan keskenään, niin kun m
+é isän lumista, sillä Ari oli käynyt usein Havartolaa ja seuraavana aamuna Mira oli saanut häntä käs
+-------------------------------------------
+Temperature: 2.0
+Generated 5:
+O ehkä Suomeen Ylenpattavisii.
+stolisi, vanhempi tyykkuy unta
+-navetto-opissa, mutta ytei Le
+5 syntiset idustelojeja edesot
+repmäs. En tiedä jätkä mihin o
+
+Generated 5 long samples (100 chars):
+0 votgun  luona puolesta, vanhainen josta aluksi kiinnitetty pubia tapansakin tavoin torvipystää nuk
+tiolme, etteivät kukkaneet lavuaniaa, niin, välireihen suunnitelma. Ei se näkee mitään. Aut. Nyt pes
+Riiskani ryppäilasalukkaita ja flunc Kylla muhre Hypä makeelia?\n A. Se tietää, oo A408 seutuksella ra
+Urpoilla Voisiteissä, tehtäväksi. Täellä paljasta juhannuksena 10m. oppi sunnun.\n Ja jos si noitat.  
+E. Kevää miettimään meidät sengrät Perramaak-luulistahulkujen lehdistä. \n Lattialas ja viimaä, tarttu
+-------------------------------------------
+[2019-05-04 04:29] Train Step 951000/1000000, Batch Size = 64, Examples/Sec = 2306.70, Accuracy = 0.80, Loss = 0.590
+[2019-05-04 04:30] Train Step 952000/1000000, Batch Size = 64, Examples/Sec = 2311.93, Accuracy = 0.81, Loss = 0.588
+[2019-05-04 04:30] Train Step 953000/1000000, Batch Size = 64, Examples/Sec = 2305.06, Accuracy = 0.81, Loss = 0.581
+[2019-05-04 04:31] Train Step 954000/1000000, Batch Size = 64, Examples/Sec = 2296.72, Accuracy = 0.80, Loss = 0.593
+[2019-05-04 04:31] Train Step 955000/1000000, Batch Size = 64, Examples/Sec = 2302.31, Accuracy = 0.81, Loss = 0.583
+[2019-05-04 04:32] Train Step 956000/1000000, Batch Size = 64, Examples/Sec = 2301.68, Accuracy = 0.80, Loss = 0.603
+[2019-05-04 04:33] Train Step 957000/1000000, Batch Size = 64, Examples/Sec = 2303.24, Accuracy = 0.81, Loss = 0.580
+[2019-05-04 04:33] Train Step 958000/1000000, Batch Size = 64, Examples/Sec = 2308.90, Accuracy = 0.80, Loss = 0.601
+[2019-05-04 04:34] Train Step 959000/1000000, Batch Size = 64, Examples/Sec = 2295.26, Accuracy = 0.80, Loss = 0.589
+[2019-05-04 04:34] Train Step 960000/1000000, Batch Size = 64, Examples/Sec = 2304.72, Accuracy = 0.81, Loss = 0.596
+[2019-05-04 04:35] Train Step 961000/1000000, Batch Size = 64, Examples/Sec = 2304.23, Accuracy = 0.81, Loss = 0.583
+[2019-05-04 04:35] Train Step 962000/1000000, Batch Size = 64, Examples/Sec = 2299.17, Accuracy = 0.80, Loss = 0.606
+[2019-05-04 04:36] Train Step 963000/1000000, Batch Size = 64, Examples/Sec = 2298.78, Accuracy = 0.81, Loss = 0.590
+[2019-05-04 04:36] Train Step 964000/1000000, Batch Size = 64, Examples/Sec = 2288.06, Accuracy = 0.81, Loss = 0.590
+[2019-05-04 04:37] Train Step 965000/1000000, Batch Size = 64, Examples/Sec = 2296.46, Accuracy = 0.80, Loss = 0.600
+[2019-05-04 04:37] Train Step 966000/1000000, Batch Size = 64, Examples/Sec = 2129.98, Accuracy = 0.81, Loss = 0.583
+[2019-05-04 04:38] Train Step 967000/1000000, Batch Size = 64, Examples/Sec = 2304.78, Accuracy = 0.80, Loss = 0.590
+[2019-05-04 04:38] Train Step 968000/1000000, Batch Size = 64, Examples/Sec = 2296.46, Accuracy = 0.81, Loss = 0.597
+[2019-05-04 04:39] Train Step 969000/1000000, Batch Size = 64, Examples/Sec = 2106.10, Accuracy = 0.81, Loss = 0.579
+[2019-05-04 04:40] Train Step 970000/1000000, Batch Size = 64, Examples/Sec = 2305.45, Accuracy = 0.80, Loss = 0.598
+[2019-05-04 04:40] Train Step 971000/1000000, Batch Size = 64, Examples/Sec = 2090.93, Accuracy = 0.80, Loss = 0.606
+[2019-05-04 04:41] Train Step 972000/1000000, Batch Size = 64, Examples/Sec = 2302.17, Accuracy = 0.80, Loss = 0.596
+[2019-05-04 04:41] Train Step 973000/1000000, Batch Size = 64, Examples/Sec = 2277.04, Accuracy = 0.80, Loss = 0.592
+[2019-05-04 04:42] Train Step 974000/1000000, Batch Size = 64, Examples/Sec = 2124.12, Accuracy = 0.79, Loss = 0.615
+[2019-05-04 04:42] Train Step 975000/1000000, Batch Size = 64, Examples/Sec = 2302.35, Accuracy = 0.80, Loss = 0.599
+[2019-05-04 04:43] Train Step 976000/1000000, Batch Size = 64, Examples/Sec = 2302.55, Accuracy = 0.80, Loss = 0.613
+[2019-05-04 04:43] Train Step 977000/1000000, Batch Size = 64, Examples/Sec = 2307.44, Accuracy = 0.80, Loss = 0.595
+[2019-05-04 04:44] Train Step 978000/1000000, Batch Size = 64, Examples/Sec = 2303.81, Accuracy = 0.81, Loss = 0.583
+[2019-05-04 04:44] Train Step 979000/1000000, Batch Size = 64, Examples/Sec = 2302.31, Accuracy = 0.81, Loss = 0.582
+[2019-05-04 04:45] Train Step 980000/1000000, Batch Size = 64, Examples/Sec = 2300.00, Accuracy = 0.80, Loss = 0.593
+[2019-05-04 04:45] Train Step 981000/1000000, Batch Size = 64, Examples/Sec = 2296.64, Accuracy = 0.81, Loss = 0.608
+[2019-05-04 04:46] Train Step 982000/1000000, Batch Size = 64, Examples/Sec = 2311.89, Accuracy = 0.80, Loss = 0.599
+[2019-05-04 04:46] Train Step 983000/1000000, Batch Size = 64, Examples/Sec = 2283.00, Accuracy = 0.81, Loss = 0.566
+[2019-05-04 04:47] Train Step 984000/1000000, Batch Size = 64, Examples/Sec = 2295.22, Accuracy = 0.80, Loss = 0.604
+[2019-05-04 04:48] Train Step 985000/1000000, Batch Size = 64, Examples/Sec = 2298.76, Accuracy = 0.80, Loss = 0.590
+[2019-05-04 04:48] Train Step 986000/1000000, Batch Size = 64, Examples/Sec = 2126.52, Accuracy = 0.80, Loss = 0.604
+[2019-05-04 04:49] Train Step 987000/1000000, Batch Size = 64, Examples/Sec = 2301.86, Accuracy = 0.81, Loss = 0.590
+[2019-05-04 04:49] Train Step 988000/1000000, Batch Size = 64, Examples/Sec = 2258.99, Accuracy = 0.80, Loss = 0.593
+[2019-05-04 04:50] Train Step 989000/1000000, Batch Size = 64, Examples/Sec = 2297.30, Accuracy = 0.80, Loss = 0.591
+[2019-05-04 04:50] Train Step 990000/1000000, Batch Size = 64, Examples/Sec = 2107.49, Accuracy = 0.80, Loss = 0.603
+[2019-05-04 04:51] Train Step 991000/1000000, Batch Size = 64, Examples/Sec = 2300.65, Accuracy = 0.81, Loss = 0.574
+[2019-05-04 04:51] Train Step 992000/1000000, Batch Size = 64, Examples/Sec = 2307.79, Accuracy = 0.80, Loss = 0.598
+[2019-05-04 04:52] Train Step 993000/1000000, Batch Size = 64, Examples/Sec = 2301.95, Accuracy = 0.81, Loss = 0.584
+[2019-05-04 04:52] Train Step 994000/1000000, Batch Size = 64, Examples/Sec = 2307.24, Accuracy = 0.80, Loss = 0.596
+[2019-05-04 04:53] Train Step 995000/1000000, Batch Size = 64, Examples/Sec = 2300.67, Accuracy = 0.81, Loss = 0.575
+[2019-05-04 04:53] Train Step 996000/1000000, Batch Size = 64, Examples/Sec = 2304.66, Accuracy = 0.80, Loss = 0.586
+[2019-05-04 04:54] Train Step 997000/1000000, Batch Size = 64, Examples/Sec = 2305.67, Accuracy = 0.79, Loss = 0.618
+[2019-05-04 04:55] Train Step 998000/1000000, Batch Size = 64, Examples/Sec = 2300.87, Accuracy = 0.81, Loss = 0.581
+[2019-05-04 04:55] Train Step 999000/1000000, Batch Size = 64, Examples/Sec = 2125.26, Accuracy = 0.80, Loss = 0.583
+[2019-05-04 04:56] Train Step 1000000/1000000, Batch Size = 64, Examples/Sec = 2306.62, Accuracy = 0.81, Loss = 0.598
+Saved model.
+Done training.
+**************************************************************

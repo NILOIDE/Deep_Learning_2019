@@ -1,0 +1,15 @@
+usage: train.py [-h] --txt_file TXT_FILE [--seq_length SEQ_LENGTH]
+                [--lstm_num_hidden LSTM_NUM_HIDDEN]
+                [--lstm_num_layers LSTM_NUM_LAYERS] [--batch_size BATCH_SIZE]
+                [--learning_rate LEARNING_RATE]
+                [--learning_rate_decay LEARNING_RATE_DECAY]
+                [--learning_rate_step LEARNING_RATE_STEP]
+                [--dropout_keep_prob DROPOUT_KEEP_PROB]
+                [--train_steps TRAIN_STEPS] [--max_norm MAX_NORM]
+                [--summary_path SUMMARY_PATH] [--print_every PRINT_EVERY]
+                [--sample_every SAMPLE_EVERY] [--device DEVICE]
+                [--temperature TEMPERATURE] [--num_samples NUM_SAMPLES]
+                [--sample_len SAMPLE_LEN] [--save_every SAVE_EVERY]
+                [--load_name LOAD_NAME]
+train.py: error: argument --train_steps: invalid int value: '3e6'
+srun: error: r32n4: task 0: Exited with exit code 2
