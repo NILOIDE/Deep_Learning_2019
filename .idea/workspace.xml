@@ -2,7 +2,200 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3d455d3-bc7a-4a68-bf58-fcbb7443af70" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/assignment_3/code/a3_gan_template.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment_3/code/a3_gan_template.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_1000000_RMS_opt_model.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_1000000_RMS_opt_model_accuracy.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_1000000_RMS_opt_model_config.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_1000000_RMS_opt_model_elapsed.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_1000000_buffed_model.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_1000000_buffed_model_accuracy.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_1000000_buffed_model_config.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_1000000_buffed_model_elapsed.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_100000_RMS_opt_model.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_100000_RMS_opt_model_accuracy.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_100000_RMS_opt_model_config.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_100000_RMS_opt_model_elapsed.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_100000_buffed_model.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_100000_buffed_model_accuracy.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_100000_buffed_model_config.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_100000_buffed_model_elapsed.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_100000_super_buffed_model.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_100000_super_buffed_model_accuracy.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_100000_super_buffed_model_config.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_100000_super_buffed_model_elapsed.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_150000_RMS_opt_model.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_150000_RMS_opt_model_accuracy.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_150000_RMS_opt_model_config.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_150000_RMS_opt_model_elapsed.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_150000_buffed_model.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_150000_buffed_model_accuracy.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_150000_buffed_model_config.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_150000_buffed_model_elapsed.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_150000_super_buffed_model.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_150000_super_buffed_model_accuracy.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_150000_super_buffed_model_config.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_150000_super_buffed_model_elapsed.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_1_RMS_opt_model.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_1_RMS_opt_model_accuracy.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_1_RMS_opt_model_config.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_1_RMS_opt_model_elapsed.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_1_buffed_model.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_1_buffed_model_accuracy.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_1_buffed_model_config.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_1_buffed_model_elapsed.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_1_super_buffed_model.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_1_super_buffed_model_accuracy.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_1_super_buffed_model_config.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_1_super_buffed_model_elapsed.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_200000_RMS_opt_model.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_200000_RMS_opt_model_accuracy.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_200000_RMS_opt_model_config.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_200000_RMS_opt_model_elapsed.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_200000_buffed_model.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_200000_buffed_model_accuracy.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_200000_buffed_model_config.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_200000_buffed_model_elapsed.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_200000_super_buffed_model.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_200000_super_buffed_model_accuracy.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_200000_super_buffed_model_config.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_200000_super_buffed_model_elapsed.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_250000_RMS_opt_model.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_250000_RMS_opt_model_accuracy.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_250000_RMS_opt_model_config.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_250000_RMS_opt_model_elapsed.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_250000_buffed_model.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_250000_buffed_model_accuracy.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_250000_buffed_model_config.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_250000_buffed_model_elapsed.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_250000_super_buffed_model.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_250000_super_buffed_model_accuracy.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_250000_super_buffed_model_config.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_250000_super_buffed_model_elapsed.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_300000_RMS_opt_model.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_300000_RMS_opt_model_accuracy.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_300000_RMS_opt_model_config.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_300000_RMS_opt_model_elapsed.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_300000_buffed_model.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_300000_buffed_model_accuracy.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_300000_buffed_model_config.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_300000_buffed_model_elapsed.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_350000_RMS_opt_model.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_350000_RMS_opt_model_accuracy.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_350000_RMS_opt_model_config.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_350000_RMS_opt_model_elapsed.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_350000_buffed_model.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_350000_buffed_model_accuracy.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_350000_buffed_model_config.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_350000_buffed_model_elapsed.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_400000_RMS_opt_model.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_400000_RMS_opt_model_accuracy.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_400000_RMS_opt_model_config.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_400000_RMS_opt_model_elapsed.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_400000_buffed_model.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_400000_buffed_model_accuracy.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_400000_buffed_model_config.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_400000_buffed_model_elapsed.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_450000_RMS_opt_model.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_450000_RMS_opt_model_accuracy.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_450000_RMS_opt_model_config.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_450000_RMS_opt_model_elapsed.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_450000_buffed_model.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_450000_buffed_model_accuracy.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_450000_buffed_model_config.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_450000_buffed_model_elapsed.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_500000_RMS_opt_model.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_500000_RMS_opt_model_accuracy.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_500000_RMS_opt_model_config.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_500000_RMS_opt_model_elapsed.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_500000_buffed_model.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_500000_buffed_model_accuracy.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_500000_buffed_model_config.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_500000_buffed_model_elapsed.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_50000_buffed_model.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_50000_buffed_model_accuracy.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_50000_buffed_model_config.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_50000_buffed_model_elapsed.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_50000_super_buffed_model.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_50000_super_buffed_model_accuracy.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_50000_super_buffed_model_config.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_50000_super_buffed_model_elapsed.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_550000_RMS_opt_model.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_550000_RMS_opt_model_accuracy.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_550000_RMS_opt_model_config.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_550000_RMS_opt_model_elapsed.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_550000_buffed_model.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_550000_buffed_model_accuracy.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_550000_buffed_model_config.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_550000_buffed_model_elapsed.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_600000_RMS_opt_model.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_600000_RMS_opt_model_accuracy.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_600000_RMS_opt_model_config.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_600000_RMS_opt_model_elapsed.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_600000_buffed_model.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_600000_buffed_model_accuracy.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_600000_buffed_model_config.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_600000_buffed_model_elapsed.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_650000_RMS_opt_model.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_650000_RMS_opt_model_accuracy.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_650000_RMS_opt_model_config.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_650000_RMS_opt_model_elapsed.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_650000_buffed_model.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_650000_buffed_model_accuracy.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_650000_buffed_model_config.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_650000_buffed_model_elapsed.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_700000_RMS_opt_model.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_700000_RMS_opt_model_accuracy.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_700000_RMS_opt_model_config.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_700000_RMS_opt_model_elapsed.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_700000_buffed_model.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_700000_buffed_model_accuracy.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_700000_buffed_model_config.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_700000_buffed_model_elapsed.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_750000_RMS_opt_model.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_750000_RMS_opt_model_accuracy.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_750000_RMS_opt_model_config.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_750000_RMS_opt_model_elapsed.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_750000_buffed_model.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_750000_buffed_model_accuracy.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_750000_buffed_model_config.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_750000_buffed_model_elapsed.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_800000_RMS_opt_model.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_800000_RMS_opt_model_accuracy.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_800000_RMS_opt_model_config.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_800000_RMS_opt_model_elapsed.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_800000_buffed_model.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_800000_buffed_model_accuracy.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_800000_buffed_model_config.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_800000_buffed_model_elapsed.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_850000_RMS_opt_model.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_850000_RMS_opt_model_accuracy.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_850000_RMS_opt_model_config.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_850000_RMS_opt_model_elapsed.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_850000_buffed_model.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_850000_buffed_model_accuracy.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_850000_buffed_model_config.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_850000_buffed_model_elapsed.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_900000_RMS_opt_model.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_900000_RMS_opt_model_accuracy.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_900000_RMS_opt_model_config.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_900000_RMS_opt_model_elapsed.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_900000_buffed_model.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_900000_buffed_model_accuracy.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_900000_buffed_model_config.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_900000_buffed_model_elapsed.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_950000_RMS_opt_model.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_950000_RMS_opt_model_accuracy.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_950000_RMS_opt_model_config.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_950000_RMS_opt_model_elapsed.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_950000_buffed_model.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_950000_buffed_model_accuracy.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_950000_buffed_model_config.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/Viimeinen_syksy_clean_950000_buffed_model_elapsed.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/slurm-2257673.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/slurm-2257711.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/slurm-2258331.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/slurm-2258607.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment_2/part2/slurm-2258627.out" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,8 +222,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/assignment_3/code/a3_gan_template.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="731">
-                  <caret line="175" column="37" selection-start-line="175" selection-start-column="37" selection-end-line="175" selection-end-column="37" />
+                <state relative-caret-position="2176">
+                  <caret line="128" column="45" selection-start-line="128" selection-start-column="28" selection-end-line="128" selection-end-column="45" />
                   <folding>
                     <element signature="e#0#15#0" expanded="true" />
                   </folding>
@@ -70,7 +263,7 @@
             <entry file="file://$PROJECT_DIR$/assignment_2/part1/train.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="528">
-                  <caret line="164" column="54" lean-forward="true" selection-start-line="164" selection-start-column="54" selection-end-line="164" selection-end-column="54" />
+                  <caret line="164" column="54" selection-start-line="164" selection-start-column="54" selection-end-line="164" selection-end-column="54" />
                   <folding>
                     <element signature="e#707#745#0" expanded="true" />
                   </folding>
@@ -579,7 +772,7 @@
     <entry file="file://$PROJECT_DIR$/assignment_2/part1/train.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
-          <caret line="164" column="54" lean-forward="true" selection-start-line="164" selection-start-column="54" selection-end-line="164" selection-end-column="54" />
+          <caret line="164" column="54" selection-start-line="164" selection-start-column="54" selection-end-line="164" selection-end-column="54" />
           <folding>
             <element signature="e#707#745#0" expanded="true" />
           </folding>
@@ -605,8 +798,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assignment_3/code/a3_gan_template.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="175" column="37" selection-start-line="175" selection-start-column="37" selection-end-line="175" selection-end-column="37" />
+        <state relative-caret-position="2176">
+          <caret line="128" column="45" selection-start-line="128" selection-start-column="28" selection-end-line="128" selection-end-column="45" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
