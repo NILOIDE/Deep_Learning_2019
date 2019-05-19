@@ -148,7 +148,7 @@ def create_sample_grid(model, epoch):
     img_samples, img_means = model.sample(ARGS.num_rows ** 2)
     sampled_grid = make_grid(img_samples, nrow=ARGS.num_rows)
     mean_grid = make_grid(img_means, nrow=ARGS.num_rows)
-    path = "./samples/"
+    path = "./VAE_samples/"
     os.makedirs(path, exist_ok=True)
     save_image(sampled_grid, path + f"train_{epoch}.png")
     save_image(mean_grid, path + f"train_{epoch}_mean.png")
@@ -173,7 +173,8 @@ def main():
         #  Add functionality to plot samples from model during training.
         #  You can use the make_grid functioanlity that is already imported.
         # --------------------------------------------------------------------
-        create_sample_grid(model, epoch)
+        if epoch % 5 == 0:
+            create_sample_grid(model, epoch)
 
     # --------------------------------------------------------------------
     #  Add functionality to plot plot the learned data manifold after
@@ -189,7 +190,7 @@ def main():
         img_samples = model.decoder.forward(grid.view(ARGS.manifold_rows*ARGS.manifold_rows, 2))
         img_samples = img_samples.view(ARGS.manifold_rows**2, *x_dims[-3:])
         sampled_grid = make_grid(img_samples, nrow=ARGS.manifold_rows)
-        save_image(sampled_grid, f"manifold.png")
+        save_image(sampled_grid, f"VAE_manifold.png")
 
     save_elbo_plot(train_curve, val_curve, 'elbo.pdf')
 
