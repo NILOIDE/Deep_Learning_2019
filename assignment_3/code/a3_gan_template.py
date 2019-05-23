@@ -46,7 +46,6 @@ class Generator(nn.Module):
                       nn.BatchNorm1d(1024),
                       nn.LeakyReLU(relu_leak),
                       nn.Linear(1024, img_len),
-                      # nn.Sigmoid()
                       nn.BatchNorm1d(img_len),
                       nn.Tanh()
                        ]
@@ -153,6 +152,21 @@ def train(dataloader, discriminator, generator, optimizer_G, optimizer_D, x_dims
                            nrow=5, normalize=True)
     save_loss_plot(G_losses, D_losses)
 
+
+def generate(generator, x_dims):
+    generator.load_state_dict(torch.load("mnist_generator.pt", map_location={'cuda:0': 'cpu'}))
+    in_features = generator.layers[0].in_features
+    interval = 0.9/8 * torch.ones((1,in_features))
+    gen_imgs = torch.empty((9, *x_dims[1:]))
+    z = -0.9 * torch.ones((1,in_features))
+    generator.eval()
+    im = generator(z).view(*x_dims[1:])
+    gen_imgs[0, :] = generator(z).view(*x_dims[1:])
+    for i in range(1, 9):
+        z = z + interval
+        gen_imgs[i, :] = generator(z).view(*x_dims[1:])
+    save_image(gen_imgs, "interpolation.png", nrow=9, normalize=True)
+
 def main():
     # Create output image directory
     os.makedirs('GAN_images', exist_ok=True)
@@ -178,7 +192,10 @@ def main():
     optimizer_D = torch.optim.Adam(discriminator.parameters(), lr=ARGS.lr)
 
     # Start training
-    train(dataloader, discriminator, generator, optimizer_G, optimizer_D, x_dims)
+    if not ARGS.generate:
+        train(dataloader, discriminator, generator, optimizer_G, optimizer_D, x_dims)
+    else:
+       generate(generator, x_dims)
 
     # You can save your generator here to re-use it to generate images for your
     # report, e.g.:
@@ -197,6 +214,7 @@ if __name__ == "__main__":
                         help='dimensionality of the latent space')
     parser.add_argument('--save_interval', type=int, default=500,
                         help='save every SAVE_INTERVAL iterations')
+    parser.add_argument('--generate', action='store_true', help='No training. Generating instead.')
     ARGS = parser.parse_args()
 
     main()

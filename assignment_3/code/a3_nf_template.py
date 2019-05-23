@@ -7,7 +7,10 @@ import torch.nn.functional as F
 import numpy as np
 from datasets.mnist import mnist
 import os
-from torchvision.utils import make_grid
+from torchvision.utils import make_grid, save_image
+
+
+DEVICE = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 
 def log_prior(x):
@@ -15,7 +18,9 @@ def log_prior(x):
     Compute the elementwise log probability of a standard Gaussian, i.e.
     N(x | mu=0, sigma=1).
     """
-    raise NotImplementedError
+
+    logp = (- np.log(np.sqrt(2 * np.pi)) - 0.5 * x**2).sum(dim=1)
+
     return logp
 
 
@@ -23,8 +28,9 @@ def sample_prior(size):
     """
     Sample from a standard Gaussian.
     """
-    raise NotImplementedError
 
+    sample = np.random.normal(0, 1, size)
+    sample = torch.from_numpy(sample)
     if torch.cuda.is_available():
         sample = sample.cuda()
 
@@ -55,14 +61,21 @@ class Coupling(torch.nn.Module):
         # Create shared architecture to generate both the translation and
         # scale variables.
         # Suggestion: Linear ReLU Linear ReLU Linear.
-        self.nn = torch.nn.Sequential(
-            None
-            )
+        self.layers = [nn.Linear(c_in, n_hidden),
+                       nn.ReLU(),
+                       nn.Linear(n_hidden, n_hidden),
+                       nn.ReLU()]
+        self.nn = nn.Sequential(*self.layers)
+
+        self.t = nn.Sequential(nn.Linear(n_hidden, c_in))
+        self.s = nn.Sequential(nn.Linear(n_hidden, c_in), nn.Tanh())
 
         # The nn should be initialized such that the weights of the last layer
         # is zero, so that its initial transform is identity.
-        self.nn[-1].weight.data.zero_()
-        self.nn[-1].bias.data.zero_()
+        self.t[-1].weight.data.zero_()
+        self.t[-1].bias.data.zero_()
+        self.s[-2].weight.data.zero_()
+        self.s[-2].bias.data.zero_()
 
     def forward(self, z, ldj, reverse=False):
         # Implement the forward and inverse for an affine coupling layer. Split
@@ -74,11 +87,18 @@ class Coupling(torch.nn.Module):
         # log_scale = tanh(h), where h is the scale-output
         # from the NN.
 
-        if not reverse:
-            raise NotImplementedError
-        else:
-            raise NotImplementedError
+        z_m = self.mask * z
+        z_h = self.nn(z_m)
+        log_scale = self.s(z_h)
+        transform = self.t(z_h)
 
+        if not reverse:
+            z = z_m + (1 - self.mask) * (z * log_scale.exp() + transform)
+            # no exp needed since we are summing over the log determinants
+            ldj += torch.sum((1 - self.mask) * log_scale, dim=1)
+        else:
+            z = z_m + (1 - self.mask) * (z - transform) * (- log_scale).exp()
+            ldj = torch.zeros_like(ldj)
         return z, ldj
 
 
@@ -157,7 +177,8 @@ class Model(nn.Module):
 
         # Compute log_pz and log_px per example
 
-        raise NotImplementedError
+        log_pz = log_prior(z)
+        log_px = log_pz + ldj
 
         return log_px
 
@@ -166,10 +187,12 @@ class Model(nn.Module):
         Sample n_samples from the model. Sample from prior and create ldj.
         Then invert the flow and invert the logit_normalize.
         """
-        z = sample_prior((n_samples,) + self.flow.z_shape)
-        ldj = torch.zeros(z.size(0), device=z.device)
+        z = sample_prior((n_samples,) + self.flow.z_shape).float()
+        ldj = torch.zeros(z.size(0), device=z.device).float()
 
-        raise NotImplementedError
+        z, ldj = self.flow.forward(z, ldj, reverse=True)
+
+        z, ldj = self.logit_normalize(z, ldj, reverse=True)
 
         return z
 
@@ -183,8 +206,25 @@ def epoch_iter(model, data, optimizer):
     log_2 likelihood per dimension) averaged over the complete epoch.
     """
 
-    avg_bpd = None
+    bpd_list = []
 
+    for i, (x, t) in enumerate(data, start=1):
+        x = x.to(DEVICE)
+
+        logp = model.forward(x)
+        loss = -logp.mean()
+
+        if model.training:
+            model.zero_grad()
+            loss.backward()
+            torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=5.0)
+            optimizer.step()
+
+        bpd_list.append(loss.item()/np.log(2)/784)
+        if i % 100 == 0:
+            print(f"[Batches done {i}] Loss: {loss.item()} BPD: {loss.item()/np.log(2)/784}")
+
+    avg_bpd = np.mean(bpd_list)
     return avg_bpd
 
 
@@ -214,6 +254,17 @@ def save_bpd_plot(train_curve, val_curve, filename):
     plt.savefig(filename)
 
 
+def create_sample_grid(model, epoch):
+    with torch.no_grad():
+        img_samples = model.sample(ARGS.num_rows ** 2)
+        img_shape = int(np.sqrt(img_samples.shape[-1]))
+        img_samples = img_samples.reshape(-1, 1, img_shape, img_shape)
+        sampled_grid = make_grid(img_samples, nrow=ARGS.num_rows, normalize=True)
+        path = "./images_nfs/"
+        os.makedirs(path, exist_ok=True)
+        save_image(sampled_grid, path + f"train_{epoch}.png")
+
+
 def main():
     data = mnist()[:2]  # ignore test split
 
@@ -225,9 +276,10 @@ def main():
     optimizer = torch.optim.Adam(model.parameters(), lr=1e-3)
 
     os.makedirs('images_nfs', exist_ok=True)
+    create_sample_grid(model, 0)
 
     train_curve, val_curve = [], []
-    for epoch in range(ARGS.epochs):
+    for epoch in range(1, ARGS.epochs+1):
         bpds = run_epoch(model, data, optimizer)
         train_bpd, val_bpd = bpds
         train_curve.append(train_bpd)
@@ -239,6 +291,11 @@ def main():
         #  Add functionality to plot samples from model during training.
         #  You can use the make_grid functionality that is already imported.
         #  Save grid to images_nfs/
+
+        if epoch % 5 == 0 or epoch == 1:
+            torch.save(model.state_dict(), "NF_model.pt")
+            create_sample_grid(model, epoch)
+
         # --------------------------------------------------------------------
 
     save_bpd_plot(train_curve, val_curve, 'nfs_bpd.pdf')
@@ -248,6 +305,8 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--epochs', default=40, type=int,
                         help='max number of epochs')
+    parser.add_argument('--num_rows', default=5, type=int,
+                        help='number of rows in sample image')
 
     ARGS = parser.parse_args()
 

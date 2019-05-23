@@ -29,9 +29,9 @@ class Encoder(nn.Module):
         """
         shared_output = self.shared_layers(input)
         mean = self.mu_head(shared_output)
-        std = self.sigma_head(shared_output)
+        log_std = self.sigma_head(shared_output)
 
-        return mean, std
+        return mean, log_std
 
 
 class Decoder(nn.Module):
@@ -75,7 +75,7 @@ class VAE(nn.Module):
         z = mean + log_std.exp() * noise
         out = self.decoder.forward(z)
 
-        l_reg = 0.5 * (torch.sum(log_std.exp() + mean**2 - log_std, dim=1) - 1)
+        l_reg = 0.5 * torch.sum(log_std.exp() + mean**2 - log_std - 1, dim=1)
         l_recon = torch.sum(self.loss(out, input), dim=1)
         average_negative_elbo = torch.mean(l_recon + l_reg, dim=0)
 
@@ -173,7 +173,7 @@ def main():
         #  Add functionality to plot samples from model during training.
         #  You can use the make_grid functioanlity that is already imported.
         # --------------------------------------------------------------------
-        if epoch % 5 == 0:
+        if epoch % 5 == 0 or epoch == 1:
             create_sample_grid(model, epoch)
 
     # --------------------------------------------------------------------
